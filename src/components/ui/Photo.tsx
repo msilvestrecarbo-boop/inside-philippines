@@ -7,11 +7,6 @@ import { tr, type Locale } from "@/i18n/config";
  * With `src`: responsive AVIF/WebP via next/image (lazy unless `priority`).
  * Without: a clearly labelled, art-directed placeholder that shows the shot brief.
  */
-/** Unsplash's CDN resizes and serves AVIF/WebP itself, so we skip the Next.js optimiser. */
-function unsplashLoader({ src, width, quality }: { src: string; width: number; quality?: number }) {
-  return `${src}?auto=format&fit=crop&w=${width}&q=${quality ?? 72}`;
-}
-
 export function Photo({
   photo,
   locale,
@@ -50,7 +45,6 @@ export function Photo({
           sizes={sizes}
           priority={priority}
           className="object-cover"
-          {...(unsplash ? { loader: unsplashLoader } : {})}
         />
         {showBrief && photo.credit && (
           <a

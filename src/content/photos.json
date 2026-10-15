@@ -1,1 +1,450 @@
-{}
+{
+  "site/hero": {
+    "src": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86",
+    "page": "https://unsplash.com/photos/aerial-photo-of-body-of-water-between-mountains-9ZXHUr5aCwM",
+    "photographer": "Cris Tagupa",
+    "subject": "Aerial of turquoise water between karst cliffs, El Nido, Palawan",
+    "verifiedLocation": true
+  },
+  "site/final-cta": {
+    "src": "https://images.unsplash.com/photo-1529686342540-1b43aec0df75",
+    "page": "https://unsplash.com/photos/outrigger-boat-on-sandy-beach-lT7zmkth3o8",
+    "photographer": "Cris Tagupa",
+    "subject": "Outrigger boat at anchor under a pink-purple dusk sky, Balabac, Palawan",
+    "verifiedLocation": true
+  },
+  "destination/palawan": {
+    "src": "https://images.unsplash.com/photo-1728042880915-0dd755899018",
+    "page": "https://unsplash.com/photos/an-aerial-view-of-a-lagoon-surrounded-by-mountains-l3-7ClgQ15U",
+    "photographer": "Geio Tischler",
+    "subject": "Top-down aerial of Secret Beach lagoon and boats, Palawan",
+    "verifiedLocation": true
+  },
+  "destination/el-nido": {
+    "src": "https://images.unsplash.com/photo-1519101236449-ac8098e16f15",
+    "page": "https://unsplash.com/photos/birds-eye-photography-of-boats-on-body-of-water-near-islet-WHDuMggGxoY",
+    "photographer": "Cris Tagupa",
+    "subject": "Aerial of bangkas moored off Helicopter Island, El Nido, Palawan",
+    "verifiedLocation": true
+  },
+  "destination/coron": {
+    "src": "https://images.unsplash.com/photo-1542533382-b42a59d8bd39",
+    "page": "https://unsplash.com/photos/aerial-photo-of-clear-blue-sea-surrounded-by-mountains-IL-fBBnF-GU",
+    "photographer": "John Hernandez",
+    "subject": "Aerial of clear blue water and limestone cliffs, Coron, Palawan",
+    "verifiedLocation": true
+  },
+  "destination/siargao": {
+    "src": "https://images.unsplash.com/photo-1559099078-8ab4ed4eefed",
+    "page": "https://unsplash.com/photos/aerial-photography-of-an-island-aFQ7rdDKweQ",
+    "photographer": "Rene Padillo",
+    "subject": "Aerial of Guyam Island, palms and white sand, Siargao",
+    "verifiedLocation": true
+  },
+  "destination/bohol": {
+    "src": "https://images.unsplash.com/photo-1728042743743-e2a2abf35c47",
+    "page": "https://unsplash.com/photos/an-aerial-view-of-a-lush-green-landscape-VEnc4fnXDmQ",
+    "photographer": "Geio Tischler",
+    "subject": "Aerial of the Chocolate Hills, Bohol",
+    "verifiedLocation": true
+  },
+  "destination/siquijor": {
+    "src": "https://images.unsplash.com/photo-1685685476548-8d57bc46032d",
+    "page": "https://unsplash.com/photos/a-view-of-the-ocean-from-the-top-of-a-hill-u3Zf-4hPrh4",
+    "photographer": "Nikko Lawrence Uy",
+    "subject": "Clifftop view over the sea, Siquijor",
+    "verifiedLocation": true
+  },
+  "destination/boracay": {
+    "src": "https://images.unsplash.com/photo-1675759801135-cc2bba0a677b",
+    "page": "https://unsplash.com/photos/a-group-of-sailboats-sailing-on-a-body-of-water-near-palm-trees-7pUL8o7e8bQ",
+    "photographer": "Edward Ang",
+    "subject": "Paraw sailboats off the palm-lined shore, Boracay (tagged Boracay)",
+    "verifiedLocation": true
+  },
+  "destination/cebu": {
+    "src": "https://images.unsplash.com/photo-1586263426392-3b3e0748f618",
+    "page": "https://unsplash.com/photos/waterfalls-in-the-middle-of-the-forest-jCIIInzOm-Y",
+    "photographer": "MJ Tangonan",
+    "subject": "Kawasan Falls, Badian, Cebu",
+    "verifiedLocation": true
+  },
+  "destination/camiguin": {
+    "src": "https://images.unsplash.com/photo-1594294749004-f13f15ed9f33",
+    "page": "https://unsplash.com/photos/green-trees-near-mountain-under-white-clouds-during-daytime-B1kiq49My7U",
+    "photographer": "Aaron Madulara",
+    "subject": "Coconut palms and volcanic slopes, Camiguin",
+    "verifiedLocation": true
+  },
+  "destination/banaue": {
+    "src": "https://images.unsplash.com/photo-1716863451357-f193111b8f8e",
+    "page": "https://unsplash.com/photos/a-view-of-a-mountain-range-with-rice-terraces-in-the-foreground-845SjifiiVM",
+    "photographer": "Glenda Wee",
+    "subject": "Batad rice terraces and mountains, Banaue, Ifugao",
+    "verifiedLocation": true
+  },
+  "destination/sagada": {
+    "src": "https://images.unsplash.com/photo-1585761347573-0b9b767801cb",
+    "page": "https://unsplash.com/photos/green-trees-on-mountain-under-blue-sky-during-daytime-4em_e8qQ4tA",
+    "photographer": "Ruby Jane Motilla",
+    "subject": "Pine-covered ridges from Marlboro Hill, Sagada",
+    "verifiedLocation": true
+  },
+  "destination/manila": {
+    "src": "https://images.unsplash.com/photo-1555557356-51c5d7a8f4c2",
+    "page": "https://unsplash.com/photos/cityscape-photography-of-buildings-and-boats-KwgEwVEsao8",
+    "photographer": "Michael Buillerey",
+    "subject": "View over the Pasig River and Binondo from Fort Santiago, Intramuros, Manila",
+    "verifiedLocation": true
+  },
+  "destination/batanes": {
+    "src": "https://images.unsplash.com/photo-1588664337611-f292c26aa4e1",
+    "page": "https://unsplash.com/photos/green-and-brown-mountain-beside-body-of-water-during-daytime-Wgxeo_X1DNo",
+    "photographer": "Jayvee Villaganas",
+    "subject": "Green headlands dropping to the sea, Batanes",
+    "verifiedLocation": true
+  },
+  "destination/negros": {
+    "src": "https://images.unsplash.com/photo-1519101739220-83f6a14852ca",
+    "page": "https://unsplash.com/photos/aerial-photography-of-yacht-in-body-of-water-re2Meno1UIU",
+    "photographer": "Cris Tagupa",
+    "subject": "Aerial of a boat in clear water off Apo Island, Dauin, Negros Oriental",
+    "verifiedLocation": true
+  },
+  "destination/malapascua": {
+    "src": "https://images.unsplash.com/photo-1654290066913-749de4a9d2d6",
+    "page": "https://unsplash.com/photos/a-beach-with-palm-trees-and-a-boat-in-the-water-EN6Sbqld2G0",
+    "photographer": "Josh Roland",
+    "subject": "North beach with palms and a bangka, Malapascua Island",
+    "verifiedLocation": true
+  },
+  "destination/moalboal": {
+    "src": "https://images.unsplash.com/photo-1495162048225-6b3b37b8a69e",
+    "page": "https://unsplash.com/photos/aerial-photography-of-several-white-boats-near-island-oO7d1Q9mJZQ",
+    "photographer": "Ken Suarez",
+    "subject": "Aerial of dive boats around Pescador Island, Moalboal, Cebu",
+    "verifiedLocation": true
+  },
+  "destination/dumaguete": {
+    "src": "https://images.unsplash.com/photo-1765862857037-43a2e7bd35fe",
+    "page": "https://unsplash.com/photos/boats-docked-by-a-waterfront-promenade-under-a-cloudy-sky-Rj-eLAxFynw",
+    "photographer": "MacroLingo LLC",
+    "subject": "Boats by the seafront promenade, Dumaguete City",
+    "verifiedLocation": true
+  },
+  "journey/island-classics": {
+    "src": "https://images.unsplash.com/photo-1564425230164-1e63b4922d3f",
+    "page": "https://unsplash.com/photos/aerial-photography-of-boats-beside-mountain-during-daytime-DGOI_BlPdC4",
+    "photographer": "Kaspars Upmanis",
+    "subject": "Aerial of bangkas below limestone cliffs, El Nido, Palawan",
+    "verifiedLocation": true
+  },
+  "journey/palawan-deep-dive": {
+    "src": "https://images.unsplash.com/photo-1584640161267-869f0aa03af6",
+    "page": "https://unsplash.com/photos/aerial-view-of-blue-lake-surrounded-by-mountains-during-daytime-R8UzGIwk4TQ",
+    "photographer": "Jake Irish",
+    "subject": "Morning mist over Barracuda Lake, Coron Island, Palawan",
+    "verifiedLocation": true
+  },
+  "journey/the-slow-philippines": {
+    "src": "https://images.unsplash.com/photo-1591267743545-57c12aff849c",
+    "page": "https://unsplash.com/photos/palm-tree-near-body-of-water-during-daytime-HyoHPFoU9Kg",
+    "photographer": "Ildi Bibo",
+    "subject": "Palm tree over calm turquoise water, Siquijor",
+    "verifiedLocation": true
+  },
+  "journey/honeymoon-inside-philippines": {
+    "src": "https://images.unsplash.com/photo-1549714301-24ca408b5446",
+    "page": "https://unsplash.com/photos/brown-wooden-boat-at-water-xJBgzu3JZnY",
+    "photographer": "Bas van Wylick",
+    "subject": "Wooden boat on still water at a purple sunset, El Nido",
+    "verifiedLocation": true
+  },
+  "journey/surf-and-islands": {
+    "src": "https://images.unsplash.com/photo-1533655887618-b3c0c95acc16",
+    "page": "https://unsplash.com/photos/island-in-aerial-view-photography-r7DTD91MEUQ",
+    "photographer": "Michael Louie",
+    "subject": "Aerial of Naked Island sandbar, Siargao",
+    "verifiedLocation": true
+  },
+  "journey/the-grand-philippines": {
+    "src": "https://images.unsplash.com/photo-1714746093312-d4d4c1f79f07",
+    "page": "https://unsplash.com/photos/a-view-of-a-rice-field-in-the-mountains-X3p-dqjXv1s",
+    "photographer": "Omri D. Cohen",
+    "subject": "Rice terraces in the mountains, Banaue, Ifugao",
+    "verifiedLocation": true
+  },
+  "journey/ten-days-two-islands": {
+    "src": "https://images.unsplash.com/photo-1565340076637-825894a74ca6",
+    "page": "https://unsplash.com/photos/road-between-trees-during-daytime-jMCOul3CK9U",
+    "photographer": "Alejandro Luengo",
+    "subject": "Aerial of a palm-lined road with a motorbike, Siargao",
+    "verifiedLocation": true
+  },
+  "category/island-escapes": {
+    "src": "https://images.unsplash.com/photo-1583685133115-90748ccbe274",
+    "page": "https://unsplash.com/photos/aerial-view-of-white-and-brown-boat-on-sea-during-daytime-tvi3oh8RdTQ",
+    "photographer": "Jules Bassoleil",
+    "subject": "Aerial of bangkas at the entrance to the Small Lagoon, El Nido",
+    "verifiedLocation": true
+  },
+  "category/honeymoons": {
+    "src": "https://images.unsplash.com/photo-1612869443725-69ff79ba2b84",
+    "page": "https://unsplash.com/photos/brown-wooden-chairs-on-beach-during-daytime-ISiweCJTpJA",
+    "photographer": "Datingscout",
+    "subject": "Two wooden chairs on the beach at Amanpulo, Cuyo, Palawan",
+    "verifiedLocation": true
+  },
+  "category/luxury": {
+    "src": "https://images.unsplash.com/photo-1676089774867-4c95eafda312",
+    "page": "https://unsplash.com/photos/a-house-with-a-thatched-roof-overlooks-the-ocean-M3xkDxubi28",
+    "photographer": "Roméo A.",
+    "subject": "Thatched tree-house villa overlooking the sea at Shangri-La Boracay",
+    "verifiedLocation": true
+  },
+  "category/family": {
+    "src": "https://images.unsplash.com/photo-1716301149701-b1b0389b466f",
+    "page": "https://unsplash.com/photos/a-man-and-a-child-standing-on-a-beach-at-sunset--I58HO5PP9s",
+    "photographer": "Beaver Fernandez",
+    "subject": "Father and child silhouetted on a beach at sunset, Tondaligan, Dagupan, Pangasinan",
+    "verifiedLocation": true
+  },
+  "category/surf": {
+    "src": "https://images.unsplash.com/photo-1598607814607-4ab64d4aa8e7",
+    "page": "https://unsplash.com/photos/a-man-riding-a-wave-on-top-of-a-surfboard-cYdfGZrTPnk",
+    "photographer": "Ivan Torres",
+    "subject": "Surfer on a wave at Urbiztondo, San Juan, La Union (not Siargao)",
+    "verifiedLocation": true
+  },
+  "category/diving": {
+    "src": "https://images.unsplash.com/photo-1697484373501-ed80ff8cca5d",
+    "page": "https://unsplash.com/photos/a-large-group-of-fish-swimming-in-the-ocean-5raHJCu3GN8",
+    "photographer": "Claus Giering",
+    "subject": "Sardine school underwater, Moalboal, Cebu",
+    "verifiedLocation": true
+  },
+  "category/food-culture": {
+    "src": "https://images.unsplash.com/photo-1537495988501-f9cd94a78f3e",
+    "page": "https://unsplash.com/photos/variety-of-fried-dishes-on-banana-leaf-q4pns2LtGwk",
+    "photographer": "Eiliv Aceron",
+    "subject": "Boodle-fight spread on banana leaves, Quezon City",
+    "verifiedLocation": true
+  },
+  "category/nature-adventure": {
+    "src": "https://images.unsplash.com/photo-1563175544-9759b48523b9",
+    "page": "https://unsplash.com/photos/mountain-at-daytime-Yfh7E4KWDZ0",
+    "photographer": "Aldrin Brosas",
+    "subject": "Rice terraces and Cordillera mountains, Sagada",
+    "verifiedLocation": true
+  },
+  "category/wellness": {
+    "src": "https://images.unsplash.com/photo-1580339355185-db2cfed018ec",
+    "page": "https://unsplash.com/photos/green-palm-tree-near-river-PV_2rHViCnM",
+    "photographer": "Franzi Engel",
+    "subject": "Palms over a jungle river, Siquijor",
+    "verifiedLocation": true
+  },
+  "category/off-the-beaten-path": {
+    "src": "https://images.unsplash.com/photo-1597926616299-c049c838a431",
+    "page": "https://unsplash.com/photos/white-and-red-lighthouse-on-top-of-mountain--XZuQQ83CIQ",
+    "photographer": "JR Padlan",
+    "subject": "Lighthouse on a green hilltop, Batanes",
+    "verifiedLocation": true
+  },
+  "category/private-journeys": {
+    "src": "https://images.unsplash.com/photo-1759773106970-9e3b78cac2fb",
+    "page": "https://unsplash.com/photos/a-traditional-filipino-boat-floats-on-calm-blue-water-8CGbH85gAis",
+    "photographer": "Bernd Dittrich",
+    "subject": "Traditional bangka on calm blue water, Philippines (exact island not stated)",
+    "verifiedLocation": false
+  },
+  "landing/siargao": {
+    "src": "https://images.unsplash.com/photo-1565565915331-293fd8113954",
+    "page": "https://unsplash.com/photos/boats-near-seashore-4flavNqoVZc",
+    "photographer": "Alejandro Luengo",
+    "subject": "Drone shot of bangkas off the beach at Guyam Island, Siargao",
+    "verifiedLocation": true
+  },
+  "landing/palawan": {
+    "src": "https://images.unsplash.com/photo-1583685173048-342a162bb888",
+    "page": "https://unsplash.com/photos/aerial-view-of-green-lake-surrounded-by-green-trees-during-daytime-y-qboGWK7aA",
+    "photographer": "Jules Bassoleil",
+    "subject": "Aerial of the Big Lagoon (Small Lagoon at right), El Nido",
+    "verifiedLocation": true
+  },
+  "landing/honeymoon": {
+    "src": "https://images.unsplash.com/photo-1685358654500-0c78db679996",
+    "page": "https://unsplash.com/photos/a-group-of-sailboats-sailing-in-the-ocean-at-sunset-8KLGbVVCi8A",
+    "photographer": "Johann Ocampo",
+    "subject": "Paraw sailboats at sunset, Boracay",
+    "verifiedLocation": true
+  },
+  "landing/family-philippines": {
+    "src": "https://images.unsplash.com/photo-1536829537172-a7dbc8ea4066",
+    "page": "https://unsplash.com/photos/brown-tarsier-perched-on-branch-BI62KRSV850",
+    "photographer": "Pao Dayag",
+    "subject": "Philippine tarsier on a branch, Bohol",
+    "verifiedLocation": true
+  },
+  "landing/luxury-philippines": {
+    "src": "https://images.unsplash.com/photo-1605538108528-8b9be1168ad8",
+    "page": "https://unsplash.com/photos/aerial-view-of-palm-trees-near-body-of-water-during-daytime--6PqSpDC3aw",
+    "photographer": "Cauayan Island Resort",
+    "subject": "Aerial of beachfront villas among palms, Cauayan Island Resort, El Nido",
+    "verifiedLocation": true
+  },
+  "landing/14-day-philippines-itinerary": {
+    "src": "https://images.unsplash.com/photo-1736776256317-0896951a4dc9",
+    "page": "https://unsplash.com/photos/an-aerial-view-of-a-tropical-island-with-a-white-sand-beach-bVpbD3cwy7k",
+    "photographer": "Adrien Brun",
+    "subject": "Aerial of a small white-sand island, Siargao",
+    "verifiedLocation": true
+  },
+  "landing/21-day-philippines-itinerary": {
+    "src": "https://images.unsplash.com/photo-1716863451342-f279ecac3d2b",
+    "page": "https://unsplash.com/photos/a-lush-green-valley-surrounded-by-mountains-Mpqabf_Hz7Q",
+    "photographer": "Glenda Wee",
+    "subject": "Green mountain valley and village, Sagada, Mountain Province",
+    "verifiedLocation": true
+  },
+  "landing/island-hopping": {
+    "src": "https://images.unsplash.com/photo-1565113218386-934429f84cc2",
+    "page": "https://unsplash.com/photos/aerial-photograph-of-sandbar-uFfChXlpUxI",
+    "photographer": "Alejandro Luengo",
+    "subject": "Drone shot of Naked Island sandbar, Siargao",
+    "verifiedLocation": true
+  },
+  "landing/private-villas": {
+    "src": "https://images.unsplash.com/photo-1605538032432-a9f0c8d9baac",
+    "page": "https://unsplash.com/photos/brown-wooden-house-surrounded-by-palm-trees-E_FnocWHIlg",
+    "photographer": "Cauayan Island Resort",
+    "subject": "Timber villa among palms at Cauayan Island Resort, El Nido, Palawan",
+    "verifiedLocation": true
+  },
+  "landing/private-boats": {
+    "src": "https://images.unsplash.com/photo-1548784590-caed77cd2a38",
+    "page": "https://unsplash.com/photos/boats-on-body-of-water-near-mountains-during-daytime-gluJDF_BfU0",
+    "photographer": "David Köhler",
+    "subject": "Bangkas moored below limestone rocks, Coron (tagged Coron; no location field)",
+    "verifiedLocation": true
+  },
+  "landing/luxury-island-escapes": {
+    "src": "https://images.unsplash.com/photo-1612347572521-d3e1956fc263",
+    "page": "https://unsplash.com/photos/brown-wicker-armchair-near-green-potted-plant-M5KO5e5hBVw",
+    "photographer": "Datingscout",
+    "subject": "Wicker armchair in a casita at Amanpulo, Cuyo, Palawan",
+    "verifiedLocation": true
+  },
+  "landing/wellness-journeys": {
+    "src": "https://images.unsplash.com/photo-1585351923007-bf6a01cb19de",
+    "page": "https://unsplash.com/photos/brown-wooden-framed-swimming-pool-tSn8bPOpVEo",
+    "photographer": "Brian Bondoc",
+    "subject": "Villa porch with hot tub, Boracay",
+    "verifiedLocation": true
+  },
+  "guide/best-time": {
+    "src": "https://images.unsplash.com/photo-1531761535209-180857e963b9",
+    "page": "https://unsplash.com/photos/el-nido-coastal-town-aerial-view-3T9dDY0WqDI",
+    "photographer": "Eibner Saliba",
+    "subject": "Aerial of El Nido town and Bacuit Bay, Palawan",
+    "verifiedLocation": true
+  },
+  "guide/weather": {
+    "src": "https://images.unsplash.com/photo-1751814202878-4085f2630a21",
+    "page": "https://unsplash.com/photos/stormy-sea-and-a-distant-misty-island-AYokA4yyB2c",
+    "photographer": "GWANGJIN GO",
+    "subject": "Rain squall over the sea behind Kalanggaman Island (Cebu/Leyte), wet-season sky",
+    "verifiedLocation": true
+  },
+  "guide/how-many-days": {
+    "src": "https://images.unsplash.com/photo-1757262639062-151c6f2ccdfd",
+    "page": "https://unsplash.com/photos/a-green-outrigger-boat-floats-near-a-tropical-island-xcSQd6UTB8Q",
+    "photographer": "Bernd Dittrich",
+    "subject": "Green outrigger bangka near a tropical island, Philippines (exact island not stated)",
+    "verifiedLocation": false
+  },
+  "guide/first-time": {
+    "src": "https://images.unsplash.com/photo-1586768798120-95597acaa6e3",
+    "page": "https://unsplash.com/photos/aerial-view-of-beach-during-daytime-Ad7-qVkGy7Y",
+    "photographer": "Darren Lawrence",
+    "subject": "Drone shot of a tropical beach and turquoise water, Philippines (exact island not stated)",
+    "verifiedLocation": false
+  },
+  "guide/travel-between-islands": {
+    "src": "https://images.unsplash.com/photo-1621820479111-a41f8e070dec",
+    "page": "https://unsplash.com/photos/white-boat-on-sea-near-green-mountain-under-white-clouds-and-blue-sky-during-daytime-57zM3Ghh-Mg",
+    "photographer": "Doug Villalos",
+    "subject": "Ferry boat crossing near a green headland, Boracay",
+    "verifiedLocation": true
+  },
+  "guide/best-islands": {
+    "src": "https://images.unsplash.com/photo-1594697797606-e79a612f0dec",
+    "page": "https://unsplash.com/photos/green-trees-on-white-sand-beach-during-daytime-PyyK898UZLA",
+    "photographer": "Vic Alcuaz",
+    "subject": "White Beach, Boracay",
+    "verifiedLocation": true
+  },
+  "guide/diving": {
+    "src": "https://images.unsplash.com/photo-1573551089778-46a7abc39d9f",
+    "page": "https://unsplash.com/photos/brown-sea-turtle-iRgbLpf50IE",
+    "photographer": "Olga ga",
+    "subject": "Green sea turtle underwater, Moalboal, Cebu",
+    "verifiedLocation": true
+  },
+  "guide/surfing": {
+    "src": "https://images.unsplash.com/photo-1715883315329-f49e664009f6",
+    "page": "https://unsplash.com/photos/a-man-riding-a-wave-on-top-of-a-surfboard-VRaFUyNhh-A",
+    "photographer": "Wilfriend Royce Quiras",
+    "subject": "Surfer riding a wave in Sorsogon, Luzon (not Siargao)",
+    "verifiedLocation": true
+  },
+  "guide/visa": {
+    "src": "https://images.unsplash.com/photo-1598258710957-db8614c2881e",
+    "page": "https://unsplash.com/photos/city-skyline-under-blue-sky-during-daytime-vL2h7xYiIlk",
+    "photographer": "Alexes Gerard",
+    "subject": "Manila city skyline under blue sky",
+    "verifiedLocation": true
+  },
+  "guide/food": {
+    "src": "https://images.unsplash.com/photo-1536489885071-87983c3e2859",
+    "page": "https://unsplash.com/photos/white-rice-steamed-okra-grilled-eggplant-and-salted-egg-Q-5eUQwEqm0",
+    "photographer": "Eiliv Aceron",
+    "subject": "Filipino lunch on banana leaves: rice, okra, grilled eggplant, salted egg, Quezon City",
+    "verifiedLocation": true
+  },
+  "story/el-nido-vs-coron": {
+    "src": "https://images.unsplash.com/photo-1593994603115-deaa40043bae",
+    "page": "https://unsplash.com/photos/green-and-brown-mountain-beside-body-of-water-under-blue-sky-during-daytime-S2aZq6yG-b4",
+    "photographer": "Giuliano Gabella",
+    "subject": "View from the Kayangan Lake viewpoint over limestone and sea, Coron",
+    "verifiedLocation": true
+  },
+  "story/siargao-beyond-surfing": {
+    "src": "https://images.unsplash.com/photo-1533656274249-01a343657cea",
+    "page": "https://unsplash.com/photos/aerial-view-photography-of-coconut-tree-during-daytime-Zw5aEvl5QjA",
+    "photographer": "Michael Louie",
+    "subject": "Aerial of a road through Siargao's coconut forest",
+    "verifiedLocation": true
+  },
+  "story/ten-islands": {
+    "src": "https://images.unsplash.com/photo-1580742314608-23d8db11fa60",
+    "page": "https://unsplash.com/photos/aerial-view-of-green-island-during-daytime-2q6x2vj5XRI",
+    "photographer": "Big Dodzy",
+    "subject": "Aerial of Virgin Island with white-sand spit, Bantayan, Cebu",
+    "verifiedLocation": true
+  },
+  "story/siquijor": {
+    "src": "https://images.unsplash.com/photo-1677565374845-f0a970a7af52",
+    "page": "https://unsplash.com/photos/a-view-of-a-body-of-water-from-a-cliff-bsEEwtiQOFQ",
+    "photographer": "Janica Sib",
+    "subject": "Clear water seen from a cliff edge, Siquijor (tagged Siquijor; no location field)",
+    "verifiedLocation": true
+  },
+  "story/manila-48h": {
+    "src": "https://images.unsplash.com/photo-1736122094944-da4deea774ab",
+    "page": "https://unsplash.com/photos/a-stone-gate-with-a-clock-tower-in-the-background-TBDUapl7H_4",
+    "photographer": "German Rivera De La Torre",
+    "subject": "Stone gate with clock tower behind, Intramuros, Manila",
+    "verifiedLocation": true
+  }
+}

@@ -11,6 +11,8 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   images: {
+    loader: "custom",
+    loaderFile: "./src/lib/image-loader.ts",
     formats: ["image/avif", "image/webp"],
     deviceSizes: [420, 640, 828, 1080, 1440, 1920, 2560],
     minimumCacheTTL: 60 * 60 * 24 * 30,
