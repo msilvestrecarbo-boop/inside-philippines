@@ -4,7 +4,12 @@
  */
 export const site = {
   name: "Inside Philippines",
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.insidephilippines.com").replace(/\/$/, ""),
+  url: (
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "https://www.insidephilippines.com")
+  ).replace(/\/$/, ""),
+  /** Search engines are kept out until launch. Set NEXT_PUBLIC_ALLOW_INDEXING=true when placeholders are replaced. */
+  indexable: process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true",
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@insidephilippines.com",
   /** Digits only with country code, e.g. 639171234567. Empty = placeholder. */
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "",

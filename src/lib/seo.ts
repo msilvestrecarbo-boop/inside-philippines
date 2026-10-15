@@ -43,7 +43,7 @@ export function buildMetadata(m: MetaInput): Metadata {
     title: m.title,
     description: m.description,
     alternates: { canonical: url, languages },
-    robots: isFallback || m.noindex ? { index: false, follow: true } : { index: true, follow: true },
+    robots: isFallback || m.noindex || !site.indexable ? { index: false, follow: true } : { index: true, follow: true },
     openGraph: {
       type: m.type ?? "website",
       url,
