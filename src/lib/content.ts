@@ -5,14 +5,22 @@
  * the bodies with GROQ queries (see sanity/README.md); the return types
  * stay the same, so no page or component changes.
  */
-import { destinations } from "@/content/destinations";
-import { journeys } from "@/content/journeys";
-import { guides } from "@/content/guides";
-import { stories } from "@/content/stories";
-import { experienceCategories, experiences } from "@/content/experiences";
-import { landings } from "@/content/landings";
+import { destinations as rawDestinations } from "@/content/destinations";
+import { journeys as rawJourneys } from "@/content/journeys";
+import { guides as rawGuides } from "@/content/guides";
+import { stories as rawStories } from "@/content/stories";
+import { experienceCategories as rawCategories, experiences } from "@/content/experiences";
+import { landings as rawLandings } from "@/content/landings";
+import { withPhoto } from "./photos";
 import { extraPlaces, extraCoords } from "@/content/places";
 import type { Destination, Journey } from "@/content/types";
+
+const destinations = rawDestinations.map((d) => ({ ...d, photo: withPhoto("destination", d.slug, d.photo) }));
+const journeys = rawJourneys.map((j) => ({ ...j, photo: withPhoto("journey", j.slug, j.photo) }));
+const guides = rawGuides.map((g) => ({ ...g, photo: withPhoto("guide", g.slug, g.photo) }));
+const stories = rawStories.map((s) => ({ ...s, photo: withPhoto("story", s.slug, s.photo) }));
+const experienceCategories = rawCategories.map((c) => ({ ...c, photo: withPhoto("category", c.slug, c.photo) }));
+const landings = rawLandings.map((l) => ({ ...l, photo: withPhoto("landing", l.slug, l.photo) }));
 
 export const getDestinations = () => destinations;
 export const getDestination = (slug: string) => destinations.find((d) => d.slug === slug);

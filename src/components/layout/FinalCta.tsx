@@ -3,6 +3,7 @@ import type { Dictionary } from "@/i18n/dictionaries";
 import { TrackedA, TrackedLink } from "./Tracking";
 import { whatsappHref } from "@/lib/site";
 import { Photo } from "@/components/ui/Photo";
+import { withPhoto } from "@/lib/photos";
 
 /** Every important page ends here. `query` pre-fills the trip builder. */
 export function FinalCta({ locale, dict, query = "", title }: { locale: Locale; dict: Dictionary; query?: string; title?: string }) {
@@ -14,7 +15,7 @@ export function FinalCta({ locale, dict, query = "", title }: { locale: Locale; 
         label={dict.common.photoToCome}
         className="absolute inset-0 -z-10"
         sizes="100vw"
-        photo={{ tone: "dusk", alt: { en: "A banca boat at dusk off a Philippine island" }, brief: "Outrigger banca drifting at dusk, silhouetted karst behind, warm low sun, no people facing camera." }}
+        photo={withPhoto("site", "final-cta", { tone: "dusk", alt: { en: "A banca boat at dusk off a Philippine island" }, brief: "Outrigger banca drifting at dusk, silhouetted karst behind, warm low sun, no people facing camera." })}
       />
       <div className="absolute inset-0 -z-10 bg-black/35" />
       <div className="container-x py-28 text-center md:py-40">

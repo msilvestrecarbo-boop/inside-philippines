@@ -13,6 +13,8 @@ import type { L } from "@/i18n/config";
 export type Photo = {
   src?: string; // real image path or CMS URL; empty = placeholder
   video?: string; // optional muted loop (hero use), src is the poster
+  credit?: string; // photographer
+  creditUrl?: string;
   alt: L;
   brief: string; // what the photographer should capture (internal, English)
   tone?: Tone;

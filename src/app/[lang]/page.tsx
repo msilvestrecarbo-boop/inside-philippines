@@ -4,6 +4,7 @@ import { resolve } from "@/lib/i18n-server";
 import { buildMetadata } from "@/lib/seo";
 import { getCategories, getDestinations, getJourneys, getStories } from "@/lib/content";
 import { Photo } from "@/components/ui/Photo";
+import { withPhoto } from "@/lib/photos";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { InsiderNote } from "@/components/ui/Insider";
 import { ArticleCard, CategoryCard, DestinationCard, JourneyCard } from "@/components/cards/Cards";
@@ -33,14 +34,15 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden text-white">
         <Photo
           priority
+          showBrief
           locale={locale}
           label={dict.common.photoToCome}
           className="absolute inset-0 -z-10"
-          photo={{
+          photo={withPhoto("site", "hero", {
             tone: "lagoon",
             alt: { en: "Aerial view of limestone islands and a lagoon in northern Palawan at first light" },
             brief: "HERO VIDEO (8–12s loop, muted, 1080p ≤4MB + poster): drone push over karst islands and a lagoon in Bacuit Bay at first light; second cut: a banca crossing glassy water. No logos, no faces to camera.",
-          }}
+          })}
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/60 via-black/10 to-black/30" />
         <div className="container-x pb-20 md:pb-28">

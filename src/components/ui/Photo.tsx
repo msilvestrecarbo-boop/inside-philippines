@@ -7,6 +7,11 @@ import { tr, type Locale } from "@/i18n/config";
  * With `src`: responsive AVIF/WebP via next/image (lazy unless `priority`).
  * Without: a clearly labelled, art-directed placeholder that shows the shot brief.
  */
+/** Unsplash's CDN resizes and serves AVIF/WebP itself, so we skip the Next.js optimiser. */
+function unsplashLoader({ src, width, quality }: { src: string; width: number; quality?: number }) {
+  return `${src}?auto=format&fit=crop&w=${width}&q=${quality ?? 72}`;
+}
+
 export function Photo({
   photo,
   locale,
@@ -35,9 +40,29 @@ export function Photo({
     );
   }
   if (photo.src) {
+    const unsplash = photo.src.startsWith("https://images.unsplash.com/");
     return (
-      <div className={`relative overflow-hidden ${className}`}>
-        <Image src={photo.src} alt={alt} fill sizes={sizes} priority={priority} className="object-cover" />
+      <div className={`relative overflow-hidden tone-${photo.tone ?? "sand"} ${className}`}>
+        <Image
+          src={photo.src}
+          alt={alt}
+          fill
+          sizes={sizes}
+          priority={priority}
+          className="object-cover"
+          {...(unsplash ? { loader: unsplashLoader } : {})}
+        />
+        {showBrief && photo.credit && (
+          <a
+            href={photo.creditUrl ? `${photo.creditUrl}?utm_source=inside_philippines&utm_medium=referral` : undefined}
+            target="_blank"
+            rel="noopener"
+            className="absolute bottom-3 end-4 z-10 hidden text-[0.65rem] text-white/60 hover:text-white md:block"
+            dir="ltr"
+          >
+            Photo: {photo.credit}{unsplash ? " / Unsplash" : ""}
+          </a>
+        )}
       </div>
     );
   }
