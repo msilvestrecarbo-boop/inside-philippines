@@ -57,21 +57,31 @@ export function Header({ locale, t, whatsappHref }: { locale: Locale; t: HeaderL
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
-        solid ? "bg-sand/95 text-ink shadow-[0_1px_0_var(--color-line)] backdrop-blur" : "bg-transparent text-white"
+        solid ? "bg-white/95 text-ink shadow-[0_1px_0_var(--color-line)] backdrop-blur" : "bg-transparent text-white"
       }`}
     >
-      <div className="container-x flex h-16 items-center justify-between gap-6 md:h-20">
+      <div className={`container-x flex h-16 items-center justify-between gap-6 transition-[height] duration-500 ${solid ? "md:h-20" : "md:h-24"}`}>
         <Link href={`/${locale}`} className="shrink-0">
           <Logo />
         </Link>
 
-        <nav aria-label="Main" className="hidden lg:block">
-          <ul className="flex items-center gap-7 text-[0.72rem] font-semibold uppercase tracking-[0.16em] rtl:tracking-normal rtl:text-[0.9rem]">
+        <nav aria-label="Main" className="hidden xl:block">
+          <ul
+            className={`flex items-center gap-1 rounded-full p-1 text-[0.85rem] uppercase tracking-[0.02em] backdrop-blur-sm transition-colors duration-500 rtl:tracking-normal rtl:text-[0.95rem] ${
+              solid ? "bg-shell" : "bg-black/25"
+            }`}
+          >
             {nav.map(([slug, label]) => {
               const active = pathname.startsWith(`/${locale}/${slug}`);
               return (
                 <li key={slug}>
-                  <Link href={`/${locale}/${slug}`} className={`link-u py-2 ${active ? "bg-[length:100%_1px]" : ""}`} aria-current={active ? "page" : undefined}>
+                  <Link
+                    href={`/${locale}/${slug}`}
+                    className={`block rounded-full px-3.5 py-1.5 transition-colors 2xl:px-4 duration-300 ${
+                      active ? (solid ? "bg-white" : "bg-white/25") : solid ? "hover:bg-white/70" : "hover:bg-white/15"
+                    }`}
+                    aria-current={active ? "page" : undefined}
+                  >
                     {label}
                   </Link>
                 </li>
@@ -88,13 +98,13 @@ export function Header({ locale, t, whatsappHref }: { locale: Locale; t: HeaderL
           <Link
             href={`/${locale}/design-my-trip`}
             onClick={() => track("design_trip_click", { placement: "header" })}
-            className="btn btn-primary hidden min-h-0 px-5 py-2.5 sm:inline-flex"
+            className={`btn hidden min-h-0 px-6 py-3 sm:inline-flex ${solid ? "btn-ink" : "btn-light"}`}
           >
             {t.designMyTrip}
           </Link>
           <button
             type="button"
-            className="kicker -me-2 p-2 lg:hidden"
+            className="kicker -me-2 p-2 xl:hidden"
             aria-expanded={open}
             aria-controls="mobile-menu"
             onClick={() => setOpen((v) => !v)}
@@ -105,7 +115,7 @@ export function Header({ locale, t, whatsappHref }: { locale: Locale; t: HeaderL
       </div>
 
       {open && (
-        <div id="mobile-menu" className="fixed inset-0 top-16 z-40 flex flex-col overflow-y-auto bg-sand px-5 pb-28 pt-8 text-ink lg:hidden">
+        <div id="mobile-menu" className="fixed inset-0 top-16 z-40 flex flex-col overflow-y-auto bg-white px-5 pb-28 pt-8 text-ink xl:hidden">
           <nav aria-label="Mobile">
             <ul className="space-y-1">
               {nav.map(([slug, label]) => (

@@ -25,9 +25,11 @@ export function Photo({
   showBrief?: boolean;
 }) {
   const alt = tr(photo.alt, locale);
+  // Callers that pass `absolute` (full-bleed backgrounds) must not also get `relative`, or the box collapses to 0px.
+  const position = /(^|\s)absolute(\s|$)/.test(className) ? "" : "relative ";
   if (photo.video) {
     return (
-      <div className={`relative overflow-hidden ${className}`}>
+      <div className={`${position}overflow-hidden ${className}`}>
         <video className="h-full w-full object-cover" autoPlay muted loop playsInline preload="metadata" poster={photo.src} aria-label={alt}>
           <source src={photo.video} type={photo.video.endsWith(".webm") ? "video/webm" : "video/mp4"} />
         </video>
@@ -37,7 +39,7 @@ export function Photo({
   if (photo.src) {
     const unsplash = photo.src.startsWith("https://images.unsplash.com/");
     return (
-      <div className={`relative overflow-hidden tone-${photo.tone ?? "sand"} ${className}`}>
+      <div className={`${position}overflow-hidden tone-${photo.tone ?? "sand"} ${className}`}>
         <Image
           src={photo.src}
           alt={alt}

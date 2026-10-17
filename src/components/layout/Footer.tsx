@@ -10,16 +10,16 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const n = dict.nav;
   const L = (p: string) => `/${locale}${p}`;
   return (
-    <footer className="bg-lagoon-deep pb-28 pt-20 text-white md:pb-12">
+    <footer className="bg-linen pb-28 pt-20 text-ink md:pb-12">
       <div className="container-x grid gap-14 md:grid-cols-12">
         <div className="md:col-span-4">
           <Logo />
-          <p className="mt-8 max-w-xs text-sm leading-relaxed text-white/70">{t.about}</p>
-          <p className="mt-6 font-display text-xl italic text-white/90">{dict.meta.tagline}</p>
+          <p className="mt-8 max-w-xs text-sm leading-relaxed text-ink/75">{t.about}</p>
+          <p className="mt-6 font-display text-xl italic text-ink/85">{dict.meta.tagline}</p>
         </div>
         <nav className="grid grid-cols-2 gap-8 text-sm md:col-span-4" aria-label="Footer">
           <div>
-            <p className="kicker text-white/50">{t.explore}</p>
+            <p className="font-display text-2xl">{t.explore}</p>
             <ul className="mt-4 space-y-2.5">
               <li><Link className="link-u" href={L("/destinations")}>{n.destinations}</Link></li>
               <li><Link className="link-u" href={L("/journeys")}>{n.journeys}</Link></li>
@@ -29,7 +29,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             </ul>
           </div>
           <div>
-            <p className="kicker text-white/50">{t.company}</p>
+            <p className="font-display text-2xl">{t.company}</p>
             <ul className="mt-4 space-y-2.5">
               <li><Link className="link-u" href={L("/about")}>{n.about}</Link></li>
               <li><Link className="link-u" href={L("/contact")}>{n.contact}</Link></li>
@@ -43,7 +43,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           <Newsletter locale={locale} t={dict.newsletter} />
         </div>
       </div>
-      <div className="container-x mt-16 flex flex-col gap-3 border-t border-white/15 pt-6 text-xs text-white/55 md:flex-row md:justify-between">
+      <div className="container-x mt-16 flex flex-col gap-3 border-t border-ink/20 pt-6 text-xs text-ink/65 md:flex-row md:justify-between">
         <p>
           © {new Date().getFullYear()} {site.name} · {site.legal.companyName} · {site.legal.registration} · {t.placeholderAddress}
         </p>

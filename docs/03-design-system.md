@@ -6,12 +6,12 @@ Deliverable 7. Tokens live in `src/app/globals.css` (`@theme`), components in `s
 
 | Group | Tokens |
 |---|---|
-| Colour | `sand` `shell` `ink` `stone` `line` `narra` `lagoon` `lagoon-deep` `rice` `clay` `clay-dark` |
-| Type | `--font-display` Cormorant Garamond (+ Noto Naskh Arabic) · `--font-sans` Manrope (+ IBM Plex Sans Arabic) |
+| Colour | `sand` (page white) `shell` (cream panels) `linen` (footer) `ink` `stone` `line` `narra` (bronze accent) `lagoon`/`lagoon-deep` (near-black bands) `rice` `clay` (placeholder notes only) |
+| Type | `--font-display` Tinos, a classic Times-style serif, regular weight (+ Noto Naskh Arabic) · `--font-sans` Jost, a Futura-style sans (+ IBM Plex Sans Arabic). The logo keeps Cormorant Garamond + Manrope. |
 | Scale | `--text-display` clamp(2.75–6.5rem) · `--text-h1` clamp(2.4–4.5rem) · `--text-h2` clamp(2–3.25rem) · `--text-h3` clamp(1.5–2rem) · body 1.075rem/1.75 |
 | Space | Sections `py-20 md:py-28` (or 32); container 88rem with 1.25rem / 2.5rem gutters |
 | Motion | `--ease-soft` cubic-bezier(.22,1,.36,1); 0.3–1.2s; respects `prefers-reduced-motion` |
-| Radius | Square photography and cards; pill buttons and choice chips only |
+| Radius | Rounded photos and cards (`rounded-card`, 1.25rem); pill buttons, nav and inputs |
 
 **Contrast:** ink on sand 15.6:1, stone on sand 5.3:1, white on lagoon 9.9:1, white on clay 4.6:1 (AA for button text at 12.5px bold uppercase).
 
@@ -21,7 +21,7 @@ Deliverable 7. Tokens live in `src/app/globals.css` (`@theme`), components in `s
 |---|---|---|
 | Logo / Mark | `brand/Logo.tsx` | Wordmark + viewfinder corners; always LTR, Latin |
 | Photo | `ui/Photo.tsx` | next/image AVIF/WebP, or labelled art-directed placeholder with shot brief |
-| Buttons | `.btn` `.btn-primary` (clay, primary CTA only) `.btn-ghost` `.btn-ink` | Min 48px tall |
+| Buttons | `.btn` `.btn-primary` (black pill; white on photos via `.on-photo` and dark bands) `.btn-light` `.btn-ghost` `.btn-ink` | Min 48px tall |
 | Kicker | `.kicker` | 0.72rem, 0.2em tracking, uppercase (Arabic: no tracking, larger) |
 | SectionHeading | `ui/SectionHeading.tsx` | kicker + H2 + lead |
 | InsiderNote | `ui/Insider.tsx` | 9 types; narra rule + corner mark |

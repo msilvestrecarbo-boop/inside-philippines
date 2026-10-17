@@ -44,12 +44,12 @@ export default async function Category({ params }: PageProps<"/[lang]/experience
   return (
     <>
       <JsonLd data={breadcrumbSchema([{ name: dict.common.breadcrumbHome, path: href(locale) }, { name: dict.nav.experiences, path: href(locale, "/experiences") }, { name: title, path }])} />
-      <section className="relative isolate flex min-h-[75svh] items-end overflow-hidden text-white">
+      <section className="on-photo relative isolate flex min-h-[75svh] items-end overflow-hidden text-white">
         <Photo photo={c.photo} locale={locale} label={dict.common.photoToCome} priority showBrief className="absolute inset-0 -z-10" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/65 to-black/20" />
         <div className="container-x pb-16 md:pb-24">
           <Breadcrumbs light items={[{ name: dict.common.breadcrumbHome, href: `/${locale}` }, { name: dict.nav.experiences, href: `/${locale}/experiences` }, { name: title, href: path }]} />
-          <h1 className="mt-8 text-[length:var(--text-display)] leading-[0.95]">{title}</h1>
+          <h1 className="mt-8 text-[length:var(--text-display)] leading-[1.05]">{title}</h1>
           <p className="mt-5 max-w-2xl text-lg text-white/85">{tr(c.short, locale)}</p>
         </div>
       </section>
@@ -64,7 +64,7 @@ export default async function Category({ params }: PageProps<"/[lang]/experience
         </div>
       </section>
       {journeys.length > 0 && (
-        <section className="bg-[#efe8dc] py-20">
+        <section className="bg-shell py-20">
           <div className="container-x">
             <h2 className="text-[length:var(--text-h2)]">{t.journeysFor}</h2>
             <div className="mt-10 grid gap-8 md:grid-cols-2">
