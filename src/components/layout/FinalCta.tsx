@@ -9,7 +9,7 @@ import { withPhoto } from "@/lib/photos";
 export function FinalCta({ locale, dict, query = "", title }: { locale: Locale; dict: Dictionary; query?: string; title?: string }) {
   const t = dict.finalCta;
   return (
-    <section className="relative isolate overflow-hidden text-white">
+    <section className="on-photo relative isolate overflow-hidden text-white">
       <Photo
         locale={locale}
         label={dict.common.photoToCome}

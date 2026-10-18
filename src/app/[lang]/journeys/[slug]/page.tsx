@@ -71,7 +71,7 @@ export default async function JourneyPage({ params }: PageProps<"/[lang]/journey
       />
 
       {/* HERO */}
-      <section className="relative isolate flex min-h-[88svh] items-end overflow-hidden text-white">
+      <section className="on-photo relative isolate flex min-h-[88svh] items-end overflow-hidden text-white">
         <Photo photo={j.photo} locale={locale} label={c.photoToCome} priority showBrief className="absolute inset-0 -z-10" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/70 via-black/10 to-black/30" />
         <div className="container-x pb-16 md:pb-24">
@@ -84,7 +84,7 @@ export default async function JourneyPage({ params }: PageProps<"/[lang]/journey
         </div>
       </section>
 
-      <div className="bg-clay px-5 py-4 text-center text-sm text-white">{t.customizeNotice}</div>
+      <div className="bg-ink px-5 py-4 text-center text-sm text-white">{t.customizeNotice}</div>
       {fallback && <p className="bg-shell py-3 text-center text-sm text-stone">{c.notTranslated}</p>}
 
       {/* INTRO + HIGHLIGHTS */}
@@ -168,7 +168,7 @@ export default async function JourneyPage({ params }: PageProps<"/[lang]/journey
 
       {/* PRICE + MONTHS */}
       <section className="container-x pb-20 md:pb-28" aria-labelledby="price">
-        <div className="grid gap-10 border border-line bg-shell p-8 md:grid-cols-12 md:p-12">
+        <div className="grid gap-10 rounded-card bg-shell p-8 md:grid-cols-12 md:p-12">
           <div className="md:col-span-4">
             <h2 id="price" className="kicker text-narra">{t.priceIndication}</h2>
             <p className="mt-4 text-sm text-stone">{t.priceNote}</p>

@@ -31,7 +31,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
   return (
     <>
       {/* HERO */}
-      <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden text-white">
+      <section className="on-photo relative isolate flex min-h-[100svh] items-center overflow-hidden text-white">
         <Photo
           priority
           showBrief
@@ -44,18 +44,19 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             brief: "HERO VIDEO (8–12s loop, muted, 1080p ≤4MB + poster): drone push over karst islands and a lagoon in Bacuit Bay at first light; second cut: a banca crossing glassy water. No logos, no faces to camera.",
           })}
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/60 via-black/10 to-black/30" />
-        <div className="container-x pb-20 md:pb-28">
+        <div className="absolute inset-0 -z-10 bg-black/40" />
+        <div className="container-x pb-24 pt-32 md:pt-36">
           <p className="kicker text-white/80">{h.heroKicker}</p>
-          <h1 className="mt-5 max-w-5xl text-[length:var(--text-display)] leading-[0.95]">{h.heroTitle}</h1>
-          <p className="mt-6 max-w-xl text-lg text-white/85 md:text-xl">{h.heroBody}</p>
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          <h1 className="mt-5 max-w-3xl text-[length:var(--text-display)]">{h.heroTitle}</h1>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/90">{h.heroBody}</p>
+          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <TrackedLink href={`/${locale}/design-my-trip`} event="design_trip_click" params={{ placement: "hero" }} className="btn btn-primary">
               {h.heroPrimary}
             </TrackedLink>
             <Link href={`/${locale}/destinations`} className="btn btn-ghost">{h.heroSecondary}</Link>
           </div>
         </div>
+        <span aria-hidden className="absolute bottom-0 end-[8%] hidden h-24 w-px bg-white/70 md:block" />
       </section>
 
       {/* DISCOVERY */}
@@ -67,12 +68,17 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           </div>
           <p className="self-end text-lg leading-relaxed text-stone lg:col-span-5">{h.discoveryBody}</p>
         </div>
-        <div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
           {h.discoveryPoints.map((p, i) => (
             <Reveal key={i}>
-              <div className="border-t border-ink pt-5">
-                <h3 className="font-display text-2xl">{p.title}</h3>
-                <p className="mt-3 text-[0.95rem] leading-relaxed text-stone">{p.body}</p>
+              <div className="flex gap-5 lg:flex-col">
+                <span aria-hidden className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-narra/40 font-display text-lg text-narra">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <h3 className="text-[1.4rem]">{p.title}</h3>
+                  <p className="mt-2 text-[0.95rem] leading-relaxed text-stone">{p.body}</p>
+                </div>
               </div>
             </Reveal>
           ))}
@@ -95,7 +101,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       </section>
 
       {/* JOURNEYS */}
-      <section className="bg-[#efe8dc] py-24 md:py-32" aria-labelledby="jour">
+      <section className="bg-shell py-24 md:py-32" aria-labelledby="jour">
         <div className="container-x">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <SectionHeading id="jour" kicker={h.journeysKicker} title={h.journeysTitle} body={h.journeysBody} />
@@ -133,7 +139,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
 
       {/* INSIDE THE ISLANDS */}
       {insiders.length > 0 && (
-        <section className="bg-shell py-24 md:py-32" aria-labelledby="inside">
+        <section className="py-24 md:py-32" aria-labelledby="inside">
           <div className="container-x grid gap-12 lg:grid-cols-12">
             <div className="lg:col-span-5">
               <SectionHeading id="inside" kicker={h.insideKicker} title={h.insideTitle} body={h.insideBody} />

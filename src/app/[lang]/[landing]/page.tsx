@@ -39,7 +39,7 @@ export default async function LandingPage({ params }: PageProps<"/[lang]/[landin
   return (
     <>
       <JsonLd data={[breadcrumbSchema([{ name: dict.common.breadcrumbHome, path: href(locale) }, { name: tr(l.title, locale), path: href(locale, `/${l.slug}`) }]), faqSchema((l.faqs ?? []).map((f) => ({ q: tr(f.q, locale), a: tr(f.a, locale) })))]} />
-      <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden text-white">
+      <section className="on-photo relative isolate flex min-h-[100svh] items-end overflow-hidden text-white">
         <Photo photo={l.photo} locale={locale} label={dict.common.photoToCome} priority className="absolute inset-0 -z-10" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/75 via-black/15 to-black/30" />
         <div className="container-x pb-16 md:pb-24">
@@ -70,7 +70,7 @@ export default async function LandingPage({ params }: PageProps<"/[lang]/[landin
       </section>
 
       {l.journeys.length > 0 && (
-        <section className="bg-[#efe8dc] py-20 md:py-28">
+        <section className="bg-shell py-20 md:py-28">
           <div className="container-x">
             <h2 className="text-[length:var(--text-h2)]">{dict.home.journeysTitle}</h2>
             <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">

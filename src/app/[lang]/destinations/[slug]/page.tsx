@@ -66,13 +66,13 @@ export default async function DestinationPage({ params }: PageProps<"/[lang]/des
       />
 
       {/* HERO */}
-      <section className="relative isolate flex min-h-[88svh] items-end overflow-hidden text-white">
+      <section className="on-photo relative isolate flex min-h-[88svh] items-end overflow-hidden text-white">
         <Photo photo={d.photo} locale={locale} label={c.photoToCome} priority showBrief className="absolute inset-0 -z-10" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/65 via-black/5 to-black/30" />
         <div className="container-x pb-16 md:pb-24">
           <Breadcrumbs light items={[{ name: c.breadcrumbHome, href: `/${locale}` }, { name: dict.nav.destinations, href: `/${locale}/destinations` }, { name, href: path }]} />
           <p className="kicker mt-8 text-white/80">{t.insideLabel}</p>
-          <h1 className="text-[length:var(--text-display)] leading-[0.9]">{name}</h1>
+          <h1 className="text-[length:var(--text-display)] leading-[1.05]">{name}</h1>
           <p className="mt-6 max-w-2xl text-lg text-white/85 md:text-xl">{tr(d.whyGo, locale)}</p>
           <TrackedLink href={`/${locale}/design-my-trip${addHref}`} event="design_trip_click" params={{ placement: "destination_hero", destination: d.slug }} className="btn btn-primary mt-9">
             {t.addToJourney.replace("{name}", name)}
@@ -158,7 +158,7 @@ export default async function DestinationPage({ params }: PageProps<"/[lang]/des
 
       {/* ADD TO JOURNEY */}
       <section className="container-x pb-8">
-        <div className="flex flex-col items-start justify-between gap-6 border border-line bg-shell p-8 md:flex-row md:items-center md:p-12">
+        <div className="flex flex-col items-start justify-between gap-6 rounded-card bg-shell p-8 md:flex-row md:items-center md:p-12">
           <p className="max-w-2xl font-display text-3xl leading-snug">{dict.journey.customizeNotice}</p>
           <TrackedLink href={`/${locale}/design-my-trip${addHref}`} event="design_trip_click" params={{ placement: "destination_band", destination: d.slug }} className="btn btn-primary shrink-0">
             {t.addToJourney.replace("{name}", name)}

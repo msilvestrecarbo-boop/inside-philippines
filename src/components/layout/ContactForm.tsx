@@ -5,7 +5,7 @@ import { useState } from "react";
 export function ContactForm({ locale, t }: { locale: string; t: { name: string; email: string; message: string; send: string; sent: string; error: string } }) {
   const [state, setState] = useState<"idle" | "sending" | "ok" | "error">("idle");
   if (state === "ok") return <p role="status" className="text-lg">{t.sent}</p>;
-  const cls = "w-full border-0 border-b border-ink/25 bg-transparent px-0 py-3 text-lg focus:border-clay focus:outline-none";
+  const cls = "w-full border-0 border-b border-ink/25 bg-transparent px-0 py-3 text-lg focus:border-ink focus:outline-none";
   return (
     <form
       className="grid gap-6"

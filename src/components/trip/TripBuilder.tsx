@@ -281,7 +281,7 @@ export function TripBuilder({
         {prefillLabel && <span>{t.prefilledFrom}: <strong className="text-ink">{prefillLabel}</strong></span>}
       </div>
       <div className="mt-3 h-px w-full bg-line" aria-hidden>
-        <div className="h-px bg-clay transition-[width] duration-700 ease-[var(--ease-soft)]" style={{ width: `${(step / TOTAL_STEPS) * 100}%` }} />
+        <div className="h-px bg-ink transition-[width] duration-700 ease-[var(--ease-soft)]" style={{ width: `${(step / TOTAL_STEPS) * 100}%` }} />
       </div>
 
       <form
@@ -469,7 +469,7 @@ export function TripBuilder({
   );
 }
 
-const inputCls = "w-full border-0 border-b border-ink/25 bg-transparent px-0 py-3 text-lg focus:border-clay focus:outline-none focus:ring-0";
+const inputCls = "w-full border-0 border-b border-ink/25 bg-transparent px-0 py-3 text-lg focus:border-ink focus:outline-none focus:ring-0";
 
 function Field({ label, hint, children }: { label: string; hint?: string; children: React.ReactNode }) {
   return (

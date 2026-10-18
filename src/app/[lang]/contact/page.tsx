@@ -36,8 +36,8 @@ export default async function Contact({ params }: PageProps<"/[lang]/contact">) 
             <dt className="kicker text-stone">{t.hours}</dt>
             <dd className="mt-2">{t.hoursValue}</dd>
           </div>
-          <div className="border-s-2 border-clay ps-5">
-            <dt className="kicker text-clay-dark">{t.emergency}</dt>
+          <div className="border-s-2 border-narra ps-5">
+            <dt className="kicker text-narra">{t.emergency}</dt>
             <dd className="mt-2">{t.emergencyBody}</dd>
           </div>
           <div>
