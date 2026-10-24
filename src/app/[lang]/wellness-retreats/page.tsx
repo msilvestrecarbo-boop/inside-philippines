@@ -10,6 +10,8 @@ import { Faqs } from "@/components/ui/Faqs";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { FinalCta } from "@/components/layout/FinalCta";
 import { TrackedLink } from "@/components/layout/Tracking";
+import { Price } from "@/components/layout/CurrencyProvider";
+import { retreatDetails } from "@/content/retreatDetails";
 
 const query = "?" + new URLSearchParams({ interest: "wellness", duration: "7-10", utm_content: "wellness-retreats" }).toString();
 
@@ -62,6 +64,13 @@ export default async function WellnessRetreats({ params }: PageProps<"/[lang]/we
                     <Link href={`/${locale}/wellness-retreats/${r.slug}`} className="after:absolute after:inset-0">{tr(r.title, locale)}</Link>
                   </h3>
                   <p className="mt-4 flex-1 leading-relaxed text-stone">{tr(r.short, locale)}</p>
+                  {retreatDetails[r.slug] && (
+                    <p className="mt-5 font-display text-2xl">
+                      <span className="text-sm text-stone">{dict.common.from} </span>
+                      <Price eur={retreatDetails[r.slug].priceEUR.shared} />
+                      <span className="text-sm text-stone"> {dict.common.perPerson}</span>
+                    </p>
+                  )}
                   <span className="btn btn-ink mt-6 min-h-0 self-start px-5 py-2 text-[0.8rem]">{dict.common.viewJourney} →</span>
                 </div>
               </article>

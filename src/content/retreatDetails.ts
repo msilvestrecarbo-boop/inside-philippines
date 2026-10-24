@@ -3,13 +3,17 @@ import type { L } from "@/i18n/config";
 /**
  * Detailed programme for each wellness retreat: key facts, day-by-day
  * schedule, a sample daily timetable, inclusions and accommodation.
- * Schedules are examples and move with tides and weather. No prices.
+ * Schedules are examples and move with tides and weather. Prices set by
+ * MARC on 2026-10-24 to match Awake Siargao (USD 2,490 shared / 2,890 private
+ * for a week); shorter retreats are pro rata per night.
  */
 
 type Day = { title: L; body: L };
 type Slot = { time: string; what: L };
 export type RetreatDetails = {
   facts: { location: L; group: L; level: L; arrival: L; season: L };
+  /** Per person, in EUR (the site converts to the visitor's currency). */
+  priceEUR: { shared: number; private: number };
   days: Day[];
   daily: Slot[];
   included: L<string[]>;
@@ -25,6 +29,16 @@ export const detailLabels = {
     arrival: { en: "Arrival", fr: "Arrivée", es: "Llegada", ru: "Прибытие", ar: "الوصول" },
     season: { en: "Best season", fr: "Meilleure saison", es: "Mejor temporada", ru: "Лучший сезон", ar: "أفضل موسم" },
   },
+  priceTitle: { en: "Price per person", fr: "Prix par personne", es: "Precio por persona", ru: "Цена на человека", ar: "السعر للشخص الواحد" } as L,
+  sharedLabel: { en: "Shared room", fr: "Chambre partagée", es: "Habitación compartida", ru: "Двухместное размещение", ar: "غرفة مشتركة" } as L,
+  privateLabel: { en: "Private room", fr: "Chambre individuelle", es: "Habitación privada", ru: "Отдельная комната", ar: "غرفة خاصة" } as L,
+  priceNote: {
+    en: "All-inclusive programme as listed below. Flights not included.",
+    fr: "Programme tout compris, détaillé ci-dessous. Vols non inclus.",
+    es: "Programa todo incluido, detallado abajo. Vuelos no incluidos.",
+    ru: "Всё включено, как описано ниже. Перелёты не включены.",
+    ar: "برنامج شامل كما هو مفصّل أدناه. لا يشمل الطيران.",
+  } as L,
   daysWord: { en: "days", fr: "jours", es: "días", ru: "дней", ar: "أيام" } as L,
   dayWord: { en: "Day", fr: "Jour", es: "Día", ru: "День", ar: "اليوم" } as L,
   scheduleTitle: { en: "Day-by-day schedule", fr: "Programme jour par jour", es: "Programa día a día", ru: "Программа по дням", ar: "البرنامج يوماً بيوم" } as L,
@@ -83,6 +97,7 @@ const withInsurance = (x: L<string[]>): L<string[]> =>
 export const retreatDetails: Record<string, RetreatDetails> = {
   /* ───────────────────────────────────────────────────────────── SIARGAO */
   "siargao-yoga-surf-reset": {
+    priceEUR: { shared: 2300, private: 2700 },
     facts: {
       location: { en: "General Luna, Siargao", fr: "General Luna, Siargao", es: "General Luna, Siargao", ru: "Дженерал-Луна, Сиаргао", ar: "جنرال لونا، سيارغاو" },
       group: privateOrSmall,
@@ -152,6 +167,7 @@ export const retreatDetails: Record<string, RetreatDetails> = {
 
   /* ───────────────────────────────────────────────────────────── PALAWAN */
   "palawan-island-detox": {
+    priceEUR: { shared: 2300, private: 2700 },
     facts: {
       location: { en: "An island resort near El Nido, Palawan", fr: "Un resort sur une île près d'El Nido, Palawan", es: "Un resort en una isla cerca de El Nido, Palawan", ru: "Островной курорт у Эль-Нидо, Палаван", ar: "منتجع على جزيرة قرب إل نيدو، بالاوان" },
       group: privateOrSmall,
@@ -217,6 +233,7 @@ export const retreatDetails: Record<string, RetreatDetails> = {
 
   /* ──────────────────────────────────────────────────────────── SIQUIJOR */
   "siquijor-healing-journey": {
+    priceEUR: { shared: 1950, private: 2250 },
     facts: {
       location: { en: "Siquijor island", fr: "Île de Siquijor", es: "Isla de Siquijor", ru: "Остров Сикихор", ar: "جزيرة سيكيهور" },
       group: privateOrSmall,
@@ -278,6 +295,7 @@ export const retreatDetails: Record<string, RetreatDetails> = {
 
   /* ─────────────────────────────────────────────────────────────── BOHOL */
   "bohol-spa-beach-escape": {
+    priceEUR: { shared: 1950, private: 2250 },
     facts: {
       location: { en: "Panglao, Bohol", fr: "Panglao, Bohol", es: "Panglao, Bohol", ru: "Панглао, Бохол", ar: "بانغلاو، بوهول" },
       group: privateOrSmall,
@@ -339,6 +357,7 @@ export const retreatDetails: Record<string, RetreatDetails> = {
 
   /* ──────────────────────────────────────────────────────────── TAGAYTAY */
   "tagaytay-highland-retreat": {
+    priceEUR: { shared: 1150, private: 1350 },
     facts: {
       location: { en: "Tagaytay, about 2 hours from Manila", fr: "Tagaytay, à environ 2 h de Manille", es: "Tagaytay, a unas 2 h de Manila", ru: "Тагайтай, около 2 часов от Манилы", ar: "تاغايتاي، على بُعد نحو ساعتين من مانيلا" },
       group: privateOrSmall,
