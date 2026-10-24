@@ -11,6 +11,8 @@ import { ArticleCard, CategoryCard, DestinationCard, JourneyCard } from "@/compo
 import { HowItWorks, Tiers, WhyUs } from "@/components/sections/Sections";
 import { FinalCta } from "@/components/layout/FinalCta";
 import { Reveal, TrackedLink } from "@/components/layout/Tracking";
+import { tr } from "@/i18n/config";
+import { curated } from "@/content/extras";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]">) {
   const { locale, dict } = await resolve(params);
@@ -130,6 +132,35 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             <div key={c.slug} className="w-[62vw] shrink-0 snap-start sm:w-[34vw] lg:w-[22vw]">
               <CategoryCard cat={c} locale={locale} dict={dict} />
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CURATED */}
+      <section className="bg-ink py-24 text-white md:py-32" aria-labelledby="curated">
+        <div className="container-x grid gap-12 lg:grid-cols-12">
+          <div className="lg:col-span-6">
+            <p className="kicker text-white/70">{tr(curated.kicker, locale)}</p>
+            <h2 id="curated" className="mt-5 text-[length:var(--text-h1)]">{tr(curated.title, locale)}</h2>
+          </div>
+          <p className="self-end text-lg leading-relaxed text-white/80 lg:col-span-6">{tr(curated.body, locale)}</p>
+        </div>
+        {curated.stats.length > 0 && (
+          <div className="container-x mt-14 grid gap-8 border-t border-white/20 pt-10 sm:grid-cols-2 lg:grid-cols-4">
+            {curated.stats.map((st) => (
+              <div key={st.value}>
+                <p className="font-display text-5xl">{st.value}</p>
+                <p className="mt-2 text-sm uppercase tracking-[0.12em] text-white/70">{tr(st.label, locale)}</p>
+              </div>
+            ))}
+          </div>
+        )}
+        <div className="container-x mt-14 grid gap-8 border-t border-white/20 pt-10 sm:grid-cols-2 lg:grid-cols-4">
+          {curated.pillars.map((p, i) => (
+            <Reveal key={i}>
+              <h3 className="text-[1.35rem]">{tr(p.title, locale)}</h3>
+              <p className="mt-2 text-[0.95rem] leading-relaxed text-white/75">{tr(p.body, locale)}</p>
+            </Reveal>
           ))}
         </div>
       </section>

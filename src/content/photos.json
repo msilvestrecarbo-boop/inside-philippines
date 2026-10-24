@@ -551,5 +551,19 @@
     "photographer": "Jayvee Villaganas",
     "subject": "Green headlands dropping to the sea, Batanes",
     "verifiedLocation": true
+  },
+  "landing/corporate-travel": {
+    "src": "https://images.unsplash.com/photo-1676089774867-4c95eafda312",
+    "page": "https://unsplash.com/photos/a-house-with-a-thatched-roof-overlooks-the-ocean-M3xkDxubi28",
+    "photographer": "Roméo A.",
+    "subject": "Thatched tree-house villa overlooking the sea at Shangri-La Boracay",
+    "verifiedLocation": true
+  },
+  "landing/philippines-tour-packages": {
+    "src": "https://images.unsplash.com/photo-1564425230164-1e63b4922d3f",
+    "page": "https://unsplash.com/photos/aerial-photography-of-boats-beside-mountain-during-daytime-DGOI_BlPdC4",
+    "photographer": "Kaspars Upmanis",
+    "subject": "Aerial of bangkas below limestone cliffs, El Nido, Palawan",
+    "verifiedLocation": true
   }
 }
