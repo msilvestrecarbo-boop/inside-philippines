@@ -7,9 +7,9 @@ const en = {
   meta: {
     siteName: "Inside Philippines",
     tagline: "The Philippines, from the inside.",
-    defaultTitle: "Inside Philippines — Tailor-made travel to the Philippines",
+    defaultTitle: "Inside Philippines — Tailor-made Philippines travel agency",
     defaultDescription:
-      "Tailor-made Philippines journeys designed locally by people who know how the islands connect. Palawan, Siargao, Bohol and beyond, planned around you.",
+      "Inside Philippines is a local travel agency designing tailor-made Philippines tours. Palawan, Siargao, Bohol and beyond, with flights, boats and transfers planned around you.",
   },
   nav: {
     destinations: "Destinations",

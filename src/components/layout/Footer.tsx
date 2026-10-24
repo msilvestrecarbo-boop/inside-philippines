@@ -4,6 +4,8 @@ import type { Dictionary } from "@/i18n/dictionaries";
 import { Logo } from "@/components/brand/Logo";
 import { Newsletter } from "./Newsletter";
 import { site } from "@/lib/site";
+import { tr } from "@/i18n/config";
+import { extraLinks } from "@/content/extras";
 
 export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const t = dict.footer;
@@ -26,6 +28,8 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               <li><Link className="link-u" href={L("/experiences")}>{n.experiences}</Link></li>
               <li><Link className="link-u" href={L("/travel-guide")}>{n.guide}</Link></li>
               <li><Link className="link-u" href={L("/stories")}>{n.stories}</Link></li>
+              <li><Link className="link-u" href={L("/gallery")}>{tr(extraLinks.gallery, locale)}</Link></li>
+              <li><Link className="link-u" href={L("/faq")}>{tr(extraLinks.faq, locale)}</Link></li>
             </ul>
           </div>
           <div>
@@ -33,6 +37,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             <ul className="mt-4 space-y-2.5">
               <li><Link className="link-u" href={L("/about")}>{n.about}</Link></li>
               <li><Link className="link-u" href={L("/contact")}>{n.contact}</Link></li>
+              <li><Link className="link-u" href={L("/corporate-travel")}>{tr(extraLinks.corporate, locale)}</Link></li>
               <li><Link className="link-u" href={L("/design-my-trip")}>{n.designMyTrip}</Link></li>
               <li><a className="link-u" href={site.instagram} rel="noopener" target="_blank">Instagram</a></li>
               <li><a className="link-u" href={site.googleBusiness} rel="noopener" target="_blank">Google</a></li>

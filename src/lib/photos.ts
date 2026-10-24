@@ -42,3 +42,10 @@ export function withPhoto<T extends Photo>(group: PhotoGroup, key: string, photo
 export function photoCredits() {
   return Object.entries(lib).map(([key, e]) => ({ key, ...e }));
 }
+
+/** A library photo by its full key (e.g. "destination/el-nido"), for the gallery. */
+export function libraryPhoto(fullKey: string, alt: string): Photo | undefined {
+  const e = lib[fullKey];
+  if (!e) return undefined;
+  return { src: e.src, credit: e.photographer, creditUrl: e.page, alt: { en: e.subject ?? alt }, brief: "" };
+}

@@ -8,7 +8,7 @@ const ar: Dictionary = {
   meta: {
     siteName: "Inside Philippines",
     tagline: "الفلبين من الداخل.",
-    defaultTitle: "Inside Philippines — رحلات فاخرة إلى الفلبين مصممة خصيصاً لك",
+    defaultTitle: "Inside Philippines — وكالة سفر إلى الفلبين ورحلات مصممة لك",
     defaultDescription:
       "رحلات إلى الفلبين مصممة خصيصاً لك على أيدي فريق محلي يعرف كيف تتصل الجزر ببعضها. بالاوان وسيارغاو وبوهول وغيرها، لشهر العسل أو لعطلة عائلية، وفق رغباتك.",
   },
