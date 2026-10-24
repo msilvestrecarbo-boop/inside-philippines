@@ -35,7 +35,14 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
     title: { default: dict.meta.defaultTitle, template: `%s · ${site.name}` },
     description: dict.meta.defaultDescription,
     applicationName: site.name,
-    icons: { icon: "/brand/mark.svg" },
+    icons: {
+      icon: [
+        { url: "/brand/mark.svg", type: "image/svg+xml" },
+        { url: "/brand/icon-32.png", sizes: "32x32", type: "image/png" },
+        { url: "/brand/icon-192.png", sizes: "192x192", type: "image/png" },
+      ],
+      apple: "/brand/apple-touch-icon.png",
+    },
     verification: process.env.GOOGLE_SITE_VERIFICATION ? { google: process.env.GOOGLE_SITE_VERIFICATION } : undefined,
     formatDetection: { telephone: false },
   };

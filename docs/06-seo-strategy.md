@@ -56,7 +56,7 @@ Gulf travellers also search in English: the English luxury/family pages target U
 | hreflang + x-default | `alternates.languages` + sitemap alternates, translated languages only |
 | XML sitemap | `src/app/sitemap.ts` — one URL per indexable language version |
 | robots.txt | `src/app/robots.ts` — blocks `/api/`, blocks everything on non-production Vercel previews |
-| OpenGraph + Twitter cards | `buildMetadata`; default OG image `public/og-default.svg` (replace with 1200×630 JPG of real photography) |
+| OpenGraph + Twitter cards | `buildMetadata`; default OG image `public/og-default.jpg` (1200×630, El Nido photo by Cris Tagupa; swap for own photography later) |
 | Organization + TravelAgency | Layout JSON-LD (address added automatically once real) |
 | WebSite | Layout |
 | TouristDestination | Destination pages |

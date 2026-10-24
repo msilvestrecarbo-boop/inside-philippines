@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/journeys/[
   return buildMetadata({
     locale,
     path: `/journeys/${slug}`,
-    title: `${tr(j.title, locale)} — ${j.days} ${dict.common.days}: ${j.route.filter((r) => r !== "manila").map(placeName).join(", ")}`.slice(0, 70),
+    title: `${tr(j.title, locale)} — ${j.days} ${dict.common.days}: ${j.route.filter((r) => r !== "manila").map(placeName).join(", ")}`,
     description: tr(j.short, locale),
     translated: translatedLocales(j.intro, j.title),
   });

@@ -75,7 +75,7 @@ export function articleSchema(a: {
     mainEntityOfPage: absolute(a.path),
     author: { "@type": "Organization", name: a.author || site.name },
     publisher: { "@id": `${site.url}/#organization` },
-    image: absolute("/og-default.svg"),
+    image: absolute("/og-default.jpg"),
   };
 }
 
