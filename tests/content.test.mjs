@@ -72,11 +72,11 @@ test("journey prices stay flagged as placeholders until confirmed", () => {
 
 test("journey translations line up with the English source", async () => {
   const dir = new URL("../src/content/translations/", import.meta.url);
-  const parts = readdirSync(dir).filter((f) => /^journeys\.(es|fr)\.part\d+\.ts$/.test(f));
+  const parts = readdirSync(dir).filter((f) => /^journeys\.((es|fr)\.part\d+\.ts|(ru|ar)\.json)$/.test(f));
   assert.ok(parts.length > 0);
   for (const f of parts) {
     const l = f.split(".")[1];
-    const { default: tr } = await import(new URL(f, dir));
+    const tr = f.endsWith(".json") ? JSON.parse(readFileSync(new URL(f, dir), "utf8")) : (await import(new URL(f, dir))).default;
     for (const [slug, t] of Object.entries(tr)) {
       const j = journeys.find((x) => x.slug === slug);
       assert.ok(j, `${l} ${slug} exists`);
@@ -107,7 +107,7 @@ test("long-form translations fit their content and leave nothing out", async () 
     if (typeof tr !== "object" || !src || typeof src !== "object") return [path];
     return Object.entries(tr).flatMap(([k, v]) => stray(src[k], v, `${path}.${k}`));
   };
-  for (const f of readdirSync(dir).filter((f) => f.endsWith(".json"))) {
+  for (const f of readdirSync(dir).filter((f) => f.endsWith(".json") && !f.startsWith("journeys."))) {
     const [name, l] = f.split(".");
     const items = collections[name];
     assert.ok(items, `${f}: unknown collection`);
