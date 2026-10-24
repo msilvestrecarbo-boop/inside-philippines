@@ -278,6 +278,7 @@ const en = {
       { name: "Pearly Mae Canoy", role: "Founder & Managing Director", bio: "Pearly Mae founded Inside Philippines to make the country easier to plan from overseas. She leads the company and shapes every journey we offer: the routes, the hotel choices and the standards we hold ourselves to." },
       { name: "Marc Silvestre", role: "Administration & Ground Operations", bio: "Marc keeps everything running on the ground: bookings, confirmations, transfers, ferries and the paperwork behind each trip. When plans change during your journey, he is the one who rearranges them." },
       { name: "Yasmen", role: "Travel Coordinator & Guest Experience", bio: "Yasmen is your main point of contact from first message to last day. She coordinates your itinerary, answers your questions before you travel and checks in with you while you are in the Philippines." },
+      { name: "Lalaine Cayanan", role: "Travel Coordinator & Guest Experience", bio: "Lalaine works alongside Yasmen as a point of contact for our guests. She helps prepare each itinerary, keeps you updated before you travel and is on hand while you are in the Philippines." },
     ],
     officeTitle: "Where we are",
   },
