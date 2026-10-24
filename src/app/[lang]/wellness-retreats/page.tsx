@@ -72,19 +72,29 @@ export default async function WellnessRetreats({ params }: PageProps<"/[lang]/we
 
       <section className="bg-shell py-20 md:py-28">
         <div className="container-x">
-          <h2 className="text-[length:var(--text-h2)]">{tr(p.activitiesTitle, locale)}</h2>
-          <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {p.activities.map((a) => {
-              const photo = libraryPhoto(a.photo, tr(a.name, locale));
+          <h2 className="text-[length:var(--text-h2)]">{tr(p.pillarsTitle, locale)}</h2>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-stone">{tr(p.pillarsIntro, locale)}</p>
+          <div className="mt-12 grid gap-10 md:grid-cols-2">
+            {p.pillars.map((pl, i) => {
+              const photo = libraryPhoto(pl.photo, tr(pl.name, locale));
               return (
-                <div key={a.key}>
-                  {photo && <Photo photo={photo} locale={locale} label={dict.common.photoToCome} sizes="(min-width:1024px) 33vw, 90vw" className="aspect-[4/3] overflow-hidden rounded-card" />}
-                  <h3 className="mt-5 text-[length:var(--text-h3)]">{tr(a.name, locale)}</h3>
-                  <p className="mt-2 leading-relaxed text-stone">{tr(a.body, locale)}</p>
-                </div>
+                <article key={pl.key} className="overflow-hidden rounded-card bg-white">
+                  {photo && <Photo photo={photo} locale={locale} label={dict.common.photoToCome} sizes="(min-width:768px) 50vw, 90vw" className="aspect-[16/9]" />}
+                  <div className="p-6 md:p-8">
+                    <span className="font-display text-3xl text-narra">{String(i + 1).padStart(2, "0")}</span>
+                    <h3 className="mt-2 text-[length:var(--text-h3)]">{tr(pl.name, locale)}</h3>
+                    <p className="mt-2 leading-relaxed text-stone">{tr(pl.body, locale)}</p>
+                    <ul className="mt-5 flex flex-wrap gap-2">
+                      {tr(pl.items, locale).map((it) => (
+                        <li key={it} className="rounded-full border border-line px-3.5 py-1.5 text-sm">{it}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </article>
               );
             })}
           </div>
+          <p className="mt-10 max-w-3xl text-sm leading-relaxed text-stone">{tr(p.pillarsNote, locale)}</p>
         </div>
       </section>
 
