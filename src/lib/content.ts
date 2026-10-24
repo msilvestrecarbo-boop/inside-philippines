@@ -22,6 +22,8 @@ import journeysRu from "@/content/translations/journeys.ru.json";
 import journeysAr from "@/content/translations/journeys.ar.json";
 import destinationsEs from "@/content/translations/destinations.es.json";
 import destinationsFr from "@/content/translations/destinations.fr.json";
+import destinationsRu from "@/content/translations/destinations.ru.json";
+import destinationsAr from "@/content/translations/destinations.ar.json";
 import guidesEs from "@/content/translations/guides.es.json";
 import guidesFr from "@/content/translations/guides.fr.json";
 import storiesEs from "@/content/translations/stories.es.json";
@@ -60,7 +62,7 @@ function translate<T extends { slug: string }>(item: T, trees: Partial<Record<Lo
   return out;
 }
 
-const destinations = rawDestinations.map((d) => translate({ ...d, photo: withPhoto("destination", d.slug, d.photo) }, { es: destinationsEs, fr: destinationsFr }));
+const destinations = rawDestinations.map((d) => translate({ ...d, photo: withPhoto("destination", d.slug, d.photo) }, { es: destinationsEs, fr: destinationsFr, ru: destinationsRu, ar: destinationsAr }));
 const journeys = rawJourneys.map((j) => translateJourney({ ...j, photo: withPhoto("journey", j.slug, j.photo) }));
 const guides = rawGuides.map((g) => translate({ ...g, photo: withPhoto("guide", g.slug, g.photo) }, { es: guidesEs, fr: guidesFr }));
 const stories = rawStories.map((s) => translate({ ...s, photo: withPhoto("story", s.slug, s.photo) }, { es: storiesEs, fr: storiesFr }));
