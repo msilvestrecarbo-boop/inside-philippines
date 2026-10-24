@@ -6,6 +6,9 @@ import { PageHero, WhyUs } from "@/components/sections/Sections";
 import { withPhoto, type PhotoGroup } from "@/lib/photos";
 import { FinalCta } from "@/components/layout/FinalCta";
 
+/** Team portraits, in the same order as dictionary `about.team`. */
+const TEAM_PHOTOS = ["/team/pearly-mae.jpg", "/team/marc.jpg", "/team/yasmen.jpg"];
+
 export async function generateMetadata({ params }: PageProps<"/[lang]/about">) {
   const { locale, dict } = await resolve(params);
   return buildMetadata({ locale, path: "/about", title: `${dict.about.kicker} — ${dict.about.title}`, description: dict.about.intro });
@@ -47,9 +50,9 @@ export default async function About({ params }: PageProps<"/[lang]/about">) {
           <h2 className="text-[length:var(--text-h2)]">{t.teamTitle}</h2>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-stone">{t.teamIntro}</p>
           <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-            {t.team.map((m) => (
+            {t.team.map((m, i) => (
               <div key={m.name}>
-                <Photo locale={locale} label={dict.common.photoToCome} className="aspect-[4/5]" photo={{ tone: "sand", alt: { en: m.name }, brief: "Portrait, natural light, outdoors in the Philippines, relaxed, not corporate." }} />
+                <Photo locale={locale} label={dict.common.photoToCome} className="aspect-[4/5]" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" photo={{ tone: "sand", src: TEAM_PHOTOS[i], alt: { en: m.name }, brief: "Portrait, natural light, outdoors in the Philippines, relaxed, not corporate." }} />
                 <p className="mt-5 font-display text-2xl">{m.name}</p>
                 <p className="mt-1 text-xs font-semibold uppercase tracking-[0.12em] text-clay-dark">{m.role}</p>
                 <p className="mt-3 leading-relaxed text-stone">{m.bio}</p>
