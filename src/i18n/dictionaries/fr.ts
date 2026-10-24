@@ -215,7 +215,7 @@ const fr: Dictionary = {
     insiderNotes: "Les notes d'initiés",
   },
   journey: {
-    seoTitle: "Voyage aux Philippines {days} jours",
+    seoTitle: "Voyage aux Philippines {days} jours : {places}",
     customizeNotice: "Inspirez-vous de ce voyage. Changez les îles, les hôtels, le rythme, les activités ou le nombre de nuits.",
     customize: "Personnaliser ce voyage",
     highlights: "Temps forts du voyage",
