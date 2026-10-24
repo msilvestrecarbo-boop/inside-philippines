@@ -42,7 +42,7 @@ Vercel · GitHub repository · Sanity project · HubSpot (private app token, pip
 
 - [ ] All A items filled; search the codebase for `[` placeholders: `grep -rn "\[" src/lib/site.ts src/i18n/dictionaries`
 - [ ] Env vars set in Vercel (see `.env.example`)
-- [ ] Real OG image (1200×630 JPG) replaces `public/og-default.svg`
+- [x] Real OG image (1200×630 JPG) at `public/og-default.jpg`
 - [ ] `npm test` and `npm run build` pass
 - [ ] Submit a real trip request on production → appears in HubSpot as NEW LEAD with UTM data
 - [ ] GA4 DebugView shows `generate_lead`; Meta/TikTok test events received

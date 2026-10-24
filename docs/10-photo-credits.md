@@ -9,6 +9,7 @@ Rows marked *Philippines only* have no island named on the Unsplash page.
 | Slot | Subject | Photographer | Unsplash page |
 |---|---|---|---|
 | site/hero | Aerial of turquoise water between karst cliffs, El Nido, Palawan | Cris Tagupa | [link](https://unsplash.com/photos/aerial-photo-of-body-of-water-between-mountains-9ZXHUr5aCwM) |
+| og-default.jpg (link-sharing image) | Same El Nido photo as site/hero, cropped to 1200×630 | Cris Tagupa | [link](https://unsplash.com/photos/aerial-photo-of-body-of-water-between-mountains-9ZXHUr5aCwM) |
 | site/final-cta | Outrigger boat at anchor under a pink-purple dusk sky, Balabac, Palawan | Cris Tagupa | [link](https://unsplash.com/photos/outrigger-boat-on-sandy-beach-lT7zmkth3o8) |
 | destination/palawan | Top-down aerial of Secret Beach lagoon and boats, Palawan | Geio Tischler | [link](https://unsplash.com/photos/an-aerial-view-of-a-lagoon-surrounded-by-mountains-l3-7ClgQ15U) |
 | destination/el-nido | Aerial of bangkas moored off Helicopter Island, El Nido, Palawan | Cris Tagupa | [link](https://unsplash.com/photos/birds-eye-photography-of-boats-on-body-of-water-near-islet-WHDuMggGxoY) |

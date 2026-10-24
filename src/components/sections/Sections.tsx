@@ -121,7 +121,17 @@ export function PageHero({
         label=""
         className="absolute inset-0 -z-10"
         sizes="100vw"
-        photo={withPhoto("site", "hero", { tone: "lagoon", alt: { en: "" }, brief: "" })}
+        photo={withPhoto("site", "hero", {
+          tone: "lagoon",
+          alt: {
+            en: "Aerial view of turquoise water between limestone cliffs in El Nido, Palawan",
+            fr: "Vue aérienne d'une eau turquoise entre des falaises calcaires à El Nido, Palawan",
+            es: "Vista aérea de agua turquesa entre acantilados de piedra caliza en El Nido, Palawan",
+            ru: "Вид сверху на бирюзовую воду среди известняковых скал в Эль-Нидо, Палаван",
+            ar: "منظر جوي لمياه فيروزية بين منحدرات الحجر الجيري في إل نيدو، بالاوان",
+          },
+          brief: "",
+        })}
       />
       <div className="absolute inset-0 -z-10 bg-black/50" />
       <div className="container-x">
