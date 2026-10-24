@@ -21,6 +21,17 @@ export function generateStaticParams() {
   return locales.flatMap((lang) => getJourneys().map((j) => ({ lang, slug: j.slug })));
 }
 
+/**
+ * Search phrase first ("Viaje a Filipinas 15 días: El Nido, Bohol"), dropping places
+ * from the end rather than cutting a name in half to fit Google's ~60 characters.
+ */
+function journeySearchTitle(template: string, days: number, places: string[]) {
+  const make = (p: string[]) => template.replace("{days}", String(days)).replace("{places}", p.join(", "));
+  let p = places;
+  while (p.length > 1 && make(p).length > 60) p = p.slice(0, -1);
+  return make(p);
+}
+
 export async function generateMetadata({ params }: PageProps<"/[lang]/journeys/[slug]">) {
   const { slug } = await params;
   const { locale, dict } = await resolve(params);
@@ -29,8 +40,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/journeys/[
   return buildMetadata({
     locale,
     path: `/journeys/${slug}`,
-    // Search phrase first ("Viaje a Filipinas 15 días"), then the places, then the trip's name.
-    title: `${dict.journey.seoTitle.replace("{days}", String(j.days))}: ${j.route.filter((r) => r !== "manila").map((r) => placeName(r, locale)).join(", ")} — ${tr(j.title, locale)}`,
+    title: `${journeySearchTitle(dict.journey.seoTitle, j.days, j.route.filter((r) => r !== "manila").map((r) => placeName(r, locale)))} — ${tr(j.title, locale)}`,
     description: tr(j.short, locale),
     translated: translatedLocales(j.intro, j.title),
   });

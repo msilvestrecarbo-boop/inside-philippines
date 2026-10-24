@@ -219,7 +219,7 @@ const ru: Dictionary = {
     insiderNotes: "Заметки инсайдера",
   },
   journey: {
-    seoTitle: "Тур на Филиппины, {days} дн.",
+    seoTitle: "Тур на Филиппины, {days} дн.: {places}",
     customizeNotice: "Используйте этот маршрут как идею. Меняйте острова, отели, темп, занятия или количество ночей.",
     customize: "Настроить маршрут",
     highlights: "Главное в маршруте",
