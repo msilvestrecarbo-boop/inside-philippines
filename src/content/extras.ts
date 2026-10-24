@@ -273,6 +273,9 @@ export const gallery = {
         { key: "destination/siargao", place: "Guyam Island, Siargao" },
         { key: "story/ten-islands", place: "Virgin Island, Bantayan" },
         { key: "landing/14-day-philippines-itinerary", place: "Siargao" },
+        { key: "gallery/ph-boat-3", place: "Philippines" },
+        { key: "gallery/ph-boat-1", place: "Philippines" },
+        { key: "gallery/ph-boat-2", place: "Philippines" },
       ],
     },
     {
@@ -285,6 +288,18 @@ export const gallery = {
         { key: "landing/private-boats", place: "Coron, Palawan" },
         { key: "destination/negros", place: "Apo Island, Negros" },
         { key: "category/private-journeys", place: "Philippines" },
+      ],
+    },
+    {
+      id: "yachts",
+      label: { en: "Yachts and private charters", fr: "Yachts et charters privés", es: "Yates y chárter privados", ru: "Яхты и частные чартеры", ar: "اليخوت والرحلات الخاصة" } as L,
+      items: [
+        { key: "gallery/yacht-1", place: "Yacht charter" },
+        { key: "gallery/yacht-2", place: "Yacht charter" },
+        { key: "gallery/yacht-3", place: "Yacht charter" },
+        { key: "gallery/yacht-4", place: "Yacht charter" },
+        { key: "gallery/yacht-5", place: "Private speedboat" },
+        { key: "gallery/ph-islet", place: "Philippines" },
       ],
     },
     {
@@ -348,6 +363,29 @@ export const gallery = {
         { key: "journey/the-slow-philippines", place: "Siquijor" },
         { key: "destination/camiguin", place: "Camiguin" },
         { key: "story/siargao-beyond-surfing", place: "Siargao" },
+      ],
+    },
+    {
+      id: "spa",
+      label: { en: "Spa and massage", fr: "Spa et massages", es: "Spa y masajes", ru: "Спа и массаж", ar: "السبا والتدليك" } as L,
+      items: [
+        { key: "gallery/massage-4", place: "Spa" },
+        { key: "gallery/massage-1", place: "Hot-stone massage" },
+        { key: "gallery/massage-2", place: "Spa" },
+        { key: "gallery/massage-3", place: "Massage" },
+        { key: "gallery/massage-5", place: "Spa" },
+      ],
+    },
+    {
+      id: "helicopters-jets",
+      label: { en: "Helicopters and private jets", fr: "Hélicoptères et jets privés", es: "Helicópteros y jets privados", ru: "Вертолёты и частные самолёты", ar: "المروحيات والطائرات الخاصة" } as L,
+      items: [
+        { key: "gallery/helicopter-1", place: "Helicopter transfer" },
+        { key: "gallery/helicopter-3", place: "Helicopter flight" },
+        { key: "gallery/helicopter-2", place: "Helicopter" },
+        { key: "gallery/jet-1", place: "Private jet" },
+        { key: "gallery/jet-2", place: "Private jet cabin" },
+        { key: "gallery/jet-4", place: "Private jet" },
       ],
     },
   ] as { id: string; label: L; items: GalleryItem[] }[],

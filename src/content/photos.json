@@ -565,5 +565,152 @@
     "photographer": "Kaspars Upmanis",
     "subject": "Aerial of bangkas below limestone cliffs, El Nido, Palawan",
     "verifiedLocation": true
+  },
+  "gallery/yacht-1": {
+    "src": "https://images.unsplash.com/photo-1528154291023-a6525fabe5b4",
+    "page": "https://unsplash.com/photos/aerial-photography-of-white-yacht-on-calm-waters-t-6GW8T6Jsc",
+    "photographer": "nikldn",
+    "subject": "Aerial view of a white yacht on calm water",
+    "verifiedLocation": false
+  },
+  "gallery/yacht-2": {
+    "src": "https://images.unsplash.com/photo-1781872324499-e51350ed640e",
+    "page": "https://unsplash.com/photos/a-luxurious-white-yacht-moored-in-a-scenic-bay-VkplOkPf59g",
+    "photographer": "Michal Vrba",
+    "subject": "Luxury white yacht moored in a scenic bay",
+    "verifiedLocation": false
+  },
+  "gallery/yacht-3": {
+    "src": "https://images.unsplash.com/photo-1762353853326-20cc0b74e952",
+    "page": "https://unsplash.com/photos/luxury-yacht-anchored-in-clear-turquoise-ocean-water-aDAl_ru9-QU",
+    "photographer": "Cartagena Boat Rental Colombia",
+    "subject": "Luxury yacht anchored in clear turquoise water",
+    "verifiedLocation": false
+  },
+  "gallery/yacht-4": {
+    "src": "https://images.unsplash.com/photo-1535024966840-e7424dc2635b",
+    "page": "https://unsplash.com/photos/birds-eye-photography-of-yacht-on-body-of-water-XZOO6QHub60",
+    "photographer": "Tobias Tullius",
+    "subject": "Bird's-eye view of a yacht at sea",
+    "verifiedLocation": false
+  },
+  "gallery/yacht-5": {
+    "src": "https://images.unsplash.com/photo-1787080768869-f89e99d23bc7",
+    "page": "https://unsplash.com/photos/motorboat-near-rocky-island-AlstS1z-fFo",
+    "photographer": "JJ",
+    "subject": "White motorboat near a rocky island",
+    "verifiedLocation": false
+  },
+  "gallery/massage-1": {
+    "src": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2",
+    "page": "https://unsplash.com/photos/person-with-hot-stones-at-spa-ZbzYDboN7fg",
+    "photographer": "engin akyurt",
+    "subject": "Hot-stone massage at a spa",
+    "verifiedLocation": false
+  },
+  "gallery/massage-2": {
+    "src": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874",
+    "page": "https://unsplash.com/photos/woman-lying-with-prone-position-cU53ZFBr3lk",
+    "photographer": "alan caishan",
+    "subject": "Guest relaxing during a spa treatment",
+    "verifiedLocation": false
+  },
+  "gallery/massage-3": {
+    "src": "https://images.unsplash.com/photo-1519823551278-64ac92734fb1",
+    "page": "https://unsplash.com/photos/man-massaging-womans-body-a9pFSC8dTlo",
+    "photographer": "Toa Heftiba",
+    "subject": "Massage treatment",
+    "verifiedLocation": false
+  },
+  "gallery/massage-4": {
+    "src": "https://images.unsplash.com/photo-1639162906614-0603b0ae95fd",
+    "page": "https://unsplash.com/photos/a-woman-getting-a-back-massage-at-a-spa--AakIaAPV0w",
+    "photographer": "Simon HUMLER",
+    "subject": "Back massage at a spa",
+    "verifiedLocation": false
+  },
+  "gallery/massage-5": {
+    "src": "https://images.unsplash.com/photo-1620733723572-11c53f73a416",
+    "page": "https://unsplash.com/photos/reed-diffuser-with-candles-and-towel-W7AyAs7azHc",
+    "photographer": "Mediamodifier",
+    "subject": "Spa candles, towels and oils",
+    "verifiedLocation": false
+  },
+  "gallery/helicopter-1": {
+    "src": "https://images.unsplash.com/photo-1698073176073-2259484c87b4",
+    "page": "https://unsplash.com/photos/LVnCRUgoebg",
+    "photographer": "Roman Rezor",
+    "subject": "Helicopter flight over the water",
+    "verifiedLocation": false
+  },
+  "gallery/helicopter-2": {
+    "src": "https://images.unsplash.com/photo-1629205163875-8f3d9a17e09e",
+    "page": "https://unsplash.com/photos/QkqdmaehigM",
+    "photographer": "Niklas Bischop",
+    "subject": "Helicopter in a cloudy sky",
+    "verifiedLocation": false
+  },
+  "gallery/helicopter-3": {
+    "src": "https://images.unsplash.com/photo-1786609909137-04266c2f7d74",
+    "page": "https://unsplash.com/photos/ZVv_x6gbPco",
+    "photographer": "ryan mayes",
+    "subject": "Passenger looking out of a helicopter window",
+    "verifiedLocation": false
+  },
+  "gallery/jet-1": {
+    "src": "https://images.unsplash.com/photo-1474302770737-173ee21bab63",
+    "page": "https://unsplash.com/photos/private-jet-on-tarmac-at-sunset-6w_dYdazo20",
+    "photographer": "Chris Leipelt",
+    "subject": "Private jet on the tarmac at sunset",
+    "verifiedLocation": false
+  },
+  "gallery/jet-2": {
+    "src": "https://images.unsplash.com/photo-1625513123245-fcb02d69ad12",
+    "page": "https://unsplash.com/photos/private-jet-cabin-with-leather-seats-xG-pV6Eu-bE",
+    "photographer": "Yaroslav Muzychenko",
+    "subject": "Private jet cabin with leather seats",
+    "verifiedLocation": false
+  },
+  "gallery/jet-3": {
+    "src": "https://images.unsplash.com/photo-1768346564233-d71f37bd19b6",
+    "page": "https://unsplash.com/photos/luxurious-interior-of-a-private-jet-with-comfortable-seating-ogUyaf8JWA4",
+    "photographer": "Andy Wang",
+    "subject": "Private jet interior",
+    "verifiedLocation": false
+  },
+  "gallery/jet-4": {
+    "src": "https://images.unsplash.com/photo-1770334618960-d246fc142297",
+    "page": "https://unsplash.com/photos/a-private-jet-parked-on-an-airport-tarmac-9vX30eYsBdc",
+    "photographer": "David Syphers",
+    "subject": "Private jet parked on the tarmac",
+    "verifiedLocation": false
+  },
+  "gallery/ph-boat-1": {
+    "src": "https://images.unsplash.com/photo-1710104429997-2daf49c9db11",
+    "page": "https://unsplash.com/photos/a-boat-in-the-middle-of-a-body-of-water-CQGuK_JAuUI",
+    "photographer": "Jarno Colijn",
+    "subject": "Boat on clear water, Philippines",
+    "verifiedLocation": false
+  },
+  "gallery/ph-boat-2": {
+    "src": "https://images.unsplash.com/photo-1710104434504-0261d06fa832",
+    "page": "https://unsplash.com/photos/a-couple-of-boats-that-are-in-the-water-5tqmCAspvIs",
+    "photographer": "Jarno Colijn",
+    "subject": "Two boats on the water, Philippines",
+    "verifiedLocation": false
+  },
+  "gallery/ph-boat-3": {
+    "src": "https://images.unsplash.com/photo-1714572877874-f6f0631ff88b",
+    "page": "https://unsplash.com/photos/a-group-of-boats-floating-on-top-of-a-body-of-water-lOfRiXscqho",
+    "photographer": "Jerry Kavan",
+    "subject": "Island-hopping boats, Philippines",
+    "verifiedLocation": false
+  },
+  "gallery/ph-islet": {
+    "src": "https://images.unsplash.com/photo-1565113180093-077f1e8f1c74",
+    "page": "https://unsplash.com/photos/landscape-photography-of-islet-h1dEzlP12hs",
+    "photographer": "Alejandro Luengo",
+    "subject": "Small islet, Philippines",
+    "verifiedLocation": false
   }
 }
