@@ -35,6 +35,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               <li><Link className="link-u" href={L("/contact")}>{n.contact}</Link></li>
               <li><Link className="link-u" href={L("/design-my-trip")}>{n.designMyTrip}</Link></li>
               <li><a className="link-u" href={site.instagram} rel="noopener" target="_blank">Instagram</a></li>
+              <li><a className="link-u" href={site.googleBusiness} rel="noopener" target="_blank">Google</a></li>
             </ul>
           </div>
         </nav>
