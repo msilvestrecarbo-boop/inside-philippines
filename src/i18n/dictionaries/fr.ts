@@ -148,7 +148,7 @@ const fr: Dictionary = {
     secondary: "Discuter sur WhatsApp",
   },
   whatsapp: {
-    label: "Parler à un travel designer",
+    label: "Écrivez-nous sur WhatsApp",
     short: "Écrivez-nous",
     message: "Bonjour Inside Philippines, je prépare un voyage aux Philippines et j'aimerais avoir quelques conseils.",
   },

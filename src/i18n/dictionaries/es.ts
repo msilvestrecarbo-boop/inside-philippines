@@ -148,7 +148,7 @@ const es: Dictionary = {
     secondary: "Escríbenos por WhatsApp",
   },
   whatsapp: {
-    label: "Habla con un diseñador de viajes",
+    label: "Escríbenos por WhatsApp",
     short: "Pregúntanos",
     message: "Hola, Inside Philippines. Estoy planeando un viaje a Filipinas y me gustaría recibir algún consejo.",
   },

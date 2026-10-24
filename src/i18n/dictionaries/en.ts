@@ -151,7 +151,7 @@ const en = {
     secondary: "Chat on WhatsApp",
   },
   whatsapp: {
-    label: "Talk to a travel designer",
+    label: "Chat with us on WhatsApp",
     short: "Ask us",
     message: "Hello Inside Philippines, I'm planning a trip to the Philippines and would like some advice.",
   },
