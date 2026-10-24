@@ -101,3 +101,13 @@ Free Unsplash stock photos. Not taken on our trips; yachts, spa, helicopter and 
 | gallery/ph-boat-2 | Two boats on the water, Philippines | Jarno Colijn | [link](https://unsplash.com/photos/a-couple-of-boats-that-are-in-the-water-5tqmCAspvIs) |
 | gallery/ph-boat-3 | Island-hopping boats, Philippines | Jerry Kavan | [link](https://unsplash.com/photos/a-group-of-boats-floating-on-top-of-a-body-of-water-lOfRiXscqho) |
 | gallery/ph-islet | Small islet, Philippines | Alejandro Luengo | [link](https://unsplash.com/photos/landscape-photography-of-islet-h1dEzlP12hs) |
+
+## Wellness retreat photos (added 2026-10-24)
+
+| Key | Subject | Photographer | Page |
+|---|---|---|---|
+| retreat/yoga | Two women doing yoga on the beach | Michiel Annaert | [link](https://unsplash.com/photos/two-women-are-doing-yoga-on-the-beach-0OPVpD2wT40) |
+| retreat/cooking | Slicing fresh vegetables at a cooking class | Maarten van den Heuvel | [link](https://unsplash.com/photos/person-slicing-green-vegetable-in-front-of-round-ceramic-plates-with-assorted-sliced-vegetables-during-daytime-EzH46XCDQRY) |
+| retreat/meditation | Woman sitting by the sea at sunset | Ash Edmonds | [link](https://unsplash.com/photos/silhouette-of-woman-sitting-by-the-seashore-during-sunset-oQ7Y1cU-Rlg) |
+| retreat/vegan-food | Bowl of vegetables | Sonny Mauricio | [link](https://unsplash.com/photos/a-blue-bowl-filled-with-vegetables-and-a-wooden-spoon-yhc4pSbl01A) |
+| retreat/tagaytay | View over Taal Lake from Tagaytay ridge (tagged Tagaytay) | Jannel Ivory | [link](https://unsplash.com/photos/a-view-of-a-lake-and-mountains-from-the-top-of-a-hill-5_E6W06YQfQ) |

@@ -11,6 +11,7 @@ import { track } from "@/lib/analytics";
 export type HeaderLabels = {
   destinations: string;
   journeys: string;
+  retreats: string;
   experiences: string;
   guide: string;
   stories: string;
@@ -48,6 +49,7 @@ export function Header({ locale, t, whatsappHref }: { locale: Locale; t: HeaderL
   const nav = [
     ["destinations", t.destinations],
     ["journeys", t.journeys],
+    ["wellness-retreats", t.retreats],
     ["experiences", t.experiences],
     ["travel-guide", t.guide],
     ["stories", t.stories],
@@ -67,7 +69,7 @@ export function Header({ locale, t, whatsappHref }: { locale: Locale; t: HeaderL
 
         <nav aria-label="Main" className="hidden xl:block">
           <ul
-            className={`flex items-center gap-1 rounded-full p-1 text-[0.85rem] uppercase tracking-[0.02em] backdrop-blur-sm transition-colors duration-500 rtl:tracking-normal rtl:text-[0.95rem] ${
+            className={`flex items-center gap-0.5 whitespace-nowrap rounded-full p-1 text-[0.78rem] uppercase 2xl:gap-1 2xl:text-[0.85rem] tracking-[0.02em] backdrop-blur-sm transition-colors duration-500 rtl:tracking-normal rtl:text-[0.95rem] ${
               solid ? "bg-shell" : "bg-black/25"
             }`}
           >
@@ -77,7 +79,7 @@ export function Header({ locale, t, whatsappHref }: { locale: Locale; t: HeaderL
                 <li key={slug}>
                   <Link
                     href={`/${locale}/${slug}`}
-                    className={`block rounded-full px-3.5 py-1.5 transition-colors 2xl:px-4 duration-300 ${
+                    className={`block rounded-full px-2.5 py-1.5 transition-colors 2xl:px-4 duration-300 ${
                       active ? (solid ? "bg-white" : "bg-white/25") : solid ? "hover:bg-white/70" : "hover:bg-white/15"
                     }`}
                     aria-current={active ? "page" : undefined}

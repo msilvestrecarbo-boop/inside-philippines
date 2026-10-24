@@ -712,5 +712,40 @@
     "photographer": "Alejandro Luengo",
     "subject": "Small islet, Philippines",
     "verifiedLocation": false
+  },
+  "retreat/yoga": {
+    "src": "https://images.unsplash.com/photo-1698778755372-351969bfaa49",
+    "page": "https://unsplash.com/photos/two-women-are-doing-yoga-on-the-beach-0OPVpD2wT40",
+    "photographer": "Michiel Annaert",
+    "subject": "Two women doing yoga on the beach",
+    "verifiedLocation": false
+  },
+  "retreat/cooking": {
+    "src": "https://images.unsplash.com/photo-1507048331197-7d4ac70811cf",
+    "page": "https://unsplash.com/photos/person-slicing-green-vegetable-in-front-of-round-ceramic-plates-with-assorted-sliced-vegetables-during-daytime-EzH46XCDQRY",
+    "photographer": "Maarten van den Heuvel",
+    "subject": "Slicing fresh vegetables at a cooking class",
+    "verifiedLocation": false
+  },
+  "retreat/meditation": {
+    "src": "https://images.unsplash.com/photo-1533012562945-b003ce1d3269",
+    "page": "https://unsplash.com/photos/silhouette-of-woman-sitting-by-the-seashore-during-sunset-oQ7Y1cU-Rlg",
+    "photographer": "Ash Edmonds",
+    "subject": "Woman sitting by the sea at sunset",
+    "verifiedLocation": false
+  },
+  "retreat/vegan-food": {
+    "src": "https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf",
+    "page": "https://unsplash.com/photos/a-blue-bowl-filled-with-vegetables-and-a-wooden-spoon-yhc4pSbl01A",
+    "photographer": "Sonny Mauricio",
+    "subject": "Bowl of vegetables",
+    "verifiedLocation": false
+  },
+  "retreat/tagaytay": {
+    "src": "https://images.unsplash.com/photo-1633670057397-b12fc5289e96",
+    "page": "https://unsplash.com/photos/a-view-of-a-lake-and-mountains-from-the-top-of-a-hill-5_E6W06YQfQ",
+    "photographer": "Jannel Ivory",
+    "subject": "View over Taal Lake from Tagaytay ridge (tagged Tagaytay)",
+    "verifiedLocation": true
   }
 }

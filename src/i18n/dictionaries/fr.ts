@@ -11,6 +11,7 @@ const fr: Dictionary = {
   nav: {
     destinations: "Destinations",
     journeys: "Voyages",
+    retreats: "Retraites",
     experiences: "Expériences",
     guide: "Guide de voyage",
     stories: "Récits",

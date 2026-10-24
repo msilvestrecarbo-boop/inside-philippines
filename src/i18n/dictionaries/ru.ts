@@ -15,6 +15,7 @@ const ru: Dictionary = {
   nav: {
     destinations: "Направления",
     journeys: "Маршруты",
+    retreats: "Ретриты",
     experiences: "Впечатления",
     guide: "Путеводитель",
     stories: "Истории",
