@@ -218,6 +218,7 @@ const en = {
     insiderNotes: "Insider notes",
   },
   journey: {
+    seoTitle: "{days}-day Philippines trip",
     customizeNotice: "Use this journey as inspiration. Change the islands, hotels, pace, activities or number of nights.",
     customize: "Customise this journey",
     highlights: "Journey highlights",

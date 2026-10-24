@@ -12,11 +12,36 @@ import { stories as rawStories } from "@/content/stories";
 import { experienceCategories as rawCategories, experiences } from "@/content/experiences";
 import { landings as rawLandings } from "@/content/landings";
 import { withPhoto } from "./photos";
-import { extraPlaces, extraCoords } from "@/content/places";
+import { extraPlaces, extraPlaceNames, extraCoords } from "@/content/places";
 import type { Destination, Journey } from "@/content/types";
+import type { Locale } from "@/i18n/config";
+import type { JourneyTranslation } from "@/content/translations/types";
+import journeysEs from "@/content/translations/journeys.es";
+import journeysFr from "@/content/translations/journeys.fr";
+
+const journeyTranslations: Partial<Record<Locale, Record<string, JourneyTranslation>>> = { es: journeysEs, fr: journeysFr };
+
+function translateJourney(j: Journey): Journey {
+  let out = j;
+  for (const [l, all] of Object.entries(journeyTranslations) as [Locale, Record<string, JourneyTranslation>][]) {
+    const t = all[j.slug];
+    if (!t) continue;
+    out = {
+      ...out,
+      intro: { ...out.intro, [l]: t.intro },
+      itinerary: out.itinerary.map((d, i) => (t.itinerary[i] ? { ...d, title: { ...d.title, [l]: t.itinerary[i][0] }, body: { ...d.body, [l]: t.itinerary[i][1] } } : d)),
+      experiences: { ...out.experiences, [l]: t.experiences },
+      upgrades: { ...out.upgrades, [l]: t.upgrades },
+      faqs: out.faqs.map((f, i) => (t.faqs[i] ? { q: { ...f.q, [l]: t.faqs[i][0] }, a: { ...f.a, [l]: t.faqs[i][1] } } : f)),
+      legs: out.legs.map((g, i) => (g.note && t.legNotes?.[i] ? { ...g, note: { ...g.note, [l]: t.legNotes[i] } } : g)),
+      bestMonths: t.bestMonths ? { ...out.bestMonths, [l]: t.bestMonths } : out.bestMonths,
+    };
+  }
+  return out;
+}
 
 const destinations = rawDestinations.map((d) => ({ ...d, photo: withPhoto("destination", d.slug, d.photo) }));
-const journeys = rawJourneys.map((j) => ({ ...j, photo: withPhoto("journey", j.slug, j.photo) }));
+const journeys = rawJourneys.map((j) => translateJourney({ ...j, photo: withPhoto("journey", j.slug, j.photo) }));
 const guides = rawGuides.map((g) => ({ ...g, photo: withPhoto("guide", g.slug, g.photo) }));
 const stories = rawStories.map((s) => ({ ...s, photo: withPhoto("story", s.slug, s.photo) }));
 const experienceCategories = rawCategories.map((c) => ({ ...c, photo: withPhoto("category", c.slug, c.photo) }));
@@ -36,8 +61,8 @@ export const getExperiences = () => experiences;
 export const getLandings = () => landings;
 export const getLanding = (slug: string) => landings.find((l) => l.slug === slug);
 
-export function placeName(slug: string) {
-  return getDestination(slug)?.name ?? extraPlaces[slug] ?? slug;
+export function placeName(slug: string, locale?: Locale) {
+  return getDestination(slug)?.name ?? (locale && extraPlaceNames[slug]?.[locale]) ?? extraPlaces[slug] ?? slug;
 }
 
 export function journeysThrough(slug: string): Journey[] {

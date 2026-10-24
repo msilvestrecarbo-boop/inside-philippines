@@ -77,7 +77,7 @@ export function JourneyCard({ j, locale, dict, wide = false }: { j: Journey; loc
         <h3 className="mt-3 text-[length:var(--text-h3)]">
           <Link href={`/${locale}/journeys/${j.slug}`} className="after:absolute after:inset-0">{tr(j.title, locale)}</Link>
         </h3>
-        <p className="mt-2 text-sm font-medium tracking-wide text-ink/80" dir="ltr">{j.route.map(placeName).join(" • ")}</p>
+        <p className="mt-2 text-sm font-medium tracking-wide text-ink/80" dir="ltr">{j.route.map((r) => placeName(r, locale)).join(" • ")}</p>
         <p className="mt-4 flex-1 leading-relaxed text-stone">{tr(j.short, locale)}</p>
         <div className="mt-6 flex items-end justify-between gap-4 border-t border-line pt-4">
           {price ? (
