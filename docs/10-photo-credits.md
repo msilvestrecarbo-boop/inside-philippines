@@ -128,3 +128,43 @@ Free Unsplash stock photos. Not taken on our trips; yachts, spa, helicopter and 
 | guide/money-and-currency-in-the-philippines | Busy outdoor market with vendors under umbrellas (tagged Philippines) | JC Gellidon | [link](https://unsplash.com/photos/busy-outdoor-market-with-vendors-under-umbrellas-v50DftXmY7A) |
 | guide/philippines-packing-guide | Open suitcase with travel essentials and hat | Marissa Grootes | [link](https://unsplash.com/photos/open-suitcase-with-travel-essentials-and-hat-TVllFyGaLEA) |
 | guide/philippine-customs-and-etiquette | Shared table of Filipino dishes | Christian Dala | [link](https://unsplash.com/photos/a-table-topped-with-plates-of-food-covered-in-meat-and-veggies-l6iSn9Z2lsE) |
+
+## Story photos (added 2026-10-24)
+
+| Key | Subject | Photographer | Page |
+|---|---|---|---|
+| story/perfect-14-day-philippines-itinerary | Close-up of a map of the Philippines | Road Ahead | [link](https://unsplash.com/photos/a-close-up-of-a-map-of-asia--DmmEDv7MXg) |
+| story/philippines-in-january | Festival dancers in traditional dress on a street, Cebu | Hitoshi Namura | [link](https://unsplash.com/photos/people-in-green-and-brown-traditional-dress-walking-on-street-during-daytime-nzEZBYpQmeg) |
+| story/philippines-in-february | Aerial of tropical islands and turquoise water (tagged Philippines remote island) | Florian Delée | [link](https://unsplash.com/photos/aerial-view-of-tropical-islands-and-clear-turquoise-water-0uPll7P-5uw) |
+| story/best-boutique-hotels-in-palawan | Tropical island with rocky cliffs and small huts (tagged Philippines remote island) | Bernd Dittrich | [link](https://unsplash.com/photos/tropical-island-with-rocky-cliffs-and-small-huts-na-nrUgwKmM) |
+| story/best-restaurants-in-siargao | Grilled seafood on a wooden plate, Manila | SJ | [link](https://unsplash.com/photos/seafoods-on-brown-wooden-plate-Qt8diusVRqg) |
+| story/most-beautiful-remote-islands-in-the-philippines | Outrigger boats on a sandy beach, Palawan | Michael Maga-ao | [link](https://unsplash.com/photos/a-group-of-boats-sitting-on-top-of-a-sandy-beach-NMxmuZVNcDA) |
+| story/how-to-travel-between-philippine-islands | Boat at sea near a green island, Philippines | Carla Cervantes | [link](https://unsplash.com/photos/white-and-blue-boat-on-sea-near-green-mountain-under-white-clouds-during-daytime-P-kh3O4Gwe8) |
+| story/where-to-honeymoon-in-the-philippines | Couple watching a sunset over the sea with boats | Lisa van Vliet | [link](https://unsplash.com/photos/couple-watching-a-vibrant-sunset-over-the-ocean-with-boats-4Sjxs_u3fP8) |
+
+## Retreat gallery photos (added 2026-10-24)
+
+| Key | Subject | Photographer | Page |
+|---|---|---|---|
+| retreat/g-yoga-beach | Woman practising yoga on a beach by the ocean | Margaret Young | [link](https://unsplash.com/photos/woman-practicing-yoga-on-a-sandy-beach-by-the-ocean-O8HkjYVILY8) |
+| retreat/g-yoga-palm | Headstand on a beach under a palm tree | Margaret Young | [link](https://unsplash.com/photos/woman-doing-a-headstand-on-a-beach-under-palm-tree-plURrpY-7ok) |
+| retreat/g-yoga-group | Group yoga class on a beach | Sumit Bisht | [link](https://unsplash.com/photos/a-group-of-people-doing-yoga-on-a-beach-Mfen1C_0C7Q) |
+| retreat/g-yoga-garden | Yoga outdoors under flowering trees | Margaret Young | [link](https://unsplash.com/photos/woman-practicing-yoga-outdoors-under-flowering-trees-5-2-1IaUv-M) |
+| retreat/g-pilates | Pilates on a reformer | ROXANA POPOVICI | [link](https://unsplash.com/photos/woman-does-pilates-exercise-on-a-reformer-machine-aY5uOJ2o96g) |
+| retreat/g-stretching | Stretching class on yoga mats | Christian Harb | [link](https://unsplash.com/photos/people-stretching-on-yoga-mats-in-a-studio-UGNGnSdEklQ) |
+| retreat/g-dinner-sea | Outdoor dining tables with an ocean view at sunset | Hailey Tong | [link](https://unsplash.com/photos/outdoor-dining-tables-with-ocean-view-at-sunset-hVzlAxqxg4k) |
+| retreat/g-beach-bar | Tropical bar overlooking the ocean at sunset | Hailey Tong | [link](https://unsplash.com/photos/tropical-bar-overlooking-the-ocean-at-sunset-7ofOtencAWo) |
+| retreat/g-table-sea | Group dinner at a table by the ocean | Ilker Ozmen | [link](https://unsplash.com/photos/a-group-of-people-sitting-at-a-table-next-to-the-ocean-S45PuFRLMO4) |
+| retreat/g-breakfast-pool | Healthy breakfast spread by the pool | Tomi Saputra | [link](https://unsplash.com/photos/healthy-breakfast-spread-by-the-pool-Ero7IT-LUTc) |
+| retreat/g-smoothie-bowl | Smoothie bowl with tropical fruit | Puifai Sutawet | [link](https://unsplash.com/photos/smoothie-bowl-with-fresh-fruit-to2VLJBooN4) |
+| retreat/g-acai | Acai bowls with fruit and granola | Vicky Ng | [link](https://unsplash.com/photos/acai-bowls-with-fruit-and-granola-yIh0i6TYGrs) |
+| retreat/g-juice | Fresh green juice | Giorgi Iremadze | [link](https://unsplash.com/photos/green-liquid-in-clear-drinking-glass-with-straw-3OV0ft7mG_o) |
+| retreat/g-flower-bath | Bath with red flower petals | Timothy Dykes | [link](https://unsplash.com/photos/woman-bathing-on-water-with-red-flower-petals-56bLos8Ze70) |
+| retreat/g-citrus-bath | Bath with lemons and flowers | Sherise Van Dyk | [link](https://unsplash.com/photos/flat-lay-photography-of-woman-dipped-in-water-surrounded-by-yellow-lemons-and-flowers-SahHnjVeHTw) |
+| retreat/g-hot-tub | Outdoor hot tub among trees | 光术 山影 | [link](https://unsplash.com/photos/woman-relaxing-in-an-outdoor-hot-tub-surrounded-by-trees-cVGk76g3yIk) |
+| retreat/g-spa | Massage table in a spa | Mayur Roxan | [link](https://unsplash.com/photos/massage-table-and-sink-in-spa-JnsuyfJrxQw) |
+| retreat/g-sauna | Wooden sauna with stone heater | Auroom Wellness | [link](https://unsplash.com/photos/modern-wooden-sauna-with-ambient-lighting-and-stone-heater-IXHVsu6n5vA) |
+| retreat/g-sauna-steam | Pouring water on hot sauna stones | HUUM | [link](https://unsplash.com/photos/woman-in-sauna-pours-water-on-hot-stones-xJcDIazIIs8) |
+| retreat/g-ice-bath | Cold-water tub for an ice bath | Lukas Kubica | [link](https://unsplash.com/photos/a-man-standing-next-to-a-metal-tub-filled-with-water-sIw6g1ZDYck) |
+| retreat/g-sound-gong | Gong and singing bowls for sound healing | Kabita Captured | [link](https://unsplash.com/photos/man-playing-a-large-gong-with-singing-bowls-around-him-YW8BCGO96L8) |
+| retreat/g-singing-bowl | Singing bowl and incense | THLT LCX | [link](https://unsplash.com/photos/person-holding-singing-bowl-with-incense-VsI_74zRzAo) |
