@@ -75,6 +75,37 @@ export default async function Retreat({ params }: PageProps<"/[lang]/wellness-re
         </ul>
       </section>
 
+      {r.program && (
+        <section className="container-x pb-20 md:pb-28">
+          <h2 className="text-[length:var(--text-h2)]">{tr(r.programTitle!, locale)}</h2>
+          <div className="mt-10 grid gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+            {r.program.map((x) => (
+              <div key={x.name.en} className="rounded-card border border-line p-6">
+                <h3 className="text-[length:var(--text-h3)]">{tr(x.name, locale)}</h3>
+                <p className="mt-3 leading-relaxed text-stone">{tr(x.body, locale)}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {r.variants && (
+        <section className="bg-ink py-20 text-white md:py-28">
+          <div className="container-x">
+            <h2 className="text-[length:var(--text-h2)]">{tr(r.variantsTitle!, locale)}</h2>
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
+              {r.variants.map((v) => (
+                <TrackedLink key={v.name.en} href={`/${locale}/design-my-trip${query}`} event="design_trip_click" params={{ placement: "retreat_variant", retreat: r.slug, variant: v.name.en }} className="block rounded-card border border-white/20 p-6 transition-colors hover:border-white">
+                  <span className="font-display text-2xl">{tr(v.name, locale)}</span>
+                  <span className="mt-3 block leading-relaxed text-white/75">{tr(v.body, locale)}</span>
+                  <span className="kicker mt-5 block text-white/90">{dict.nav.designMyTrip} →</span>
+                </TrackedLink>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="bg-shell py-20 md:py-28">
         <div className="container-x grid gap-12 md:grid-cols-2">
           <div>

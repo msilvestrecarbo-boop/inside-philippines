@@ -13,7 +13,7 @@ const destSlugs = new Set(destinations.map((d) => d.slug));
 const journeySlugs = new Set(journeys.map((j) => j.slug));
 const catSlugs = new Set(experienceCategories.map((c) => c.slug));
 const LOCALES = ["en", "fr", "es", "ru", "ar"];
-const RESERVED = ["destinations", "journeys", "experiences", "travel-guide", "stories", "about", "contact", "design-my-trip", "privacy", "terms", "faq", "gallery", "wellness-retreats"];
+const RESERVED = ["destinations", "journeys", "experiences", "travel-guide", "stories", "about", "contact", "design-my-trip", "privacy", "terms", "faq", "gallery", "wellness-retreats", "private-retreats", "group-retreats", "corporate-retreats"];
 
 test("17 destinations with complete, fully translated card fields", () => {
   assert.equal(destinations.length, 17);
