@@ -121,7 +121,7 @@ const en = {
   },
   why: {
     kicker: "Why Inside Philippines",
-    title: "We don't sell the Philippines from a distance.",
+    title: "We live here, and we plan every trip on the ground.",
     items: [
       { title: "Local knowledge", body: "We know the Philippines firsthand: the routes, the seasons, the places that have changed and the ones that haven't." },
       { title: "Tailor-made", body: "Every journey can be built around you: your dates, your pace, your budget, your idea of a good day." },
