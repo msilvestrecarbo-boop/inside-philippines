@@ -1,29 +1,37 @@
-/**
- * INSIDE PHILIPPINES wordmark with the "viewfinder" corner marks.
- * Pure markup + CSS (no image request); always Latin script in every locale.
- */
-export function Logo({ className = "", compact = false }: { className?: string; compact?: boolean }) {
-  return (
-    <span role="img" className={`relative inline-flex flex-col leading-none ${className}`} dir="ltr" aria-label="Inside Philippines">
-      <Corner className="-left-2.5 -top-2" />
-      <span aria-hidden className="font-sans text-[0.58rem] font-semibold tracking-[0.42em] ps-[0.1em]">
-        INSIDE
-      </span>
-      {!compact && (
-        <span aria-hidden className="font-display text-[1.35rem] font-semibold tracking-[0.14em] mt-[0.18rem]" style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}>
-          PHILIPPINES
-        </span>
-      )}
-      <Corner className="-right-2.5 -bottom-1.5 rotate-180" />
-    </span>
-  );
-}
+import { INSIDE, MARK, PHILIPPINES, SUN } from "./logoPaths";
 
-function Corner({ className }: { className: string }) {
+/**
+ * Inside Philippines logo: arch-and-sunrise mark plus the INSIDE / Philippines
+ * wordmark, as inline vectors so it takes the current text colour (white over
+ * photos, ink on light backgrounds). The sun keeps the brand clay colour.
+ * "horizontal" sits in the header; "stacked" is the full artwork.
+ */
+export function Logo({ className = "", variant = "horizontal" }: { className?: string; variant?: "horizontal" | "stacked" }) {
+  if (variant === "stacked") {
+    return (
+      <svg role="img" aria-label="Inside Philippines" viewBox="257 188 566 634" className={`h-auto ${className}`}>
+        <g fill="currentColor" fillRule="evenodd">
+          <path d={MARK} />
+          <path d={INSIDE} />
+          <path d={PHILIPPINES} />
+        </g>
+        <path d={SUN} fill="var(--color-clay)" />
+      </svg>
+    );
+  }
   return (
-    <svg aria-hidden viewBox="0 0 10 10" className={`absolute h-2.5 w-2.5 ${className}`} fill="none" stroke="currentColor" strokeWidth="1.1">
-      <path d="M0.6 9.4V0.6H9.4" />
-    </svg>
+    <span role="img" aria-label="Inside Philippines" dir="ltr" className={`inline-flex items-center gap-2.5 ${className}`}>
+      <svg aria-hidden viewBox="388 188 304 384" className="h-10 w-auto md:h-12">
+        <path d={MARK} fill="currentColor" fillRule="evenodd" />
+        <path d={SUN} fill="var(--color-clay)" />
+      </svg>
+      <svg aria-hidden viewBox="257 633 566 189" className="h-8 w-auto md:h-10">
+        <g fill="currentColor" fillRule="evenodd">
+          <path d={INSIDE} />
+          <path d={PHILIPPINES} />
+        </g>
+      </svg>
+    </span>
   );
 }
 

@@ -13,7 +13,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
     <footer className="bg-linen pb-28 pt-20 text-ink md:pb-12">
       <div className="container-x grid gap-14 md:grid-cols-12">
         <div className="md:col-span-4">
-          <Logo />
+          <Logo variant="stacked" className="w-40" />
           <p className="mt-8 max-w-xs text-sm leading-relaxed text-ink/75">{t.about}</p>
           <p className="mt-6 font-display text-xl italic text-ink/85">{dict.meta.tagline}</p>
         </div>
