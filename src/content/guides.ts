@@ -1,4 +1,4 @@
-import type { GuideArticle } from "./types";
+import type { FAQ, GuideArticle, Insider } from "./types";
 
 /**
  * Travel guides ("Inside the Islands", "Inside Tips" and friends).
@@ -13,6 +13,567 @@ import type { GuideArticle } from "./types";
  */
 
 const UPDATED = "2026-10-01";
+
+/**
+ * English bodies, insider notes and FAQs for the guides published on
+ * 2026-10-24 (previously listed as "in preparation"). Merged into
+ * guides.ts by slug. Same markdown-lite rules as guides.ts.
+ */
+
+type More = { body: string; insiders: Insider[]; faqs: FAQ[]; related?: { destinations?: string[]; journeys?: string[] } };
+
+export const moreGuides: Record<string, More> = {
+  /* ------------------------------------------------------------------ */
+  "best-philippines-itineraries": {
+    body: `The Philippines rewards fewer stops, not more. With more than 7,000 islands and most connections running through Manila or Cebu, every extra island costs you half a day of travel. The routes below are the ones we come back to most, built around real flight and ferry links and tested against the weather. Treat them as starting points: we adjust every one to your dates, pace and budget.
+
+## One week: Palawan, done properly
+
+With seven nights, choose one region and enjoy it. Fly from Manila to El Nido (or to Puerto Princesa and drive north), spend four nights there, then take the fast ferry to Coron for three.
+
+- Nights 1 to 4: El Nido. Island-hopping by private boat, a quiet beach day, kayaking in the lagoons early in the morning.
+- Nights 5 to 7: Coron. Kayangan Lake, Twin Lagoon, Barracuda Lake and, for divers, the Second World War wrecks.
+- Fly home from Coron (Busuanga airport) via Manila.
+
+The trade-off: you see one island group in depth and nothing else. For a first trip, that is usually the right call.
+
+## Two weeks: two or three islands with contrast
+
+Fourteen nights is the sweet spot for a first visit. The classic shape pairs Palawan's lagoons with a completely different island.
+
+- Palawan and Bohol: lagoons and limestone, then the Chocolate Hills, tarsiers, rivers and calm beaches on Panglao. Easy for families.
+- Palawan and Siargao: lagoons, then surf, coconut forest and a slower, sociable island. Best from March to October on Siargao.
+- Palawan, Bohol and Siquijor: add Siquijor's waterfalls and quiet coast by fast ferry from Bohol or via Dumaguete.
+
+Expect one full travel day between Palawan and the Visayas, because most routes connect in Manila or Cebu.
+
+## Three weeks: add the north or go slower
+
+With 21 nights you can add the rice terraces of Banaue and Batad and the mountain town of Sagada, a long drive north of Manila, or slow everything down and add Camiguin or Negros. Our favourite three-week shape is Manila, the Cordillera, Palawan, then Bohol or Siargao, with a final night near Manila or Cebu airport before flying home.
+
+## How we build a route
+
+- Fewer moves: two or three bases for two weeks, never a new hotel every night.
+- Connections that survive the weather: no tight self-transfers, and no outer-island night just before your international flight in the wet season.
+- The right order: busy islands first, quiet ones last, so the trip winds down rather than speeds up.
+- Season first: Palawan and Boracay from December to May; Siargao, Camiguin and Bohol hold up better from June to October.
+
+## Common mistakes
+
+Trying to see six islands in ten days. Booking the cheapest flight with a two-hour connection in Manila. Ending on a remote island the night before a long-haul flight. Skipping Bohol or Siquijor because they are less famous than they deserve. Tell us your dates and we will show you which version of these routes fits.`,
+    insiders: [
+      { type: "inside-tip", title: { en: "Put the quiet island last" }, body: { en: "End on Siquijor, Camiguin or a villa in Palawan rather than a busy town. You go home rested instead of rushed." } },
+      { type: "skip-this", title: { en: "Skip the one-night stops" }, body: { en: "A single night on an island usually means a day of travel for half a day of beach. Two nights is our minimum, three is better." } },
+      { type: "our-favorite", title: { en: "Our favourite two-week shape" }, body: { en: "Six nights in Palawan split between El Nido and Coron, then a week between Bohol and Siquijor. Lagoons, then countryside and waterfalls." } },
+    ],
+    faqs: [
+      { q: { en: "How many islands can I see in two weeks?" }, a: { en: "Two or three island groups is comfortable. More than that and travel days start to eat into beach days." } },
+      { q: { en: "What is the best one-week itinerary for the Philippines?" }, a: { en: "Palawan: four nights in El Nido and three in Coron, linked by fast ferry. If it is the wet season, look at Bohol and Siargao instead." } },
+      { q: { en: "Should I include Manila?" }, a: { en: "One night on arrival or before departure is enough for most travellers. Intramuros and a good dinner are the highlights." } },
+      { q: { en: "Can you adapt these routes?" }, a: { en: "Yes. Every route we send is built around your dates, interests and budget. Use Design my trip or message us on WhatsApp." } },
+    ],
+    related: { destinations: ["el-nido", "coron", "bohol", "siargao", "siquijor", "banaue"], journeys: ["island-classics", "essential-palawan", "palawan-bohol-boracay", "the-grand-philippines"] },
+  },
+
+  /* ------------------------------------------------------------------ */
+  "philippines-honeymoon-guide": {
+    body: `A Philippine honeymoon works best with two islands, private transfers and enough time to do nothing at all. The country has some of the most beautiful water in Asia, villas that sit directly on it, and boatmen who know how to find an empty beach. What it does not forgive is an over-packed itinerary.
+
+## The best months
+
+January to April is the most reliable window for beach days, calm seas and blue skies on the western islands. May is hot and usually calm. From June to October, look east and south (Siargao, Bohol, Camiguin), because Palawan and Boracay sit in the path of the southwest monsoon.
+
+## Where to go
+
+- El Nido and northern Palawan: the classic. Limestone islands, lagoons and island resorts where your room looks straight onto the sea.
+- Coron: wilder, with freshwater lakes and the best snorkelling over coral gardens and wrecks.
+- Boracay: easy, sociable and beautiful at sunset. Good for couples who want restaurants and a bit of life.
+- Siargao: relaxed and romantic in a barefoot way, with surf, palm forest and island picnics.
+- Bohol and Panglao: calm beaches, river trips and comfortable resorts. A gentle second stop.
+- Private island resorts: the Philippines has a handful of very exclusive island resorts in Palawan. They are expensive and worth it if seclusion is what you want most.
+
+## Our honeymoon shape
+
+Ten to fourteen nights, two islands. Start with drama (El Nido or Coron), finish with stillness (a villa in Palawan, Bohol, Siquijor or Siargao). Every transfer private. No island arrival after dark. One spare day at the end before your international flight.
+
+## The moments worth planning
+
+- A private boat that leaves before the shared tours, so the lagoons are yours.
+- A sandbar lunch or a dinner on the beach, set up for two.
+- A couples' massage the day after the long-haul flight.
+- Sunset from the water, on a paraw sailboat in Boracay or a bangka in El Nido.
+
+## What to avoid
+
+Midday at the most famous lagoons in high season. Resorts chosen only from photos. Itineraries with four islands in ten days. Tight connections in Manila. Tell us how you like to travel and we will plan the honeymoon around it, including every surprise you want to keep secret.`,
+    insiders: [
+      { type: "go-early", title: { en: "Be first into the lagoon" }, body: { en: "Leave at 7am with a private boat and you will often paddle the Big Lagoon in El Nido with nobody else in sight." } },
+      { type: "our-favorite", title: { en: "A villa for the last four nights" }, body: { en: "Finish in a villa with its own stretch of beach. It is the part of the trip couples remember most." } },
+    ],
+    faqs: [
+      { q: { en: "Where is the best place for a honeymoon in the Philippines?" }, a: { en: "El Nido in Palawan is the classic choice. Pair it with Coron, Bohol or Siargao for contrast and a slower finish." } },
+      { q: { en: "How long should a Philippine honeymoon be?" }, a: { en: "Ten to fourteen nights lets you see two islands without rushing and still have days with nothing planned." } },
+      { q: { en: "Can you arrange surprises?" }, a: { en: "Yes: private dinners, flowers in the room, a sandbar lunch or a sunset boat. Tell us privately and we keep it secret." } },
+    ],
+    related: { destinations: ["el-nido", "coron", "boracay", "siargao", "bohol"], journeys: ["honeymoon-inside-philippines", "luxury-palawan", "exclusive-philippines"] },
+  },
+
+  /* ------------------------------------------------------------------ */
+  "philippines-with-children": {
+    body: `The Philippines is one of the warmest places in Asia to travel with children, in every sense. Filipinos adore kids, beaches are often shallow and calm, and English is widely spoken. The secret is to keep transfers short, choose the right islands for the season and plan the days around the heat.
+
+## The easiest islands for families
+
+- Bohol and Panglao: calm beaches, the Chocolate Hills, the tarsier sanctuary and a river trip. Short distances and comfortable resorts.
+- Cebu and Mactan: direct international flights, big family resorts and easy day trips. A good first or last stop.
+- Boracay: soft sand and gentle water on White Beach from roughly November to May, with plenty of food choices.
+- Palawan: El Nido and Coron are spectacular for older children who can swim and enjoy boat days. The transfers are longer, so we plan them carefully.
+- Siargao: great for teenagers who want to learn to surf.
+
+## Transfers and pacing
+
+Keep the number of flights low and the transfers short. Two or three bases are plenty for two weeks. We use private vehicles so you stop when you need to, and we avoid early-morning flights after late arrivals. Child seats are not standard in Philippine cars; tell us ages and we will arrange what is available or suggest bringing a travel seat.
+
+## Beaches and the sea
+
+Many of the best beaches are shallow and calm in the dry season, ideal for small children. On boat days, every passenger wears a life jacket and we choose boats with shade. Rash guards and reef-safe sunscreen protect against the strong sun. Some beaches have sea urchins or sharp coral, so water shoes help.
+
+## Health and comfort
+
+- The sun is strong all year: hats, shade and water, and quieter time in the middle of the day.
+- Drink bottled or filtered water. Mosquitoes carry dengue, so use repellent, especially at dawn and dusk.
+- Cities like Manila, Cebu and Davao have good private hospitals. Small islands have basic clinics, which is one reason we keep young children close to the main hubs.
+- Every trip includes travel insurance; check the cover for children with us when you book.
+
+## What children love
+
+Tarsiers in Bohol, snorkelling with turtles, a day on a bangka with lunch on a beach, kayaking in a lagoon, mango shakes and a sandcastle on a white beach. Tell us your children's ages and interests and we will build the trip around them.`,
+    insiders: [
+      { type: "inside-tip", title: { en: "Start and end in Cebu" }, body: { en: "Cebu has international flights and family resorts close to the airport, so the long-haul days stay short." } },
+      { type: "our-favorite", title: { en: "Bohol for younger children" }, body: { en: "Calm water, short drives and tarsiers. It is our first suggestion for families with children under eight." } },
+      { type: "skip-this", title: { en: "Skip long road transfers" }, body: { en: "The six-hour drive between Puerto Princesa and El Nido is tiring for small children. A direct flight to El Nido is worth it." } },
+    ],
+    faqs: [
+      { q: { en: "Is the Philippines good for a family holiday?" }, a: { en: "Yes. Filipinos are very welcoming to children, beaches are often calm and shallow, and English is widely spoken." } },
+      { q: { en: "Which island is best for families?" }, a: { en: "Bohol for younger children, Cebu for easy logistics, Boracay for a beach holiday and Palawan for older children who love boats." } },
+      { q: { en: "Are there car seats?" }, a: { en: "Not as standard. Tell us your children's ages and we will arrange what is available or advise you to bring a travel seat." } },
+    ],
+    related: { destinations: ["bohol", "cebu", "boracay", "el-nido"], journeys: ["family-islands", "bohol-beach-escape", "island-classics"] },
+  },
+
+  /* ------------------------------------------------------------------ */
+  "luxury-philippines": {
+    body: `Luxury in the Philippines is not mainly about marble lobbies. It is about space and privacy: a private island with a handful of villas, a boat that takes you where the shared tours do not, a transfer that saves you half a day. Spend in the right places and the country delivers some of the most exclusive beach experiences in Asia.
+
+## Where luxury is worth it
+
+- Private island resorts in Palawan: a few resorts own or share an entire island, with villas on the sand or over the water and very few guests. This is where the money buys the most.
+- Villas with staff: in El Nido, Siargao and Boracay, private villas with a cook and a housekeeper suit families and groups.
+- Boracay's best resorts: polished, with private beach areas away from the busy main strip.
+- Spa resorts in Bohol, Cebu and Tagaytay: good for a slower, restorative stop.
+
+## Time is the real luxury
+
+Most of the effort in a Philippine trip is getting between islands. Paying for better connections changes the whole experience.
+
+- Private transfers on arrival and between every stop.
+- Direct flights to small airports such as El Nido instead of long road journeys.
+- Private charter flights, seaplanes and helicopter transfers on some routes, subject to availability, weather and permits. Ask us what is possible for your dates.
+- Yachts and private boats for island-hopping, sunset cruises or multi-day sailing around Palawan.
+
+## Experiences we like
+
+A private boat to the lagoons at 7am. Lunch on a sandbar. A chef cooking your catch on the beach. A dive guide for just the two of you. A night on a remote island with no one else there. These are the moments that make the price worthwhile.
+
+## Where not to overspend
+
+Manila hotels are comfortable at every level, but one night is usually enough. Big-name brands are not always the best choice on small islands, where a small, well-run resort often beats a large one. And in the wet season, a top-tier room cannot change the weather, so time your trip well.
+
+## How we work
+
+We look for privacy, service and location, not just stars, and we tell you honestly when a cheaper option is the better one. Every Signature trip includes private transfers, hand-picked hotels and travel insurance with €2,000 cancellation cover.`,
+    insiders: [
+      { type: "worth-the-detour", title: { en: "One night truly alone" }, body: { en: "A remote island camp or villa for one night, with nobody else on the island, is the most memorable luxury we can arrange." } },
+      { type: "inside-tip", title: { en: "Spend on boats, not on rooms" }, body: { en: "A private boat changes the El Nido experience more than any room upgrade." } },
+    ],
+    faqs: [
+      { q: { en: "What are the most luxurious places to stay in the Philippines?" }, a: { en: "The private island resorts of northern Palawan, the best resorts in Boracay and private villas in El Nido and Siargao." } },
+      { q: { en: "Can you arrange private flights or helicopters?" }, a: { en: "On some routes, private charters, seaplanes or helicopter transfers can be arranged, depending on availability, weather and permits. Ask us for your dates." } },
+      { q: { en: "Is a yacht charter possible?" }, a: { en: "Yes, day charters and multi-day sailing trips are possible in Palawan and elsewhere. Tell us your group size and dates." } },
+    ],
+    related: { destinations: ["el-nido", "palawan", "boracay", "siargao"], journeys: ["luxury-palawan", "exclusive-philippines", "honeymoon-inside-philippines"] },
+  },
+
+  /* ------------------------------------------------------------------ */
+  "domestic-flights-in-the-philippines": {
+    body: `In the Philippines, flying is usually the fastest way between island groups. Domestic flights are short and often good value, but connections, baggage limits and the weather need planning. Here is how it works.
+
+## The airlines
+
+Philippine Airlines (with its regional arm PAL Express) and Cebu Pacific (with Cebgo) fly most domestic routes. AirSWIFT flies small aircraft to El Nido, and a few smaller carriers serve niche routes. Low-cost fares are cheap, but extras such as checked bags and seat selection are paid separately.
+
+## The two hubs: Manila and Cebu
+
+Most routes go through Manila (NAIA) or Cebu (Mactan-Cebu). Manila is the busier hub, and its terminals are not all connected airside, so changing terminals can take time in traffic. Cebu is often smoother and has useful connections to the Visayas and Mindanao, which can save you a stop in Manila. Clark, north of Manila, is a growing alternative.
+
+## Baggage limits
+
+Small aircraft to places like El Nido, Siargao and Busuanga (Coron) can have lower baggage allowances and weight limits, and excess baggage may not fly on the same plane. Pack in a soft bag, keep it light, and tell us if you travel with dive or surf gear so we can book the right allowance.
+
+## Delays and cancellations
+
+Delays are common, especially later in the day, as delays build through the schedule. In the wet season, typhoons can cancel flights for a day or more. That is why we:
+
+- Book morning flights where possible.
+- Never plan a tight connection on two separate tickets.
+- Leave at least one night in Manila or Cebu before an international departure from an island, especially between June and November.
+
+## Small airports
+
+Some island airports are tiny, with a single runway and basic terminals. Siargao (Sayak), Busuanga, El Nido and Camiguin all have short check-in queues but limited facilities. Arrive on time; small planes may close check-in early.
+
+## Practical tips
+
+- Use the same name as in your passport when booking.
+- Check in online when possible, but keep a printed or offline copy.
+- Domestic terminal fees are usually included in the fare today, but some small airports and destinations charge local environmental fees on arrival.
+
+We book and track every flight for you and rebook if a typhoon changes the plan.`,
+    insiders: [
+      { type: "inside-tip", title: { en: "Connect through Cebu" }, body: { en: "Bohol, Siargao, Siquijor (via Dumaguete) and Camiguin are often easier from Cebu than from Manila." } },
+      { type: "go-early", title: { en: "Take the first flight" }, body: { en: "Early flights are the most punctual. Delays tend to build through the day." } },
+    ],
+    faqs: [
+      { q: { en: "Which airlines fly within the Philippines?" }, a: { en: "Mainly Philippine Airlines and PAL Express, Cebu Pacific and Cebgo, plus AirSWIFT to El Nido and a few smaller carriers." } },
+      { q: { en: "How much time should I leave between flights?" }, a: { en: "On separate tickets, at least three to four hours in Manila, and an overnight stop before an international flight in the wet season." } },
+      { q: { en: "Are baggage limits strict?" }, a: { en: "On small aircraft, yes. Pack light in a soft bag and tell us about dive or surf equipment in advance." } },
+    ],
+    related: { destinations: ["manila", "cebu", "el-nido", "siargao", "coron"], journeys: ["island-classics", "the-grand-philippines"] },
+  },
+
+  /* ------------------------------------------------------------------ */
+  "ferries-in-the-philippines": {
+    body: `Ferries are part of the Philippine experience. Some routes are quicker by sea than by air, and arriving at an island by boat is often the most beautiful way to get there. There are three kinds of boats to know.
+
+## Fast craft
+
+Modern, air-conditioned passenger boats with assigned seats. They run the busiest short routes, such as Cebu to Bohol (about two hours), Dumaguete to Siquijor (about an hour), and El Nido to Coron (around four hours on a fast ferry). Main operators include OceanJet and 2GO's fast craft services; smaller companies run regional routes.
+
+## Large ferries
+
+Big roll-on roll-off ships carry vehicles and passengers on longer routes, sometimes overnight. They are slower and cheaper, with cabins on some routes. We rarely use them for holiday trips, but they are useful for travellers with time.
+
+## Bangkas
+
+The traditional outrigger boats used for island-hopping and short crossings. For tours, we use private bangkas with life jackets, shade and an experienced crew. Public bangkas also cross between some islands.
+
+## Weather and the Coast Guard
+
+When a storm signal is raised, the Philippine Coast Guard suspends sailings for small boats or for all vessels. This is for your safety and there is no way around it. In the wet season, especially from July to November, plan a buffer day after any sea crossing before an important flight.
+
+## Booking and boarding
+
+- Book popular fast craft in advance in high season; we do this for you.
+- Bring your passport or ID; you may need it to board.
+- Arrive at least an hour early. Ports charge small terminal fees, and some destinations collect environmental fees.
+- Large bags go in a luggage area; keep valuables, water and seasickness tablets with you.
+
+## Routes we use most
+
+- Cebu to Tagbilaran (Bohol).
+- Bohol or Dumaguete to Siquijor.
+- El Nido to Coron.
+- Cebu or Bohol to Camiguin via Mindanao.
+- Siargao from Surigao, if not flying direct.
+
+Sea crossings are calmest early in the day. If you are prone to seasickness, sit in the middle of the boat and take something before you board.`,
+    insiders: [
+      { type: "inside-tip", title: { en: "Sit at the back, outside" }, body: { en: "On fast craft, the open rear deck has the best air and views, and you feel the motion less than at the front." } },
+      { type: "go-early", title: { en: "Morning crossings are calmer" }, body: { en: "Wind and waves often build in the afternoon. Take the first boat when you can." } },
+    ],
+    faqs: [
+      { q: { en: "Are ferries in the Philippines safe?" }, a: { en: "The main fast craft operators run regular, supervised services, and the Coast Guard stops sailings in bad weather. We use reputable operators and private boats with life jackets." } },
+      { q: { en: "How long is the ferry from El Nido to Coron?" }, a: { en: "Around four hours on a fast ferry, depending on the boat and the sea." } },
+      { q: { en: "What happens if my ferry is cancelled?" }, a: { en: "We rebook you on the next available crossing and adjust the rest of the trip. That is why we leave buffer days in the wet season." } },
+    ],
+    related: { destinations: ["bohol", "siquijor", "coron", "el-nido", "cebu"], journeys: ["palawan-bohol-boracay", "bohol-and-camiguin"] },
+  },
+
+  /* ------------------------------------------------------------------ */
+  "sim-cards-in-the-philippines": {
+    body: `Staying connected in the Philippines is easy and affordable. You can buy an eSIM before you fly, or a local SIM card on arrival. Either way, you will want mobile data for maps, messages and ride-hailing.
+
+## eSIM: the simplest option
+
+If your phone supports eSIM, buy a data plan online before you travel and activate it when you land. Providers such as Airalo sell Philippine eSIMs that run on local networks. You keep your home number active for calls and two-factor codes, and you are online as soon as you leave the plane.
+
+## Local SIM cards
+
+The main networks are Smart and Globe, with DITO as the newer third network. SIM cards are sold at airport counters, convenience stores and mall kiosks. Prepaid data promos are inexpensive and easy to top up.
+
+## Registration
+
+Under Philippine law, every SIM must be registered. Tourists register with their passport, and tourist registrations are usually valid for a limited period (often 30 days) unless extended. The airport counters handle this for you; elsewhere you complete it online. eSIMs from international providers deal with registration in their own process.
+
+## Coverage on the islands
+
+Coverage is good in cities and most tourist towns, including El Nido, Coron, Siargao's General Luna, Bohol and Boracay. It drops on small islands, remote beaches, mountain roads and at sea. Smart and Globe have different strengths by area, so some travellers carry one of each.
+
+## Practical tips
+
+- Download offline maps before boat days and road trips.
+- WhatsApp works well across the country; it is how our team stays in touch with you 24/7.
+- Unlock your phone before you travel if you want a local SIM.
+- Keep your home SIM safe in your wallet if you swap it out.
+
+Our team sends you the latest eSIM and SIM advice with your travel documents.`,
+    insiders: [
+      { type: "inside-tip", title: { en: "Set it up before you fly" }, body: { en: "Install your eSIM at home on Wi-Fi and switch it on when you land. No queues at the airport." } },
+      { type: "worth-the-detour", title: { en: "Carry two networks for remote trips" }, body: { en: "If you are heading to small islands or the mountains, a second SIM on the other network is cheap insurance." } },
+    ],
+    faqs: [
+      { q: { en: "Should I buy an eSIM or a local SIM?" }, a: { en: "An eSIM is easiest if your phone supports it. A local SIM can be cheaper for long stays and gives you a Philippine number." } },
+      { q: { en: "Do I need to register a SIM card as a tourist?" }, a: { en: "Yes. Philippine SIMs must be registered; tourists use their passport. Airport counters do it for you." } },
+      { q: { en: "Is there mobile coverage on the islands?" }, a: { en: "In most tourist towns, yes. Expect weak or no signal on remote beaches, at sea and on mountain roads." } },
+    ],
+    related: { destinations: ["manila", "el-nido", "siargao"] },
+  },
+
+  /* ------------------------------------------------------------------ */
+  "internet-in-the-philippines": {
+    body: `Internet in the Philippines has improved a lot, but it is still uneven. In cities and many resorts it is fast enough for video calls; on small islands it can be slow or interrupted. If you need to work while you travel, plan your route around the connection.
+
+## Hotel and resort Wi-Fi
+
+Most hotels offer free Wi-Fi. Quality varies widely: it is often strong in the lobby and weaker in villas far from the main building. Some remote resorts now use satellite internet, which can be surprisingly good. We check the connection with each hotel before booking if you tell us you need it.
+
+## Mobile data
+
+4G is common in towns, and 5G is available in parts of the big cities. Mobile data is often faster than hotel Wi-Fi on the islands, so a local SIM or eSIM is a good backup. See our guide to SIM cards and eSIMs.
+
+## Where the connection is good
+
+- Manila, Cebu, Davao and other cities: fast fibre and mobile data.
+- Siargao (General Luna), El Nido town, Boracay and Panglao in Bohol: generally good, with cafés and co-working spaces popular with remote workers.
+- Coron town: reasonable; island resorts vary.
+
+## Where it is not
+
+Small islands, remote beaches, mountain areas such as Batad and Sagada, and anywhere at sea. Power cuts also happen on some islands, which can take the Wi-Fi down for a few hours.
+
+## Working remotely
+
+- Choose places with a back-up connection or a generator.
+- Keep an offline copy of anything you need for the day.
+- Schedule important calls for cities or well-connected towns, not for island-hopping days.
+- A small power bank and a universal adapter (types A, B and C, 220V) are worth packing.
+
+Tell us when you need to be online and we will plan the route so your connection is there when it matters, and the offline days are the ones you want.`,
+    insiders: [
+      { type: "inside-tip", title: { en: "Ask for a room near the router" }, body: { en: "In island resorts, rooms closer to the main building usually have a much better signal." } },
+      { type: "our-favorite", title: { en: "Siargao for working stays" }, body: { en: "General Luna has cafés and co-working spaces with solid connections, plus surf before work." } },
+    ],
+    faqs: [
+      { q: { en: "Is the internet good in the Philippines?" }, a: { en: "Good in cities and most tourist towns, variable on small islands and in the mountains. Mobile data is a useful backup." } },
+      { q: { en: "Can I work remotely from the islands?" }, a: { en: "Yes, in places like Siargao, El Nido town, Boracay and Bohol. Tell us your needs and we choose hotels with reliable connections." } },
+    ],
+    related: { destinations: ["siargao", "el-nido", "boracay", "bohol"] },
+  },
+
+  /* ------------------------------------------------------------------ */
+  "money-and-currency-in-the-philippines": {
+    body: `The currency is the Philippine peso (PHP, written ₱). Cards work in hotels, malls and many restaurants, but cash is still essential on the islands. Here is how to handle money without surprises.
+
+## Cash and ATMs
+
+ATMs are easy to find in cities and larger towns, and most accept foreign cards. Local banks usually charge a fee per withdrawal on foreign cards (often around ₱250, on top of your own bank's charges), and withdrawal limits per transaction are fairly low. Take out larger amounts less often to reduce fees.
+
+On small islands and remote beaches, ATMs may be few, out of cash or offline. Before heading somewhere remote, withdraw what you need in the last big town.
+
+## Cards
+
+Visa and Mastercard are accepted at most hotels, larger restaurants, malls and airlines. Small restaurants, markets, tricycles and boat crews usually want cash. Some places add a surcharge for card payments. Tell your bank you are travelling and carry two cards in case one is blocked.
+
+## Exchanging money
+
+Bring a few clean, undamaged euro or US dollar notes as a backup. Licensed money changers in malls and city centres usually give better rates than airports and hotels. Count your money at the counter and keep the receipt.
+
+## Digital wallets
+
+GCash and Maya are widely used by Filipinos, including in small shops, but setting them up usually requires a local number and verification. Most visitors manage with cash and cards.
+
+## Tipping
+
+Tipping is appreciated but not compulsory. Many restaurants add a 10% service charge; if they do not, leaving around 10% is generous. For guides, drivers and boat crews, a tip at the end of a good day is welcome. We can suggest amounts before you travel.
+
+## Small notes matter
+
+Keep small notes (₱20, ₱50, ₱100) for tricycles, snacks, fees and tips. Large notes can be hard to break in small places.
+
+## A simple plan
+
+Arrive with a card and a little cash in euros or dollars, withdraw pesos at the airport or in town, carry enough cash for each island, and pay hotels and big bills by card.`,
+    insiders: [
+      { type: "inside-tip", title: { en: "Withdraw before the islands" }, body: { en: "Before a remote island or a long boat day, take out cash in the last big town. Island ATMs run out at weekends." } },
+      { type: "skip-this", title: { en: "Skip the airport exchange" }, body: { en: "Change only what you need for the first day at the airport. Malls and city money changers usually give better rates." } },
+    ],
+    faqs: [
+      { q: { en: "Should I bring cash to the Philippines?" }, a: { en: "Bring a card and a small amount of euros or dollars as backup. Withdraw pesos locally and keep cash for small islands." } },
+      { q: { en: "Can I use my card in the Philippines?" }, a: { en: "Yes in hotels, malls and larger restaurants. Small places, markets and transport usually need cash." } },
+      { q: { en: "Is tipping expected?" }, a: { en: "It is appreciated, not required. Many restaurants add a service charge; for guides and boat crews, a tip after a good day is welcome." } },
+    ],
+    related: { destinations: ["manila", "el-nido", "siargao"] },
+  },
+
+  /* ------------------------------------------------------------------ */
+  "is-the-philippines-safe": {
+    body: `For most visitors, the Philippines is a safe and very friendly country to travel in. The main tourist islands (Palawan, Bohol, Cebu, Boracay, Siargao, Siquijor) see millions of visitors each year without problems. As anywhere, a few simple precautions make a big difference.
+
+## Official advice worth reading
+
+Before you book, read your own government's travel advice for the Philippines. Several governments advise against travel to parts of Mindanao, particularly the Sulu archipelago and some western and central areas. These are not on our itineraries. Popular destinations in northern Mindanao, such as Siargao and Camiguin, are generally treated differently, but always check the current advice.
+
+## In cities
+
+In Manila and Cebu, the main risks are petty theft and scams, as in any big city. Keep phones and wallets out of sight in crowds, use ride-hailing apps (Grab) or hotel cars rather than street taxis at night, and be wary of strangers who are suddenly very friendly and suggest a drink or a card game.
+
+## At sea
+
+Boat days are the highlight of most trips. Use reputable operators with life jackets for everyone, check the weather, and never insist on sailing when the crew or the Coast Guard says no. All our boats carry life jackets and experienced crews.
+
+## Nature
+
+- Typhoons: most common from July to November. Disruption is more likely than danger; we monitor the weather and adjust plans.
+- Earthquakes and volcanoes: the Philippines is on the Pacific Ring of Fire. Follow local instructions if an alert is raised.
+- Sun and heat: drink water, use shade and protect yourself from the sun.
+- The sea: currents can be strong; swim where locals swim and respect red flags.
+
+## Health
+
+Drink bottled or filtered water. Use mosquito repellent, as dengue is present. Hospitals in big cities are good; small islands have basic clinics. Check vaccinations with your doctor before travel.
+
+## How we look after you
+
+Every trip includes travel insurance with €2,000 cancellation cover, private transfers on arrival, and our team on WhatsApp 24/7 during your trip. If the weather or the situation changes, we change the plan.`,
+    insiders: [
+      { type: "inside-tip", title: { en: "Use Grab in the cities" }, body: { en: "In Manila and Cebu, ride-hailing with Grab is easy, priced upfront and safer than hailing a taxi at night." } },
+      { type: "local-favorite", title: { en: "Ask your boatman" }, body: { en: "Local crews know the sea better than any app. If they say it is too rough to cross, trust them." } },
+    ],
+    faqs: [
+      { q: { en: "Is the Philippines safe for tourists?" }, a: { en: "Yes, the main tourist islands are generally safe and very welcoming. Read your government's travel advice and take normal city precautions." } },
+      { q: { en: "Is Mindanao safe?" }, a: { en: "Parts of Mindanao are covered by government travel warnings, and they are not on our itineraries. Siargao and Camiguin are popular and generally treated differently, but check the current advice." } },
+      { q: { en: "What happens if a typhoon hits during my trip?" }, a: { en: "We monitor the weather, rebook flights and ferries, and move you somewhere safe and comfortable. Your trip includes travel insurance." } },
+    ],
+    related: { destinations: ["manila", "siargao", "camiguin"] },
+  },
+
+  /* ------------------------------------------------------------------ */
+  "philippines-packing-guide": {
+    body: `Packing for the Philippines is mostly about the sun, the sea and small planes. Pack light, in a soft bag, and bring a few things that are hard to find on the islands.
+
+## Clothes
+
+- Light, breathable clothes in cotton or linen. It is warm all year.
+- Swimwear, plus a rash guard for long boat and snorkelling days.
+- A light layer for air-conditioned planes, buses and restaurants, and for the mountains in Banaue, Sagada or Tagaytay, where evenings are cool.
+- Something modest that covers shoulders and knees for churches and mosques.
+- A light rain jacket in the wet season (June to October).
+
+## Shoes
+
+Sandals, water shoes for rocky beaches and boat landings, and light trainers or walking shoes for waterfalls and hikes. Leave heavy boots at home unless you plan serious trekking.
+
+## Sea and sun
+
+- Reef-safe sunscreen, a hat and sunglasses. The sun is strong, even when it is cloudy.
+- A dry bag for phones and cameras on boat days.
+- A snorkel mask if you prefer your own; masks are also available locally.
+- After-sun or aloe vera.
+
+## Health
+
+Mosquito repellent, a basic first-aid kit, motion-sickness tablets for boats, your usual medicines with prescriptions, and rehydration salts. Hand sanitiser and tissues are useful in small places.
+
+## Electronics
+
+The Philippines uses 220V at 60Hz with plug types A, B and C. A universal adapter covers all of them. Bring a power bank for long travel days, a waterproof phone pouch, and download offline maps before you go.
+
+## Documents
+
+Passport valid for at least six months, the eTravel registration completed before arrival, printed or offline copies of bookings, and your travel insurance details (included with every trip we plan).
+
+## Bag and weight
+
+Small planes have lower baggage allowances, so a soft duffel or backpack is easier than a large hard suitcase. If you bring dive or surf equipment, tell us before we book flights.
+
+## What to leave at home
+
+Heavy jeans, lots of shoes, expensive jewellery and anything you would hate to get wet. Laundry services are cheap and fast in most towns, so you can pack for a week even on a three-week trip.`,
+    insiders: [
+      { type: "inside-tip", title: { en: "Pack for a week" }, body: { en: "Laundry is quick and cheap almost everywhere. A week of clothes is enough for any trip length." } },
+      { type: "our-favorite", title: { en: "The one thing guests forget" }, body: { en: "Water shoes. Boat landings, rocky beaches and waterfalls are far more comfortable with them." } },
+    ],
+    faqs: [
+      { q: { en: "What should I wear in the Philippines?" }, a: { en: "Light, breathable clothes, swimwear and a rash guard, plus a light layer for air conditioning and something modest for churches." } },
+      { q: { en: "What plug adapter do I need?" }, a: { en: "The Philippines uses types A, B and C at 220V and 60Hz. A universal adapter is the easiest option." } },
+      { q: { en: "Can I bring a big suitcase?" }, a: { en: "You can, but small planes have lower limits and boats are easier with soft bags. Pack light if you can." } },
+    ],
+    related: { destinations: ["el-nido", "siargao", "banaue"] },
+  },
+
+  /* ------------------------------------------------------------------ */
+  "philippine-customs-and-etiquette": {
+    body: `Filipinos are famously warm, generous and welcoming. You do not need to learn many rules to be a good guest, but a few small gestures go a long way and will often earn you a big smile.
+
+## Respect and politeness
+
+- Po and opo: adding "po" to a sentence, and saying "opo" for yes, shows respect, especially to older people. Visitors who try it are always appreciated.
+- Kuya and ate: "older brother" and "older sister" are polite, friendly ways to address drivers, staff and vendors.
+- Mano: younger Filipinos greet elders by taking their hand and touching it to their forehead. You will see it at family gatherings; you are not expected to do it, but it is lovely to understand.
+
+## Saving face
+
+Open anger or raising your voice in public is considered embarrassing for everyone. If something goes wrong, stay calm and friendly; problems get solved faster that way. Filipinos may also avoid saying a direct "no", so listen for a polite "maybe" or "we will try".
+
+## Time
+
+"Filipino time" is a gentle joke about relaxed schedules. Social events often start late; flights and boats, however, leave on time, so be punctual for transport.
+
+## Food and eating
+
+Meals are shared and generous. You may be offered food again and again; it is fine to accept a little. Eating with your hands (kamayan) is traditional, especially at a boodle fight, a feast served on banana leaves. Wash your hands, use your right hand and enjoy it. Rice comes with almost everything.
+
+## Churches and religion
+
+The Philippines is mostly Catholic, with a Muslim community mainly in Mindanao. In churches, cover shoulders and knees and stay quiet during Mass. Fiestas are joyful, open celebrations and visitors are usually welcome.
+
+## Homes
+
+Take your shoes off when entering someone's home. Bringing a small gift such as pastries or fruit is a kind gesture.
+
+## Gestures
+
+Filipinos often point with their lips and raise their eyebrows to say yes. "Psst" is a normal way to get someone's attention. Beckoning with your palm up can feel rude; use your palm facing down instead.
+
+## Tipping and bargaining
+
+Tipping is appreciated but not expected. Gentle bargaining is fine at markets, but keep it light and friendly; the difference often matters more to the seller than to you.
+
+## A few useful words
+
+Salamat (thank you), salamat po (thank you, respectfully), magandang umaga (good morning), ingat (take care) and masarap (delicious). Most Filipinos speak English, but a few words of Tagalog or the local language will always be welcomed.`,
+    insiders: [
+      { type: "local-favorite", title: { en: "Join a boodle fight" }, body: { en: "A shared feast on banana leaves, eaten with your hands, is the most Filipino meal you can have. Ask us to arrange one on a boat day." } },
+      { type: "inside-tip", title: { en: "Add po" }, body: { en: "Saying \"salamat po\" instead of \"thank you\" costs nothing and makes people smile everywhere." } },
+    ],
+    faqs: [
+      { q: { en: "Do people speak English in the Philippines?" }, a: { en: "Yes, English is an official language and widely spoken, especially in tourist areas." } },
+      { q: { en: "How should I dress when visiting churches?" }, a: { en: "Cover your shoulders and knees, remove your hat and stay quiet during services." } },
+      { q: { en: "Is it rude to eat with your hands?" }, a: { en: "No. Kamayan, eating with your hands, is traditional. Use your right hand and wash before eating." } },
+    ],
+    related: { destinations: ["manila", "cebu", "bohol"], journeys: ["cebu-islands-and-culture", "rice-terraces-and-islands"] },
+  },
+};
 
 /* ------------------------------------------------------------------ */
 /* Bodies                                                              */
@@ -933,7 +1494,7 @@ export const guides: GuideArticle[] = [
   {
     slug: "best-philippines-itineraries",
     group: "planning",
-    status: "planned",
+    status: "published",
     updated: UPDATED,
     title: {
       en: "Best Philippines Itineraries",
@@ -954,7 +1515,10 @@ export const guides: GuideArticle[] = [
       brief: "Overhead: a paper map of the Philippines with a pencil route from Manila to Palawan to Siargao, coffee cup and boarding pass at the edge.",
       tone: "sand",
     },
-    body: { en: "" },
+    body: { en: moreGuides["best-philippines-itineraries"].body },
+    insiders: moreGuides["best-philippines-itineraries"].insiders,
+    faqs: moreGuides["best-philippines-itineraries"].faqs,
+    related: moreGuides["best-philippines-itineraries"].related,
   },
 
   /* ----------------------------- ISLANDS ---------------------------- */
@@ -1101,7 +1665,7 @@ export const guides: GuideArticle[] = [
   {
     slug: "philippines-honeymoon-guide",
     group: "travel-styles",
-    status: "planned",
+    status: "published",
     updated: UPDATED,
     title: {
       en: "Philippines Honeymoon Guide",
@@ -1122,12 +1686,15 @@ export const guides: GuideArticle[] = [
       brief: "Two kayaks side by side in an empty lagoon at 7am, cliffs reflected in still water. Intimate without posing.",
       tone: "lagoon",
     },
-    body: { en: "" },
+    body: { en: moreGuides["philippines-honeymoon-guide"].body },
+    insiders: moreGuides["philippines-honeymoon-guide"].insiders,
+    faqs: moreGuides["philippines-honeymoon-guide"].faqs,
+    related: moreGuides["philippines-honeymoon-guide"].related,
   },
   {
     slug: "philippines-with-children",
     group: "travel-styles",
-    status: "planned",
+    status: "published",
     updated: UPDATED,
     title: {
       en: "The Philippines With Children",
@@ -1148,12 +1715,15 @@ export const guides: GuideArticle[] = [
       brief: "Two children in rash guards snorkelling in knee-deep water by a white beach, parent nearby. Bright, safe, unposed.",
       tone: "reef",
     },
-    body: { en: "" },
+    body: { en: moreGuides["philippines-with-children"].body },
+    insiders: moreGuides["philippines-with-children"].insiders,
+    faqs: moreGuides["philippines-with-children"].faqs,
+    related: moreGuides["philippines-with-children"].related,
   },
   {
     slug: "luxury-philippines",
     group: "travel-styles",
-    status: "planned",
+    status: "published",
     updated: UPDATED,
     title: {
       en: "Luxury Travel in the Philippines",
@@ -1174,7 +1744,10 @@ export const guides: GuideArticle[] = [
       brief: "A timber villa deck over calm water at golden hour, two loungers, no logos or identifiable property. Quiet luxury.",
       tone: "dusk",
     },
-    body: { en: "" },
+    body: { en: moreGuides["luxury-philippines"].body },
+    insiders: moreGuides["luxury-philippines"].insiders,
+    faqs: moreGuides["luxury-philippines"].faqs,
+    related: moreGuides["luxury-philippines"].related,
   },
   {
     slug: "diving-in-the-philippines",
@@ -1324,7 +1897,7 @@ export const guides: GuideArticle[] = [
   {
     slug: "domestic-flights-in-the-philippines",
     group: "practical",
-    status: "planned",
+    status: "published",
     updated: UPDATED,
     title: {
       en: "Domestic Flights in the Philippines",
@@ -1345,12 +1918,15 @@ export const guides: GuideArticle[] = [
       brief: "A small turboprop on a palm-fringed island runway, passengers walking across the apron. No airline livery visible.",
       tone: "sand",
     },
-    body: { en: "" },
+    body: { en: moreGuides["domestic-flights-in-the-philippines"].body },
+    insiders: moreGuides["domestic-flights-in-the-philippines"].insiders,
+    faqs: moreGuides["domestic-flights-in-the-philippines"].faqs,
+    related: moreGuides["domestic-flights-in-the-philippines"].related,
   },
   {
     slug: "ferries-in-the-philippines",
     group: "practical",
-    status: "planned",
+    status: "published",
     updated: UPDATED,
     title: {
       en: "Ferries in the Philippines",
@@ -1371,12 +1947,15 @@ export const guides: GuideArticle[] = [
       brief: "From the open rear deck of a fast craft: wake, a green island on the horizon, a passenger's arm on the rail.",
       tone: "stone",
     },
-    body: { en: "" },
+    body: { en: moreGuides["ferries-in-the-philippines"].body },
+    insiders: moreGuides["ferries-in-the-philippines"].insiders,
+    faqs: moreGuides["ferries-in-the-philippines"].faqs,
+    related: moreGuides["ferries-in-the-philippines"].related,
   },
   {
     slug: "sim-cards-in-the-philippines",
     group: "practical",
-    status: "planned",
+    status: "published",
     updated: UPDATED,
     title: {
       en: "SIM Cards and eSIMs in the Philippines",
@@ -1397,12 +1976,15 @@ export const guides: GuideArticle[] = [
       brief: "Close-up of a phone with an offline map open, resting on a woven bag on a beach bench. No brand logos.",
       tone: "sand",
     },
-    body: { en: "" },
+    body: { en: moreGuides["sim-cards-in-the-philippines"].body },
+    insiders: moreGuides["sim-cards-in-the-philippines"].insiders,
+    faqs: moreGuides["sim-cards-in-the-philippines"].faqs,
+    related: moreGuides["sim-cards-in-the-philippines"].related,
   },
   {
     slug: "internet-in-the-philippines",
     group: "practical",
-    status: "planned",
+    status: "published",
     updated: UPDATED,
     title: {
       en: "Internet and Wi-Fi in the Philippines",
@@ -1423,12 +2005,15 @@ export const guides: GuideArticle[] = [
       brief: "A laptop on a weathered wooden table under a nipa roof, sea beyond. Remote work, honestly framed.",
       tone: "jungle",
     },
-    body: { en: "" },
+    body: { en: moreGuides["internet-in-the-philippines"].body },
+    insiders: moreGuides["internet-in-the-philippines"].insiders,
+    faqs: moreGuides["internet-in-the-philippines"].faqs,
+    related: moreGuides["internet-in-the-philippines"].related,
   },
   {
     slug: "money-and-currency-in-the-philippines",
     group: "practical",
-    status: "planned",
+    status: "published",
     updated: UPDATED,
     title: {
       en: "Money and Currency in the Philippines",
@@ -1449,7 +2034,10 @@ export const guides: GuideArticle[] = [
       brief: "A market stall counter: a few peso notes and coins next to ripe mangoes and a handwritten price card.",
       tone: "sand",
     },
-    body: { en: "" },
+    body: { en: moreGuides["money-and-currency-in-the-philippines"].body },
+    insiders: moreGuides["money-and-currency-in-the-philippines"].insiders,
+    faqs: moreGuides["money-and-currency-in-the-philippines"].faqs,
+    related: moreGuides["money-and-currency-in-the-philippines"].related,
   },
   {
     slug: "philippines-visa-information",
@@ -1522,7 +2110,7 @@ export const guides: GuideArticle[] = [
   {
     slug: "is-the-philippines-safe",
     group: "practical",
-    status: "planned",
+    status: "published",
     updated: UPDATED,
     title: {
       en: "Is the Philippines Safe? A Practical Guide",
@@ -1543,12 +2131,15 @@ export const guides: GuideArticle[] = [
       brief: "Orange life jackets hanging neatly along the frame of a bangka, sea and island behind. Reassuring, practical.",
       tone: "lagoon",
     },
-    body: { en: "" },
+    body: { en: moreGuides["is-the-philippines-safe"].body },
+    insiders: moreGuides["is-the-philippines-safe"].insiders,
+    faqs: moreGuides["is-the-philippines-safe"].faqs,
+    related: moreGuides["is-the-philippines-safe"].related,
   },
   {
     slug: "philippines-packing-guide",
     group: "practical",
-    status: "planned",
+    status: "published",
     updated: UPDATED,
     title: {
       en: "What to Pack for the Philippines",
@@ -1569,14 +2160,17 @@ export const guides: GuideArticle[] = [
       brief: "Overhead flat lay on linen: soft duffel, rash guard, hat, dry bag, sandals, reef-safe sunscreen without visible brands.",
       tone: "sand",
     },
-    body: { en: "" },
+    body: { en: moreGuides["philippines-packing-guide"].body },
+    insiders: moreGuides["philippines-packing-guide"].insiders,
+    faqs: moreGuides["philippines-packing-guide"].faqs,
+    related: moreGuides["philippines-packing-guide"].related,
   },
 
   /* ----------------------------- CULTURE ---------------------------- */
   {
     slug: "philippine-customs-and-etiquette",
     group: "culture",
-    status: "planned",
+    status: "published",
     updated: UPDATED,
     title: {
       en: "Local Customs and Etiquette in the Philippines",
@@ -1597,7 +2191,10 @@ export const guides: GuideArticle[] = [
       brief: "A boodle-style meal on banana leaves, hands reaching in, laughter, rice mounds and grilled fish. Faces partially out of frame.",
       tone: "rice",
     },
-    body: { en: "" },
+    body: { en: moreGuides["philippine-customs-and-etiquette"].body },
+    insiders: moreGuides["philippine-customs-and-etiquette"].insiders,
+    faqs: moreGuides["philippine-customs-and-etiquette"].faqs,
+    related: moreGuides["philippine-customs-and-etiquette"].related,
   },
   {
     slug: "philippine-food-guide",
