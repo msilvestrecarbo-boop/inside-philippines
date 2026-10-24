@@ -102,6 +102,14 @@ export default async function JourneyPage({ params }: PageProps<"/[lang]/journey
         </aside>
       </section>
 
+      {/* INCLUDED / NOT INCLUDED */}
+      <section className="container-x pb-20 md:pb-28" aria-label={`${t.included} · ${t.notIncluded}`}>
+        <div className="grid gap-10 rounded-2xl border border-line bg-shell p-6 md:grid-cols-2 md:p-10">
+          <Checklist title={t.included} items={tr(j.included, locale)} mark="✓" markClass="text-rice" />
+          <Checklist title={t.notIncluded} items={tr(j.notIncluded, locale)} mark="✕" markClass="text-clay-dark" />
+        </div>
+      </section>
+
       {/* ROUTE + LOGISTICS */}
       <section className="bg-shell py-20 md:py-28" aria-labelledby="route">
         <div className="container-x grid gap-14 lg:grid-cols-12">
@@ -153,14 +161,10 @@ export default async function JourneyPage({ params }: PageProps<"/[lang]/journey
 
       {/* HOTELS / EXPERIENCES / INCLUDED */}
       <section className="bg-lagoon py-20 text-white md:py-28">
-        <div className="container-x grid gap-14 md:grid-cols-2 lg:grid-cols-4">
+        <div className="container-x grid gap-14 md:grid-cols-3">
           <Block title={t.hotels}><p className="text-white/80">{t.hotelsNote}</p></Block>
           <Block title={t.experiences}><List items={tr(j.experiences, locale)} /></Block>
-          <Block title={t.included}><List items={tr(j.included, locale)} /></Block>
-          <div className="space-y-12">
-            <Block title={t.notIncluded}><List items={tr(j.notIncluded, locale)} /></Block>
-            <Block title={t.upgrades}><List items={tr(j.upgrades, locale)} /></Block>
-          </div>
+          <Block title={t.upgrades}><List items={tr(j.upgrades, locale)} /></Block>
         </div>
       </section>
 
@@ -214,5 +218,21 @@ function List({ items }: { items: string[] }) {
         <li key={i} className="border-t border-white/15 pt-2.5 text-white/85">{it}</li>
       ))}
     </ul>
+  );
+}
+
+function Checklist({ title, items, mark, markClass }: { title: string; items: string[]; mark: string; markClass: string }) {
+  return (
+    <div>
+      <h2 className="text-[length:var(--text-h3)]">{title}</h2>
+      <ul className="mt-6 space-y-3">
+        {items.map((it, i) => (
+          <li key={i} className="flex gap-3 leading-relaxed">
+            <span aria-hidden className={`mt-0.5 shrink-0 font-semibold ${markClass}`}>{mark}</span>
+            <span>{it}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
