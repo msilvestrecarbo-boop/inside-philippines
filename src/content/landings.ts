@@ -325,7 +325,7 @@ export const landings: Landing[] = [
         fr: "Lune de miel Philippines sur mesure | Inside Philippines",
         es: "Luna de miel en Filipinas a medida | Inside Philippines",
         ru: "Медовый месяц на Филиппинах | Inside Philippines",
-        ar: "رحلات شهر العسل الفلبين | Inside Philippines",
+        ar: "رحلات شهر العسل في الفلبين | Inside Philippines",
       },
       description: {
         en: "A tailor-made Philippines honeymoon: two islands, private boats and villas, a sandbar dinner and every transfer arranged. Planned by a team in the country.",
