@@ -29,7 +29,8 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/journeys/[
   return buildMetadata({
     locale,
     path: `/journeys/${slug}`,
-    title: `${tr(j.title, locale)} — ${j.days} ${dict.common.days}: ${j.route.filter((r) => r !== "manila").map(placeName).join(", ")}`,
+    // Search phrase first ("Viaje a Filipinas 15 días"), then the places, then the trip's name.
+    title: `${dict.journey.seoTitle.replace("{days}", String(j.days))}: ${j.route.filter((r) => r !== "manila").map((r) => placeName(r, locale)).join(", ")} — ${tr(j.title, locale)}`,
     description: tr(j.short, locale),
     translated: translatedLocales(j.intro, j.title),
   });
@@ -45,7 +46,7 @@ export default async function JourneyPage({ params }: PageProps<"/[lang]/journey
   const title = tr(j.title, locale);
   const path = href(locale, `/journeys/${j.slug}`);
   const fallback = !translatedLocales(j.intro).includes(locale);
-  const stops = j.route.map((s) => ({ name: placeName(s), coords: placeCoords(s) })).filter((s): s is { name: string; coords: [number, number] } => !!s.coords);
+  const stops = j.route.map((s) => ({ name: placeName(s, locale), coords: placeCoords(s) })).filter((s): s is { name: string; coords: [number, number] } => !!s.coords);
   const q = `?journey=${j.slug}`;
   const modeLabel = { flight: t.flight, ferry: t.ferry, boat: t.boat, road: t.road };
   const tiers = (Object.keys(j.fromPriceEUR) as TierId[]).filter((k) => j.fromPriceEUR[k]);
@@ -60,7 +61,7 @@ export default async function JourneyPage({ params }: PageProps<"/[lang]/journey
       <TrackView event="journey_view" params={{ journey: j.slug }} />
       <JsonLd
         data={[
-          tripSchema({ name: title, description: tr(j.short, locale), path, days: j.days, stops: j.route.map(placeName), priceEUR: j.priceIsPlaceholder ? undefined : lowestPrice(j) }),
+          tripSchema({ name: title, description: tr(j.short, locale), path, days: j.days, stops: j.route.map((r) => placeName(r, locale)), priceEUR: j.priceIsPlaceholder ? undefined : lowestPrice(j) }),
           breadcrumbSchema([
             { name: c.breadcrumbHome, path: href(locale) },
             { name: dict.nav.journeys, path: href(locale, "/journeys") },
@@ -77,7 +78,7 @@ export default async function JourneyPage({ params }: PageProps<"/[lang]/journey
         <div className="container-x pb-16 md:pb-24">
           <Breadcrumbs light items={[{ name: c.breadcrumbHome, href: `/${locale}` }, { name: dict.nav.journeys, href: `/${locale}/journeys` }, { name: title, href: path }]} />
           <p className="mt-8 font-display text-4xl md:text-5xl">{j.days} {c.days.toUpperCase()}</p>
-          <p className="kicker mt-3 text-white/85" dir="ltr">{j.route.filter((r) => r !== "manila").map(placeName).join(" • ")}</p>
+          <p className="kicker mt-3 text-white/85" dir="ltr">{j.route.filter((r) => r !== "manila").map((r) => placeName(r, locale)).join(" • ")}</p>
           <h1 className="mt-5 max-w-4xl text-[length:var(--text-h1)]">{title}</h1>
           <p className="mt-5 max-w-2xl text-lg text-white/85">{tr(j.short, locale)}</p>
           <div className="mt-9">{customize("journey_hero")}</div>

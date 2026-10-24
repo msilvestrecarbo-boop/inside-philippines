@@ -1,3 +1,9 @@
+/** Translated names for the few stops that are words, not place names. */
+export const extraPlaceNames: Record<string, Record<string, string>> = {
+  "private-island": { fr: "Île privée", es: "Isla privada", ru: "Частный остров", ar: "جزيرة خاصة" },
+  "siargao-islands": { fr: "Îles de Siargao", es: "Islas de Siargao", ru: "Острова Сиаргао", ar: "جزر سيارغاو" },
+};
+
 /** Display names for route stops that are not full destination pages. */
 export const extraPlaces: Record<string, string> = {
   "port-barton": "Port Barton",

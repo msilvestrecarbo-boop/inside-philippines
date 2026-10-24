@@ -1,0 +1,100 @@
+import type { JourneyTranslation } from "./types";
+
+const t: Record<string, JourneyTranslation> = {
+  "island-classics": {
+    intro:
+      "Es la ruta que más recomendamos a quien viaja a Filipinas por primera vez, porque muestra tres caras muy distintas del país sin obligarte a vivir en los aviones. El Nido es caliza y lagunas, y se disfruta mejor desde un barco antes de las nueve de la mañana. Bohol son ríos, las Colinas de Chocolate y las playas tranquilas de Panglao, con un ritmo suave que te recarga después de los días de barco. Siargao es el interior de cocoteros, las lagunas del sur entre islas y un pueblo surfero que ha crecido sin perder su espíritu relajado.\n\nEs honesta con la logística: hay dos días reales de traslado y los dos pasan por Manila o Cebú, porque así funcionan los vuelos domésticos en Filipinas. Los organizamos para que no tengas que levantarte a las tres de la mañana. Tómalo como punto de partida. Cambia Bohol por Siquijor, añade Coron, quita una noche a Siargao y dásela a El Nido: rehacemos la ruta en torno a lo que quieras.",
+    itinerary: [
+      ["Llegada a Manila, noche cerca del aeropuerto", "La mayoría de los vuelos de largo recorrido desde Europa llegan a Manila. Te recibimos, te llevamos a un hotel tranquilo cerca del aeropuerto y te dejamos descansar. Si tu vuelo llega pronto, podemos conectarte con El Nido el mismo día, pero después de más de doce horas de vuelo casi todo el mundo agradece la noche."],
+      ["Vuelo a El Nido", "Un vuelo corto en un pequeño turbohélice aterriza en el aeródromo de El Nido, a unos 20 minutos del pueblo. Las plazas son limitadas y el equipaje permitido es estricto, así que lo reservamos con antelación. La tarde es tuya: un baño en Corong Corong y la puesta de sol sobre la bahía de Bacuit."],
+      ["Lagunas, playas y un día sin barco", "Empezamos por las lagunas en un barco privado o de grupo reducido, según tu estilo de viaje, saliendo temprano para entrar en la Big y la Small Lagoon antes que la flota principal. Al día siguiente, las islas más tranquilas de la bahía. El quinto día es libre a propósito: la playa de Nacpan en triciclo, un masaje o no hacer nada."],
+      ["Día de traslado: de El Nido a Bohol por Manila", "No hay conexión directa entre Palawan y Bohol, así que es un día con dos vuelos y escala en Manila (a veces en Cebú, según los horarios de la temporada). Dejamos un margen razonable entre vuelos y alguien te espera en el aeropuerto de Panglao. Llegarás a media tarde."],
+      ["Bohol: colinas, río y un ritmo más lento", "Visita las Colinas de Chocolate temprano: la luz es más suave y las furgonetas de excursiones llegan más tarde. Añade el santuario de tarseros, un tramo del río Loboc y un almuerzo en el campo. Guarda un día para la playa y, si el mar acompaña, una salida temprana en barco a Balicasag para hacer snorkel."],
+      ["Día de traslado: de Bohol a Siargao por Cebú", "Un ferry rápido de Tagbilaran a Cebú tarda unas dos horas y después hay un vuelo de una hora a Siargao. Es un día completo, pero sencillo. Tu conductor te espera en el aeropuerto de Sayak para el trayecto de 45 minutos a General Luna."],
+      ["Siargao: islas, lagunas y una primera clase de surf", "Un día recorriendo las islas Naked, Daku y Guyam; otro hacia el norte, a la laguna de Sugba, en barco desde Del Carmen; y otro para una clase de surf de iniciación en una ola suave de arrecife, las piscinas naturales de Magpupungko con la marea baja o un paseo en moto entre palmeras. Las noches en General Luna son tranquilas y se come muy bien."],
+      ["Vuelo de salida por Manila o Cebú", "Siargao no tiene vuelos internacionales, así que conectas en Manila o Cebú con tu vuelo de vuelta. Elegimos el vuelo doméstico con un margen cómodo, porque los vuelos entre islas a veces se retrasan."],
+    ],
+    experiences: ["Barco a primera hora a la Big y la Small Lagoon de El Nido", "Excursión por las islas de la bahía de Bacuit por una ruta más tranquila", "Las Colinas de Chocolate al amanecer y el santuario de tarseros", "El río Loboc en paddle surf o en barca tradicional", "Snorkel en Balicasag, si el tiempo lo permite", "Excursión por las islas de Siargao: Naked, Daku y Guyam", "Excursión de un día a la laguna de Sugba desde Del Carmen", "Clase de surf de iniciación con un profesor local"],
+    upgrades: ["Barco privado todos los días en El Nido, con almuerzo en una playa tranquila", "Añadir tres noches en Coron en ferry rápido (solo en los meses más secos)", "Cambiar Bohol por Siquijor y unos días más lentos", "Clases de surf privadas cada mañana en Siargao", "Última noche en un hotel de Manila con salida tardía antes del vuelo"],
+    faqs: [
+      ["¿Puedo cambiar las islas?", "Sí. Es un punto de partida. Los cambios más habituales son cambiar Bohol por Siquijor, añadir Coron o quitar una parada para ir más despacio. Te diremos con sinceridad cuánto tiempo de traslado supone cada cambio."],
+      ["¿Cuál es el mejor mes?", "De marzo a mayo tienes más probabilidades de buen tiempo en El Nido y Siargao a la vez. De diciembre a febrero también es buena época para Palawan y Bohol, aunque en Siargao puede llover más."],
+      ["¿Es un viaje adecuado con niños?", "Muy adecuado a partir de unos seis años. Los días de barco se pueden acortar, Bohol es tranquilo y podemos elegir habitaciones familiares y playas más calmadas. Con niños muy pequeños solemos quitar una parada."],
+      ["¿Cómo funcionan los vuelos domésticos?", "La mayoría de las rutas entre islas conectan por Manila o Cebú, así que dos de tus días incluyen una escala. Lo reservamos todo, vigilamos los horarios y te cambiamos la reserva si un vuelo se modifica."],
+    ],
+    legNotes: { 0: "Avioneta con límite de equipaje estricto. Alternativa: volar a Puerto Princesa y conducir 5–6 h hacia el norte.", 6: "O por Cebú, según tu conexión internacional." },
+  },
+
+  "palawan-deep-dive": {
+    intro:
+      "Palawan recompensa a quien se queda un tiempo, y esta ruta está pensada para eso. Empiezas en Coron, donde lo mejor de la isla está bajo el agua: pecios japoneses de 1944 para los buceadores, y jardines de coral y lagos de agua dulce entre la caliza para todos los demás. Un ferry rápido te lleva al sur, a El Nido, y después una carretera entre campos y pueblos de pescadores te deja en Port Barton, un pueblo de bahía sin aeropuerto, sin grandes resorts y con muy poco que hacer salvo nadar, comer pescado a la brasa y salir en barca a un banco de arena.\n\nEl precio a pagar es el tiempo. El ferry Coron–El Nido funciona sobre todo en los meses secos y se cancela cuando hay mala mar, así que siempre tenemos un vuelo de reserva. Como todos nuestros viajes, es un punto de partida: los buceadores suelen añadir una noche en Coron, los viajeros más tranquilos cambian Port Barton por la larga playa de San Vicente y algunos se saltan Coron. Cuéntanos y lo adaptamos.",
+    itinerary: [
+      ["Llegada a Manila", "Te recibimos a la salida de tu vuelo internacional y te llevamos a un hotel cerca de la terminal doméstica. Los vuelos a Coron salen temprano, así que esta noche aquí hace que el segundo día sea tranquilo."],
+      ["Vuelo a Busuanga y traslado a Coron", "Un vuelo de una hora a Busuanga y unos 40 minutos por carretera hasta el pueblo de Coron. Sube al monte Tapyas para ver la puesta de sol, son unos 700 escalones, o guarda las piernas para mañana."],
+      ["Lagos, arrecifes y pecios", "Sal temprano hacia los lagos Kayangan y Barracuda, antes que los barcos de excursión, con paradas de snorkel en los arrecifes de la isla de Coron. El cuarto día es para los pecios: los buceadores titulados hacen dos o tres inmersiones en los barcos de suministro japoneses hundidos en 1944, y quien hace snorkel visita los poco profundos Skeleton Wreck y Lusong Gunboat."],
+      ["Por mar a El Nido", "El ferry rápido tarda unas cuatro horas en mar abierto y te deja en El Nido por la tarde. Funciona sobre todo de noviembre a mayo y se cancela con mal tiempo; si pasa, te pasamos a un vuelo."],
+      ["La bahía de El Nido y el norte más tranquilo", "Un día de barco temprano a las lagunas, otro a las islas más alejadas y otro en tierra: la playa de Nacpan, kayak por la costa o una tarde tranquila en Las Cabanas. A estas alturas ya tendrás opinión sobre el mejor pescado a la brasa del pueblo."],
+      ["Hacia el sur por carretera hasta Port Barton", "Unas cuatro horas por carretera entre arrozales y pueblos, con un último tramo que baja serpenteando hasta la costa. Port Barton no tiene aeropuerto y hay pocos coches, y las excursiones en barco son pequeñas y sin prisas: bancos de arena, tortugas en el arrecife y almuerzo en una playa vacía. Es la parte del viaje que más se recuerda al volver a casa."],
+      ["Carretera a Puerto Princesa", "Unas tres horas por carretera hasta Puerto Princesa. Si quieres ver el río subterráneo, podemos pasar por Sabang y hacerlo de camino; el día es largo, pero merece la pena. Si no, una tarde tranquila y cena en la ciudad."],
+      ["Vuelo de regreso por Manila", "Un vuelo de 1 h 20 min a Manila conecta con tu vuelo internacional. Dejamos un margen amplio entre los dos."],
+    ],
+    experiences: ["Los lagos Kayangan y Barracuda en barco a primera hora", "Buceo en pecios (con titulación) o snorkel sobre pecios en la bahía de Coron", "Puesta de sol desde el monte Tapyas", "Lagunas e islas exteriores de El Nido en barco", "Kayak por la costa de El Nido", "Excursión por las islas de Port Barton: bancos de arena, arrecife y tortugas", "Opcional: río subterráneo de Puerto Princesa por Sabang"],
+    upgrades: ["Barco privado todos los días de barco", "Una noche más en Coron para un segundo día de buceo", "Permiso para el río subterráneo y traslado privado por Sabang", "Cambiar Port Barton por dos noches en la larga playa de San Vicente"],
+    faqs: [
+      ["¿Puedo cambiar la ruta?", "Sí. Mucha gente la hace al revés, llegando a Puerto Princesa y saliendo desde Coron. También puedes quitar Port Barton, añadir San Vicente o quedarte más tiempo en un sitio. Es un punto de partida."],
+      ["¿Y si se cancela el ferry?", "Pasa algunas veces cada temporada con mal tiempo. Seguimos la previsión con la naviera y, si hace falta, te cambiamos a un vuelo por Manila. Pierdes unas horas, no un día."],
+      ["¿Tengo que bucear?", "No. El día de los pecios funciona también como día de snorkel, y dos de los pecios de Coron son lo bastante poco profundos para verlos desde la superficie. Para bucear necesitas tu titulación y experiencia reciente."],
+      ["¿Es adecuado para niños?", "Sí, para niños que nadan con soltura a partir de unos ocho años. Los trayectos por carretera son largos para los más pequeños, así que algunas familias se saltan Port Barton o salen desde El Nido."],
+    ],
+    legNotes: { 2: "Funciona sobre todo de noviembre a mayo y depende del tiempo. Alternativa: vuelo por Manila." },
+  },
+
+  "the-slow-philippines": {
+    intro:
+      "La mayoría de los itinerarios por Filipinas se construyen en torno a cuánto puedes ver. Este se construye en torno a lo poco que necesitas moverte. Siquijor tiene cuatro días completos: suficiente para bañarte en las cascadas de Cambugahay antes que las excursiones, recorrer la carretera de la costa en una tarde, conocer a un curandero tradicional si te pica la curiosidad y después hacer muy poco. Luego viene Bohol, con sus ríos y colinas, y el viaje termina con cuatro días en Siargao, donde el ritmo lo marcan las mareas y el desayuno.\n\nLa logística sigue ahí. Llegar a Siquijor supone un vuelo a Dumaguete y un barco rápido, y llegar a Siargao desde Bohol supone un ferry a Cebú y un vuelo corto. Lo hemos reducido a tres días de traslado en dieciséis. Es un punto de partida, no un programa cerrado: añade Apo Island desde Dumaguete, cambia Bohol por Camiguin o dale a Siquijor una quinta noche.",
+    itinerary: [
+      ["Llegada a Manila", "Te recibimos en el aeropuerto y te llevamos a un hotel cercano. Descansa: mañana es un día de traslado en dos etapas."],
+      ["Vuelo a Dumaguete y barco a Siquijor", "Un vuelo de 1 h 20 min a Dumaguete, un trayecto corto hasta el puerto y un barco rápido de una hora a hora y media hasta Siquijor. Si hay tiempo, almuerzo en el paseo marítimo de Dumaguete antes de cruzar. Tu conductor te espera en el muelle."],
+      ["Siquijor a su ritmo", "Báñate temprano en las cascadas de Cambugahay y recorre en una tarde los unos 70 kilómetros de carretera costera, con paradas en el viejo árbol balete y la iglesia de piedra de coral de Lazi. Haz snorkel en Tubod, sal en barco a Apo Island si el mar lo permite y deja al menos un día sin planes. Siquijor es conocida por sus curanderos tradicionales; podemos organizar una visita respetuosa para quien tenga interés."],
+      ["Barco rápido a Bohol", "Un barco rápido directo va de Siquijor a Tagbilaran en unas dos horas, aunque los horarios son escasos y cambian, así que lo confirmamos cerca de la fecha. Si no funciona, vamos por Dumaguete. Tarde en Panglao."],
+      ["Bohol: río, colinas y campo", "Las Colinas de Chocolate a primera hora, el santuario de tarseros y una hora tranquila por el río Loboc. Dedica un día a la costa este, más tranquila, o a las playas de Anda, y otro a un almuerzo largo y un baño."],
+      ["De Bohol a Siargao por Cebú", "Unas dos horas en ferry rápido a Cebú, después un vuelo de una hora a Siargao y 45 minutos por carretera hasta General Luna. Un día largo, pero no volverás a moverte hasta que te vayas."],
+      ["Cuatro días tranquilos en Siargao", "Surf si te apetece, yoga si lo prefieres, las dos cosas si te animas. Un día de excursión por las islas Naked, Daku y Guyam, otro a la laguna de Sugba, y el resto que se organice solo en torno a la marea baja en Magpupungko y la cena en el pueblo."],
+      ["Vuelo de salida por Manila o Cebú", "Un vuelo doméstico conecta con tu salida internacional, con un margen cómodo."],
+    ],
+    experiences: ["Cascadas de Cambugahay antes de las excursiones", "La carretera costera de Siquijor en coche privado o en moto", "Snorkel en la costa oeste de Siquijor", "Excursión opcional en barco a Apo Island, si el mar lo permite", "Colinas de Chocolate, tarseros y el río Loboc", "Excursión por las islas de Siargao y la laguna de Sugba", "Clases de surf o yoga por la mañana en General Luna"],
+    upgrades: ["Estancia de bienestar en Siargao con tratamientos diarios", "Barco privado a Apo Island para hacer snorkel con tortugas", "Cambiar Bohol por los volcanes y las aguas termales de Camiguin", "Una quinta noche en Siquijor"],
+    faqs: [
+      ["¿Puedo cambiar las islas?", "Por supuesto. Camiguin, Dumaguete y Apo Island encajan con este ritmo. Lo que no recomendamos es añadir una cuarta parada: es el único cambio que deshace el sentido del viaje."],
+      ["¿Es Siquijor seguro? He leído sobre brujería.", "Sí. La fama de Siquijor por sus curanderos y su «misterio» es sobre todo un motivo de orgullo local y una buena historia. Es una de las islas más tranquilas y acogedoras con las que trabajamos."],
+      ["¿Es adecuado para niños?", "Mucho. El ritmo es suave, los traslados son cortos y las cascadas de Siquijor y los tarseros de Bohol encantan a los niños."],
+      ["¿Es fiable el barco Siquijor–Bohol?", "Funciona, pero no todos los días, y los horarios cambian. Lo confirmamos unos días antes y, si hace falta, vamos por Dumaguete, lo que añade un par de horas."],
+    ],
+    legNotes: { 2: "Horarios limitados y cambiantes; ruta alternativa por Dumaguete." },
+  },
+
+  "honeymoon-inside-philippines": {
+    intro:
+      "Una luna de miel no debería incluir colas para subir a un barco de excursión, así que esta no las tiene. En El Nido tienes tu propio barco y tus propios horarios: lagunas a las siete, almuerzo en una playa a la que no ha llegado nadie y vuelta para la siesta. Después, un trayecto corto en barco os lleva a un resort en una isla privada del norte de Palawan, donde hay más personal que huéspedes y la gran decisión del día es desde qué lado de la isla bañarse. Siargao llega al final porque es el contraste perfecto: algo más de vida, buena comida, una clase de surf de la que os reiréis y puestas de sol sobre las palmeras.\n\nHay un día largo de viaje, de la isla a Siargao por Manila, y lo hacemos lo más cómodo posible con traslados privados y una sala VIP entre vuelos. Como todos nuestros viajes, es un punto de partida. Algunas parejas cambian Siargao por un segundo resort en una isla; otras añaden Bohol o Coron. Lo diseñamos a vuestra medida.",
+    itinerary: [
+      ["Llegada a Manila", "Os recibimos en la puerta del avión o en la sala de llegadas, según vuestro estilo de viaje, y os llevamos a un hotel cerca del aeropuerto con una cena tardía si os apetece. Si vuestro vuelo llega por la mañana, podemos conectaros directamente con El Nido."],
+      ["Vuelo a El Nido", "Un vuelo corto aterriza en el aeródromo de El Nido; vuestro conductor os lleva a un hotel boutique en una zona tranquila de playa, lejos del pueblo. Tarde en el agua y puesta de sol con una copa."],
+      ["El Nido en vuestro propio barco", "Tres días, tres rutas distintas por la bahía de Bacuit, siempre en bangka privada. Salimos temprano para ver las lagunas vacías y después vamos a playas que las excursiones estándar no visitan. Una tarde es solo para un masaje en pareja."],
+      ["Tres noches en una isla privada", "Un traslado en barco de alrededor de una hora os lleva a un resort en una isla privada del norte de Palawan. Las villas están sobre el agua o sobre la playa, el arrecife está a unas brazadas de la puerta y los días se llenan solos con kayak, snorkel y almuerzos largos. Una noche os preparamos una mesa para dos en la arena."],
+      ["A Siargao por Manila", "El único día largo del viaje: barco a tierra firme, vuelo a Manila, sala VIP entre conexiones y vuelo a Siargao, con traslados privados en cada punto. Llegáis a tiempo para la cena."],
+      ["Siargao: lagunas, palmeras y una clase de surf", "Un barco privado a las islas Naked, Daku y Guyam, o hacia el norte a la laguna de Sugba. Una clase de surf suave para dos, un paseo en moto entre palmeras y cenas en General Luna, que tiene parte de la mejor comida informal de las islas."],
+      ["Vuelo de salida por Manila", "Un vuelo doméstico a Manila conecta con vuestro vuelo de vuelta, con un margen cómodo y acceso a sala VIP."],
+    ],
+    experiences: ["Días en bangka privada por la bahía de Bacuit", "Masaje en pareja en El Nido", "Cena privada en la arena", "Snorkel y kayak en el arrecife de la isla privada", "Excursión por las islas de Siargao en barco privado", "Una clase de surf para dos"],
+    upgrades: ["Vuelo chárter de El Nido a Siargao para ahorrar casi todo el día de traslado", "Villa sobre el agua o villa con piscina en la isla privada", "Cambiar Siargao por un segundo resort en una isla para una calma total", "Paseo en velero tradicional (paraw) al atardecer", "Fotógrafo profesional durante una mañana"],
+    faqs: [
+      ["¿Podemos cambiar las islas?", "Sí, y muchas parejas lo hacen. Los cambios más habituales son un segundo resort en lugar de Siargao, añadir Coron o más noches en la isla privada. Tomadlo como nuestro primer borrador."],
+      ["¿Cuál es el mejor mes?", "De febrero a abril el mar está en calma para los días de barco y el traslado a la isla. De junio a octubre es la época de lluvias en Palawan: sigue siendo posible, con menos huéspedes y mejores precios, pero es menos previsible."],
+      ["¿Cómo funcionan los vuelos?", "El Nido y Siargao no tienen conexión directa, así que el noveno día pasa por Manila. En Signature podemos presupuestar un chárter que lo reduce a un par de horas."],
+      ["¿Podéis ayudarnos con una pedida de mano o una sorpresa de aniversario?", "Sí. Contádnoslo en privado y lo organizamos con discreción con la tripulación del barco o el resort."],
+    ],
+    legNotes: { 1: "Depende de la isla; algunos resorts hacen el traslado por su propio aeródromo o desde un embarcadero en tierra firme." },
+  },
+};
+
+export default t;

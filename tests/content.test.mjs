@@ -1,5 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { readdirSync } from "node:fs";
 import { destinations } from "../src/content/destinations.ts";
 import { journeys } from "../src/content/journeys.ts";
 import { guides } from "../src/content/guides.ts";
@@ -67,4 +68,24 @@ test("landing pages don't collide with site sections and reference real content"
 
 test("journey prices stay flagged as placeholders until confirmed", () => {
   for (const j of journeys) assert.equal(j.priceIsPlaceholder, true, j.slug);
+});
+
+test("journey translations line up with the English source", async () => {
+  const dir = new URL("../src/content/translations/", import.meta.url);
+  const parts = readdirSync(dir).filter((f) => /^journeys\.(es|fr)\.part\d+\.ts$/.test(f));
+  assert.ok(parts.length > 0);
+  for (const f of parts) {
+    const l = f.split(".")[1];
+    const { default: tr } = await import(new URL(f, dir));
+    for (const [slug, t] of Object.entries(tr)) {
+      const j = journeys.find((x) => x.slug === slug);
+      assert.ok(j, `${l} ${slug} exists`);
+      assert.equal(t.itinerary.length, j.itinerary.length, `${l} ${slug} itinerary`);
+      assert.equal(t.faqs.length, j.faqs.length, `${l} ${slug} faqs`);
+      assert.equal(t.experiences.length, j.experiences.en.length, `${l} ${slug} experiences`);
+      assert.equal(t.upgrades.length, j.upgrades.en.length, `${l} ${slug} upgrades`);
+      for (const i of Object.keys(t.legNotes ?? {})) assert.ok(j.legs[i]?.note, `${l} ${slug} leg ${i} has a note`);
+      for (const [i, g] of j.legs.entries()) if (g.note) assert.ok(t.legNotes?.[i], `${l} ${slug} leg ${i} note translated`);
+    }
+  }
 });

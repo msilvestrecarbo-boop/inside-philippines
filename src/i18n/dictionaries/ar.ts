@@ -219,6 +219,7 @@ const ar: Dictionary = {
     insiderNotes: "ملاحظات من الداخل",
   },
   journey: {
+    seoTitle: "رحلة إلى الفلبين لمدة {days} يوم",
     customizeNotice: "اتخذ هذه الرحلة مصدر إلهام. غيّر الجزر أو الفنادق أو الإيقاع أو الأنشطة أو عدد الليالي.",
     customize: "خصّص هذه الرحلة",
     highlights: "أبرز محطات الرحلة",
