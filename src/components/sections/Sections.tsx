@@ -60,6 +60,18 @@ export function Tiers({ dict, highlight }: { dict: Dictionary; highlight?: TierI
               <h3 className="mt-6 text-3xl">{t.name}</h3>
               <p className="mt-2 font-medium">{t.line}</p>
               <p className="mt-3 text-sm leading-relaxed text-stone">{t.body}</p>
+              <ul className="mt-6 space-y-2.5 border-t border-line pt-5 text-sm">
+                {t.includes.map((x, k) =>
+                  k === 0 && i > 0 ? (
+                    <li key={k} className="text-xs font-semibold uppercase tracking-[0.08em] text-clay-dark rtl:tracking-normal">{x}</li>
+                  ) : (
+                    <li key={k} className="flex gap-2.5 leading-snug">
+                      <span aria-hidden className="mt-px shrink-0 font-semibold text-rice">✓</span>
+                      <span>{x}</span>
+                    </li>
+                  ),
+                )}
+              </ul>
             </div>
           );
         })}
