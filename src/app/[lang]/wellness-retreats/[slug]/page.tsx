@@ -7,6 +7,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 import { libraryPhoto } from "@/lib/photos";
 import { whatsappHref } from "@/lib/site";
 import { getRetreat, retreats, retreatsPage as p } from "@/content/retreats";
+import { retreatDetails, detailLabels as dl } from "@/content/retreatDetails";
 import { Photo } from "@/components/ui/Photo";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { FinalCta } from "@/components/layout/FinalCta";
@@ -33,6 +34,17 @@ export default async function Retreat({ params }: PageProps<"/[lang]/wellness-re
   const photo = libraryPhoto(r.photo, tr(r.place, locale));
   const query = "?" + new URLSearchParams({ interest: "wellness", duration: "7-10", utm_content: r.slug }).toString();
   const others = retreats.filter((x) => x.slug !== r.slug);
+  const d = retreatDetails[r.slug];
+  const facts = d
+    ? [
+        { label: dl.facts.duration, value: `${r.nights + 1} ${tr(dl.daysWord, locale)} / ${r.nights} ${tr(p.nightsLabel, locale)}` },
+        { label: dl.facts.location, value: tr(d.facts.location, locale) },
+        { label: dl.facts.group, value: tr(d.facts.group, locale) },
+        { label: dl.facts.level, value: tr(d.facts.level, locale) },
+        { label: dl.facts.arrival, value: tr(d.facts.arrival, locale) },
+        { label: dl.facts.season, value: tr(d.facts.season, locale) },
+      ]
+    : [];
 
   return (
     <>
@@ -63,6 +75,19 @@ export default async function Retreat({ params }: PageProps<"/[lang]/wellness-re
         </div>
       </section>
 
+      {d && (
+        <section className="border-b border-line bg-shell">
+          <dl className="container-x grid gap-x-8 gap-y-6 py-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+            {facts.map((f) => (
+              <div key={f.label.en}>
+                <dt className="kicker text-narra">{tr(f.label, locale)}</dt>
+                <dd className="mt-2 leading-snug">{f.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
+
       <section className="container-x py-20 md:py-28">
         <p className="max-w-3xl text-xl leading-relaxed">{tr(r.intro, locale)}</p>
         <ul className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -85,6 +110,41 @@ export default async function Retreat({ params }: PageProps<"/[lang]/wellness-re
                 <p className="mt-3 leading-relaxed text-stone">{tr(x.body, locale)}</p>
               </div>
             ))}
+          </div>
+        </section>
+      )}
+
+      {d && (
+        <section className="container-x pb-20 md:pb-28">
+          <div className="grid gap-14 lg:grid-cols-[1.6fr_1fr]">
+            <div>
+              <h2 className="text-[length:var(--text-h2)]">{tr(dl.scheduleTitle, locale)}</h2>
+              <p className="mt-4 max-w-2xl leading-relaxed text-stone">{tr(dl.scheduleNote, locale)}</p>
+              <ol className="mt-10 space-y-8">
+                {d.days.map((day, i) => (
+                  <li key={i} className="grid gap-2 border-t border-ink pt-5 sm:grid-cols-[7rem_1fr] sm:gap-6">
+                    <span className="kicker text-narra">{tr(dl.dayWord, locale)} {i + 1}</span>
+                    <div>
+                      <h3 className="text-[length:var(--text-h3)]">{tr(day.title, locale)}</h3>
+                      <p className="mt-2 leading-relaxed text-stone">{tr(day.body, locale)}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </div>
+            <div>
+              <div className="rounded-card bg-shell p-6 md:p-8 lg:sticky lg:top-28">
+                <h2 className="text-[length:var(--text-h3)]">{tr(dl.dailyTitle, locale)}</h2>
+                <ul className="mt-6 space-y-4">
+                  {d.daily.map((s) => (
+                    <li key={s.time} className="grid grid-cols-[4.5rem_1fr] gap-3 border-t border-line pt-4">
+                      <span className="font-display text-lg text-narra" dir="ltr">{s.time}</span>
+                      <span className="leading-relaxed">{tr(s.what, locale)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
       )}
@@ -129,6 +189,34 @@ export default async function Retreat({ params }: PageProps<"/[lang]/wellness-re
           </div>
         </div>
       </section>
+
+      {d && (
+        <section className="container-x py-20 md:py-28">
+          <div className="grid gap-10 md:grid-cols-3">
+            {[
+              { title: dl.includedTitle, items: tr(d.included, locale), mark: "✓" },
+              { title: dl.notIncludedTitle, items: tr(dl.notIncluded, locale), mark: "–" },
+              { title: dl.addOnsTitle, items: tr(dl.addOns, locale), mark: "+" },
+            ].map((col) => (
+              <div key={col.title.en}>
+                <h2 className="text-[length:var(--text-h3)]">{tr(col.title, locale)}</h2>
+                <ul className="mt-5 space-y-3">
+                  {col.items.map((it) => (
+                    <li key={it} className="flex gap-3 border-t border-line pt-3 leading-relaxed">
+                      <span aria-hidden className="text-narra">{col.mark}</span>
+                      <span>{it}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="mt-16 max-w-3xl border-t border-ink pt-6">
+            <h2 className="text-[length:var(--text-h3)]">{tr(dl.stayTitle, locale)}</h2>
+            <p className="mt-3 text-lg leading-relaxed">{tr(d.stay, locale)}</p>
+          </div>
+        </section>
+      )}
 
       <section className="container-x py-20 md:py-28">
         <h2 className="text-[length:var(--text-h2)]">{tr(p.retreatsTitle, locale)}</h2>
