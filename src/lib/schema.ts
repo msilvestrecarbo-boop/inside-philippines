@@ -18,7 +18,7 @@ export function organizationSchema(): Json {
     areaServed: ["FR", "ES", "GB", "DE", "IT", "CH", "BE", "NL", "RU", "AE", "SA", "QA"],
     knowsLanguage: ["en", "fr", "es", "ru", "ar"],
     address: site.legal.locations.map((l) => ({ "@type": "PostalAddress", addressLocality: l.locality, addressRegion: l.region, addressCountry: "PH" })),
-    sameAs: [site.instagram],
+    sameAs: [site.instagram, site.googleBusiness],
   };
 }
 
