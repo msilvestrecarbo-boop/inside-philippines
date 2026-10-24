@@ -206,6 +206,7 @@ const en = {
     rights: "All rights reserved.",
   },
   destination: {
+    seoTitle: "{name}, Philippines: travel guide and tips",
     insideLabel: "Inside",
     whoShouldVisit: "Who should visit",
     recommendedNights: "Recommended nights",

@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/destinatio
   return buildMetadata({
     locale,
     path: `/destinations/${slug}`,
-    title: `${dict.destination.insideLabel} ${name} — ${tr(d.whyGo, locale)}`,
+    title: `${dict.destination.seoTitle.replace("{name}", name)} — ${tr(d.whyGo, locale)}`,
     description: tr(d.short, locale),
     translated: translatedLocales(d.intro ?? d.short, d.short),
   });

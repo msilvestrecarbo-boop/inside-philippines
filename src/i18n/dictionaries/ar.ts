@@ -207,6 +207,7 @@ const ar: Dictionary = {
     rights: "جميع الحقوق محفوظة.",
   },
   destination: {
+    seoTitle: "دليل السفر إلى {name}، الفلبين",
     insideLabel: "Inside",
     whoShouldVisit: "لمن تناسب هذه الوجهة",
     recommendedNights: "عدد الليالي المقترح",

@@ -203,6 +203,7 @@ const fr: Dictionary = {
     rights: "Tous droits réservés.",
   },
   destination: {
+    seoTitle: "{name}, Philippines : que faire, où dormir",
     insideLabel: "Inside",
     whoShouldVisit: "Pour qui",
     recommendedNights: "Nuits conseillées",
