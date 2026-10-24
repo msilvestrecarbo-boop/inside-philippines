@@ -78,11 +78,11 @@ export default async function Retreat({ params }: PageProps<"/[lang]/wellness-re
       <section className="bg-shell py-20 md:py-28">
         <div className="container-x grid gap-12 md:grid-cols-2">
           <div>
-            <p className="kicker text-narra">{tr(p.activitiesTitle, locale)}</p>
+            <p className="kicker text-narra">{tr(p.pillarsTitle, locale)}</p>
             <p className="mt-4 text-lg leading-relaxed">{tr(r.day, locale)}</p>
             <ul className="mt-6 flex flex-wrap gap-2">
-              {p.activities.map((a) => (
-                <li key={a.key} className="rounded-full border border-ink px-4 py-1.5 text-sm">{tr(a.name, locale)}</li>
+              {p.pillars.map((pl) => (
+                <li key={pl.key} className="rounded-full border border-ink px-4 py-1.5 text-sm">{tr(pl.name, locale)}</li>
               ))}
             </ul>
           </div>
