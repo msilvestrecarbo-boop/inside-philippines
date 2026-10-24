@@ -152,7 +152,7 @@ const ar: Dictionary = {
     secondary: "تحدث معنا عبر واتساب",
   },
   whatsapp: {
-    label: "تحدث إلى مصمم رحلات",
+    label: "راسلنا عبر واتساب",
     short: "اسألنا",
     message: "مرحباً Inside Philippines، أخطط لرحلة إلى الفلبين وأودّ الحصول على بعض النصائح.",
   },

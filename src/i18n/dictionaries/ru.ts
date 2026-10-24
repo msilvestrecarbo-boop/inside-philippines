@@ -152,7 +152,7 @@ const ru: Dictionary = {
     secondary: "Написать в WhatsApp",
   },
   whatsapp: {
-    label: "Поговорить с тревел-дизайнером",
+    label: "Напишите нам в WhatsApp",
     short: "Спросите нас",
     message: "Здравствуйте, Inside Philippines! Я планирую поездку на Филиппины и хотел(а) бы получить совет.",
   },
