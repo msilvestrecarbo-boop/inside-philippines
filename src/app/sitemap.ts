@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { locales, localeMeta, type Locale } from "@/i18n/config";
 import { absolute, href, translatedLocales } from "@/lib/seo";
+import { retreats } from "@/content/retreats";
 import { getCategories, getDestinations, getGuides, getJourneys, getLandings, getStories } from "@/lib/content";
 
 type Entry = { path: string; translated: readonly Locale[]; priority: number; freq: "weekly" | "monthly"; modified?: string };
@@ -14,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/destinations", translated: all, priority: 0.9, freq: "weekly" },
     { path: "/journeys", translated: all, priority: 0.9, freq: "weekly" },
     { path: "/experiences", translated: all, priority: 0.7, freq: "monthly" },
+    { path: "/wellness-retreats", translated: all, priority: 0.8, freq: "monthly" },
     { path: "/travel-guide", translated: all, priority: 0.8, freq: "weekly" },
     { path: "/stories", translated: all, priority: 0.7, freq: "weekly" },
     { path: "/about", translated: all, priority: 0.6, freq: "monthly" },
@@ -25,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getCategories().map((c) => ({ path: `/experiences/${c.slug}`, translated: translatedLocales(c.body, c.title), priority: 0.6, freq: "monthly" as const })),
     ...getGuides().filter((g) => g.status === "published").map((g) => ({ path: `/travel-guide/${g.slug}`, translated: translatedLocales(g.body, g.title), priority: 0.7, freq: "monthly" as const, modified: g.updated })),
     ...getStories().filter((s) => s.status === "published").map((s) => ({ path: `/stories/${s.slug}`, translated: translatedLocales(s.body, s.title), priority: 0.6, freq: "monthly" as const, modified: s.updated })),
+    ...retreats.map((r) => ({ path: `/wellness-retreats/${r.slug}`, translated: all, priority: 0.7, freq: "monthly" as const })),
     ...getLandings().map((l) => ({ path: `/${l.slug}`, translated: translatedLocales(l.title, l.intro), priority: 0.7, freq: "monthly" as const })),
   ];
 

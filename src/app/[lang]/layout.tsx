@@ -73,6 +73,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
             t={{
               destinations: n.destinations,
               journeys: n.journeys,
+              retreats: n.retreats,
               experiences: n.experiences,
               guide: n.guide,
               stories: n.stories,

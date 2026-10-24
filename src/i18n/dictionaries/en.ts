@@ -14,6 +14,7 @@ const en = {
   nav: {
     destinations: "Destinations",
     journeys: "Journeys",
+    retreats: "Retreats",
     experiences: "Experiences",
     guide: "Travel guide",
     stories: "Stories",

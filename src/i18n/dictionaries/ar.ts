@@ -15,6 +15,7 @@ const ar: Dictionary = {
   nav: {
     destinations: "الوجهات",
     journeys: "الرحلات",
+    retreats: "الاستجمام",
     experiences: "التجارب",
     guide: "دليل السفر",
     stories: "حكايات",
