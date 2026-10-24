@@ -42,7 +42,7 @@ export default async function Contact({ params }: PageProps<"/[lang]/contact">) 
           </div>
           <div>
             <dt className="kicker text-stone">{dict.about.officeTitle}</dt>
-            <dd className="mt-2">{site.legal.address}</dd>
+            <dd className="mt-2 space-y-1">{site.legal.locations.map((l) => <p key={l.locality}>{l.locality}, {l.region}</p>)}</dd>
           </div>
         </dl>
         <div>
