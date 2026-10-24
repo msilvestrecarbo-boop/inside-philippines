@@ -1,11 +1,9 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { TierId } from "@/content/types";
-import { useCurrency } from "@/components/layout/CurrencyProvider";
-import { convert, formatAmount } from "@/lib/currency";
 import { getUtm, track } from "@/lib/analytics";
 import type { Lead } from "@/lib/lead";
 
@@ -44,11 +42,9 @@ type State = {
 const DURATIONS = ["7-10", "11-14", "15-18", "19-21", "21+"];
 const WHO = ["couple", "honeymoon", "family", "friends", "solo", "group"] as const;
 const INTERESTS = ["beaches", "luxury", "adventure", "diving", "surf", "nature", "food", "culture", "wellness", "remote", "nightlife", "family"] as const;
-const OCCASIONS = ["honeymoon", "anniversary", "birthday", "proposal", "celebration", "diving", "surf", "other"] as const;
 const TIERS: TierId[] = ["essential", "boutique", "premium", "signature"];
-const BUDGET_PP_EUR = [2000, 3500, 5000, 8000, 12000];
-const BUDGET_TOTAL_EUR = [4000, 7000, 10000, 16000, 25000];
-const TOTAL_STEPS = 10;
+/** Approximate EUR per person for each budget choice (last choice = "rather discuss"). */
+const BUDGET_EUR = [1500, 2750, 4250, 6500, 8000];
 const STORAGE = "ip_trip_draft";
 
 const COUNTRIES = [
@@ -101,6 +97,7 @@ export function TripBuilder({
   journeys,
   privacyHref,
   whatsappHref,
+  email,
 }: {
   locale: Locale;
   dict: Dictionary;
@@ -108,16 +105,16 @@ export function TripBuilder({
   journeys: JourneyHint[];
   privacyHref: string;
   whatsappHref: string;
+  email: string;
 }) {
   const t = dict.tripBuilder;
-  const { currency } = useCurrency();
+  const q = t.quick;
   const [s, setS] = useState<State>(() => initialState(locale));
-  const [step, setStep] = useState(1);
+  const [budgetChoice, setBudgetChoice] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "failed">("idle");
   const [prefillLabel, setPrefillLabel] = useState<string | null>(null);
   const started = useRef(false);
-  const headingRef = useRef<HTMLHeadingElement>(null);
 
   // Restore draft + apply prefill from ?journey= / ?destination= / landing hints.
   useEffect(() => {
@@ -160,11 +157,6 @@ export function TripBuilder({
     } catch {}
   }, [s]);
 
-  useEffect(() => {
-    headingRef.current?.focus({ preventScroll: true });
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [step]);
-
   const set = <K extends keyof State>(k: K, v: State[K]) => {
     if (!started.current) {
       started.current = true;
@@ -180,37 +172,21 @@ export function TripBuilder({
     set(k, next);
   };
 
-  function validate(n: number): string | null {
-    switch (n) {
-      case 1:
-        if (!s.dateMode) return t.required;
-        if (s.dateMode === "month" && !s.month) return t.required;
-        if (s.dateMode === "exact" && (!s.startDate || !s.endDate || s.endDate < s.startDate)) return t.required;
-        return null;
-      case 2: return s.duration ? null : t.required;
-      case 3: return s.who ? null : t.required;
-      case 4: return s.adults >= 1 ? null : t.required;
-      case 6: return s.destinations.length || s.otherDestination ? null : t.required;
-      case 7: return s.style ? null : t.required;
-      case 10:
-        if (s.name.trim().length < 2 || !s.country.trim()) return t.required;
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(s.email.trim())) return t.invalidEmail;
-        if (!s.consent) return t.required;
-        return null;
-      default: return null;
-    }
-  }
-
-  function next() {
-    const e = validate(step);
-    if (e) return setError(e);
-    track("trip_builder_step", { step });
-    if (step < TOTAL_STEPS) setStep(step + 1);
-    else submit();
+  function validate(): string | null {
+    if (s.dateMode === "month" && !s.month) return t.required;
+    if (s.dateMode === "exact" && (!s.startDate || !s.endDate || s.endDate < s.startDate)) return t.required;
+    if (s.name.trim().length < 2 || !s.country.trim()) return t.required;
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(s.email.trim())) return t.invalidEmail;
+    if (!s.consent) return t.required;
+    return null;
   }
 
   async function submit() {
+    const e = validate();
+    if (e) return setError(e);
     setStatus("sending");
+    const budgetIndex = budgetChoice === "" ? -1 : Number(budgetChoice);
+    const budgetAmount = budgetIndex >= 0 && budgetIndex < BUDGET_EUR.length ? BUDGET_EUR[budgetIndex] : undefined;
     const lead: Lead = {
       name: s.name.trim(),
       email: s.email.trim(),
@@ -229,11 +205,11 @@ export function TripBuilder({
       interests: s.interests,
       destinations: [...s.destinations, ...(s.otherDestination ? [`other:${s.otherDestination}`] : [])],
       style: s.style,
-      budgetAmount: s.budgetBasis === "undecided" ? undefined : s.budgetAmount ?? undefined,
-      budgetBasis: s.budgetBasis,
-      currency,
+      budgetAmount,
+      budgetBasis: budgetAmount ? "per-person" : "undecided",
+      currency: "EUR",
       occasions: s.occasions,
-      comments: s.comments.trim() || undefined,
+      comments: [budgetIndex >= 0 ? `${q.budget}: ${q.budgetOptions[budgetIndex]}` : "", s.comments.trim()].filter(Boolean).join("\n\n") || undefined,
       consent: s.consent,
       siteLanguage: locale,
       sourceJourney: s.sourceJourney,
@@ -245,18 +221,14 @@ export function TripBuilder({
       const res = await fetch("/api/lead", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(lead) });
       if (!res.ok) throw new Error(String(res.status));
       track("trip_builder_complete", { style: s.style, duration: s.duration, who: s.who });
-      track("generate_lead", { style: s.style, duration: s.duration, value_basis: s.budgetBasis });
+      track("generate_lead", { style: s.style, duration: s.duration, value_basis: lead.budgetBasis });
       try { sessionStorage.removeItem(STORAGE); } catch {}
       setStatus("done");
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } catch {
       setStatus("failed");
     }
   }
-
-  const budgetOptions = useMemo(
-    () => (s.budgetBasis === "total" ? BUDGET_TOTAL_EUR : BUDGET_PP_EUR).map((eur) => convert(eur, currency)),
-    [s.budgetBasis, currency],
-  );
 
   if (status === "done") {
     return (
@@ -271,201 +243,147 @@ export function TripBuilder({
     );
   }
 
-  const titles = [t.q1.title, t.q2.title, t.q3.title, t.q4.title, t.q5.title, t.q6.title, t.q7.title, t.q8.title, t.q9.title, t.q10.title];
-
   return (
     <div className="mx-auto max-w-3xl">
-      {/* progress */}
-      <div className="flex items-center justify-between text-xs text-stone">
-        <span className="kicker">{t.step} {step} {t.of} {TOTAL_STEPS}</span>
-        {prefillLabel && <span>{t.prefilledFrom}: <strong className="text-ink">{prefillLabel}</strong></span>}
-      </div>
-      <div className="mt-3 h-px w-full bg-line" aria-hidden>
-        <div className="h-px bg-ink transition-[width] duration-700 ease-[var(--ease-soft)]" style={{ width: `${(step / TOTAL_STEPS) * 100}%` }} />
-      </div>
+      <aside className="flex flex-col gap-5 rounded-2xl border border-line bg-shell p-6 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p className="font-display text-2xl">{q.talkTitle}</p>
+          <p className="mt-1 text-sm text-stone">{q.talkBody}</p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <a href={whatsappHref} target="_blank" rel="noopener" onClick={() => track("whatsapp_click", { placement: "trip_form_top" })} className="btn btn-primary min-h-0 px-5 py-2.5">{q.whatsapp}</a>
+          <a href={`mailto:${email}`} className="btn btn-ghost min-h-0 px-5 py-2.5">{q.email}</a>
+        </div>
+      </aside>
+
+      {prefillLabel && <p className="mt-8 text-sm text-stone">{t.prefilledFrom}: <strong className="text-ink">{prefillLabel}</strong></p>}
 
       <form
-        className="mt-12"
+        className="mt-10 space-y-12"
         onSubmit={(e) => {
           e.preventDefault();
-          next();
+          submit();
         }}
         noValidate
       >
-        <fieldset>
-          <legend className="contents">
-            <h2 ref={headingRef} tabIndex={-1} className="text-[length:var(--text-h2)] outline-none">{titles[step - 1]}</h2>
-          </legend>
-
-          <div className="mt-10">
-            {step === 1 && (
-              <div className="space-y-6">
-                <Choices
-                  options={[["exact", t.q1.exact], ["month", t.q1.month], ["unsure", t.q1.unsure]]}
-                  value={[s.dateMode]}
-                  onPick={(v) => set("dateMode", v as State["dateMode"])}
-                />
-                {s.dateMode === "exact" && (
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    <Field label={t.q1.start}><input type="date" className={inputCls} value={s.startDate} min={new Date().toISOString().slice(0, 10)} onChange={(e) => set("startDate", e.target.value)} /></Field>
-                    <Field label={t.q1.end}><input type="date" className={inputCls} value={s.endDate} min={s.startDate || undefined} onChange={(e) => set("endDate", e.target.value)} /></Field>
-                  </div>
-                )}
-                {s.dateMode === "month" && (
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    <Field label={t.q1.monthLabel}>
-                      <select className={inputCls} value={s.month} onChange={(e) => set("month", e.target.value)}>
-                        <option value="">—</option>
-                        {dict.months.map((m, i) => <option key={m} value={String(i + 1).padStart(2, "0")}>{m}</option>)}
-                      </select>
-                    </Field>
-                    <Field label={t.q1.yearLabel}>
-                      <select className={inputCls} value={s.year} onChange={(e) => set("year", e.target.value)}>
-                        {[0, 1, 2].map((o) => { const y = String(new Date().getFullYear() + o); return <option key={y} value={y}>{y}</option>; })}
-                      </select>
-                    </Field>
-                  </div>
-                )}
-              </div>
-            )}
-
-            {step === 2 && (
-              <>
-                <Choices options={DURATIONS.map((d, i) => [d, t.q2.options[i]])} value={[s.duration]} onPick={(v) => set("duration", v)} />
-                <p className="mt-6 text-sm text-stone">{t.q2.hint}</p>
-              </>
-            )}
-
-            {step === 3 && (
-              <Choices options={WHO.map((w) => [w, t.q3.options[w]])} value={[s.who]} onPick={(v) => set("who", v)} />
-            )}
-
-            {step === 4 && (
-              <div className="space-y-6">
-                <Counter label={t.q4.adults} value={s.adults} min={1} max={30} onChange={(v) => set("adults", v)} />
-                <Counter label={t.q4.children} value={s.children} min={0} max={10} onChange={(v) => { set("children", v); set("childrenAges", [...s.childrenAges, ...Array(10).fill(6)].slice(0, v)); }} />
-                {s.children > 0 && (
-                  <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
-                    {Array.from({ length: s.children }).map((_, i) => (
-                      <Field key={i} label={t.q4.childAge.replace("{n}", String(i + 1))}>
-                        <select className={inputCls} value={s.childrenAges[i] ?? 6} onChange={(e) => { const a = [...s.childrenAges]; a[i] = Number(e.target.value); set("childrenAges", a); }}>
-                          {Array.from({ length: 18 }).map((_, age) => <option key={age} value={age}>{age}</option>)}
-                        </select>
-                      </Field>
-                    ))}
-                  </div>
-                )}
-              </div>
-            )}
-
-            {step === 5 && (
-              <>
-                <p className="mb-5 text-sm text-stone">{t.multiHint}</p>
-                <Choices multi options={INTERESTS.map((i) => [i, t.q5.options[i]])} value={s.interests} onPick={(v) => toggle("interests", v)} />
-              </>
-            )}
-
-            {step === 6 && (
-              <div className="space-y-6">
-                <p className="text-sm text-stone">{t.multiHint}</p>
-                <Choices multi options={destinations.map((d) => [d.slug, d.name])} value={s.destinations} onPick={(v) => toggle("destinations", v)} />
-                <Field label={t.q6.other}>
-                  <input className={inputCls} value={s.otherDestination} placeholder={t.q6.otherPlaceholder} onChange={(e) => set("otherDestination", e.target.value)} />
-                </Field>
-                <Choices options={[["recommend", t.q6.recommend]]} value={s.destinations} onPick={(v) => toggle("destinations", v)} />
-              </div>
-            )}
-
-            {step === 7 && (
+        <Section title={t.q1.title} hint={q.optional}>
+          <div className="space-y-6">
+            <Choices
+              options={[["exact", t.q1.exact], ["month", t.q1.month], ["unsure", t.q1.unsure]]}
+              value={[s.dateMode]}
+              onPick={(v) => set("dateMode", v as State["dateMode"])}
+            />
+            {s.dateMode === "exact" && (
               <div className="grid gap-4 sm:grid-cols-2">
-                {TIERS.map((id) => {
-                  const tier = dict.tiers[id];
-                  const on = s.style === id;
-                  return (
-                    <button type="button" key={id} aria-pressed={on} onClick={() => set("style", id)} className={`border p-6 text-start transition-colors ${on ? "border-ink bg-ink text-sand" : "border-line bg-shell hover:border-ink/40"}`}>
-                      <span className="block font-display text-3xl">{tier.name}</span>
-                      <span className="mt-1 block font-medium">{tier.line}</span>
-                      <span className={`mt-3 block text-sm leading-relaxed ${on ? "text-sand/75" : "text-stone"}`}>{tier.body}</span>
-                    </button>
-                  );
-                })}
+                <Field label={t.q1.start}><input type="date" className={inputCls} value={s.startDate} min={new Date().toISOString().slice(0, 10)} onChange={(e) => set("startDate", e.target.value)} /></Field>
+                <Field label={t.q1.end}><input type="date" className={inputCls} value={s.endDate} min={s.startDate || undefined} onChange={(e) => set("endDate", e.target.value)} /></Field>
               </div>
             )}
-
-            {step === 8 && (
-              <div className="space-y-8">
-                <Choices
-                  options={[["per-person", t.q8.perPerson], ["total", t.q8.total], ["undecided", t.q8.notSure]]}
-                  value={[s.budgetBasis]}
-                  onPick={(v) => { set("budgetBasis", v as State["budgetBasis"]); set("budgetAmount", null); }}
-                />
-                {s.budgetBasis !== "undecided" && (
-                  <>
-                    <Choices
-                      options={budgetOptions.map((a, i) => [String(a), i === budgetOptions.length - 1 ? `${formatAmount(a, currency, locale)}+` : `~ ${formatAmount(a, currency, locale)}`])}
-                      value={[String(s.budgetAmount ?? "")]}
-                      onPick={(v) => set("budgetAmount", Number(v))}
-                    />
-                    <Field label={`${s.budgetBasis === "total" ? t.q8.total : t.q8.perPerson} (${currency})`}>
-                      <input type="number" inputMode="numeric" min={0} step={100} className={inputCls} value={s.budgetAmount ?? ""} onChange={(e) => set("budgetAmount", e.target.value ? Number(e.target.value) : null)} />
-                    </Field>
-                  </>
-                )}
-                <p className="text-sm text-stone">{t.q8.hint}</p>
-              </div>
-            )}
-
-            {step === 9 && (
-              <>
-                <p className="mb-5 text-sm text-stone">{t.multiHint}</p>
-                <Choices multi options={OCCASIONS.map((o) => [o, t.q9.options[o]])} value={s.occasions} onPick={(v) => toggle("occasions", v)} />
-              </>
-            )}
-
-            {step === 10 && (
-              <div className="grid gap-5 sm:grid-cols-2">
-                <Field label={t.q10.name}><input className={inputCls} autoComplete="name" value={s.name} onChange={(e) => set("name", e.target.value)} required /></Field>
-                <Field label={t.q10.country}>
-                  <input className={inputCls} autoComplete="country-name" list="countries" value={s.country} onChange={(e) => set("country", e.target.value)} required />
-                  <datalist id="countries">{COUNTRIES.map((c) => <option key={c} value={c} />)}</datalist>
-                </Field>
-                <Field label={t.q10.email}><input type="email" className={inputCls} autoComplete="email" inputMode="email" value={s.email} onChange={(e) => set("email", e.target.value)} required /></Field>
-                <Field label={t.q10.whatsapp} hint={t.q10.whatsappHint}><input type="tel" className={inputCls} autoComplete="tel" inputMode="tel" placeholder="+33 6 …" value={s.whatsapp} onChange={(e) => set("whatsapp", e.target.value)} /></Field>
-                <Field label={t.q10.language}>
-                  <select className={inputCls} value={s.preferredLanguage} onChange={(e) => set("preferredLanguage", e.target.value)}>
-                    <option value="en">English</option><option value="fr">Français</option><option value="es">Español</option><option value="ru">Русский</option><option value="ar">العربية</option><option value="other">Other</option>
+            {s.dateMode === "month" && (
+              <div className="grid gap-4 sm:grid-cols-2">
+                <Field label={t.q1.monthLabel}>
+                  <select className={inputCls} value={s.month} onChange={(e) => set("month", e.target.value)}>
+                    <option value="">—</option>
+                    {dict.months.map((m, i) => <option key={m} value={String(i + 1).padStart(2, "0")}>{m}</option>)}
                   </select>
                 </Field>
-                <div className="sm:col-span-2">
-                  <Field label={t.q10.comments}><textarea rows={4} className={inputCls} value={s.comments} onChange={(e) => set("comments", e.target.value)} /></Field>
-                </div>
-                <label className="flex items-start gap-3 text-sm text-stone sm:col-span-2">
-                  <input type="checkbox" className="mt-1 h-4 w-4 accent-[var(--color-clay)]" checked={s.consent} onChange={(e) => set("consent", e.target.checked)} />
-                  <span>{t.q10.consent} <a className="underline" href={privacyHref} target="_blank">↗</a></span>
-                </label>
+                <Field label={t.q1.yearLabel}>
+                  <select className={inputCls} value={s.year} onChange={(e) => set("year", e.target.value)}>
+                    {[0, 1, 2].map((o) => { const y = String(new Date().getFullYear() + o); return <option key={y} value={y}>{y}</option>; })}
+                  </select>
+                </Field>
               </div>
             )}
           </div>
-        </fieldset>
+        </Section>
 
-        {error && <p role="alert" className="mt-6 text-sm text-clay-dark">{error}</p>}
-        {status === "failed" && <p role="alert" className="mt-6 text-sm text-clay-dark">{t.error} <a className="underline" href={whatsappHref} target="_blank" rel="noopener">WhatsApp</a></p>}
+        <Section title={t.q2.title} hint={q.optional}>
+          <Choices options={DURATIONS.map((d, i) => [d, t.q2.options[i]])} value={[s.duration]} onPick={(v) => set("duration", v)} />
+        </Section>
 
-        <div className="mt-12 flex items-center justify-between gap-4 border-t border-line pt-6 pb-[env(safe-area-inset-bottom)]">
-          <button type="button" onClick={() => { setError(null); setStep(Math.max(1, step - 1)); }} className={`kicker link-u ${step === 1 ? "invisible" : ""}`}>
-            ← {t.back}
-          </button>
-          <div className="flex items-center gap-6">
-            {[5, 8, 9].includes(step) && (
-              <button type="button" className="kicker text-stone link-u" onClick={() => { setError(null); setStep(step + 1); }}>{t.skip}</button>
+        <Section title={t.q3.title} hint={q.optional}>
+          <div className="space-y-6">
+            <Choices options={WHO.map((w) => [w, t.q3.options[w]])} value={[s.who]} onPick={(v) => set("who", v)} />
+            <Counter label={t.q4.adults} value={s.adults} min={1} max={30} onChange={(v) => set("adults", v)} />
+            <Counter label={t.q4.children} value={s.children} min={0} max={10} onChange={(v) => { set("children", v); set("childrenAges", [...s.childrenAges, ...Array(10).fill(6)].slice(0, v)); }} />
+            {s.children > 0 && (
+              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+                {Array.from({ length: s.children }).map((_, i) => (
+                  <Field key={i} label={t.q4.childAge.replace("{n}", String(i + 1))}>
+                    <select className={inputCls} value={s.childrenAges[i] ?? 6} onChange={(e) => { const a = [...s.childrenAges]; a[i] = Number(e.target.value); set("childrenAges", a); }}>
+                      {Array.from({ length: 18 }).map((_, age) => <option key={age} value={age}>{age}</option>)}
+                    </select>
+                  </Field>
+                ))}
+              </div>
             )}
-            <button type="submit" disabled={status === "sending"} className="btn btn-primary">
-              {step === TOTAL_STEPS ? (status === "sending" ? t.submitting : t.submit) : t.next}
-            </button>
           </div>
+        </Section>
+
+        <Section title={t.q6.title} hint={q.optional}>
+          <div className="space-y-6">
+            <Choices multi options={destinations.map((d) => [d.slug, d.name])} value={s.destinations} onPick={(v) => toggle("destinations", v)} />
+            <Choices options={[["recommend", t.q6.recommend]]} value={s.destinations} onPick={(v) => toggle("destinations", v)} />
+          </div>
+        </Section>
+
+        <Section title={q.style} hint={q.optional}>
+          <div className="space-y-6">
+            <Choices options={TIERS.map((id) => [id, `${dict.tiers[id].name} · ${dict.tiers[id].line}`])} value={[s.style]} onPick={(v) => set("style", v)} />
+            <Field label={q.budget}>
+              <select className={inputCls} value={budgetChoice} onChange={(e) => { setError(null); setBudgetChoice(e.target.value); }}>
+                <option value="">—</option>
+                {q.budgetOptions.map((o, i) => <option key={o} value={i}>{o}</option>)}
+              </select>
+            </Field>
+          </div>
+        </Section>
+
+        <Section title={q.details}>
+          <div className="grid gap-5 sm:grid-cols-2">
+            <Field label={t.q10.name}><input className={inputCls} autoComplete="name" value={s.name} onChange={(e) => set("name", e.target.value)} required /></Field>
+            <Field label={t.q10.country}>
+              <input className={inputCls} autoComplete="country-name" list="countries" value={s.country} onChange={(e) => set("country", e.target.value)} required />
+              <datalist id="countries">{COUNTRIES.map((c) => <option key={c} value={c} />)}</datalist>
+            </Field>
+            <Field label={t.q10.email}><input type="email" className={inputCls} autoComplete="email" inputMode="email" value={s.email} onChange={(e) => set("email", e.target.value)} required /></Field>
+            <Field label={t.q10.whatsapp} hint={t.q10.whatsappHint}><input type="tel" className={inputCls} autoComplete="tel" inputMode="tel" placeholder="+33 6 …" value={s.whatsapp} onChange={(e) => set("whatsapp", e.target.value)} /></Field>
+            <Field label={t.q10.language}>
+              <select className={inputCls} value={s.preferredLanguage} onChange={(e) => set("preferredLanguage", e.target.value)}>
+                <option value="en">English</option><option value="fr">Français</option><option value="es">Español</option><option value="ru">Русский</option><option value="ar">العربية</option><option value="other">Other</option>
+              </select>
+            </Field>
+            <div className="sm:col-span-2">
+              <Field label={t.q10.comments}><textarea rows={4} className={inputCls} value={s.comments} onChange={(e) => set("comments", e.target.value)} /></Field>
+            </div>
+            <label className="flex items-start gap-3 text-sm text-stone sm:col-span-2">
+              <input type="checkbox" className="mt-1 h-4 w-4 accent-[var(--color-clay)]" checked={s.consent} onChange={(e) => set("consent", e.target.checked)} />
+              <span>{t.q10.consent} <a className="underline" href={privacyHref} target="_blank">↗</a></span>
+            </label>
+          </div>
+        </Section>
+
+        <div className="border-t border-line pt-6 pb-[env(safe-area-inset-bottom)]">
+          {error && <p role="alert" className="mb-4 text-sm text-clay-dark">{error}</p>}
+          {status === "failed" && <p role="alert" className="mb-4 text-sm text-clay-dark">{t.error} <a className="underline" href={whatsappHref} target="_blank" rel="noopener">WhatsApp</a></p>}
+          <button type="submit" disabled={status === "sending"} className="btn btn-primary w-full sm:w-auto">
+            {status === "sending" ? t.submitting : t.submit}
+          </button>
         </div>
       </form>
     </div>
+  );
+}
+
+function Section({ title, hint, children }: { title: string; hint?: string; children: React.ReactNode }) {
+  return (
+    <fieldset>
+      <legend className="mb-6 flex w-full items-baseline justify-between gap-4 border-b border-line pb-3">
+        <span className="font-display text-[length:var(--text-h3)] leading-tight">{title}</span>
+        {hint && <span className="kicker shrink-0 text-[0.65rem] text-stone">{hint}</span>}
+      </legend>
+      {children}
+    </fieldset>
   );
 }
 
