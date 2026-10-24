@@ -14,7 +14,6 @@ export const site = {
   /** Digits only with country code, e.g. 639171234567. Empty = placeholder. */
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "639524050513",
   instagram: "https://www.instagram.com/inside.philippines",
-  tiktok: "https://www.tiktok.com/@insidephilippines",
   youtube: "https://www.youtube.com/@insidephilippines",
   legal: {
     companyName: "[Registered company name]",
