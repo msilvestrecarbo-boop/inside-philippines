@@ -2,7 +2,8 @@ import { resolve } from "@/lib/i18n-server";
 import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
 import { Photo } from "@/components/ui/Photo";
-import { PageHero, Trust, WhyUs } from "@/components/sections/Sections";
+import { PageHero, WhyUs } from "@/components/sections/Sections";
+import { withPhoto, type PhotoGroup } from "@/lib/photos";
 import { FinalCta } from "@/components/layout/FinalCta";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/about">) {
@@ -14,6 +15,12 @@ export default async function About({ params }: PageProps<"/[lang]/about">) {
   const { locale, dict } = await resolve(params);
   const t = dict.about;
   const tones = ["jungle", "lagoon", "stone", "dusk"] as const;
+  const blockPhotos: [PhotoGroup, string][] = [
+    ["story", "siargao-beyond-surfing"],
+    ["guide", "how-many-days"],
+    ["guide", "travel-between-islands"],
+    ["journey", "the-slow-philippines"],
+  ];
   return (
     <>
       <PageHero kicker={t.kicker} title={t.title} body={t.intro} />
@@ -25,7 +32,7 @@ export default async function About({ params }: PageProps<"/[lang]/about">) {
               label={dict.common.photoToCome}
               showBrief
               className="aspect-[4/3]"
-              photo={{ tone: tones[i % 4], alt: { en: b.title }, brief: ["Team member at a sari-sari store or market, candid, natural light.", "A team member on a banca between islands, looking out, not posing.", "Hands on a printed route map with ferry times, flight boarding passes beside it.", "A traveller couple greeted by a team member at a small island airport, genuine moment."][i % 4] }}
+              photo={withPhoto(blockPhotos[i % 4][0], blockPhotos[i % 4][1], { tone: tones[i % 4], alt: { en: b.title }, brief: ["Team member at a sari-sari store or market, candid, natural light.", "A team member on a banca between islands, looking out, not posing.", "Hands on a printed route map with ferry times, flight boarding passes beside it.", "A traveller couple greeted by a team member at a small island airport, genuine moment."][i % 4] })}
             />
             <div>
               <h2 className="text-[length:var(--text-h2)]">{b.title}</h2>
@@ -56,11 +63,11 @@ export default async function About({ params }: PageProps<"/[lang]/about">) {
 
       <section className="container-x py-20 md:py-28">
         <h2 className="text-[length:var(--text-h2)]">{t.officeTitle}</h2>
-        <p className="mt-4 text-lg text-stone">{site.legal.address}</p>
-        <p className="text-sm text-stone">{site.legal.companyName} · {site.legal.registration} · {site.legal.dotAccreditation}</p>
+        <div className="mt-4 space-y-1 text-lg text-stone">
+          {site.legal.locations.map((l) => <p key={l.locality}>{l.locality}, {l.region}</p>)}
+        </div>
       </section>
 
-      <Trust dict={dict} />
       <FinalCta locale={locale} dict={dict} />
     </>
   );
