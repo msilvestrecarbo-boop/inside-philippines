@@ -11,6 +11,7 @@ import { retreatDetails, detailLabels as dl } from "@/content/retreatDetails";
 import { Photo } from "@/components/ui/Photo";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { FinalCta } from "@/components/layout/FinalCta";
+import { RetreatGallery } from "@/components/sections/RetreatGallery";
 import { TrackedA, TrackedLink } from "@/components/layout/Tracking";
 import { Price } from "@/components/layout/CurrencyProvider";
 
@@ -235,6 +236,8 @@ export default async function Retreat({ params }: PageProps<"/[lang]/wellness-re
           </div>
         </section>
       )}
+
+      <RetreatGallery locale={locale} label={dict.common.photoToCome} limit={12} />
 
       <section className="container-x py-20 md:py-28">
         <h2 className="text-[length:var(--text-h2)]">{tr(p.retreatsTitle, locale)}</h2>

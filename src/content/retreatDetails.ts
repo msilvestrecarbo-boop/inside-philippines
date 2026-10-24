@@ -409,3 +409,30 @@ export const retreatDetails: Record<string, RetreatDetails> = {
     },
   },
 };
+
+/** Retreat photo gallery: keys in photos.json ("retreat/g-…"), credits in docs/10-photo-credits.md. */
+export const retreatGalleryTitle: L = { en: "Life on retreat", fr: "La vie en retraite", es: "La vida en el retiro", ru: "Жизнь на ретрите", ar: "الحياة في رحلة الاستجمام" };
+export const retreatGallery: { key: string; caption: L }[] = [
+  { key: "yoga-beach", caption: { en: "Yoga by the sea", fr: "Yoga face à la mer", es: "Yoga frente al mar", ru: "Йога у моря", ar: "يوغا على شاطئ البحر" } },
+  { key: "dinner-sea", caption: { en: "Dinner with an ocean view", fr: "Dîner face à l'océan", es: "Cena con vistas al mar", ru: "Ужин с видом на океан", ar: "عشاء مطل على المحيط" } },
+  { key: "flower-bath", caption: { en: "Flower bath", fr: "Bain de fleurs", es: "Baño de flores", ru: "Цветочная ванна", ar: "حمّام الزهور" } },
+  { key: "yoga-palm", caption: { en: "Inversions under the palms", fr: "Inversions sous les palmiers", es: "Invertidas bajo las palmeras", ru: "Перевёрнутые асаны под пальмами", ar: "وضعيات مقلوبة تحت النخيل" } },
+  { key: "breakfast-pool", caption: { en: "Breakfast by the pool", fr: "Petit-déjeuner au bord de la piscine", es: "Desayuno junto a la piscina", ru: "Завтрак у бассейна", ar: "فطور بجانب المسبح" } },
+  { key: "sauna", caption: { en: "Sauna", fr: "Sauna", es: "Sauna", ru: "Сауна", ar: "ساونا" } },
+  { key: "yoga-group", caption: { en: "Group yoga on the beach", fr: "Yoga en groupe sur la plage", es: "Yoga en grupo en la playa", ru: "Групповая йога на пляже", ar: "يوغا جماعية على الشاطئ" } },
+  { key: "beach-bar", caption: { en: "Sunset by the water", fr: "Coucher de soleil au bord de l'eau", es: "Atardecer junto al agua", ru: "Закат у воды", ar: "الغروب على حافة الماء" } },
+  { key: "ice-bath", caption: { en: "Ice bath", fr: "Bain glacé", es: "Baño de hielo", ru: "Ледяная ванна", ar: "حمّام الثلج" } },
+  { key: "pilates", caption: { en: "Pilates", fr: "Pilates", es: "Pilates", ru: "Пилатес", ar: "بيلاتس" } },
+  { key: "smoothie-bowl", caption: { en: "Tropical smoothie bowls", fr: "Smoothie bowls tropicaux", es: "Smoothie bowls tropicales", ru: "Тропические смузи-боулы", ar: "أطباق سموذي استوائية" } },
+  { key: "sound-gong", caption: { en: "Sound healing", fr: "Bain sonore", es: "Baño de sonido", ru: "Звуковая терапия", ar: "العلاج بالصوت" } },
+  { key: "yoga-garden", caption: { en: "Yoga in the garden", fr: "Yoga au jardin", es: "Yoga en el jardín", ru: "Йога в саду", ar: "يوغا في الحديقة" } },
+  { key: "table-sea", caption: { en: "Long dinners by the ocean", fr: "Longs dîners au bord de l'océan", es: "Cenas largas junto al mar", ru: "Долгие ужины у океана", ar: "عشاء طويل على المحيط" } },
+  { key: "citrus-bath", caption: { en: "Citrus and flower bath", fr: "Bain d'agrumes et de fleurs", es: "Baño de cítricos y flores", ru: "Ванна с цитрусами и цветами", ar: "حمّام الحمضيات والزهور" } },
+  { key: "spa", caption: { en: "Massage and spa", fr: "Massage et spa", es: "Masaje y spa", ru: "Массаж и спа", ar: "تدليك وسبا" } },
+  { key: "stretching", caption: { en: "Stretching and mobility", fr: "Étirements et mobilité", es: "Estiramientos y movilidad", ru: "Растяжка и мобильность", ar: "تمدد ومرونة" } },
+  { key: "acai", caption: { en: "Açaí and granola", fr: "Açaí et granola", es: "Açaí y granola", ru: "Асаи и гранола", ar: "أساي وغرانولا" } },
+  { key: "hot-tub", caption: { en: "Hot tub among the trees", fr: "Bain chaud sous les arbres", es: "Bañera caliente entre los árboles", ru: "Горячая купель среди деревьев", ar: "حوض ساخن بين الأشجار" } },
+  { key: "sauna-steam", caption: { en: "Steam and heat", fr: "Vapeur et chaleur", es: "Vapor y calor", ru: "Пар и тепло", ar: "البخار والحرارة" } },
+  { key: "juice", caption: { en: "Fresh green juices", fr: "Jus verts frais", es: "Zumos verdes frescos", ru: "Свежие зелёные соки", ar: "عصائر خضراء طازجة" } },
+  { key: "singing-bowl", caption: { en: "Singing bowls", fr: "Bols chantants", es: "Cuencos tibetanos", ru: "Поющие чаши", ar: "الأوعية الغنائية" } },
+];

@@ -9,6 +9,7 @@ import { Photo } from "@/components/ui/Photo";
 import { Faqs } from "@/components/ui/Faqs";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { FinalCta } from "@/components/layout/FinalCta";
+import { RetreatGallery } from "@/components/sections/RetreatGallery";
 import { TrackedLink } from "@/components/layout/Tracking";
 import { Price } from "@/components/layout/CurrencyProvider";
 import { retreatDetails } from "@/content/retreatDetails";
@@ -120,6 +121,8 @@ export default async function WellnessRetreats({ params }: PageProps<"/[lang]/we
           <p className="mt-6 border-t border-line pt-5 leading-relaxed">{tr(p.included, locale)}</p>
         </div>
       </section>
+
+      <RetreatGallery locale={locale} label={dict.common.photoToCome} />
 
       <Faqs faqs={p.faqs} locale={locale} title={dict.common.faqs} />
       <FinalCta locale={locale} dict={dict} query={query} />
