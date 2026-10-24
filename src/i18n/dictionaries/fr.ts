@@ -169,7 +169,6 @@ const fr: Dictionary = {
     privacy: "Confidentialité",
     terms: "Conditions",
     rights: "Tous droits réservés.",
-    placeholderAddress: "[Adresse du bureau, Philippines — à confirmer]",
   },
   destination: {
     insideLabel: "Inside",

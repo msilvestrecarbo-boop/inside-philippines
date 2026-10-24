@@ -172,7 +172,6 @@ const en = {
     privacy: "Privacy",
     terms: "Terms",
     rights: "All rights reserved.",
-    placeholderAddress: "[Office address, Philippines — to be confirmed]",
   },
   destination: {
     insideLabel: "Inside",

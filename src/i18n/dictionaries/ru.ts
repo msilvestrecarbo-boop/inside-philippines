@@ -173,7 +173,6 @@ const ru: Dictionary = {
     privacy: "Конфиденциальность",
     terms: "Условия",
     rights: "Все права защищены.",
-    placeholderAddress: "[Адрес офиса, Филиппины — уточняется]",
   },
   destination: {
     insideLabel: "Inside",

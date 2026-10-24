@@ -173,7 +173,6 @@ const ar: Dictionary = {
     privacy: "الخصوصية",
     terms: "الشروط",
     rights: "جميع الحقوق محفوظة.",
-    placeholderAddress: "[عنوان المكتب، الفلبين — يُؤكَّد لاحقاً]",
   },
   destination: {
     insideLabel: "Inside",
