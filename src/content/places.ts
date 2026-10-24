@@ -12,6 +12,9 @@ export const extraPlaces: Record<string, string> = {
   "balabac": "Balabac",
   "panglao": "Panglao",
   "bacolod": "Bacolod",
+  vigan: "Vigan",
+  donsol: "Donsol",
+  linapacan: "Linapacan",
 };
 
 /** Approximate coordinates for route stops without a destination page (for route maps). */
@@ -27,4 +30,7 @@ export const extraCoords: Record<string, [number, number]> = {
   balabac: [7.98, 117.06],
   panglao: [9.58, 123.75],
   bacolod: [10.68, 122.95],
+  vigan: [17.574, 120.387],
+  donsol: [12.908, 123.597],
+  linapacan: [11.47, 119.87],
 };
