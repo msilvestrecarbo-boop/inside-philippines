@@ -5,7 +5,7 @@ import type { FAQ } from "./types";
  * Wellness retreats: a top-menu section at /{lang}/wellness-retreats with one
  * page per retreat. Activities (yoga, surf, cooking lessons, hilot, breathwork)
  * and vegetarian / vegan food are part of every retreat. Every string is
- * translated in all five languages. No prices: these are designed per guest.
+ * translated in all five languages. Prices live in ./retreatDetails.ts.
  */
 
 export type Retreat = {

@@ -12,6 +12,7 @@ import { Photo } from "@/components/ui/Photo";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { FinalCta } from "@/components/layout/FinalCta";
 import { TrackedA, TrackedLink } from "@/components/layout/Tracking";
+import { Price } from "@/components/layout/CurrencyProvider";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -77,6 +78,23 @@ export default async function Retreat({ params }: PageProps<"/[lang]/wellness-re
 
       {d && (
         <section className="border-b border-line bg-shell">
+          <div className="container-x flex flex-col gap-6 border-b border-line py-10 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="kicker text-narra">{tr(dl.priceTitle, locale)}</p>
+              <div className="mt-3 flex flex-wrap gap-x-12 gap-y-4">
+                {([["shared", dl.sharedLabel], ["private", dl.privateLabel]] as const).map(([k, label]) => (
+                  <p key={k}>
+                    <span className="block text-sm text-stone">{tr(label, locale)}</span>
+                    <span className="font-display text-4xl"><span className="text-base text-stone">{dict.common.from} </span><Price eur={d.priceEUR[k]} /></span>
+                  </p>
+                ))}
+              </div>
+              <p className="mt-3 text-sm text-stone">{tr(dl.priceNote, locale)}</p>
+            </div>
+            <TrackedLink href={`/${locale}/design-my-trip${query}`} event="design_trip_click" params={{ placement: "retreat_price", retreat: r.slug }} className="btn btn-primary self-start md:self-auto">
+              {dict.nav.designMyTrip}
+            </TrackedLink>
+          </div>
           <dl className="container-x grid gap-x-8 gap-y-6 py-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
             {facts.map((f) => (
               <div key={f.label.en}>
