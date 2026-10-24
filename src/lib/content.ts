@@ -20,6 +20,14 @@ import journeysEs from "@/content/translations/journeys.es";
 import journeysFr from "@/content/translations/journeys.fr";
 import destinationsEs from "@/content/translations/destinations.es.json";
 import destinationsFr from "@/content/translations/destinations.fr.json";
+import guidesEs from "@/content/translations/guides.es.json";
+import guidesFr from "@/content/translations/guides.fr.json";
+import storiesEs from "@/content/translations/stories.es.json";
+import storiesFr from "@/content/translations/stories.fr.json";
+import categoriesEs from "@/content/translations/experiences.es.json";
+import categoriesFr from "@/content/translations/experiences.fr.json";
+import landingsEs from "@/content/translations/landings.es.json";
+import landingsFr from "@/content/translations/landings.fr.json";
 import { overlay } from "./overlay";
 
 const journeyTranslations: Partial<Record<Locale, Record<string, JourneyTranslation>>> = { es: journeysEs, fr: journeysFr };
@@ -52,10 +60,10 @@ function translate<T extends { slug: string }>(item: T, trees: Partial<Record<Lo
 
 const destinations = rawDestinations.map((d) => translate({ ...d, photo: withPhoto("destination", d.slug, d.photo) }, { es: destinationsEs, fr: destinationsFr }));
 const journeys = rawJourneys.map((j) => translateJourney({ ...j, photo: withPhoto("journey", j.slug, j.photo) }));
-const guides = rawGuides.map((g) => ({ ...g, photo: withPhoto("guide", g.slug, g.photo) }));
-const stories = rawStories.map((s) => ({ ...s, photo: withPhoto("story", s.slug, s.photo) }));
-const experienceCategories = rawCategories.map((c) => ({ ...c, photo: withPhoto("category", c.slug, c.photo) }));
-const landings = rawLandings.map((l) => ({ ...l, photo: withPhoto("landing", l.slug, l.photo) }));
+const guides = rawGuides.map((g) => translate({ ...g, photo: withPhoto("guide", g.slug, g.photo) }, { es: guidesEs, fr: guidesFr }));
+const stories = rawStories.map((s) => translate({ ...s, photo: withPhoto("story", s.slug, s.photo) }, { es: storiesEs, fr: storiesFr }));
+const experienceCategories = rawCategories.map((c) => translate({ ...c, photo: withPhoto("category", c.slug, c.photo) }, { es: categoriesEs, fr: categoriesFr }));
+const landings = rawLandings.map((l) => translate({ ...l, photo: withPhoto("landing", l.slug, l.photo) }, { es: landingsEs, fr: landingsFr }));
 
 export const getDestinations = () => destinations;
 export const getDestination = (slug: string) => destinations.find((d) => d.slug === slug);

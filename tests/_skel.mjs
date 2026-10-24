@@ -10,5 +10,5 @@ function skel(o, key) {
   return undefined;
 }
 const out = {};
-for (const d of arr.slice(+a, +b)) { const s = skel(d); if (s) { delete s.slug; out[d.slug] = s; } }
+for (const d of arr.slice(+a, +b)) { if (d.status === "planned") continue; const s = skel(d); if (s) { delete s.slug; out[d.slug] = s; } }
 console.log(JSON.stringify(out, null, 1));
