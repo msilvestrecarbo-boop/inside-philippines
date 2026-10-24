@@ -259,8 +259,12 @@ const fr: Dictionary = {
       { title: "Nous vous aidons à découvrir le pays intelligemment.", body: "Moins d'îles, mieux choisies. La bonne saison pour chacune. Du temps pour les moments que vous n'aviez pas prévus. Et une équipe sur place pendant votre séjour." },
     ],
     teamTitle: "L'équipe",
-    teamNote: "Profils de l'équipe — à compléter avec les vrais noms, photos et parcours.",
-    teamPlaceholderRole: "Travel designer",
+    teamIntro: "Une petite équipe basée aux Philippines. Vous parlez aux mêmes personnes du premier message au dernier jour.",
+    team: [
+      { name: "Marc Silvestre", role: "Fondateur et directeur général", bio: "Marc a fondé Inside Philippines pour rendre le pays plus simple à organiser depuis l'étranger. Il dirige l'entreprise et façonne chaque voyage que nous proposons : les itinéraires, le choix des hôtels et les exigences que nous nous fixons." },
+      { name: "Pearly Mae Canoy", role: "Administration et opérations sur le terrain", bio: "Pearly Mae fait tourner tout ce qui se passe sur place : réservations, confirmations, transferts, ferries et formalités de chaque voyage. Quand un plan change pendant votre séjour, c'est elle qui réorganise." },
+      { name: "Yasmen", role: "Coordinatrice voyage et expérience client", bio: "Yasmen est votre interlocutrice principale, du premier message au dernier jour. Elle coordonne votre itinéraire, répond à vos questions avant le départ et prend de vos nouvelles pendant votre séjour aux Philippines." },
+    ],
     officeTitle: "Où nous trouver",
   },
   contact: {

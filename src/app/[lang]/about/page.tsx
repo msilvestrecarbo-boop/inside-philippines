@@ -38,13 +38,14 @@ export default async function About({ params }: PageProps<"/[lang]/about">) {
       <section className="bg-shell py-20 md:py-28">
         <div className="container-x">
           <h2 className="text-[length:var(--text-h2)]">{t.teamTitle}</h2>
-          <p className="mt-4 inline-block border border-dashed border-clay px-3 py-1 text-xs text-clay-dark">{t.teamNote}</p>
-          <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {[1, 2, 3, 4].map((n) => (
-              <div key={n}>
-                <Photo locale={locale} label={dict.common.photoToCome} className="aspect-[4/5]" photo={{ tone: "sand", alt: { en: `Team member ${n}` }, brief: "Portrait, natural light, outdoors in the Philippines, relaxed, not corporate." }} />
-                <p className="mt-4 font-display text-2xl">[Name]</p>
-                <p className="text-sm text-stone">{t.teamPlaceholderRole} · [Languages spoken]</p>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-stone">{t.teamIntro}</p>
+          <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            {t.team.map((m) => (
+              <div key={m.name}>
+                <Photo locale={locale} label={dict.common.photoToCome} className="aspect-[4/5]" photo={{ tone: "sand", alt: { en: m.name }, brief: "Portrait, natural light, outdoors in the Philippines, relaxed, not corporate." }} />
+                <p className="mt-5 font-display text-2xl">{m.name}</p>
+                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.12em] text-clay-dark">{m.role}</p>
+                <p className="mt-3 leading-relaxed text-stone">{m.bio}</p>
               </div>
             ))}
           </div>

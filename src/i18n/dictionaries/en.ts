@@ -261,9 +261,13 @@ const en = {
       { title: "We know how the islands actually connect.", body: "Which flight leaves early enough to catch the afternoon boat, which crossing gets rough in August, which hotels will hold a late check-in. That knowledge is the difference between a beautiful trip and a tiring one." },
       { title: "We help you experience the country intelligently.", body: "Fewer islands, chosen well. The right season for each. Time built in for the moments you didn't plan. And people on the ground while you're here." },
     ],
-    teamTitle: "The team",
-    teamNote: "Team profiles — to be added with real names, photographs and backgrounds.",
-    teamPlaceholderRole: "Travel designer",
+    teamTitle: "Meet the team",
+    teamIntro: "A small team based in the Philippines. You talk to the same people from your first message to your last day.",
+    team: [
+      { name: "Marc Silvestre", role: "Founder & Managing Director", bio: "Marc founded Inside Philippines to make the country easier to plan from overseas. He leads the company and shapes every journey we offer: the routes, the hotel choices and the standards we hold ourselves to." },
+      { name: "Pearly Mae Canoy", role: "Administration & Ground Operations", bio: "Pearly Mae keeps everything running on the ground: bookings, confirmations, transfers, ferries and the paperwork behind each trip. When plans change during your journey, she is the one who rearranges them." },
+      { name: "Yasmen", role: "Travel Coordinator & Guest Experience", bio: "Yasmen is your main point of contact from first message to last day. She coordinates your itinerary, answers your questions before you travel and checks in with you while you are in the Philippines." },
+    ],
     officeTitle: "Where we are",
   },
   contact: {
