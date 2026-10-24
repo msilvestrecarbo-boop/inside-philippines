@@ -45,7 +45,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       </div>
       <div className="container-x mt-16 flex flex-col gap-3 border-t border-ink/20 pt-6 text-xs text-ink/65 md:flex-row md:justify-between">
         <p>
-          © {new Date().getFullYear()} {site.name} · {site.legal.companyName} · {site.legal.registration} · {t.placeholderAddress}
+          © {new Date().getFullYear()} {site.name} · {site.legal.address}
         </p>
         <p className="flex gap-5">
           <Link className="link-u" href={L("/privacy")}>{t.privacy}</Link>

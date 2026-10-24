@@ -8,7 +8,7 @@ import { withPhoto } from "@/lib/photos";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { InsiderNote } from "@/components/ui/Insider";
 import { ArticleCard, CategoryCard, DestinationCard, JourneyCard } from "@/components/cards/Cards";
-import { HowItWorks, Tiers, Trust, WhyUs } from "@/components/sections/Sections";
+import { HowItWorks, Tiers, WhyUs } from "@/components/sections/Sections";
 import { FinalCta } from "@/components/layout/FinalCta";
 import { Reveal, TrackedLink } from "@/components/layout/Tracking";
 
@@ -156,7 +156,6 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </section>
       )}
 
-      <Trust dict={dict} />
 
       {stories.length > 0 && (
         <section className="container-x pb-24 md:pb-32" aria-labelledby="stories">

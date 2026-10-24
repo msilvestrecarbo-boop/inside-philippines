@@ -17,10 +17,7 @@ export function organizationSchema(): Json {
     ...(site.whatsapp ? { telephone: `+${site.whatsapp}` } : {}),
     areaServed: ["FR", "ES", "GB", "DE", "IT", "CH", "BE", "NL", "RU", "AE", "SA", "QA"],
     knowsLanguage: ["en", "fr", "es", "ru", "ar"],
-    // address + sameAs filled in once verified (placeholders are not published)
-    ...(site.isPlaceholder(site.legal.address)
-      ? {}
-      : { address: { "@type": "PostalAddress", streetAddress: site.legal.address, addressCountry: "PH" } }),
+    address: site.legal.locations.map((l) => ({ "@type": "PostalAddress", addressLocality: l.locality, addressRegion: l.region, addressCountry: "PH" })),
     sameAs: [site.instagram, site.tiktok, site.youtube],
   };
 }

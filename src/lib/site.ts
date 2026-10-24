@@ -10,9 +10,9 @@ export const site = {
   ).replace(/\/$/, ""),
   /** Search engines are kept out until launch. Set NEXT_PUBLIC_ALLOW_INDEXING=true when placeholders are replaced. */
   indexable: process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true",
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@insidephilippines.com",
+  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "marc@lymaculinary.com",
   /** Digits only with country code, e.g. 639171234567. Empty = placeholder. */
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "",
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "639524050513",
   instagram: "https://www.instagram.com/insidephilippines", // handle availability to be confirmed
   tiktok: "https://www.tiktok.com/@insidephilippines",
   youtube: "https://www.youtube.com/@insidephilippines",
@@ -20,8 +20,13 @@ export const site = {
     companyName: "[Registered company name]",
     registration: "[SEC/DTI registration number]",
     dotAccreditation: "[DOT accreditation number]",
-    address: "[Street, City, Province, Philippines]",
-    city: "[City]",
+    /** Where the team works. Street addresses to be added once confirmed. */
+    locations: [
+      { locality: "Taguig", region: "Metro Manila" },
+      { locality: "General Luna", region: "Siargao Island" },
+    ],
+    address: "Taguig, Metro Manila · General Luna, Siargao Island, Philippines",
+    city: "Taguig",
   },
   isPlaceholder: (v: string) => v.startsWith("["),
 };

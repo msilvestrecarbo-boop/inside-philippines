@@ -2,7 +2,7 @@ import { tr } from "@/i18n/config";
 import { resolve } from "@/lib/i18n-server";
 import { buildMetadata } from "@/lib/seo";
 import { getDestinations, getJourneys } from "@/lib/content";
-import { whatsappHref } from "@/lib/site";
+import { site, whatsappHref } from "@/lib/site";
 import { TripBuilder } from "@/components/trip/TripBuilder";
 import { destName } from "@/components/cards/Cards";
 
@@ -32,6 +32,7 @@ export default async function DesignMyTrip({ params }: PageProps<"/[lang]/design
           journeys={journeys}
           privacyHref={`/${locale}/privacy`}
           whatsappHref={whatsappHref(dict.whatsapp.message)}
+          email={site.email}
         />
       </div>
     </section>
