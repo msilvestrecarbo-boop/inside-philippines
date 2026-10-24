@@ -25,6 +25,8 @@ import destinationsFr from "@/content/translations/destinations.fr.json";
 import destinationsRu from "@/content/translations/destinations.ru.json";
 import destinationsAr from "@/content/translations/destinations.ar.json";
 import guidesEs from "@/content/translations/guides.es.json";
+import guidesRu from "@/content/translations/guides.ru.json";
+import guidesAr from "@/content/translations/guides.ar.json";
 import guidesFr from "@/content/translations/guides.fr.json";
 import storiesEs from "@/content/translations/stories.es.json";
 import storiesFr from "@/content/translations/stories.fr.json";
@@ -64,7 +66,7 @@ function translate<T extends { slug: string }>(item: T, trees: Partial<Record<Lo
 
 const destinations = rawDestinations.map((d) => translate({ ...d, photo: withPhoto("destination", d.slug, d.photo) }, { es: destinationsEs, fr: destinationsFr, ru: destinationsRu, ar: destinationsAr }));
 const journeys = rawJourneys.map((j) => translateJourney({ ...j, photo: withPhoto("journey", j.slug, j.photo) }));
-const guides = rawGuides.map((g) => translate({ ...g, photo: withPhoto("guide", g.slug, g.photo) }, { es: guidesEs, fr: guidesFr }));
+const guides = rawGuides.map((g) => translate({ ...g, photo: withPhoto("guide", g.slug, g.photo) }, { es: guidesEs, fr: guidesFr, ru: guidesRu, ar: guidesAr }));
 const stories = rawStories.map((s) => translate({ ...s, photo: withPhoto("story", s.slug, s.photo) }, { es: storiesEs, fr: storiesFr }));
 const experienceCategories = rawCategories.map((c) => translate({ ...c, photo: withPhoto("category", c.slug, c.photo) }, { es: categoriesEs, fr: categoriesFr }));
 const landings = rawLandings.map((l) => translate({ ...l, photo: withPhoto("landing", l.slug, l.photo) }, { es: landingsEs, fr: landingsFr }));
