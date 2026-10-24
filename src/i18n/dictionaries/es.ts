@@ -203,6 +203,7 @@ const es: Dictionary = {
     rights: "Todos los derechos reservados.",
   },
   destination: {
+    seoTitle: "Qué ver en {name}, Filipinas: guía de viaje",
     insideLabel: "Inside",
     whoShouldVisit: "Para quién es",
     recommendedNights: "Noches recomendadas",

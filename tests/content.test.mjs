@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readdirSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { destinations } from "../src/content/destinations.ts";
 import { journeys } from "../src/content/journeys.ts";
 import { guides } from "../src/content/guides.ts";
@@ -86,6 +86,37 @@ test("journey translations line up with the English source", async () => {
       assert.equal(t.upgrades.length, j.upgrades.en.length, `${l} ${slug} upgrades`);
       for (const i of Object.keys(t.legNotes ?? {})) assert.ok(j.legs[i]?.note, `${l} ${slug} leg ${i} has a note`);
       for (const [i, g] of j.legs.entries()) if (g.note) assert.ok(t.legNotes?.[i], `${l} ${slug} leg ${i} note translated`);
+    }
+  }
+});
+
+test("long-form translations fit their content and leave nothing out", async () => {
+  const { overlay } = await import("../src/lib/overlay.ts");
+  const collections = { destinations, guides, stories, experiences: experienceCategories, landings };
+  const dir = new URL("../src/content/translations/", import.meta.url);
+  // Every L field still missing the locale, as a list of paths.
+  const missing = (o, l, path = "") => {
+    if (o && typeof o === "object" && !Array.isArray(o) && "en" in o) return l in o ? [] : [path];
+    if (o && typeof o === "object") return Object.entries(o).flatMap(([k, v]) => (["brief", "credit", "creditUrl", "src"].includes(k) ? [] : missing(v, l, `${path}.${k}`)));
+    return [];
+  };
+  // Every text in the translation tree that does not land on an L field.
+  const stray = (src, tr, path = "") => {
+    if (tr === null || tr === undefined) return [];
+    if (src && typeof src === "object" && !Array.isArray(src) && "en" in src) return Array.isArray(src.en) === Array.isArray(tr) ? [] : [path];
+    if (typeof tr !== "object" || !src || typeof src !== "object") return [path];
+    return Object.entries(tr).flatMap(([k, v]) => stray(src[k], v, `${path}.${k}`));
+  };
+  for (const f of readdirSync(dir).filter((f) => f.endsWith(".json"))) {
+    const [name, l] = f.split(".");
+    const items = collections[name];
+    assert.ok(items, `${f}: unknown collection`);
+    const tree = JSON.parse(readFileSync(new URL(f, dir), "utf8"));
+    for (const [slug, tr] of Object.entries(tree)) {
+      const item = items.find((x) => x.slug === slug);
+      assert.ok(item, `${f}: ${slug} exists`);
+      assert.deepEqual(stray(item, tr), [], `${f}: ${slug} stray`);
+      assert.deepEqual(missing(overlay(item, tr, l), l), [], `${f}: ${slug} untranslated`);
     }
   }
 });

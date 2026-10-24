@@ -18,6 +18,9 @@ import type { Locale } from "@/i18n/config";
 import type { JourneyTranslation } from "@/content/translations/types";
 import journeysEs from "@/content/translations/journeys.es";
 import journeysFr from "@/content/translations/journeys.fr";
+import destinationsEs from "@/content/translations/destinations.es.json";
+import destinationsFr from "@/content/translations/destinations.fr.json";
+import { overlay } from "./overlay";
 
 const journeyTranslations: Partial<Record<Locale, Record<string, JourneyTranslation>>> = { es: journeysEs, fr: journeysFr };
 
@@ -40,7 +43,14 @@ function translateJourney(j: Journey): Journey {
   return out;
 }
 
-const destinations = rawDestinations.map((d) => ({ ...d, photo: withPhoto("destination", d.slug, d.photo) }));
+/** Long-form translations kept beside the content, by slug: { es: {...}, fr: {...} }. */
+function translate<T extends { slug: string }>(item: T, trees: Partial<Record<Locale, Record<string, unknown>>>): T {
+  let out = item;
+  for (const [l, all] of Object.entries(trees) as [Locale, Record<string, unknown>][]) out = overlay(out, all[item.slug], l);
+  return out;
+}
+
+const destinations = rawDestinations.map((d) => translate({ ...d, photo: withPhoto("destination", d.slug, d.photo) }, { es: destinationsEs, fr: destinationsFr }));
 const journeys = rawJourneys.map((j) => translateJourney({ ...j, photo: withPhoto("journey", j.slug, j.photo) }));
 const guides = rawGuides.map((g) => ({ ...g, photo: withPhoto("guide", g.slug, g.photo) }));
 const stories = rawStories.map((s) => ({ ...s, photo: withPhoto("story", s.slug, s.photo) }));

@@ -1,0 +1,1661 @@
+{
+ "banaue": {
+  "intro": "Banaue es el pueblo de entrada a los arrozales en terrazas de Ifugao, en lo alto de la Cordillera del norte de Luzón. Las terrazas que se ven desde el mirador del pueblo son famosas, pero los conjuntos Patrimonio de la UNESCO están cerca: Batad, Bangaan, Hungduan, Mayoyao y Nagacadan. Batad, un pueblo en un anfiteatro natural al que se llega a pie, es el que hay que ver. Llegar cuesta esfuerzo y el pueblo en sí es sencillo, pero las caminatas son extraordinarias, y las terrazas cambian por completo a lo largo del año: inundadas y como espejos antes de la siembra, de un verde intenso mientras crece el arroz y doradas antes de la cosecha.",
+  "whoShouldVisit": "Caminantes, viajeros con curiosidad cultural, fotógrafos y quien combina el norte de Luzón con Sagada. No es para quien va justo de tiempo o no soporta los trayectos largos por carretera y los escalones empinados.",
+  "gettingThere": "Los autobuses nocturnos desde Manila tardan unas 9 horas. En coche privado es parecido, a veces más rápido, con paradas; muchos viajeros parten el trayecto con una noche por el camino. Desde Banaue, el inicio del sendero a Batad está a unos 30–45 minutos por carretera, y luego hay que caminar de 30 a 60 minutos de bajada hasta el pueblo. Sagada está unas 3 horas más allá por carretera.",
+  "sections": [
+   {
+    "title": "Caminar entre las terrazas",
+    "body": "La caminata clásica baja a Batad, recorre los muros de las terrazas a través del pueblo y sigue hasta la cascada de Tappiyah, con un descenso empinado hasta una poza fría. Calcula casi un día entero y lleva buen calzado; los muros de piedra son estrechos y pueden resbalar. Es muy recomendable ir con un guía local, que además apoya a la comunidad.\n\nEl mirador de Banaue, a poca distancia en coche del pueblo, ofrece la panorámica clásica en minutos. Bangaan y Hungduan son alternativas más tranquilas para quien ya ha visto Batad.",
+    "items": [
+     {
+      "name": "Batad",
+      "text": "El anfiteatro de terrazas, Patrimonio Mundial de la UNESCO. Si puedes, pasa una noche en el pueblo."
+     },
+     {
+      "name": "Cascada de Tappiyah",
+      "text": "Una cascada alta bajo Batad. Escalones empinados para bajar y para volver a subir."
+     },
+     {
+      "name": "Mirador de Banaue",
+      "text": "La vista famosa, a unos minutos del pueblo en triciclo."
+     }
+    ]
+   },
+   {
+    "title": "La cultura ifugao",
+    "body": "Las terrazas son un sistema vivo, no un monumento: las gestionan las comunidades ifugao, con rituales ligados al ciclo del arroz y casas tradicionales elevadas sobre postes. Muchos jóvenes trabajan hoy fuera de la región, y mantener los muros es difícil. Alojarse en casas del pueblo, contratar guías locales y comprar tallas de madera y tejidos locales ayuda."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "Una noche en Batad",
+    "body": "Cuando se van los excursionistas del día, el pueblo se queda en silencio. El amanecer sobre las terrazas merece la subida."
+   },
+   {
+    "title": "Equipaje ligero, piernas fuertes",
+    "body": "Deja el equipaje grande en Banaue. Se pueden contratar porteadores para la bajada a Batad."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Son las terrazas de Banaue Patrimonio de la UNESCO?",
+    "a": "La declaración de la UNESCO incluye cinco conjuntos de Ifugao, entre ellos Batad y Bangaan. La vista justo encima del pueblo de Banaue no es uno de ellos, aunque sigue siendo preciosa."
+   },
+   {
+    "q": "¿Cómo llego a Banaue desde Manila?",
+    "a": "En autobús nocturno, unas 9 horas, o en coche privado con una parada por el camino."
+   },
+   {
+    "q": "¿Cuándo están verdes las terrazas?",
+    "a": "Varía según el pueblo y la altitud, pero en general de marzo a mayo, después de la siembra; el dorado de la cosecha llega más o menos en junio y julio."
+   }
+  ]
+ },
+ "batanes": {
+  "intro": "Batanes está en el estrecho de Luzón, más cerca de Taiwán que de Manila. Su pueblo, los ivatan, ha construido su vida en torno a los tifones: casas de caliza y coral con muros de hasta un metro de grosor, tejados de hierba cogon y el vakul, un tocado de fibra de palma trenzada que protege a las mujeres del sol y la lluvia. El paisaje son colinas de hierba, acantilados y pastos rodeados de muros de piedra, más parecido a la costa atlántica de Europa que a una isla tropical. Solo llegan unos pocos miles de visitantes al año, y eso es gran parte de su encanto. El inconveniente es el tiempo: los vuelos son pequeños y pueden cancelarse, así que el viaje necesita un día de margen.",
+  "whoShouldVisit": "Viajeros que ya han visto las playas y buscan algo completamente distinto, caminantes, fotógrafos y cualquiera interesado en la cultura isleña. No es para agendas ajustadas ni para quien busca playas para bañarse.",
+  "gettingThere": "Vuela a Basco (BSO) desde Manila, en 1 h 30 min a 2 horas; en temporada hay algunos vuelos desde Clark. Los vuelos son pocos, se llenan pronto en los mejores meses y dependen del tiempo, así que deja al menos un día de margen antes de una conexión internacional. A la isla de Sabtang se llega en una faluwa, un barco tradicional, desde Ivana, en unos 30–40 minutos y solo con el mar en calma.",
+  "sections": [
+   {
+    "title": "Qué hacer",
+    "body": "Batan, la isla principal, se divide de forma natural en una ruta norte y otra sur, mejor con un conductor local que te vaya contando la isla por el camino. Sabtang merece un día propio por sus pueblos de piedra.",
+    "items": [
+     {
+      "name": "Colinas de Vayang",
+      "text": "Crestas verdes sobre el mar al norte de Basco. Mejor a última hora de la tarde."
+     },
+     {
+      "name": "Racuh a Payaman (Marlboro Country)",
+      "text": "Un pasto comunal con ganado, muros de piedra y vistas inmensas. La imagen clásica de Batanes."
+     },
+     {
+      "name": "Colinas de Naidi y faro de Basco",
+      "text": "A un corto paseo de Basco, para el atardecer."
+     },
+     {
+      "name": "Valugan Boulder Beach",
+      "text": "Cantos volcánicos pulidos en la costa del Pacífico, arrojados por el mar."
+     },
+     {
+      "name": "Isla de Sabtang",
+      "text": "Chavayan y Savidug, pueblos de casas tradicionales de piedra. Solo con buen tiempo."
+     }
+    ]
+   },
+   {
+    "title": "La vida y la cocina ivatan",
+    "body": "Batanes es pequeña, segura y muy unida, y recibe a los visitantes con una cortesía discreta que es fácil devolver: saluda a la gente, pide permiso antes de fotografiar las casas y llévate tu basura. El alojamiento son sobre todo pequeñas posadas y casas de huéspedes; la comodidad es sencilla, algo que encaja con el lugar.\n\nLa cocina ivatan aprovecha al máximo una temporada de cultivo corta y un mar bravo. Busca el uvod, un plato hecho con el corazón del tallo del plátano, el pez volador secado al sol y la langosta fresca en temporada. Puede que te ofrezcan cangrejo de los cocoteros; es una especie vulnerable, y nosotros lo evitaríamos."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "Añade un día de margen",
+    "body": "Los vuelos de entrada y salida de Basco se cancelan con mal tiempo. No planifiques nunca un vuelo internacional para el día siguiente a tu salida."
+   },
+   {
+    "title": "Chavayan, Sabtang",
+    "body": "Aquí las mujeres todavía tejen los tocados vakul. Pide permiso antes de hacer fotos."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuál es la mejor época para visitar Batanes?",
+    "a": "De marzo a mayo el mar está más tranquilo y el tiempo es más estable. De junio a noviembre es temporada de tifones; los vuelos y los barcos se cancelan con frecuencia."
+   },
+   {
+    "q": "¿Cuántos días necesito?",
+    "a": "Tres noches cubren Batan y Sabtang, más un día de margen por el tiempo."
+   },
+   {
+    "q": "¿Se puede nadar en Batanes?",
+    "a": "Algunas calas permiten bañarse con buen tiempo, pero la mayor parte de la costa es rocosa y con corrientes fuertes. Ven por el paisaje, no por las playas."
+   }
+  ]
+ },
+ "bohol": {
+  "intro": "Bohol es la isla a la que enviamos a quien quiere un poco de todo sin traslados largos. Las Colinas de Chocolate, más de mil cúpulas cubiertas de hierba que se vuelven marrones en la temporada seca, están a hora y media de las playas de Panglao. El tarsero filipino, un primate del tamaño de la palma de la mano con unos ojos enormes, vive en un bosque protegido en Corella. El río Loboc se desliza por la selva bajo un dosel de palmeras nipa. Y las iglesias de piedra de la época española, muchas reconstruidas tras el terremoto de 2013, marcan casi cada pueblo.\n\nLa mayoría de los visitantes se alojan en Panglao, una isla más pequeña unida a Bohol por puentes, y hacen el interior en una excursión de un día. Funciona. Pero si tienes tiempo, una o dos noches en el interior o en la tranquila costa este, en Anda, cambian por completo la sensación del viaje.",
+  "whoShouldVisit": "Familias con niños de cualquier edad, quienes viajan por primera vez, parejas que quieren mezclar playa y visitas, y buceadores que buscan arrecifes fáciles y variados. Menos adecuada para quien quiere playas salvajes y vacías solo para sí; las playas principales de Panglao están urbanizadas.",
+  "gettingThere": "El aeropuerto internacional de Bohol-Panglao (TAG) tiene vuelos directos desde Manila (1 h 20 min aproximadamente) y algunas rutas internacionales. Desde Cebú, los ferris rápidos llegan al puerto de Tagbilaran en unas 2 horas, varias veces al día. El aeropuerto está a unos 15–20 minutos de Alona Beach. También hay ferris entre Bohol y Siquijor, Dumaguete y Camiguin; los horarios varían, así que conviene comprobarlos cerca de la fecha.",
+  "sections": [
+   {
+    "title": "Por qué Bohol",
+    "body": "Bohol es Filipinas a una escala manejable. En tres o cuatro días puedes ver una rareza geológica, un primate único, un paseo por el río y algunos de los buceos más fáciles de las Visayas, y aun así pasar las tardes junto a la piscina.\n\nAdemás está bien organizada. Las carreteras son buenas para lo que suele ser una isla, el aeropuerto está cerca de las playas y el ferry a Cebú facilita combinarla con otras islas."
+   },
+   {
+    "title": "Dónde alojarse",
+    "body": "Panglao es la opción por defecto; Anda y el interior son alternativas que recompensan a quien tiene más tiempo.",
+    "items": [
+     {
+      "name": "Alona Beach, Panglao",
+      "text": "Concurrida y práctica, con centros de buceo y restaurantes a pie de playa. Bien para una o dos noches."
+     },
+     {
+      "name": "Dumaluan y Bikini Beach, Panglao",
+      "text": "Tramos más tranquilos de arena clara en la costa sur, con resorts más grandes."
+     },
+     {
+      "name": "Norte de Panglao",
+      "text": "Zonas más calmadas alrededor de las playas de Doljo y Momo, con vistas al atardecer."
+     },
+     {
+      "name": "Anda",
+      "text": "La costa este: calas de arena blanca, pozas en cuevas y muy poca gente. A unas 2–2,5 horas de Panglao."
+     },
+     {
+      "name": "Loboc y el interior",
+      "text": "Alojamientos junto al río y en el bosque para pasar una noche lejos de la playa."
+     }
+    ]
+   },
+   {
+    "title": "Qué hacer",
+    "body": "Un día clásico por el interior recorre lo esencial en un circuito desde Panglao. Con un conductor privado puedes hacerlo en el orden correcto: colinas temprano, tarseros a media mañana y río a la hora de comer.",
+    "items": [
+     {
+      "name": "Colinas de Chocolate",
+      "text": "Más de 1.200 colinas casi simétricas alrededor de Carmen. Verdes tras las lluvias, marrones en abril."
+     },
+     {
+      "name": "Santuario de tarseros, Corella",
+      "text": "Un bosque protegido donde los tarseros viven en libertad. Voz baja y sin flash."
+     },
+     {
+      "name": "Río Loboc",
+      "text": "Los cruceros en restaurantes flotantes son populares; en paddle surf o en kayak es más tranquilo."
+     },
+     {
+      "name": "Iglesia de Baclayon",
+      "text": "Una de las iglesias de piedra más antiguas del país, cuidadosamente restaurada tras el terremoto de 2013."
+     },
+     {
+      "name": "Bosque artificial de Bilar",
+      "text": "Un tramo denso de caoba plantada junto a la carretera. Buena parada para fotos."
+     },
+     {
+      "name": "Cueva de Hinagdanan",
+      "text": "Una pequeña poza en una cueva de Panglao, iluminada por agujeros en el techo."
+     }
+    ],
+    "insider": {
+     "title": "Colinas de Chocolate a las 6",
+     "body": "La luz es más suave y las furgonetas de tours no llegan hasta las nueve más o menos."
+    }
+   },
+   {
+    "title": "Playas",
+    "body": "Panglao tiene buenas playas, pero no vacías. Para arena más tranquila, toma un barco a las islas cercanas o conduce hacia el este, hasta Anda.",
+    "items": [
+     {
+      "name": "Alona Beach",
+      "text": "El centro animado, mejor para pasear por la tarde y para salir fácilmente en barco."
+     },
+     {
+      "name": "Playa de Dumaluan",
+      "text": "Larga, clara y más tranquila, con aguas poco profundas buenas para niños."
+     },
+     {
+      "name": "Virgin Island",
+      "text": "Un banco de arena frente a Panglao que aparece con la marea baja. Suele formar parte de una excursión matinal en barco."
+     },
+     {
+      "name": "Las calas de Anda",
+      "text": "Quinale y las pequeñas playas alrededor de Anda: arena blanca y muy poca gente."
+     }
+    ]
+   },
+   {
+    "title": "Buceo y snorkel",
+    "body": "La isla de Balicasag, a unos 30–45 minutos en barco de Panglao, es un santuario marino con paredes, tortugas y grandes bancos de jureles. Haciendo snorkel se ve mucho desde la superficie; los buceadores tienen algunas de las inmersiones en pared más fáciles de la región. La isla de Pamilacan, más alejada, es conocida por los avistamientos de delfines en las salidas de primera hora.\n\nLa mañana clásica: salir hacia las 6 para ver delfines cerca de Pamilacan, hacer snorkel en Balicasag y parar en el banco de arena de Virgin Island a la vuelta."
+   },
+   {
+    "title": "Gastronomía",
+    "body": "La comida de Bohol es cocina casera: pescado a la brasa, cerdo, arroz y verduras de temporada. Busca el calamay, un dulce pegajoso de coco y azúcar envasado en cáscaras de coco, y los peanut kisses, galletitas de cacahuete con forma de Colinas de Chocolate. Panglao tiene una amplia oferta de restaurantes alrededor de Alona y de la carretera principal; en el interior, come en pequeños locales junto al río."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "Evita las atracciones de tarseros junto a la carretera",
+    "body": "A los tarseros les estresa que los manipulen y la luz. Visita en su lugar el santuario protegido de Corella."
+   },
+   {
+    "title": "Anda",
+    "body": "Dos horas al este y otro Bohol: calas blancas, pozas en cuevas y tardes tranquilas."
+   },
+   {
+    "title": "Delfines frente a Pamilacan",
+    "body": "Es más probable verlos a primera hora de la mañana. Sal de Panglao antes de las 6."
+   },
+   {
+    "title": "Calamay de Jagna",
+    "body": "El dulce en cáscara de coco de la costa sur. Compra un poco para el vuelo de vuelta."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cómo voy de Cebú a Bohol?",
+    "a": "En ferry rápido de la ciudad de Cebú a Tagbilaran, unas 2 horas, varias veces al día."
+   },
+   {
+    "q": "¿Puedo ver las Colinas de Chocolate en una excursión de un día?",
+    "a": "Sí. Un circuito por el interior desde Panglao incluye las colinas, los tarseros y el río en un día largo."
+   },
+   {
+    "q": "¿Es Bohol buena para familias?",
+    "a": "Es una de las mejores islas para familias: trayectos cortos, playas tranquilas y mucho que ver."
+   },
+   {
+    "q": "¿Cuándo están marrones las Colinas de Chocolate?",
+    "a": "Hacia el final de la temporada seca, normalmente de marzo a mayo. El resto del año suelen estar verdes."
+   }
+  ]
+ },
+ "boracay": {
+  "intro": "Boracay es la isla de playa más famosa de Filipinas, y lo sabe. White Beach está concurrida, llena de restaurantes y hoteles, y la isla estuvo cerrada seis meses en 2018 para una limpieza que trajo normas más estrictas sobre construcción, alcohol y tabaco en la arena. El resultado es más tranquilo y limpio que antes, aunque sigue lejos de ser silencioso. Lo que no ha cambiado es la arena, que se mantiene fresca bajo los pies, y un atardecer al oeste que cada tarde cruzan los veleros paraw. Alójate en los extremos más tranquilos de la isla, planifica según la temporada y es un lugar fácil y alegre.",
+  "whoShouldVisit": "Familias, grupos de amigos, parejas que prefieren la comodidad al aislamiento, kitesurfistas en temporada seca y quien cierra un viaje más largo con unos días sencillos de playa. No es para quien quiere sentir que ha descubierto un lugar desconocido.",
+  "gettingThere": "Vuela a Caticlan (MPH), a 1 hora de Manila, y luego haz un traslado corto al embarcadero y un barco de unos 15 minutos hasta el puerto de Cagban, en Boracay. Los aviones más grandes y algunos vuelos internacionales aterrizan en Kalibo (KLO), a 1 h 30 min o 2 horas por carretera de Caticlan. En el embarcadero se pagan tasas medioambientales y de terminal.",
+  "sections": [
+   {
+    "title": "Dónde alojarse",
+    "body": "White Beach se divide en las Stations 1, 2 y 3. La Station 1 tiene la arena más ancha y los hoteles más grandes; la Station 2 es el centro animado; la Station 3 es más tranquila y sencilla. Lejos de White Beach, Diniwid, al noroeste, y las calas del extremo norte de la isla son más tranquilas, y la costa este, frente a Bulabog, es donde se alojan los kitesurfistas."
+   },
+   {
+    "title": "Qué hacer",
+    "body": "Sal a navegar en paraw al atardecer, la hora emblemática de la isla. Ve andando o en bici hasta Puka Beach, en el norte, para un baño más tranquilo. Haz snorkel en una excursión entre islas alrededor de Crocodile Island y los arrecifes cercanos. Y más o menos de noviembre a abril, cuando sopla el viento del noreste, Bulabog Beach se convierte en uno de los lugares de kitesurf más animados de Asia, con escuelas para principiantes.",
+    "insider": {
+     "title": "Desde un paraw",
+     "body": "Reserva la última salida de la tarde y mira la puesta de sol desde el agua, en lugar de desde la arena llena de gente."
+    }
+   },
+   {
+    "title": "Cuándo ir",
+    "body": "De noviembre a mayo es lo mejor: el viento del noreste (amihan) mantiene White Beach en calma y transparente. De junio a octubre, el monzón del suroeste (habagat) puede traer olas, algas y viento a White Beach, mientras que Bulabog, al otro lado, se convierte en la playa tranquila para bañarse. Navidad, el Año Nuevo chino y Semana Santa son extremadamente concurridos."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "White Beach a las 7",
+    "body": "Antes de que se llene, la arena está vacía y el agua, lisa. Báñate y luego desayuna."
+   },
+   {
+    "title": "No duermas en la Station 2",
+    "body": "Es la zona más ruidosa de la playa. Alójate en la Station 1, en Diniwid o en el extremo norte, y ve allí a cenar."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Vuelo a Caticlan o a Kalibo?",
+    "a": "A Caticlan, si los vuelos encajan en tu plan; está a minutos del embarcadero. Kalibo supone 1 h 30 min o 2 horas más por carretera."
+   },
+   {
+    "q": "¿Está Boracay demasiado masificada?",
+    "a": "En las semanas punta, hay mucha gente. Alojarse en los extremos más tranquilos, madrugar y evitar las grandes fiestas marca una gran diferencia."
+   },
+   {
+    "q": "¿Es Boracay buena para familias?",
+    "a": "Mucho. Distancias cortas, agua poco profunda en White Beach en temporada seca y muchas opciones para comer."
+   }
+  ]
+ },
+ "camiguin": {
+  "intro": "Camiguin tiene unos 64 kilómetros de perímetro, así que puedes darle la vuelta por una sola carretera costera en un par de horas, aunque es mejor hacerlo despacio a lo largo de un día. La formaron los volcanes, entre ellos el Hibok-Hibok, todavía activo, cuya última erupción fue a principios de los años cincuenta. Una erupción anterior, en 1871, hundió parte de un pueblo; una gran cruz blanca en el mar señala hoy el Cementerio Hundido. Entre medias hay cascadas, manantiales fríos, aguas termales, huertos de lanzones y un ritmo de vida que apenas ha cambiado en mucho tiempo.",
+  "whoShouldVisit": "Viajeros sin prisa, familias, senderistas y quien combina Bohol o Siargao con el norte de Mindanao. Menos adecuada para quien busca resorts impecables o largas playas de arena blanca; la mayor parte de la costa de Camiguin es de arena volcánica oscura.",
+  "gettingThere": "La ruta principal es en ferry desde el puerto de Balingoan, en Misamis Oriental, en una hora hasta Benoni, en Camiguin. Balingoan está a unas 2 horas por carretera del aeropuerto de Laguindingan (CGY), que da servicio a Cagayán de Oro con vuelos desde Manila y Cebú. También hay ferris de temporada desde Jagna, en Bohol, de 3 a 4 horas, y algunos vuelos directos desde Cebú al pequeño aeropuerto de Camiguin. Los horarios cambian, así que compruébalos cerca de la fecha.",
+  "sections": [
+   {
+    "title": "Qué hacer",
+    "body": "Toma un barco al amanecer hasta White Island, un banco de arena desnudo a poca distancia de Mambajao con los volcanes de fondo. Báñate en la cascada de Katibawasan, un salto alto y fino que cae en una poza fría, y camina hasta la cascada de Tuasan. Date un baño en las aguas termales de Ardent por la tarde y visita el Cementerio Hundido al atardecer. Los senderistas con experiencia pueden subir al Hibok-Hibok con un guía registrado y permiso; es un día exigente.",
+    "items": [
+     {
+      "name": "White Island",
+      "text": "Ve al amanecer. A las 10 la arena ya no tiene ni una sombra."
+     },
+     {
+      "name": "Isla de Mantigue",
+      "text": "Una pequeña isla boscosa con un santuario marino y buen snorkel."
+     },
+     {
+      "name": "Ruinas de la antigua iglesia de Guiob",
+      "text": "Muros de piedra coralina que quedaron tras la erupción de 1871, hoy cubiertos de musgo."
+     }
+    ]
+   },
+   {
+    "title": "Gastronomía",
+    "body": "Camiguin es conocida por los lanzones, una fruta dulce y translúcida que se celebra cada octubre con el Festival de los Lanzones. Busca también el pastel, un bollo tierno relleno de crema que los visitantes se llevan a casa por cajas."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "White Island al amanecer",
+    "body": "La luz sobre los volcanes es la mejor y el banco de arena está vacío."
+   },
+   {
+    "title": "El Cementerio Hundido",
+    "body": "La cruz en el agua atrapa la última luz del día. Tranquilo y conmovedor."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cómo llego a Camiguin?",
+    "a": "Vuela a Laguindingan (Cagayán de Oro), conduce unas 2 horas hasta Balingoan y toma el ferry de una hora hasta Benoni."
+   },
+   {
+    "q": "¿Cuántos días necesito?",
+    "a": "Dos noches cubren lo esencial; tres o cuatro son ideales para una estancia más tranquila."
+   },
+   {
+    "q": "¿Puedo combinar Camiguin con Bohol?",
+    "a": "Sí, normalmente hay ferris entre Jagna (Bohol) y Benoni. Consulta los horarios, que cambian según la temporada."
+   }
+  ]
+ },
+ "cebu": {
+  "intro": "Cebú es donde empezó Filipinas como colonia española: Magallanes desembarcó en Mactán en 1521 y la ciudad de Cebú se fundó en 1565, lo que la convierte en la ciudad más antigua del país. Hoy es una metrópolis bulliciosa y extensa, y la principal puerta de entrada a las islas centrales, con vuelos internacionales directos y ferris a Bohol, Siquijor, Leyte y más allá.\n\nLa mayoría de los viajeros solo pasan por aquí. Quienes se quedan unos días descubren una ciudad gastronómica excelente, una isla larga y montañosa con cascadas y cañones en el sur, y algunos de los buceos más accesibles del país en Moalboal y Malapascua. Piensa en Cebú como dos viajes: la ciudad, una o dos noches, y luego la isla que hay más allá.",
+  "whoShouldVisit": "Amantes de la gastronomía, buceadores, viajeros activos que buscan barranquismo y cascadas, y quien recorre las Visayas. También familias que quieren un resort en Mactán, cerca del aeropuerto. Menos adecuado para quien solo quiere una playa tranquila: las mejores playas están en las islas que rodean Cebú, no cerca de la ciudad.",
+  "gettingThere": "El aeropuerto internacional de Mactán-Cebú (CEB) tiene vuelos internacionales directos desde varias ciudades de Asia y vuelos domésticos a casi todas las islas. Desde Manila son 1 h 20 min aproximadamente. El aeropuerto está en la isla de Mactán, a unos 30–60 minutos del centro de Cebú según el tráfico. Desde el puerto de la ciudad salen ferris rápidos a Bohol (unas 2 horas), Dumaguete, Siquijor y otras islas.",
+  "sections": [
+   {
+    "title": "Por qué Cebú",
+    "body": "Cebú es el centro de conexiones más práctico del país, y eso es una ventaja real. Evita pasar por Manila para buena parte de las Visayas y Mindanao, y su larga isla ofrece mucho que hacer a pocas horas en coche.\n\nLa ciudad en sí no es bonita en el sentido evidente, y el tráfico puede ser intenso. Pero tiene historia, muy buena comida y una identidad local segura de sí misma. Los cebuanos están orgullosos de su isla y de su idioma, y se nota."
+   },
+   {
+    "title": "Dónde alojarse",
+    "body": "Tu base depende del motivo de tu visita.",
+    "items": [
+     {
+      "name": "Isla de Mactán",
+      "text": "Resorts de playa cerca del aeropuerto. Ideales para la primera o la última noche del viaje, o para familias."
+     },
+     {
+      "name": "Ciudad de Cebú: IT Park y Lahug",
+      "text": "Hoteles modernos cerca de restaurantes y cafés. Buenos para una noche en la ciudad."
+     },
+     {
+      "name": "Moalboal",
+      "text": "A unas 3 horas al suroeste: sardinas, tortugas y las cascadas de Kawasan cerca."
+     },
+     {
+      "name": "Malapascua",
+      "text": "Una isla pequeña frente al extremo norte, a unas 4 horas más un barco. Tiburones zorro."
+     },
+     {
+      "name": "Isla de Bantayan",
+      "text": "Llana, tranquila y de arena blanca, frente a la costa noroeste, en ferry."
+     }
+    ]
+   },
+   {
+    "title": "La ciudad de Cebú",
+    "body": "El centro histórico es lo bastante compacto para recorrerlo a pie en una mañana. Empieza en la Cruz de Magallanes, la cruz de madera que, según se dice, contiene fragmentos de la plantada en 1521, y entra después en la Basílica Menor del Santo Niño, que guarda la reliquia católica más antigua del país. El fuerte de San Pedro, un pequeño fuerte español triangular, está a un corto paseo.\n\nDesde allí, recorre la calle Colón, la más antigua del país, y el mercado de Carbon, el mercado público más antiguo y grande de la ciudad, con fruta, pescado seco y vida cotidiana. En las colinas sobre la ciudad, el Templo Taoísta y los miradores de Busay dominan toda el área metropolitana.",
+    "insider": {
+     "title": "Sinulog",
+     "body": "La mayor fiesta de Cebú se celebra hacia el tercer domingo de enero. Espectacular, y los hoteles se llenan con meses de antelación."
+    }
+   },
+   {
+    "title": "Gastronomía",
+    "body": "Cebú presume del mejor lechón de Filipinas, y la mayoría de los filipinos le da la razón. Los cerdos enteros se rellenan de limoncillo, ajo y cebolleta y se asan sobre carbón hasta que la piel cruje. No necesita salsa; esa es la gracia.\n\nAdemás del lechón, prueba el sutukil en Mactán (sugba, tuwa, kilaw: a la brasa, en sopa o crudo), el puso (arroz cocido dentro de una bolsita trenzada de hoja de cocotero), el ngohiong (un rollito cebuano-chino) y el mango seco, por el que la isla es famosa.",
+    "items": [
+     {
+      "name": "Lechón",
+      "text": "Búscalo en Carcar y Talisay, al sur de la ciudad, y en puestos por toda la ciudad."
+     },
+     {
+      "name": "Sutukil",
+      "text": "Elige tu pescado y decide cómo lo quieres: a la brasa, en sopa o en kinilaw."
+     },
+     {
+      "name": "Puso",
+      "text": "Arroz colgado, vendido en las parrillas callejeras y que se come con las manos."
+     },
+     {
+      "name": "Ngohiong",
+      "text": "Un rollito con cinco especias, especialidad de Cebú."
+     },
+     {
+      "name": "Mango seco",
+      "text": "Cómpralo en el aeropuerto o en los mercados para llevar a casa."
+     }
+    ],
+    "insider": {
+     "title": "Carcar",
+     "body": "Un pueblo histórico a una hora al sur, conocido por el lechón, el chicharrón y sus antiguas casas solariegas."
+    }
+   },
+   {
+    "title": "El sur de Cebú",
+    "body": "La mitad sur de la isla son montañas, ríos y arrecifes. Una ruta hacia el sur te lleva por Carcar, cruza a la costa oeste y baja hasta Moalboal y Badian.",
+    "items": [
+     {
+      "name": "Cascadas de Kawasan",
+      "text": "Pozas turquesa en el río, en Badian. El barranquismo que empieza río arriba termina aquí: saltos, baños y trepadas."
+     },
+     {
+      "name": "Moalboal",
+      "text": "El banco de sardinas, tortugas y buen buceo justo frente a la orilla."
+     },
+     {
+      "name": "Osmeña Peak",
+      "text": "El punto más alto de Cebú, con colinas puntiagudas y vistas al amanecer. Una caminata corta."
+     },
+     {
+      "name": "Cascada de Tumalog",
+      "text": "Una fina cortina de agua cubierta de musgo cerca de Oslob."
+     }
+    ]
+   },
+   {
+    "title": "Buceo",
+    "body": "Cebú es una de las islas mejor situadas del país para bucear. Moalboal tiene paredes, tortugas y un banco de sardinas que se ve haciendo snorkel desde la playa; Malapascua es uno de los pocos lugares del mundo donde se ven con regularidad tiburones zorro; y Mactán tiene inmersiones fáciles de arrecife cerca del aeropuerto."
+   },
+   {
+    "title": "Sobre Oslob",
+    "body": "En Oslob, en el extremo sur, los pescadores alimentan a los tiburones ballena para que los turistas puedan nadar con ellos. Es popular, pero la alimentación cambia el comportamiento natural de los animales, y muchos biólogos marinos y conservacionistas la cuestionan. No lo incluimos en nuestros viajes.\n\nPara ver tiburones ballena en libertad, piensa en Donsol (de temporada, más o menos de diciembre a mayo) o disfruta simplemente de lo que los arrecifes de Cebú ofrecen por sí solos.",
+    "insider": {
+     "title": "Olvida Oslob y prueba el barranquismo",
+     "body": "Dedica esa misma mañana a saltar a pozas turquesa camino de las cascadas de Kawasan."
+    }
+   }
+  ],
+  "insiders": [
+   {
+    "title": "Cascadas de Kawasan",
+    "body": "Llega antes de las 7. Los grupos de barranquismo alcanzan las cascadas inferiores a partir de media mañana."
+   },
+   {
+    "title": "Un almuerzo de lechón en Carcar",
+    "body": "Cómelo recién sacado del asador. Ese es todo el consejo."
+   },
+   {
+    "title": "Isla de Bantayan",
+    "body": "Llana, blanca y tranquila, con muy poco construido. Unos días de no hacer nada."
+   },
+   {
+    "title": "Evita el tráfico",
+    "body": "No cruces la ciudad de Cebú entre las 7 y las 9 ni entre las 16 y las 19. Un trayecto de 30 minutos puede duplicarse fácilmente."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Merece la pena visitar Cebú o es solo un lugar de paso?",
+    "a": "Las dos cosas. Quédate al menos una noche por la comida y la historia, y luego ve al sur o al norte para conocer la isla."
+   },
+   {
+    "q": "¿A qué distancia está Moalboal de la ciudad de Cebú?",
+    "a": "A unas 3 horas por carretera, según el tráfico."
+   },
+   {
+    "q": "¿Hay vuelos internacionales a Cebú?",
+    "a": "Sí. Cebú tiene vuelos internacionales directos desde varias ciudades de Asia, que pueden ahorrarte una conexión en Manila."
+   },
+   {
+    "q": "¿Recomendáis los tiburones ballena de Oslob?",
+    "a": "No. Se alimenta a los tiburones para que se queden allí. Te sugerimos Donsol en temporada u otras experiencias con fauna."
+   },
+   {
+    "q": "¿Cuál es la mejor playa cerca de la ciudad de Cebú?",
+    "a": "Mactán tiene playas de resort, pero para playas de verdad iríamos a Bantayan, Malapascua o Bohol."
+   }
+  ]
+ },
+ "coron": {
+  "intro": "Coron es el nombre que todos usan, pero abarca tres cosas: el pueblo de Coron, un puerto con vida propia en la isla de Busuanga; la isla de Coron, al otro lado del agua, una muralla de caliza negra y verde que es tierra ancestral del pueblo tagbanua; y las islas y arrecifes dispersos del grupo de las Calamianes a su alrededor. El pueblo es más práctico que bonito. Lo importante está a un corto trayecto en barco.\n\nEso significa lagos de agua salobre, transparente como el cristal, encerrados entre acantilados; islas de arena blanca en los arrecifes exteriores; y una flota de buques de suministro japoneses hundidos por aviones estadounidenses en septiembre de 1944. Los buceadores vienen por los pecios; los demás vienen por los lagos y se quedan por las islas. Tres o cuatro noches es lo adecuado para la mayoría.",
+  "whoShouldVisit": "Buceadores (sobre todo de pecios), buenos nadadores, parejas activas y quien lo combine con El Nido. Menos adecuado para quien busca un pueblo de playa con resorts pulidos; la mayoría del alojamiento está en el pueblo o en islas apartadas.",
+  "gettingThere": "Vuela al aeropuerto Francisco B. Reyes (USU), en Busuanga, a 1 hora de Manila, con algunos vuelos desde Cebú y Clark. Del aeropuerto al pueblo de Coron hay unos 30–40 minutos por carretera. Desde El Nido, los ferris rápidos tardan unas 4 horas cuando el mar lo permite, y en temporada seca hay barcos de expedición que hacen la travesía en varios días. También hay ferris nocturnos desde Manila, pero tardan casi un día y una noche.",
+  "sections": [
+   {
+    "title": "Por qué Coron",
+    "body": "Coron parece más salvaje que El Nido. Los acantilados de la isla de Coron son más altos y oscuros, los lagos no se parecen a nada del resto del país y puedes hacer snorkel sobre un barco hundido a pocos metros de profundidad sin titulación de buceo.\n\nLa contrapartida: el pueblo no es un pueblo de playa, y los mejores lugares los comparten muchos barcos en las horas punta. Sal temprano o alójate en una de las islas exteriores."
+   },
+   {
+    "title": "Dónde alojarse",
+    "body": "La elección es entre comodidad y aislamiento.",
+    "items": [
+     {
+      "name": "El pueblo de Coron",
+      "text": "Cerca del puerto, los restaurantes y los centros de buceo. Práctico y con buena relación calidad-precio, pero sin vistas."
+     },
+     {
+      "name": "La ladera sobre el pueblo",
+      "text": "Algunos alojamientos están en las laderas, con vistas a la bahía y a la isla de Coron. Merecen la pena por las tardes."
+     },
+     {
+      "name": "Islas exteriores",
+      "text": "Los resorts en islas alrededor de Busuanga y las Calamianes son remotos y tranquilos. Ideales para lunas de miel, con traslados en barco incluidos."
+     }
+    ]
+   },
+   {
+    "title": "Lagos, lagunas e islas",
+    "body": "Los tours de Coron combinan los lagos de la isla de Coron con playas y arrecifes. El lago Kayangan exige subir unos 150 escalones hasta un mirador famoso antes de bajar al agua. El lago Barracuda es conocido por su termoclina, donde se encuentran capas de agua cálida y fría en profundidad. La Twin Lagoon son dos masas de agua unidas por un paso que se cruza nadando o deslizándose, según la marea.\n\nPara playas, dedica otro día a las islas exteriores: Malcapuya, Banana Island y Bulog Dos están a 1 h 30 min en barco y son mucho más tranquilas.",
+    "items": [
+     {
+      "name": "Lago Kayangan",
+      "text": "La vista de postal y luego el baño. Gestionado por la comunidad tagbanua."
+     },
+     {
+      "name": "Lago Barracuda",
+      "text": "Agua dulce sobre agua salada y caliza afilada bajo la superficie. Buen snorkel, y aún mejor para la apnea."
+     },
+     {
+      "name": "Twin Lagoon",
+      "text": "Nada de la primera laguna a la segunda a través de un estrecho paso en la roca."
+     },
+     {
+      "name": "Siete Pecados",
+      "text": "Un pequeño parque marino de siete islotes cerca del pueblo. Snorkel fácil y bueno."
+     },
+     {
+      "name": "Malcapuya, Banana Island, Bulog Dos",
+      "text": "El día de playas en las islas exteriores. Arena fina y aguas transparentes y poco profundas."
+     }
+    ],
+    "insider": {
+     "title": "Kayangan antes de las 8",
+     "body": "A media mañana, la cola del mirador puede tardar bastante. Sé el primer barco en el embarcadero."
+    }
+   },
+   {
+    "title": "Buceo en los pecios",
+    "body": "En septiembre de 1944, aviones de la Marina estadounidense atacaron una flota de suministro japonesa resguardada en la bahía de Coron. Hoy, una docena de pecios reposan entre unos 10 y 40 metros, cubiertos de coral y llenos de peces. Algunos, como el Skeleton Wreck y el cañonero de Lusong, son lo bastante someros para verlos haciendo snorkel.\n\nPenetrar en los pecios requiere la formación adecuada y un guía cuidadoso. La mayoría de los centros de buceo hacen salidas diarias de dos inmersiones; los buceadores avanzados pueden planificar varios días aquí.",
+    "items": [
+     {
+      "name": "Okikawa Maru",
+      "text": "Un gran petrolero, uno de los pecios más grandes de la bahía. A veces con corrientes fuertes."
+     },
+     {
+      "name": "Akitsushima",
+      "text": "Un buque nodriza de hidroaviones, el único verdadero buque de guerra de la zona. Para buceadores con experiencia."
+     },
+     {
+      "name": "Irako",
+      "text": "Un buque frigorífico en aguas más profundas, con buena visibilidad y peces grandes."
+     },
+     {
+      "name": "Cañonero de Lusong",
+      "text": "Tan somero que la popa casi asoma a la superficie con la marea baja. Ideal para el snorkel."
+     }
+    ]
+   },
+   {
+    "title": "En tierra",
+    "body": "Busuanga es una isla grande, y un día en tierra es un buen descanso entre días de barco.",
+    "items": [
+     {
+      "name": "Monte Tapyas",
+      "text": "Unos 700 escalones desde el pueblo hasta un mirador sobre la bahía. Sube antes del atardecer."
+     },
+     {
+      "name": "Aguas termales de Maquinit",
+      "text": "Unas aguas termales de agua salada junto a los manglares. Mejor de noche."
+     },
+     {
+      "name": "Calauit Safari Park",
+      "text": "Jirafas y cebras africanas, traídas aquí en los años setenta, junto al ciervo autóctono de las Calamianes. Una excursión larga de un día por caminos difíciles."
+     },
+     {
+      "name": "Culion",
+      "text": "Una antigua colonia de leprosos con un museo conmovedor y un pueblo tranquilo. Excursión de medio día en barco."
+     }
+    ]
+   },
+   {
+    "title": "Gastronomía",
+    "body": "En el pueblo de Coron se come como en un puerto: pescado a la brasa, marisco al peso, kinilaw y anacardos de Palawan. Los días de barco, el almuerzo se asa a bordo. En el pueblo hay una pequeña oferta de cafés y restaurantes en la calle principal y junto al puerto; para una buena cena, los locales de la ladera con vistas a la bahía suelen ser la mejor opción."
+   },
+   {
+    "title": "Cuándo ir",
+    "body": "De noviembre a mayo es la temporada seca y más tranquila. De junio a octubre, el monzón del suroeste trae lluvia y mar más agitado; las excursiones en barco y el ferry a El Nido pueden suspenderse durante días. El buceo en pecios funciona todo el año cuando las condiciones lo permiten."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "Snorkel en el cañonero de Lusong",
+    "body": "Un pecio de la Segunda Guerra Mundial que se ve desde la superficie, sin necesidad de titulación de buceo."
+   },
+   {
+    "title": "Monte Tapyas",
+    "body": "Empieza a subir una hora antes del atardecer; la bahía se vuelve dorada y abajo se encienden las luces del pueblo."
+   },
+   {
+    "title": "Culion",
+    "body": "Medio día en Culion te cuenta más sobre la historia de esta región que una semana de playas."
+   },
+   {
+    "title": "Separa los lagos de las playas",
+    "body": "Haz los lagos de la isla de Coron un día y las islas exteriores otro. Los tours combinados van con prisas en ambos."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Tengo que bucear para disfrutar de Coron?",
+    "a": "No. Los lagos, las lagunas y varios pecios poco profundos son accesibles con gafas y aletas."
+   },
+   {
+    "q": "¿Cómo voy de Coron a El Nido?",
+    "a": "En ferry rápido, unas 4 horas con buenas condiciones, o en un barco de expedición de varios días. Los vuelos pasan por Manila."
+   },
+   {
+    "q": "¿Es agradable alojarse en el pueblo de Coron?",
+    "a": "Es más práctico que bonito. Elige un alojamiento con vistas en la ladera o un resort en una isla si el ambiente es importante para ti."
+   },
+   {
+    "q": "¿Cuántas noches necesito?",
+    "a": "Tres noches para lagos e islas; cuatro o más si quieres bucear bien los pecios."
+   }
+  ]
+ },
+ "dumaguete": {
+  "intro": "Dumaguete es la capital de Negros Oriental y una ciudad universitaria, sede de la Universidad Silliman, fundada en 1901 por misioneros estadounidenses. Estudiantes, jubilados y buceadores le dan un ambiente fácil y amable, y su paseo marítimo, el Rizal Boulevard, es uno de los paseos al atardecer más agradables del país. La mayoría de los visitantes vienen por lo que la rodea: Apo Island, uno de los santuarios marinos gestionados por la comunidad más antiguos del país; los puntos de buceo de arena negra de Dauin, llenos de vida macro; los lagos gemelos de cráter de Balinsasayao y Danao en las colinas; y el barco rápido a Siquijor.",
+  "whoShouldVisit": "Buceadores, aficionados al snorkel, viajeros que van a Siquijor y quien disfruta de una ciudad pequeña con comida buena y barata. No es un destino de playa en sí; las playas están al sur, en Dauin y Zamboanguita.",
+  "gettingThere": "Vuela a Dumaguete (DGT), a 1 h 20 min de Manila, también con vuelos desde Cebú. Los ferris conectan Dumaguete con Siquijor (1 a 1 h 30 min), Bohol y Cebú. Desde Moalboal, en Cebú, un ferry corto desde Liloan o Bato llega a Sibulan, cerca de Dumaguete.",
+  "sections": [
+   {
+    "title": "Apo Island y Dauin",
+    "body": "Apo Island, a unos 30 minutos en barco desde Malatapay, al sur de Dumaguete, es una pequeña isla volcánica protegida desde los años ochenta por su propia comunidad. El arrecife está sano y se ven tortugas en casi cada salida de snorkel. El número de visitantes y las tasas están regulados, así que reserva con antelación.\n\nDauin, a unos 30 minutos al sur de la ciudad, es un destino de macro de primer nivel mundial: laderas de arena negra con peces sapo, caballitos de mar, peces pipa fantasma y nudibranquios. Varios resorts de buceo se suceden por la costa."
+   },
+   {
+    "title": "Alrededor de la ciudad",
+    "body": "Pasea por el Rizal Boulevard al anochecer. Sube a las colinas para ver los lagos gemelos de Balinsasayao y Danao, en un parque forestal a una hora, o la cascada de Casaroro, cerca de Valencia. Desde Bais, a una hora al norte, salen barcos por la mañana en busca de delfines y hasta el banco de arena de Manjuyod."
+   },
+   {
+    "title": "Gastronomía",
+    "body": "Dumaguete es conocida por sus silvanas y su sans rival, postres en capas de merengue y anacardo, y por el budbud kabog, un pastel pegajoso de mijo que se come con chocolate caliente y mango maduro. El mercado de Malatapay, al sur de la ciudad, es un mercado semanal (tradicionalmente los miércoles) con compraventa de ganado y lechón."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "Budbud kabog y tsokolate",
+    "body": "Pastel de mijo con chocolate caliente espeso y mango. La mañana clásica de Dumaguete."
+   },
+   {
+    "title": "Apo Island antes de las 8",
+    "body": "Mar más tranquilo y menos barcos. A las tortugas les da igual la hora."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Merece la pena alojarse en Dumaguete o es solo un lugar de paso?",
+    "a": "Quédate al menos dos noches. Apo Island y Dauin están entre los mejores lugares del país para bucear y hacer snorkel."
+   },
+   {
+    "q": "¿Cómo voy de Dumaguete a Siquijor?",
+    "a": "En barco rápido, de 1 a 1 h 30 min, varias veces al día."
+   },
+   {
+    "q": "¿Puedo visitar Apo Island sin bucear?",
+    "a": "Sí. El snorkel con tortugas allí es excelente."
+   }
+  ]
+ },
+ "el-nido": {
+  "intro": "El Nido es la razón por la que mucha gente reserva un vuelo a Filipinas, y en general está a la altura. La bahía de Bacuit es un archipiélago de islas de caliza escarpadas con lagunas escondidas en su interior, calas de arena blanca entre los acantilados y un agua que pasa del jade al azul profundo en pocos metros. Una mañana de calma en kayak, cuesta de verdad creérselo.\n\nEl pueblo es otra historia: concurrido, ruidoso en algunas zonas y todavía adaptándose a su propia fama. Nuestro consejo es sencillo. Alójate un poco fuera, sal al agua temprano y date al menos tres días completos para que una mañana de lluvia no te cueste las lagunas.",
+  "whoShouldVisit": "Parejas, lunas de miel, quienes viajan por primera vez y familias con niños lo bastante mayores para disfrutar de días largos en barco. No es ideal para quien busca buceo serio (Coron es mejor) ni ambiente de pueblo tranquilo.",
+  "gettingThere": "Dos opciones. Volar desde Manila (a veces desde Cebú) en avioneta al aeropuerto de Lio, en 1 h 15 min aproximadamente, y luego 15–20 minutos por carretera hasta el pueblo. O volar a Puerto Princesa y subir unas 5–6 horas al norte en furgoneta privada. Desde Coron, los ferris rápidos tardan unas 4 horas, normalmente una o dos salidas al día en temporada seca; dependen del tiempo y pueden cancelarse con poco aviso. Los vuelos a Lio tienen límites de equipaje estrictos, así que prepara la maleta en consecuencia.",
+  "sections": [
+   {
+    "title": "Por qué El Nido",
+    "body": "Ningún otro lugar del país reúne tantas escenas clásicas a tan poca distancia en barco: lagunas cerradas, snorkel sobre coral al pie de los acantilados, bancos de arena que aparecen con la marea baja y una vista al oeste que convierte el atardecer en el gran momento de cada tarde.\n\nEstá concurrido porque es bueno. Con los horarios adecuados y un barco privado, pasarás la mayor parte del día en lugares mucho más tranquilos de lo que sugiere su fama."
+   },
+   {
+    "title": "Dónde alojarse",
+    "body": "Aquí el lugar donde duermes marca el viaje más que en casi ningún otro sitio, porque el pueblo de El Nido es pequeño y está lleno, mientras que las mejores playas están repartidas.",
+    "items": [
+     {
+      "name": "Corong Corong",
+      "text": "Justo al sur del pueblo, mirando al oeste sobre la bahía. Nuestra elección habitual: cerca de los barcos, noches más tranquilas y los mejores atardeceres."
+     },
+     {
+      "name": "El pueblo de El Nido",
+      "text": "Práctico y animado, pero ruidoso y apretado. Bien para una o dos noches si quieres estar en el centro de todo."
+     },
+     {
+      "name": "Lio",
+      "text": "Una zona de playa planificada junto al aeropuerto, a 15–20 minutos del pueblo. Buena para familias y para días de llegada fáciles."
+     },
+     {
+      "name": "Nacpan y Duli",
+      "text": "Playas tranquilas del norte, a unos 40 minutos. Arena amplia, olas en temporada y muy poca vida nocturna."
+     },
+     {
+      "name": "Islas privadas",
+      "text": "Unos pocos resorts en islas de la bahía de Bacuit ofrecen la versión más aislada de El Nido, solo accesible en barco."
+     }
+    ],
+    "insider": {
+     "title": "Dos bases, una estancia",
+     "body": "En un viaje de cinco noches, divídelo: tres noches en Corong Corong para los barcos y dos en Nacpan para la playa."
+    }
+   },
+   {
+    "title": "Playas",
+    "body": "Algunas de las mejores playas solo se alcanzan en barco, así que la lista de playas y la de excursiones entre islas se solapan.",
+    "items": [
+     {
+      "name": "Playa de Nacpan",
+      "text": "Cuatro kilómetros de arena fina al norte del pueblo. Ve por la tarde y quédate al atardecer."
+     },
+     {
+      "name": "Las Cabanas (Marimegmeg)",
+      "text": "La playa fácil para el atardecer, al sur del pueblo, con islitas en primer plano. Concurrida, pero con razón."
+     },
+     {
+      "name": "Seven Commando Beach",
+      "text": "Una cala con palmeras en tierra firme, normalmente parada para comer en los tours."
+     },
+     {
+      "name": "Hidden Beach, Matinloc",
+      "text": "Una playa encerrada entre acantilados a la que se entra por una abertura en la roca. Mejor con marea alta."
+     },
+     {
+      "name": "Helicopter Island",
+      "text": "Debe su nombre a su silueta; buen snorkel en el arrecife frente a su playa."
+     }
+    ]
+   },
+   {
+    "title": "Excursiones entre islas",
+    "body": "Los tours compartidos de El Nido se llaman A, B, C y D. El tour A incluye la Big Lagoon, la Small Lagoon y la Secret Lagoon; el tour C recorre Hidden Beach, Secret Beach y el santuario de Matinloc; el B y el D combinan cuevas, playas y paradas de snorkel. La Small y la Big Lagoon tienen aforo limitado y turnos con hora, otra razón para planificar.\n\nUn barco privado te permite mezclar los tours, salir temprano y quedarte más donde te guste. También significa comer donde tú quieras, y no donde han fondeado otros 30 barcos.",
+    "items": [
+     {
+      "name": "Big Lagoon",
+      "text": "Un canal ancho y poco profundo entre acantilados. Entras en kayak y el agua se hace más profunda hasta formar un cuenco verde al fondo."
+     },
+     {
+      "name": "Small Lagoon",
+      "text": "Se entra por una abertura estrecha, en kayak o nadando. El rincón más fotografiado de la bahía."
+     },
+     {
+      "name": "Secret Lagoon",
+      "text": "Una poza tras un pequeño agujero en la pared de roca. Diminuta, y llena en las horas punta."
+     },
+     {
+      "name": "Isla de Cadlao",
+      "text": "La isla más grande de la bahía, con una laguna y playas que los tours de grupo a menudo se saltan."
+     }
+    ]
+   },
+   {
+    "title": "Qué hacer",
+    "body": "Más allá de los barcos, hay suficiente para llenar un día libre sin sentir que te pierdes algo.",
+    "items": [
+     {
+      "name": "Taraw Cliff",
+      "text": "Una subida guiada y empinada por caliza afilada hasta una vista sobre el pueblo y la bahía. Dura para las manos; no es para todo el mundo."
+     },
+     {
+      "name": "Paseo en barco al atardecer",
+      "text": "Una banca tradicional o un pequeño velero por la bahía a la hora dorada."
+     },
+     {
+      "name": "Buceo",
+      "text": "Buceo fácil de arrecife por la bahía; bueno para principiantes y para quien quiere refrescar."
+     },
+     {
+      "name": "Nacpan en moto o en triciclo",
+      "text": "La carretera hacia el norte pasa junto a arrozales y pequeños barangays. Una media jornada agradable."
+     }
+    ]
+   },
+   {
+    "title": "Gastronomía",
+    "body": "La comida de El Nido gira sobre todo en torno al marisco y al almuerzo en barco. En los tours, las tripulaciones asan pescado, cerdo y calamares a bordo y los sirven con arroz, ensalada y mango en una playa. En el pueblo, busca kinilaw, pescado a la brasa vendido al peso y halo-halo en una tarde de calor.\n\nEl pueblo tiene además una amplia oferta de cafés y restaurantes internacionales, sobre todo en el paseo principal frente al mar y en Corong Corong. La calidad cambia rápido según el personal y la temporada, así que te damos recomendaciones actualizadas cuando viajas en lugar de publicar una lista."
+   },
+   {
+    "title": "Atardeceres",
+    "body": "El Nido mira al oeste, así que cada tarde es un espectáculo si el cielo está despejado. Las Cabanas es el clásico, Corong Corong la opción tranquila y Nacpan ofrece el horizonte más amplio. Desde el agua, un paseo en barco al atardecer es el mejor asiento.",
+    "insider": {
+     "title": "Corong Corong",
+     "body": "Más tranquilo que Las Cabanas, con las islas de la bahía alineadas frente a ti."
+    }
+   },
+   {
+    "title": "Cuándo ir",
+    "body": "La temporada seca va más o menos de diciembre a mayo, con el mar en calma y la mejor visibilidad de marzo a mayo. De junio a octubre, el monzón del suroeste trae lluvia, viento y algunos tours cancelados; entre chaparrones puede seguir siendo precioso, y mucho más tranquilo. Navidad, Año Nuevo y Semana Santa son las semanas de más afluencia del año."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "Lagunas a las 7 de la mañana",
+    "body": "Sal a las 7, no a las 9. La Big Lagoon con la primera luz, con solo otros tres kayaks, es otro lugar."
+   },
+   {
+    "title": "No te alojes en la calle principal del pueblo",
+    "body": "Duerme en Corong Corong o en Lio y ve al pueblo a cenar. Dormirás mejor y verás el atardecer."
+   },
+   {
+    "title": "Nacpan, a última hora de la tarde",
+    "body": "Báñate, recórrela entera hasta el mirador de las dos playas y quédate hasta que la luz se vuelva dorada."
+   },
+   {
+    "title": "Isla de Cadlao",
+    "body": "La isla más grande de la bahía está a un trayecto corto del pueblo y es más tranquila que las paradas de los tours por letras."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuántos días debo pasar en El Nido?",
+    "a": "Tres días completos es el mínimo que recomendamos: dos días en barco y uno de playa o descanso, más margen por el tiempo. Cuatro o cinco es mejor."
+   },
+   {
+    "q": "¿Es mejor volar a Lio o ir por carretera desde Puerto Princesa?",
+    "a": "Volar a Lio ahorra casi un día y merece la pena en viajes cortos. El trayecto por carretera está bien si lo partes con una noche en Port Barton."
+   },
+   {
+    "q": "¿Hay una tasa medioambiental?",
+    "a": "Sí. Los visitantes pagan una tasa de desarrollo ecoturístico, válida varios días, además de tasas de las lagunas en algunos tours. Las incluimos en el plan."
+   },
+   {
+    "q": "¿Puedo ir de El Nido a Coron en barco?",
+    "a": "Sí, en ferry rápido en unas 4 horas si hace buen tiempo, o en un barco de expedición de varios días en temporada seca. Ambos dependen del estado del mar."
+   },
+   {
+    "q": "¿Está El Nido demasiado masificado?",
+    "a": "El pueblo y las lagunas más famosas pueden estarlo, sobre todo a mediodía en temporada alta. Salir temprano, ir en barco privado y alojarse fuera del pueblo lo resuelve casi todo."
+   }
+  ]
+ },
+ "malapascua": {
+  "intro": "Malapascua mide apenas 2,5 kilómetros de largo, con caminos de arena en lugar de carreteras y un puñado de pequeños resorts y centros de buceo a lo largo de Bounty Beach. Su fama viene de Monad Shoal, una meseta submarina a poca distancia en barco donde los tiburones zorro suben de aguas profundas al amanecer para visitar las estaciones de limpieza. Es uno de los pocos lugares del mundo donde se pueden ver con regularidad. La isla sufrió mucho con el tifón Haiyan en 2013 y desde entonces se ha reconstruido. También vienen quienes no bucean, por las excursiones de snorkel, las playas tranquilas y la excursión de un día al banco de arena de la isla de Kalanggaman.",
+  "whoShouldVisit": "Sobre todo buceadores (la titulación Advanced Open Water ayuda en Monad Shoal, donde los tiburones suelen verse a unos 20–30 metros), parejas y viajeros sin prisa. Menos adecuada para familias que buscan grandes resorts y para quien no soporta los traslados largos.",
+  "gettingThere": "Desde la ciudad de Cebú o el aeropuerto de Mactán, conduce unas 4 horas al norte hasta el puerto de Maya, en Daanbantayan (el tráfico puede alargarlo). Desde Maya, pequeños barcos cruzan a Malapascua en unos 30–45 minutos. Según la marea, puede que haya que desembarcar con el agua por las rodillas.",
+  "sections": [
+   {
+    "title": "Buceo",
+    "body": "Las inmersiones con tiburones zorro salen hacia Monad Shoal sobre las 5 de la mañana. Los avistamientos son frecuentes, pero nunca están garantizados. Otras inmersiones incluyen Gato Island, un santuario marino con un túnel que se atraviesa nadando, tiburones de punta blanca y serpientes marinas, y puntos con buena vida macro, incluidos peces mandarín al anochecer."
+   },
+   {
+    "title": "Más allá del buceo",
+    "body": "Recorre la isla a pie en un par de horas, entre pueblos y hasta el faro. Pasa una tarde en Langob o en Bounty Beach. Haz una excursión de un día a la isla de Kalanggaman, a 1 h 30 min o 2 horas en barco, un largo banco de arena con una franja de palmeras en el centro. Y no te pierdas el atardecer desde la costa noroeste."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "La inmersión de las 5 con tiburones zorro",
+    "body": "Suena brutal; merece la pena. Luego, desayuno y de vuelta a la cama."
+   },
+   {
+    "title": "Isla de Kalanggaman",
+    "body": "Una isla larga y estrecha de arena blanca. Lleva sombra y comida; las instalaciones son básicas."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Tengo que ser buceador avanzado para ver tiburones zorro?",
+    "a": "Se recomienda el Advanced Open Water por la profundidad. Algunos centros ofrecen la formación en la isla."
+   },
+   {
+    "q": "¿Cuánto se tarda en llegar a Malapascua desde Cebú?",
+    "a": "Unas 4 horas por carretera hasta el puerto de Maya y luego 30–45 minutos en barco."
+   }
+  ]
+ },
+ "manila": {
+  "intro": "La mayoría de la gente intenta evitar Manila, y entendemos por qué: el tráfico es denso, el calor es de verdad y la ciudad se extiende por dieciséis ciudades y un municipio sin un centro evidente. Pero pasa aquí uno o dos días con un plan y Manila se convierte en la clave de todo lo demás. Aquí conviven las capas española, china, estadounidense y malaya del país, a menudo en la misma calle.\n\nEl corazón histórico es Intramuros, la ciudad amurallada fundada por los españoles en el siglo XVI. Al otro lado del río está Binondo, fundado en 1594 y considerado el barrio chino más antiguo del mundo. Al sur, Makati y Bonifacio Global City (BGC) es donde la ciudad moderna vive, come y sale. Nuestro consejo: elige uno o dos barrios por día, muévete fuera de las horas punta y come todo lo que puedas.",
+  "whoShouldVisit": "Amantes de la gastronomía, aficionados a la historia y la arquitectura, quien llega de un vuelo largo y necesita una noche para recuperarse, y viajeros que quieren entender Filipinas y no solo sus playas. Menos adecuado para quien tiene solo una semana y quiere el máximo de playa: en ese caso, basta con una noche junto al aeropuerto.",
+  "gettingThere": "El aeropuerto internacional Ninoy Aquino (MNL) es la principal puerta de entrada internacional, con vuelos directos desde Oriente Medio y toda Asia, y conexiones con Europa. Ten en cuenta que MNL tiene varias terminales que no están todas conectadas en zona de embarque; deja tiempo si cambias de una a otra. Según el tráfico, el centro de Makati está a unos 30–60 minutos del aeropuerto, e Intramuros y Binondo pueden estar a una hora o más en horas de mucho tráfico. El aeropuerto internacional de Clark (CRK), a unas 2 horas al norte, es una alternativa para algunas rutas.",
+  "sections": [
+   {
+    "title": "Por qué Manila",
+    "body": "Manila es donde Filipinas cobra sentido. Pasea por Intramuros y entenderás tres siglos de dominio español; recorre Binondo comiendo y verás la influencia china en la cocina filipina; pasa una noche en Poblacion y conocerás el país joven, seguro y creativo que suele faltar en los itinerarios de playa.\n\nTiene además los mejores museos del país, la oferta de restaurantes más variada y la escena de arte contemporáneo más interesante. Nada de eso se ve desde la carretera del aeropuerto."
+   },
+   {
+    "title": "Dónde alojarse",
+    "body": "Elige el barrio según lo que quieras hacer, y recuerda que cruzar la ciudad puede llevar una hora.",
+    "items": [
+     {
+      "name": "Makati",
+      "text": "Céntrico, transitable a pie para lo que es Manila, con parques, centros comerciales y los barrios de Legazpi y Salcedo. La base más fácil para la mayoría de los visitantes."
+     },
+     {
+      "name": "Bonifacio Global City (BGC)",
+      "text": "Moderno, limpio y ordenado, con aceras amplias. Bueno para familias y viajes de negocios."
+     },
+     {
+      "name": "Poblacion",
+      "text": "El casco antiguo de Makati, hoy el barrio de bares y comida más animado de la ciudad. Divertido, pero ruidoso de noche."
+     },
+     {
+      "name": "Bahía de Manila y Ermita",
+      "text": "Cerca de Intramuros y del Museo Nacional, con atardeceres sobre la bahía. Más concurrido y más áspero."
+     },
+     {
+      "name": "Cerca del aeropuerto",
+      "text": "Para una sola noche entre vuelos, alójate cerca de tu terminal y olvídate del tráfico."
+     }
+    ]
+   },
+   {
+    "title": "Qué hacer",
+    "body": "Manila recompensa a quien llega con un plan. Un buen primer día empieza temprano en Intramuros, pasa al Museo Nacional en las horas de más calor y cruza a Binondo para un almuerzo tardío y un paseo por la tarde.",
+    "items": [
+     {
+      "name": "Intramuros",
+      "text": "La ciudad amurallada. Recorre las murallas, visita el fuerte de Santiago y la Casa Manila, y entra en la iglesia de San Agustín."
+     },
+     {
+      "name": "Iglesia de San Agustín",
+      "text": "Terminada en 1607, es la iglesia de piedra más antigua del país y Patrimonio Mundial de la UNESCO."
+     },
+     {
+      "name": "El complejo del Museo Nacional",
+      "text": "Bellas artes, antropología e historia natural en grandes edificios junto al parque Rizal. La entrada es gratuita; consulta los días de apertura."
+     },
+     {
+      "name": "Binondo",
+      "text": "El antiguo barrio chino: templos, tiendas de dumplings, herbolarios y las calles bulliciosas alrededor de Ongpin."
+     },
+     {
+      "name": "Escolta",
+      "text": "La calle comercial de Manila de antes de la guerra, con viejos edificios art déco y una pequeña escena creativa."
+     },
+     {
+      "name": "Quiapo",
+      "text": "Alrededor de la basílica del Nazareno Negro: mercados, vida callejera y devoción. Intenso y fascinante."
+     },
+     {
+      "name": "Atardecer en la bahía de Manila",
+      "text": "Desde el bulevar Roxas o el paseo de la bahía, una de las imágenes famosas de la ciudad."
+     }
+    ],
+    "insider": {
+     "title": "Intramuros a las 7",
+     "body": "Recorre las murallas antes del calor y del tráfico. La luz sobre la piedra antigua es preciosa y la tendrás casi para ti."
+    }
+   },
+   {
+    "title": "Gastronomía",
+    "body": "Manila es el mejor lugar del país para recorrer la cocina filipina comiendo, desde las carinderias hasta las cocinas filipinas modernas. Muchos platos son regionales, pero todos acaban llegando aquí.\n\nEmpieza por los clásicos. El adobo, el plato nacional, es carne guisada en vinagre, soja, ajo y laurel; cada familia tiene su versión. El sinigang es una sopa ácida a base de tamarindo. El kare-kare es rabo de buey en salsa de cacahuete con bagoong (pasta de gamba fermentada). El sisig, de Pampanga, es cerdo picado servido en plancha caliente. Termina con halo-halo, una montaña de hielo picado, leche, judías dulces, gelatinas y ube.",
+    "items": [
+     {
+      "name": "Adobo",
+      "text": "El plato nacional, y distinto en cada cocina."
+     },
+     {
+      "name": "Sinigang",
+      "text": "Sopa ácida de tamarindo con cerdo, gambas o pescado. Comida reconfortante."
+     },
+     {
+      "name": "Kare-kare",
+      "text": "Guiso de cacahuete con rabo de buey y verduras, servido con bagoong."
+     },
+     {
+      "name": "Sisig",
+      "text": "Cerdo picado chisporroteante con chile y calamansi. Pídelo con una cerveza fría."
+     },
+     {
+      "name": "Halo-halo",
+      "text": "El gran postre filipino. Mézclalo todo antes de comerlo."
+     },
+     {
+      "name": "Dumplings y hopia de Binondo",
+      "text": "Aperitivos chino-filipinos de las viejas tiendas de Ongpin y las calles cercanas."
+     }
+    ],
+    "insider": {
+     "title": "Mercados de fin de semana",
+     "body": "El mercado de los sábados en Salcedo Village y el de los domingos en Legazpi Village, en Makati, es adonde va la gente local a desayunar, probar platos regionales y comprar fruta."
+    }
+   },
+   {
+    "title": "Un paseo gastronómico por Binondo",
+    "body": "Binondo se descubre mejor a pie y con el estómago vacío. Empieza en la iglesia de Binondo, recorre la calle Ongpin y los estrechos callejones a su alrededor, y para a probar dumplings, siopao frito, lumpia y hopia, para terminar con un té o un café en una tienda antigua.\n\nEs concurrido, ruidoso y mejor con alguien que sepa adónde ir. Un paseo guiado con un periodista gastronómico o un historiador local aporta mucho."
+   },
+   {
+    "title": "Vida nocturna",
+    "body": "Poblacion, en Makati, es el barrio más divertido de la ciudad cuando anochece: pequeños bares, terrazas en azoteas, cervecerías artesanas y comida callejera barata en unas pocas manzanas que se recorren a pie. BGC es más pulido, con coctelerías y restaurantes que cierran tarde. Manila tiene además una seria cultura de música en directo y de cócteles; pregúntanos qué está abierto y merece la pena cuando viajes."
+   },
+   {
+    "title": "Excursiones de un día",
+    "body": "Tagaytay, a unas 2 horas al sur, domina el volcán Taal y su lago, y es más fresca que la ciudad. Pampanga, a unas 2 horas al norte, es la capital gastronómica del país. Ambas son buenas paradas al principio o al final de un viaje."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "Evita las horas punta",
+    "body": "Planifica los trayectos de un lado a otro de la ciudad más o menos entre las 10 y las 16, o después de las 20. El mismo trayecto a las 18 puede durar el triple."
+   },
+   {
+    "title": "Museo Nacional de Bellas Artes",
+    "body": "El Spoliarium de Juan Luna, un enorme lienzo del siglo XIX, y entrada gratuita. El lugar más fresco para pasar una tarde de calor."
+   },
+   {
+    "title": "La bahía de Manila",
+    "body": "El sol se hunde en la bahía detrás de los barcos. Míralo desde el paseo junto al Centro Cultural."
+   },
+   {
+    "title": "Olvida el día de centro comercial",
+    "body": "Los centros comerciales son enormes, pero parecidos a los de cualquier otro lugar. Pasa el día en Intramuros y Binondo."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuánto tiempo debo quedarme en Manila?",
+    "a": "Una o dos noches suele ser lo adecuado: suficiente para Intramuros, Binondo y una buena cena. Los amantes de la gastronomía pueden quedarse tres sin problema."
+   },
+   {
+    "q": "¿Es Manila segura para los visitantes?",
+    "a": "La mayoría de las zonas que visitan los viajeros son seguras con las precauciones normales de una ciudad. No lleves objetos de valor a la vista en lugares concurridos y usa taxis registrados o aplicaciones de transporte."
+   },
+   {
+    "q": "¿Cuál es la mejor zona para alojarse?",
+    "a": "Makati es la base más fácil en general. BGC es ideal para familias. Para una sola noche entre vuelos, alójate cerca del aeropuerto."
+   },
+   {
+    "q": "¿Cómo me muevo por Manila?",
+    "a": "Lo más fácil son las aplicaciones de transporte y los conductores privados. Los trenes ayudan en algunas rutas, pero van llenos en horas punta."
+   },
+   {
+    "q": "¿Puedo saltarme Manila por completo?",
+    "a": "Sí, si vuelas a Cebú o conectas directamente con una isla. Pero incluso un día aquí da contexto a todo el viaje."
+   }
+  ]
+ },
+ "moalboal": {
+  "intro": "Moalboal es en realidad Panagsama, una franja de centros de buceo, pequeñas casas de huéspedes y bares a lo largo de una costa rocosa a unos kilómetros del pueblo. No es un destino de playa en el sentido habitual; lo importante está justo frente a la orilla. Una pared de arrecife cae casi desde el borde del agua y, desde alrededor de 2010, vive allí un enorme banco de sardinas, a menudo visible con gafas y tubo. Las tortugas son habituales, la isla de Pescador está a un corto trayecto en barco, y las cascadas de Kawasan y la ruta de barranquismo por Badian están muy cerca.",
+  "whoShouldVisit": "Buceadores, aficionados al snorkel y a la apnea, y viajeros activos. También es buena para unas noches dentro de una ruta en coche por Cebú. Menos adecuada para quien quiere una playa de arena delante del hotel.",
+  "gettingThere": "Desde la ciudad de Cebú, unas 3 horas por carretera, según el tráfico y la ruta. Desde el aeropuerto de Mactán, calcula un poco más. Ferris cortos desde Liloan (Santander) o Bato, en el sur de Cebú, cruzan a Negros cerca de Dumaguete, lo que facilita seguir hacia el sur.",
+  "sections": [
+   {
+    "title": "Sardinas, tortugas y Pescador",
+    "body": "El banco de sardinas es la gran atracción: millones de peces a pocas brazadas de Panagsama. Su comportamiento cambia cada día, pero normalmente está ahí. La isla de Pescador, a unos 20–30 minutos en barco, tiene una pared y un paso submarino que parece una catedral. Las tortugas son frecuentes en el arrecife frente a la costa. Las escuelas de apnea son cada vez más populares aquí, gracias a las aguas profundas cerca de la orilla."
+   },
+   {
+    "title": "En tierra",
+    "body": "El barranquismo desde Alegria o Badian hasta las cascadas de Kawasan es lo más destacado: varias horas saltando, nadando y deslizándose por un cañón de río turquesa, con guías y casco. White Beach (Basdaku), a unos 10 minutos al norte de Panagsama, es la playa de arena de verdad más cercana."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "Sardinas antes del desayuno",
+    "body": "Haz snorkel antes de que lleguen los barcos. El agua está tranquila y el banco suele estar más cerca de la superficie."
+   },
+   {
+    "title": "Barranquismo hasta Kawasan",
+    "body": "La media jornada más divertida de Cebú. Ve temprano para adelantarte a los grupos."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Puedo ver las sardinas sin bucear?",
+    "a": "Sí, normalmente basta con el snorkel. El banco suele estar a pocos metros de profundidad, a poca distancia nadando desde la orilla."
+   },
+   {
+    "q": "¿Hay playa en Moalboal?",
+    "a": "Panagsama es rocosa. Para arena, ve a White Beach (Basdaku), a un corto trayecto al norte."
+   }
+  ]
+ },
+ "negros": {
+  "intro": "Negros es la cuarta isla más grande de Filipinas y una de las menos visitadas por los viajeros internacionales. Su norte, Negros Occidental, se enriqueció con el azúcar en el siglo XIX, y los antiguos pueblos de hacendados de Silay y Talisay conservan grandes casas solariegas. Bacolod, la capital provincial, es conocida por el chicken inasal y por el Festival MassKara de cada octubre. El sur es más tranquilo: las playas de Sipalay, la reserva marina de la isla de Danjugan y, al otro lado de las montañas, Dumaguete, la puerta de entrada a Apo Island y Siquijor. Recorrerla en coche, entre cañaverales y las laderas volcánicas del monte Kanlaon, forma parte del atractivo.",
+  "whoShouldVisit": "Amantes de la gastronomía, aficionados al patrimonio, quienes repiten viaje y viajeros a los que les gustan las rutas por carretera. No es para quien busca una isla de resorts impecables; Negros va de variedad y autenticidad, no de lujo.",
+  "gettingThere": "Vuela al aeropuerto de Bacolod-Silay (BCD) para el norte, o a Dumaguete (DGT) para el sur; ambos tienen vuelos desde Manila y Cebú. Los ferris rápidos unen Bacolod con Iloílo en 1 a 1 h 30 min aproximadamente. En coche, de Bacolod a Sipalay hay unas 4–5 horas, y de Sipalay a Dumaguete, unas 4.",
+  "sections": [
+   {
+    "title": "Bacolod y los pueblos del azúcar",
+    "body": "Pasa un día en Silay, a unos 30 minutos de Bacolod, paseando entre casas solariegas restauradas, algunas convertidas en museo. En Talisay, The Ruins, el esqueleto de una mansión de principios del siglo XX incendiada en la Segunda Guerra Mundial, es especialmente bonita al anochecer. De vuelta en Bacolod, come chicken inasal, pollo a la brasa untado con aceite de achiote, y prueba la piaya, un hojaldre plano relleno de azúcar moscabado."
+   },
+   {
+    "title": "Sipalay y la costa sur",
+    "body": "Sipalay tiene playas largas y tranquilas y buen buceo, con Sugar Beach accesible en un corto trayecto en barco o caminando con marea baja. La isla de Danjugan, una reserva marina y de fauna protegida, se puede visitar previo acuerdo con sus gestores. Desde aquí hay un trayecto precioso hasta Dumaguete y los ferris a Siquijor."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "Chicken inasal en Bacolod",
+    "body": "Cómelo a la manera local: con arroz al ajo, aceite de pollo por encima y calamansi al lado."
+   },
+   {
+    "title": "The Ruins, Talisay",
+    "body": "Los muros de la vieja mansión brillan con la última luz. Llega una hora antes del atardecer."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Merece la pena visitar Negros?",
+    "a": "Sí, sobre todo por la comida, el patrimonio y una Filipinas más tranquila. Combina bien con Siquijor, Dumaguete e Iloílo."
+   },
+   {
+    "q": "¿Cuándo es el Festival MassKara?",
+    "a": "Se celebra en Bacolod en octubre, con los actos principales normalmente el fin de semana más cercano al cuarto domingo."
+   }
+  ]
+ },
+ "palawan": {
+  "intro": "Palawan es menos un destino que un corredor. La isla se extiende unos 450 km, desde los pecios de Coron en el norte hasta los arrecifes dispersos de Balabac en el sur, y la mayoría de los viajeros solo ve una parte: El Nido, quizá Coron y una noche en Puerto Princesa de paso. Esa parte es espectacular, pero la provincia recompensa a quien le da espacio: unas noches en Port Barton entre los nombres famosos, un día en Long Beach, los 14 km de playa de San Vicente, o un día en barco sin el itinerario de nadie más.\n\nLa contrapartida honesta es la distancia. Las carreteras son largas, los barcos dependen del tiempo y los mejores lugares rara vez están uno al lado del otro. Planificamos Palawan como una secuencia, de norte a sur o al revés, con un día de traslado por cada dos o tres días de hacer muy poco. Así, es el viaje de islas más gratificante del país.",
+  "whoShouldVisit": "Parejas, quienes viajan por primera vez y quieren la Filipinas clásica de caliza y lagunas, familias con niños mayores y cualquiera dispuesto a cambiar algunos traslados largos por días en el agua. Menos ideal si buscas vida nocturna, grandes resorts con todo dentro o un viaje de menos de una semana.",
+  "gettingThere": "La mayoría de los viajes empiezan en Puerto Princesa (PPS), a 1 h 20 min en avión de Manila, con vuelos también desde Cebú y Clark. Desde allí hay unas 5–6 horas por carretera a El Nido, unas 3 a Port Barton y unas 4 a San Vicente. También hay avionetas de Manila al aeropuerto de Lio, junto a El Nido, que ahorran el largo trayecto. A Coron se llega por el aeropuerto de Busuanga (USU), o en ferry rápido desde El Nido en unas 4 horas cuando el mar lo permite. Los horarios de los ferris son de temporada y dependen del tiempo, así que siempre dejamos margen.",
+  "sections": [
+   {
+    "title": "Por qué Palawan",
+    "body": "Aquí la protagonista es la caliza. El mismo karst que forma las lagunas de El Nido y los lagos interiores de Coron da forma también al río subterráneo cerca de Puerto Princesa, uno de los ríos subterráneos navegables más largos del mundo. Súmale una costa con muy poco desarrollo urbanístico, arrecifes donde todavía hay tortugas y tiburones de arrecife, y pueblos donde el plan de la noche es un pescado a la brasa y un atardecer.\n\nLo que Palawan no hace es ir deprisa. Las carreteras mejoran, pero siguen siendo lentas, y los barcos entre islas necesitan mar en calma. Si lo aceptas, la recompensa crece con el tiempo que le dedicas."
+   },
+   {
+    "title": "Dónde alojarse",
+    "body": "Piensa en bases, no en hoteles. Cada zona de la isla encaja con un estado de ánimo distinto, y la combinación adecuada depende de cuántas noches tengas.",
+    "items": [
+     {
+      "name": "El Nido",
+      "text": "Lo esencial para lagunas y excursiones entre islas. Alójate fuera del pueblo, que es muy concurrido: en Corong Corong para los atardeceres, o cerca de Nacpan y Lio para tener espacio."
+     },
+     {
+      "name": "Coron",
+      "text": "Pecios, lagos interiores y un pueblo portuario con vida propia. Se combina mejor con El Nido en ferry o en avión por Manila."
+     },
+     {
+      "name": "Port Barton",
+      "text": "Un pequeño pueblo de bahía sin grandes carreteras y con un ritmo tranquilo. Dos o tres noches aquí convierten el trayecto a El Nido en un viaje y no en un trámite."
+     },
+     {
+      "name": "San Vicente",
+      "text": "Long Beach son 14 km de arena casi vacía. Tranquilo, sencillo y todavía muy poco construido."
+     },
+     {
+      "name": "Puerto Princesa",
+      "text": "La capital de la provincia y el punto de llegada. Una noche para el río subterráneo suele bastar."
+     }
+    ]
+   },
+   {
+    "title": "Playas",
+    "body": "Las mejores playas de Palawan suelen ser las que se alcanzan en barco, pero algunas por carretera merecen que les dediques un día.",
+    "items": [
+     {
+      "name": "Playa de Nacpan, El Nido",
+      "text": "Una curva de 4 km de arena clara a unos 40 minutos al norte del pueblo de El Nido. Lo bastante amplia para encontrar tu propio rincón incluso en temporada alta."
+     },
+     {
+      "name": "Long Beach, San Vicente",
+      "text": "14 km de largo y casi nunca concurrida. Recórrela temprano y báñate con la marea alta."
+     },
+     {
+      "name": "Malcapuya y Banana Island, Coron",
+      "text": "Arena fina y aguas poco profundas y transparentes en las islas exteriores, en una excursión de día completo en barco."
+     },
+     {
+      "name": "German Island, Port Barton",
+      "text": "Una parada fácil en una islita, con buen snorkel justo frente a la orilla."
+     }
+    ]
+   },
+   {
+    "title": "Qué hacer",
+    "body": "Casi todos los días giran en torno al agua, pero Palawan es mucho más que lagunas.",
+    "items": [
+     {
+      "name": "Río subterráneo de Puerto Princesa",
+      "text": "Una cueva fluvial Patrimonio de la UNESCO que se recorre en barca a remo. Los permisos diarios son limitados, así que reservamos con mucha antelación."
+     },
+     {
+      "name": "Excursiones entre islas",
+      "text": "Los tours por letras de El Nido, los lagos de Coron y las islas más tranquilas de Port Barton. Un barco privado lo cambia todo en cuanto a horarios."
+     },
+     {
+      "name": "Kayak por las lagunas",
+      "text": "La Big Lagoon y la Small Lagoon de El Nido se disfrutan más en kayak, temprano, antes de que lleguen los barcos."
+     },
+     {
+      "name": "Buceo en pecios",
+      "text": "Los pecios japoneses de la Segunda Guerra Mundial en Coron están entre las mejores inmersiones en pecios de Asia."
+     },
+     {
+      "name": "Bahía de Honda",
+      "text": "Excursiones fáciles de un día a islas y bancos de arena desde Puerto Princesa, ideales para familias."
+     }
+    ]
+   },
+   {
+    "title": "Excursiones entre islas, bien hechas",
+    "body": "Los tours compartidos siguen el mismo orden a la misma hora, y por eso las lagunas famosas pueden estar llenas a las 11 de la mañana. Una bangka privada te permite invertir la ruta, salir a las 7 y parar a comer en una playa que los tours de grupo se saltan.\n\nPara una ruta más larga, en temporada seca salen expediciones en barco de varios días entre El Nido y Coron, durmiendo en sencillos campamentos en las islas. Son rústicas y dependen del tiempo, pero son la forma más memorable de cruzar de una a otra.",
+    "insider": {
+     "title": "Invierte la ruta",
+     "body": "Pide a la tripulación que haga el día al revés. Llegarás a las lagunas cuando todos los demás estén comiendo."
+    }
+   },
+   {
+    "title": "Gastronomía",
+    "body": "Palawan come del mar. Busca kinilaw (pescado crudo marinado en vinagre y calamansi), calamares a la brasa y lo que hayan traído los barcos esa mañana. Puerto Princesa tiene una escena gastronómica local pequeña pero seria, incluido el tamilok (gusano de madera de los manglares) para los curiosos, y anacardos de las propias plantaciones de la isla.\n\nLos días de barco, el almuerzo suele hacerse a la brasa a bordo o en una playa: pescado, brochetas de cerdo, arroz y fruta. Sencillo, y muchas veces la mejor comida del viaje."
+   },
+   {
+    "title": "Cuándo ir",
+    "body": "De diciembre a mayo es temporada seca y el mar suele estar en calma; de marzo a mayo es lo más caluroso y tranquilo. De junio a octubre llega el monzón del suroeste: más lluvia, travesías más movidas y alguna excursión en barco cancelada, pero también mucha menos gente y precios más bajos. Noviembre es un mes de transición que puede salir de una forma u otra."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "Port Barton",
+    "body": "Dos noches aquí parten el largo trayecto a El Nido y te enseñan el Palawan de hace quince años: una carretera, una bahía llena de barcos y poco más."
+   },
+   {
+    "title": "Río subterráneo",
+    "body": "Coge el primer turno de permisos del día. La cola de barcas en Sabang crece rápido a partir de las 9."
+   },
+   {
+    "title": "Una bangka privada",
+    "body": "En una costa tan bonita, la mayor mejora posible es tener tu propio barco y tripulación para el día."
+   },
+   {
+    "title": "Evita la excursión de un día a El Nido desde Puerto Princesa",
+    "body": "Supone más de 10 horas en furgoneta para pasar unas pocas horas en el pueblo. Quédate al menos tres noches o no vayas."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuántos días necesito para Palawan?",
+    "a": "Una semana cubre con comodidad El Nido y otra base. De diez a doce noches te permiten añadir Coron o Port Barton sin prisas."
+   },
+   {
+    "q": "¿Elijo El Nido o Coron?",
+    "a": "Si solo tienes tiempo para uno, El Nido ofrece más variedad de playas y lagunas; Coron es mejor para buceadores y para los lagos interiores. Con una semana o más, haz los dos."
+   },
+   {
+    "q": "¿Merece la pena Palawan en temporada de lluvias?",
+    "a": "Puede merecerla. La lluvia suele llegar en chaparrones más que durar todo el día, pero a veces se cancelan excursiones en barco. Deja días flexibles y evita conexiones ajustadas."
+   },
+   {
+    "q": "¿Hay que reservar el río subterráneo con antelación?",
+    "a": "Sí. El número de visitantes diarios está limitado y los permisos se agotan en los meses de más demanda. Los gestionamos como parte del viaje."
+   }
+  ]
+ },
+ "sagada": {
+  "intro": "Sagada está a unos 1.500 metros de altitud, en la Provincia de la Montaña, y lo primero que notas es el frío. En enero, las noches pueden bajar casi a 10 °C, lo que la convierte en una escapada favorita de los filipinos para huir del calor de las tierras bajas. El pueblo igorot de la zona colocaba tradicionalmente a sus muertos en ataúdes colgados de los acantilados o apilados en cuevas, y todavía se pueden ver en el valle de Echo y en la cueva de Lumiang. Súmale cuevas que se recorren vadeando y trepando, paseos por pinares y una fuerte cultura gastronómica local, y Sagada es uno de los lugares con más personalidad del norte.",
+  "whoShouldVisit": "Viajeros activos, senderistas, aficionados a la espeleología y cualquiera interesado en la cultura de la Cordillera. No es para quien no soporta los trayectos largos de montaña o el alojamiento sencillo.",
+  "gettingThere": "Sagada está a un largo trayecto de Manila: unas 11–13 horas directas en autobús o coche. La mayoría de los viajeros la combinan con Banaue (unas 3 horas por carretera) o llegan por Baguio (unas 5–6 horas por carreteras de montaña). Al llegar, los visitantes se registran en la oficina de turismo y pagan una tasa medioambiental; muchos lugares requieren guía local.",
+  "sections": [
+   {
+    "title": "Qué hacer",
+    "body": "Lo mejor de Sagada está concentrado, pero casi todo requiere guías contratados a través del pueblo. La cueva de Sumaguing es la gran visita: un descenso por cámaras de caliza resbaladiza con pozas y formaciones rocosas. La travesía de cuevas, de Lumiang a Sumaguing, dura unas 3–4 horas y es solo para personas en forma y seguras de sí mismas. Los ataúdes colgantes del valle de Echo están a un corto paseo guiado del pueblo, y la cascada de Bomod-ok es un agradable paseo entre arrozales en terrazas.",
+    "items": [
+     {
+      "name": "Mirador de Kiltepan",
+      "text": "El clásico amanecer sobre un mar de nubes. Ve más o menos entre noviembre y febrero para tener más posibilidades."
+     },
+     {
+      "name": "Cueva de Sumaguing",
+      "text": "Pies descalzos, cuerdas y agua fría. Muy divertido."
+     },
+     {
+      "name": "Valle de Echo",
+      "text": "Los ataúdes colgantes, en un paseo corto con guía."
+     },
+     {
+      "name": "Cascada de Bomod-ok",
+      "text": "Una gran cascada a la que se llega entre arrozales en terrazas y pueblos."
+     }
+    ]
+   },
+   {
+    "title": "Gastronomía",
+    "body": "Sagada es conocida por el etag, cerdo salado y ahumado que se usa en sopas y guisos, el café local cultivado en las colinas y las tartas de fruta. Con el frío, un cuenco de caldo caliente con etag es justo lo que apetece."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "Kiltepan antes de las 5:30",
+    "body": "El mar de nubes aparece antes del amanecer y se disipa poco después. Lleva una chaqueta."
+   },
+   {
+    "title": "Respeta los ataúdes",
+    "body": "Son lugares de enterramiento, no atracciones. No los toques y sigue las indicaciones de tu guía."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuánto se tarda en llegar a Sagada?",
+    "a": "Unas 11–13 horas directas desde Manila. Es mejor como parte de un viaje por el norte de Luzón con Banaue o Baguio."
+   },
+   {
+    "q": "¿Necesito guía en Sagada?",
+    "a": "Para las cuevas, los ataúdes colgantes y la mayoría de los senderos, sí. Los guías se contratan a través de la oficina de turismo o la asociación de guías del pueblo."
+   },
+   {
+    "q": "¿Cuánto frío hace?",
+    "a": "Las noches de diciembre a febrero pueden rondar los 10–15 °C. Lleva varias capas."
+   }
+  ]
+ },
+ "siargao": {
+  "intro": "Siargao está en el borde pacífico de Mindanao, y durante mucho tiempo solo la conocían los surfistas que buscaban Cloud 9, la derecha tubera frente a General Luna. Los surfistas siguen aquí, pero la isla se ha convertido en algo más amplio: un lugar donde la gente viene una semana y se queda una temporada, donde el mejor plan de la tarde es un atardecer en la pasarela y el único atasco son las motos en Tourism Road.\n\nHa cambiado deprisa, sobre todo tras la reconstrucción después del tifón Odette en diciembre de 2021, y General Luna está más concurrido que antes. Pero conduce veinte minutos en cualquier dirección y vuelves a estar entre cocoteros, arrozales y tranquilos pueblos de pescadores. Nuestro consejo: alójate cerca de General Luna por la comida y el ambiente, y pasa los días saliendo de allí.",
+  "whoShouldVisit": "Surfistas de todos los niveles, parejas jóvenes, grupos de amigos, nómadas digitales y cualquiera que busque una isla relajada con vida social. También es buena para familias activas. Menos adecuada para quien quiere resorts de lujo impecables en todas partes o unas vacaciones clásicas de playa de arena blanca sin nada más.",
+  "gettingThere": "Vuela al aeropuerto de Sayak (IAO), en Del Carmen, con vuelos directos desde Manila (1 h 40 min aproximadamente), Cebú (alrededor de 1 hora) y, según la temporada, Clark. Desde el aeropuerto hay entre 45 minutos y una hora por carretera hasta General Luna. Otra opción es volar a Surigao o Butuan y tomar un barco rápido de la ciudad de Surigao al puerto de Dapa, en 1 h 30 min a 2 horas, y luego 20 minutos por carretera. Los vuelos a Siargao se llenan rápido en los meses de más demanda, así que reserva con tiempo.",
+  "sections": [
+   {
+    "title": "Por qué Siargao",
+    "body": "Siargao funciona porque hace bien varias cosas a la vez. Tiene surf de nivel mundial para expertos y olas de arrecife suaves para principiantes. Tiene excursiones entre islas que rivalizan con las de Palawan, con bancos de arena y lagunas a poca distancia en barco. Y tiene una escena de cafés y restaurantes en General Luna inusualmente buena para una isla de este tamaño.\n\nPero, sobre todo, a la gente le encanta el ritmo. Los días se organizan en torno a las mareas y el oleaje. Las tardes, en torno al atardecer. Nada empieza a su hora, y al cabo de dos días no te importará."
+   },
+   {
+    "title": "Dónde alojarse",
+    "body": "Casi todo ocurre en General Luna y sus alrededores, el pueblo del sureste de la isla. Lo cerca que quieras estar depende de si prefieres ir a cenar andando o despertarte en silencio.",
+    "items": [
+     {
+      "name": "General Luna y Tourism Road",
+      "text": "El centro de todo: cafés, restaurantes, escuelas de surf y vida nocturna. Práctico, animado y a veces ruidoso."
+     },
+     {
+      "name": "Cloud 9",
+      "text": "Un tramo de costa al norte del pueblo, alrededor de la famosa pasarela. Ideal para surfistas que quieren ver la ola desde la cama."
+     },
+     {
+      "name": "Catangnan y Malinao",
+      "text": "Zonas más tranquilas justo a las afueras, con villas con jardín y trayectos cortos en moto para ir a cenar."
+     },
+     {
+      "name": "Pacifico",
+      "text": "A una hora al norte, en la costa este. Una playa larga, una ola de arrecife expuesta y poco más. Ideal para unas últimas noches más tranquilas."
+     },
+     {
+      "name": "Pilar y Burgos",
+      "text": "Rurales, costeros y tranquilos, con unos pocos alojamientos pequeños para quien quiere alejarse de la gente."
+     }
+    ],
+    "insider": {
+     "title": "Divide tu estancia",
+     "body": "Cuatro noches en General Luna por el ambiente, dos o tres en Pacifico por el silencio. El trayecto entre ambos forma parte del viaje."
+    }
+   },
+   {
+    "title": "Playas",
+    "body": "No todas las playas de Siargao son blancas de postal. La costa este mira al Pacífico, y muchas orillas son de arrecife más que de arena, sobre todo con marea baja. Las mejores playas para bañarse están en las islas cercanas y en el norte.",
+    "items": [
+     {
+      "name": "Isla de Guyam",
+      "text": "Una islita cubierta de palmeras a diez minutos en barco de General Luna. La primera parada clásica."
+     },
+     {
+      "name": "Isla de Daku",
+      "text": "La mayor de las islas cercanas, con una playa larga, una pequeña comunidad y almuerzos de marisco a la brasa."
+     },
+     {
+      "name": "Naked Island",
+      "text": "Un banco de arena desnudo, sin absolutamente nada. Espectacular con la marea baja, totalmente expuesto al sol."
+     },
+     {
+      "name": "Playa de Pacifico",
+      "text": "Una larga curva de arena en el norte, con agua transparente y espacio para respirar."
+     },
+     {
+      "name": "Playa de Alegría",
+      "text": "Arena clara en el extremo norte de la isla. Merece la pena combinarla con un día de ruta por el norte."
+     }
+    ]
+   },
+   {
+    "title": "Qué hacer",
+    "body": "Alquila una moto o contrata un conductor un día y da la vuelta a la isla. Los mejores lugares de Siargao están repartidos, y el trayecto entre palmeras y arrozales es la mitad del placer.",
+    "items": [
+     {
+      "name": "Piscinas naturales de Magpupungko",
+      "text": "Pozas de marea naturales en Pilar que solo aparecen con la marea baja. Consulta la tabla de mareas antes de ir."
+     },
+     {
+      "name": "Laguna de Sugba",
+      "text": "Una laguna turquesa entre manglares frente a Del Carmen, accesible en barco. Paddle surf, baño y saltos desde la plataforma."
+     },
+     {
+      "name": "Río Maasin",
+      "text": "El cocotero inclinado y el columpio de cuerda. Mejor en barquita o en paddle surf río arriba."
+     },
+     {
+      "name": "Mirador de los cocoteros",
+      "text": "El mirador junto a la carretera sobre un océano de palmeras, a las afueras de General Luna. Ve a la hora dorada."
+     },
+     {
+      "name": "Manglares de Del Carmen",
+      "text": "Uno de los mayores bosques continuos de manglar de Mindanao. Recórrelo en barquita o en kayak."
+     }
+    ]
+   },
+   {
+    "title": "Surf",
+    "body": "Cloud 9 es la famosa: una ola de arrecife potente y tubera que da lo mejor de sí más o menos de septiembre a noviembre, cuando la mayoría de los años acoge una competición internacional de surf. Es solo para surfistas con experiencia, y el arrecife es poco profundo.\n\nLa buena noticia para los demás es que la isla tiene una variedad sorprendente de olas más suaves. La mayoría de los principiantes aprende en Jacking Horse, justo al lado de Cloud 9, o en Daku Reef y Guiwan, en barco. En General Luna hay escuelas y profesores de surf por todas partes; con una semana de clases, casi todo el mundo se pone de pie con soltura.",
+    "items": [
+     {
+      "name": "Cloud 9",
+      "text": "La ola de arrecife de derechas emblemática, mejor con marea media o alta. Mírala desde la torre de la pasarela si no la surfeas."
+     },
+     {
+      "name": "Jacking Horse",
+      "text": "Olas para principiantes a una corta remada de la orilla, junto a Cloud 9."
+     },
+     {
+      "name": "Quiksilver y Stimpy's",
+      "text": "Olas de arrecife mar adentro a las que se llega en barco. Para surfistas de nivel intermedio a avanzado."
+     },
+     {
+      "name": "Pacifico",
+      "text": "Una ola de arrecife expuesta en el norte que puede funcionar cuando el sur está plano."
+     },
+     {
+      "name": "Daku Reef y Guiwan",
+      "text": "Olas suaves y amables para quienes aprenden y para longboard."
+     }
+    ],
+    "insider": {
+     "title": "Al amanecer",
+     "body": "Entra al agua con la primera luz. Normalmente hay menos viento, el agua está más lisa y el pico de Cloud 9 está en su momento más tranquilo."
+    }
+   },
+   {
+    "title": "Excursiones entre islas",
+    "body": "La clásica excursión a tres islas (Naked, Daku y Guyam) sale del puerto de General Luna y ocupa casi todo el día. Es sencilla y divertida: bañarse, comer pescado a la brasa en Daku y echar la siesta bajo las palmeras en Guyam.\n\nPara tener más espacio, reserva un barco privado a la laguna de Sugba y las islas frente a Del Carmen, o baja más al sur, a la isla de Bucas Grande y Sohoton Cove, un sistema de lagunas con cuevas y lagos llenos de medusas (el acceso depende de la temporada y de las normas locales). Es un día largo, pero memorable.",
+    "insider": {
+     "title": "Evita la ruta de las tres islas a mediodía",
+     "body": "Ve temprano o hazla al revés. Naked Island a mediodía no tiene sombra y sí mucha compañía."
+    }
+   },
+   {
+    "title": "Gastronomía",
+    "body": "La comida local de Siargao gira en torno al mar. Busca kinilaw (pescado crudo con vinagre, calamansi y chile), sinuglaw (kinilaw mezclado con panceta de cerdo a la brasa), pescado y calamares a la brasa y coco fresco. Los mercados matinales de Dapa y General Luna venden lo que han traído los barcos.\n\nEn General Luna, la influencia internacional es fuerte: café excelente, bowls y panaderías, pizza al horno de leña, cocina mediterránea, japonesa y una fusión filipina muy buena. El nivel es alto, pero cambia rápido con las temporadas, por eso te damos recomendaciones actualizadas cuando viajas en lugar de una lista aquí.",
+    "items": [
+     {
+      "name": "Kinilaw",
+      "text": "El plato emblemático de la isla: pescado crudo, vinagre, calamansi, cebolla y chile. Mejor al mediodía, con algo frío."
+     },
+     {
+      "name": "Sinuglaw",
+      "text": "Kinilaw con panceta de cerdo a la brasa. El favorito de la gente local."
+     },
+     {
+      "name": "Marisco a la brasa en Daku",
+      "text": "Elige tu pescado y deja que los cocineros de la isla lo asen."
+     }
+    ]
+   },
+   {
+    "title": "Restaurantes",
+    "body": "La mayoría de los restaurantes de la isla están en Tourism Road, en General Luna, y en la carretera hacia Cloud 9. Encontrarás locales relajados al aire libre bajo techos de paja, restaurantes en jardines iluminados con farolillos, pequeñas casas de comidas filipinas (carinderias) que sirven platos de las ollas al mediodía y cada vez más cocinas de autor.\n\nPara cenar, reserva en temporada alta, sobre todo en diciembre, en Semana Santa y durante la competición de surf. Para comer, sigue la cola de la gente local hasta las carinderias.",
+    "insider": {
+     "title": "Almuerzo en una carinderia",
+     "body": "Señala lo que tenga buena pinta en las ollas: adobo, pescado a la brasa, guisos de verduras. Cuesta una fracción de lo que cuesta comer en un café."
+    }
+   },
+   {
+    "title": "Vida nocturna",
+    "body": "La vida nocturna de Siargao funciona por turnos: cada bar organiza la gran noche un día distinto de la semana, así que la gente se mueve junta por General Luna. Espera música en directo, DJs, hogueras en la playa y gente todavía con arena del día.\n\nEs más amistosa que desenfrenada, y termina antes de lo que crees porque todo el mundo quiere surfear por la mañana. Si prefieres no oírla, alójate en Catangnan, Malinao o más al norte."
+   },
+   {
+    "title": "Bienestar",
+    "body": "General Luna tiene una oferta de bienestar notable para una isla de este tamaño: shalas de yoga al aire libre con clases diarias, sesiones de respiración y de sonido, y piscinas de inmersión, saunas y baños de hielo para recuperarse después del surf. El masaje tradicional filipino hilot también está muy extendido, a menudo en sencillos espacios con jardín.\n\nPodemos organizar unos días más tranquilos en torno al yoga matinal, un masaje y una tarde en el agua. Después de una semana de surf, tus hombros te lo agradecerán.",
+    "insider": {
+     "title": "Hilot después del surf",
+     "body": "Masaje tradicional filipino con aceite de coco, ideal tras unos días remando."
+    }
+   }
+  ],
+  "insiders": [
+   {
+    "title": "La pasarela de Cloud 9",
+    "body": "Mira a los últimos surfistas del día desde el final de la pasarela mientras el cielo se tiñe de rosa sobre el arrecife."
+   },
+   {
+    "title": "La ruta del norte",
+    "body": "Pacifico, Burgos y Alegría en un día, en moto o con conductor. Arrozales, playas vacías y casi nada de tráfico."
+   },
+   {
+    "title": "Consulta la marea",
+    "body": "Magpupungko, Naked Island y varias olas dependen de ella. Una aplicación de mareas te ahorrará un viaje en vano."
+   },
+   {
+    "title": "Tourism Road",
+    "body": "Café excelente y bowls generosos después del surf de la mañana. Ve antes de las 9 para conseguir mesa."
+   },
+   {
+    "title": "Laguna de Sugba",
+    "body": "Llega el primero y tendrás la laguna casi para ti durante una hora."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Es Siargao buena para surfistas principiantes?",
+    "a": "Mucho. Jacking Horse, Daku Reef y Guiwan son suaves, y General Luna tiene muchas escuelas de surf. Cloud 9 es solo para surfistas con experiencia."
+   },
+   {
+    "q": "¿Cuál es la mejor época para visitar Siargao?",
+    "a": "De marzo a octubre suele ser más seco. El mejor oleaje para Cloud 9 llega más o menos de septiembre a noviembre. De noviembre a enero puede haber lluvia y viento en la costa del Pacífico."
+   },
+   {
+    "q": "¿Cómo llego a Siargao?",
+    "a": "Vuela al aeropuerto de Sayak (IAO) desde Manila, Cebú o Clark, y luego conduce entre 45 minutos y una hora hasta General Luna. O vuela a Surigao y toma un barco rápido a Dapa."
+   },
+   {
+    "q": "¿Cuántos días necesito?",
+    "a": "De cinco a siete noches te permiten surfear, hacer excursiones entre islas, dar la vuelta a la isla y aún tener días de no hacer nada."
+   },
+   {
+    "q": "¿Necesito una moto?",
+    "a": "Ayuda, pero si no te sientes seguro, contrata un conductor. Las carreteras suelen estar bien, aunque resbalan después de llover."
+   },
+   {
+    "q": "¿Es Siargao buena para familias?",
+    "a": "Sí, para familias activas. Los niños pueden aprender a surfear y las excursiones entre islas son fáciles. Busca alojamiento un poco alejado de la vida nocturna."
+   }
+  ]
+ },
+ "siquijor": {
+  "intro": "Durante generaciones, los filipinos han hablado de Siquijor en voz baja. Es la isla de los mananambal, los curanderos tradicionales que trabajan con hierbas, aceites y oraciones, y de historias sobre filtros de amor y hechizos. Esa fama mantuvo alejado el turismo durante mucho tiempo, y en parte por eso la isla sigue sintiéndose tan sin prisas.\n\nLo que encuentras es amable: una carretera circular de unos 70 kilómetros entre pueblos y bosque, cascadas de un turquesa casi irreal, iglesias de la época española, calas de arena blanca y una costa orientada al oeste hecha para los atardeceres. Alquila una moto o contrata un conductor, da la vuelta a la isla en un día y dedica el resto del tiempo a hacer muy poco.",
+  "whoShouldVisit": "Parejas, viajeros sin prisa, curiosos de la cultura popular filipina y quienes combinan Dumaguete, Apo Island y Bohol. Menos adecuada para quien busca grandes resorts, vida nocturna o mucha variedad de restaurantes.",
+  "gettingThere": "La ruta habitual es en barco rápido desde Dumaguete, de 1 a 1 h 30 min hasta el puerto de Siquijor o Larena. El aeropuerto de Dumaguete (DGT) tiene vuelos desde Manila y Cebú. También hay ferris desde Tagbilaran (Bohol) y Cebú, que tardan más; los horarios cambian, así que compruébalos cerca de la fecha. La mayor parte del alojamiento está en San Juan, a unos 20–30 minutos del puerto por carretera.",
+  "sections": [
+   {
+    "title": "Por qué Siquijor",
+    "body": "Siquijor está en el punto justo entre lo fácil y lo desconocido. Está bien conectada con Dumaguete y Bohol, tiene suficientes buenos alojamientos y las carreteras son lo bastante tranquilas para recorrerla en moto. Y aun así sigue pareciendo una isla rural donde el gran acontecimiento es la luz de la tarde.\n\nAdemás es pequeña. Puedes verlo todo en un día, y te queda el resto de la estancia para nadar, leer y cenar sin prisa."
+   },
+   {
+    "title": "Dónde alojarse",
+    "body": "La mayoría de los alojamientos están en las costas oeste y suroeste, donde están los atardeceres.",
+    "items": [
+     {
+      "name": "San Juan",
+      "text": "El centro principal de pequeños resorts, cafés y centros de buceo. Lo mejor para una primera visita."
+     },
+     {
+      "name": "Siquijor y Larena",
+      "text": "Los pueblos portuarios. Prácticos, menos bonitos."
+     },
+     {
+      "name": "Lazi y el sur",
+      "text": "Más tranquilos, cerca de las cascadas de Cambugahay y del antiguo convento."
+     },
+     {
+      "name": "Maria y Salagdoong",
+      "text": "La costa este: muy pocos visitantes, calas rocosas y bosque."
+     }
+    ]
+   },
+   {
+    "title": "Qué hacer",
+    "body": "La vuelta a la isla es el día clásico. Sal temprano, en el sentido que prefieras, y para donde te apetezca.",
+    "items": [
+     {
+      "name": "Cascadas de Cambugahay",
+      "text": "Tres niveles de pozas turquesa cerca de Lazi. Columpios de cuerda y balsas de bambú. Ve temprano."
+     },
+     {
+      "name": "Iglesia y convento de Lazi",
+      "text": "Una iglesia de piedra coralina terminada en 1884 y un enorme convento con suelos de madera completado en la década de 1890, a menudo considerado uno de los más grandes de Asia."
+     },
+     {
+      "name": "El viejo balete encantado",
+      "text": "Un enorme baniano, al que se atribuyen varios siglos, con un manantial y una pequeña poza con peces entre sus raíces."
+     },
+     {
+      "name": "Playa de Salagdoong",
+      "text": "Plataformas para saltar desde el acantilado y agua transparente en la costa este."
+     },
+     {
+      "name": "Monte Bandilaan",
+      "text": "El punto más alto de la isla, con senderos por el bosque y vistas."
+     },
+     {
+      "name": "Santuario marino de Tulapos",
+      "text": "Coral y peces junto a la costa noreste; buen snorkel."
+     }
+    ]
+   },
+   {
+    "title": "Playas",
+    "body": "Las playas de Siquijor son pequeñas y tranquilas más que espectaculares. La costa oeste es la mejor para bañarse y ver el atardecer.",
+    "items": [
+     {
+      "name": "Playa de Paliton",
+      "text": "Un tramo corto de arena blanca bajo las palmeras. El lugar del atardecer en la isla."
+     },
+     {
+      "name": "Playa de Kagusuan",
+      "text": "Bajando una escalera en el sur, rocosa y con pequeños rincones de arena. Da sensación de intimidad."
+     },
+     {
+      "name": "Salagdoong",
+      "text": "La playa de la costa este para saltar desde las rocas y hacer snorkel."
+     }
+    ]
+   },
+   {
+    "title": "Curanderos y cultura popular",
+    "body": "Los mananambal (curanderos tradicionales) de Siquijor siguen ejerciendo por toda la isla, sobre todo para la gente local. Algunos reciben a visitantes para un tratamiento tradicional como el bolo-bolo, que utiliza un vaso de agua y una pajita de bambú. Acércate con respeto y curiosidad, no como a un espectáculo.\n\nCada Semana Santa, los curanderos se reúnen en las colinas para preparar pociones de hierbas, raíces y aceites, un ritual que en los últimos años ha despertado más interés entre los visitantes. Si estás allí en esas fechas, pregúntanos cómo ir de forma respetuosa."
+   },
+   {
+    "title": "Buceo",
+    "body": "Los arrecifes de Siquijor están sanos y rara vez concurridos, con paredes, vida macro y alguna tortuga cerca de la costa. San Juan tiene varios centros de buceo. Apo Island, uno de los santuarios marinos más conocidos del país, es accesible en barco desde la isla o desde Dumaguete."
+   }
+  ],
+  "insiders": [
+   {
+    "title": "Cambugahay a primera hora",
+    "body": "A media mañana, las cascadas se llenan de excursionistas de Dumaguete. Antes de las 8 las compartirás con unos pocos vecinos."
+   },
+   {
+    "title": "Playa de Paliton",
+    "body": "Pequeña, con palmeras y orientada justo al oeste. Lleva algo frío y quédate hasta que anochezca."
+   },
+   {
+    "title": "Lleva efectivo",
+    "body": "Hay pocos cajeros y no siempre aceptan tarjeta. Llega con pesos suficientes para tu estancia."
+   },
+   {
+    "title": "El convento de Lazi",
+    "body": "Recorre los largos pasillos de madera del antiguo convento. Discretamente impresionante."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cómo llego a Siquijor?",
+    "a": "Vuela a Dumaguete y toma un barco rápido de 1 a 1 h 30 min. También hay ferris desde Bohol y Cebú."
+   },
+   {
+    "q": "¿Es segura Siquijor?",
+    "a": "Sí. Su fama de brujería es folclore; la isla es tranquila y acogedora."
+   },
+   {
+    "q": "¿Cuántos días necesito?",
+    "a": "Dos noches bastan para ver la isla; tres o cuatro te permiten relajarte de verdad."
+   },
+   {
+    "q": "¿Alquilo una moto?",
+    "a": "Si te sientes seguro, sí. Las carreteras son tranquilas. Si no, es fácil contratar un conductor con triciclo o furgoneta."
+   }
+  ]
+ }
+}

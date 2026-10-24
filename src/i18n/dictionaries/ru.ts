@@ -207,6 +207,7 @@ const ru: Dictionary = {
     rights: "Все права защищены.",
   },
   destination: {
+    seoTitle: "{name}, Филиппины: путеводитель",
     insideLabel: "Inside",
     whoShouldVisit: "Кому стоит поехать",
     recommendedNights: "Рекомендуемое число ночей",
