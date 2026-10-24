@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { locales, tr } from "@/i18n/config";
 import { resolve } from "@/lib/i18n-server";
 import { buildMetadata, href, translatedLocales } from "@/lib/seo";
-import { getJourney, getJourneys, placeCoords, placeName, lowestPrice } from "@/lib/content";
+import { getJourney, getJourneys, placeCoords, placeName, localPlaceName, lowestPrice } from "@/lib/content";
 import { breadcrumbSchema, faqSchema, tripSchema } from "@/lib/schema";
 import { Photo } from "@/components/ui/Photo";
 import { Prose } from "@/components/ui/Prose";
@@ -27,8 +27,10 @@ export function generateStaticParams() {
  * Search phrase first ("Viaje a Filipinas 15 días: El Nido, Bohol"), dropping places
  * from the end rather than cutting a name in half to fit Google's ~60 characters.
  */
-function journeySearchTitle(template: string, days: number, places: string[]) {
-  const make = (p: string[]) => template.replace("{days}", String(days)).replace("{places}", p.join(", "));
+function journeySearchTitle(template: string, days: number, places: string[], sep = ", ") {
+  // Arabic counts 3–10 with the plural "أيام" and 11+ with the singular "يومًا".
+  const t = template.replace("{days} يوم", days <= 10 ? "{days} أيام" : "{days} يومًا");
+  const make = (p: string[]) => t.replace("{days}", String(days)).replace("{places}", p.join(sep));
   let p = places;
   while (p.length > 1 && make(p).length > 60) p = p.slice(0, -1);
   return make(p);
@@ -42,7 +44,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/journeys/[
   return buildMetadata({
     locale,
     path: `/journeys/${slug}`,
-    title: `${journeySearchTitle(dict.journey.seoTitle, j.days, j.route.filter((r) => r !== "manila").map((r) => placeName(r, locale)))} — ${tr(j.title, locale)}`,
+    title: `${journeySearchTitle(dict.journey.seoTitle, j.days, j.route.filter((r) => r !== "manila").map((r) => localPlaceName(r, locale)), locale === "ar" ? "، " : ", ")} — ${tr(j.title, locale)}`,
     description: tr(j.short, locale),
     translated: translatedLocales(j.intro, j.title),
   });
