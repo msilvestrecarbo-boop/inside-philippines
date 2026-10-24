@@ -248,7 +248,7 @@ const fr: Dictionary = {
       country: "Pays de résidence",
       email: "E-mail",
       whatsapp: "Numéro WhatsApp",
-      whatsappHint: "Avec l'indicatif du pays. Facultatif, mais c'est souvent le moyen le plus rapide d'échanger.",
+      whatsappHint: "Avec l'indicatif du pays.",
       language: "Langue préférée",
       comments: "Autre chose que nous devrions savoir ?",
       consent: "J'accepte qu'Inside Philippines me contacte au sujet de ce voyage. Voir la politique de confidentialité.",

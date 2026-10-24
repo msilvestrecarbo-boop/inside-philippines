@@ -248,7 +248,7 @@ const es: Dictionary = {
       country: "País de residencia",
       email: "Email",
       whatsapp: "Número de WhatsApp",
-      whatsappHint: "Con prefijo internacional. Opcional, pero suele ser la forma más rápida de hablar.",
+      whatsappHint: "Con prefijo internacional.",
       language: "Idioma preferido",
       comments: "¿Algo más que debamos saber?",
       consent: "Acepto que Inside Philippines se ponga en contacto conmigo sobre este viaje. Consulta la política de privacidad.",

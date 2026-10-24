@@ -251,7 +251,7 @@ const en = {
       country: "Country of residence",
       email: "Email",
       whatsapp: "WhatsApp number",
-      whatsappHint: "With country code. Optional, but often the fastest way to talk.",
+      whatsappHint: "With country code.",
       language: "Preferred language",
       comments: "Anything else we should know?",
       consent: "I agree that Inside Philippines may contact me about this trip. See the privacy policy.",
