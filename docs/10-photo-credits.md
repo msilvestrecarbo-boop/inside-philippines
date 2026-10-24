@@ -111,3 +111,20 @@ Free Unsplash stock photos. Not taken on our trips; yachts, spa, helicopter and 
 | retreat/meditation | Woman sitting by the sea at sunset | Ash Edmonds | [link](https://unsplash.com/photos/silhouette-of-woman-sitting-by-the-seashore-during-sunset-oQ7Y1cU-Rlg) |
 | retreat/vegan-food | Bowl of vegetables | Sonny Mauricio | [link](https://unsplash.com/photos/a-blue-bowl-filled-with-vegetables-and-a-wooden-spoon-yhc4pSbl01A) |
 | retreat/tagaytay | View over Taal Lake from Tagaytay ridge (tagged Tagaytay) | Jannel Ivory | [link](https://unsplash.com/photos/a-view-of-a-lake-and-mountains-from-the-top-of-a-hill-5_E6W06YQfQ) |
+
+## Travel guide photos (added 2026-10-24)
+
+| Key | Subject | Photographer | Page |
+|---|---|---|---|
+| guide/best-philippines-itineraries | Aerial of a small white-sand island, Siargao | Adrien Brun | [link](https://unsplash.com/photos/an-aerial-view-of-a-tropical-island-with-a-white-sand-beach-bVpbD3cwy7k) |
+| guide/philippines-honeymoon-guide | Two wooden chairs on the beach at Amanpulo, Cuyo, Palawan | Datingscout | [link](https://unsplash.com/photos/brown-wooden-chairs-on-beach-during-daytime-ISiweCJTpJA) |
+| guide/philippines-with-children | Father and child silhouetted on a beach at sunset, Tondaligan, Dagupan, Pangasinan | Beaver Fernandez | [link](https://unsplash.com/photos/a-man-and-a-child-standing-on-a-beach-at-sunset--I58HO5PP9s) |
+| guide/luxury-philippines | Aerial of beachfront villas among palms, Cauayan Island Resort, El Nido | Cauayan Island Resort | [link](https://unsplash.com/photos/aerial-view-of-palm-trees-near-body-of-water-during-daytime--6PqSpDC3aw) |
+| guide/is-the-philippines-safe | Island-hopping boats, Philippines | Jerry Kavan | [link](https://unsplash.com/photos/a-group-of-boats-floating-on-top-of-a-body-of-water-lOfRiXscqho) |
+| guide/domestic-flights-in-the-philippines | Cebu Pacific plane taxiing at golden hour | Rigil Kent Cobrador | [link](https://unsplash.com/photos/cebu-pacific-airplane-on-airport-runway-ca28UxjE7BQ) |
+| guide/ferries-in-the-philippines | Passenger boat near a green island (tagged Philippines) | Doug Villalos | [link](https://unsplash.com/photos/white-boat-on-sea-near-green-mountain-under-white-clouds-and-blue-sky-during-daytime-57zM3Ghh-Mg) |
+| guide/sim-cards-in-the-philippines | Hands holding a phone with a map | Sylwia Bartyzel | [link](https://unsplash.com/photos/hands-holding-smartphone-displaying-a-map-outdoors-axsCAxm2m0c) |
+| guide/internet-in-the-philippines | Laptop on the beach | Anastasiia Nelen | [link](https://unsplash.com/photos/a-person-sitting-on-a-beach-with-a-suitcase-and-a-laptop-Y7AwRJmfC0I) |
+| guide/money-and-currency-in-the-philippines | Busy outdoor market with vendors under umbrellas (tagged Philippines) | JC Gellidon | [link](https://unsplash.com/photos/busy-outdoor-market-with-vendors-under-umbrellas-v50DftXmY7A) |
+| guide/philippines-packing-guide | Open suitcase with travel essentials and hat | Marissa Grootes | [link](https://unsplash.com/photos/open-suitcase-with-travel-essentials-and-hat-TVllFyGaLEA) |
+| guide/philippine-customs-and-etiquette | Shared table of Filipino dishes | Christian Dala | [link](https://unsplash.com/photos/a-table-topped-with-plates-of-food-covered-in-meat-and-veggies-l6iSn9Z2lsE) |

@@ -747,5 +747,89 @@
     "photographer": "Jannel Ivory",
     "subject": "View over Taal Lake from Tagaytay ridge (tagged Tagaytay)",
     "verifiedLocation": true
+  },
+  "guide/best-philippines-itineraries": {
+    "src": "https://images.unsplash.com/photo-1736776256317-0896951a4dc9",
+    "page": "https://unsplash.com/photos/an-aerial-view-of-a-tropical-island-with-a-white-sand-beach-bVpbD3cwy7k",
+    "photographer": "Adrien Brun",
+    "subject": "Aerial of a small white-sand island, Siargao",
+    "verifiedLocation": true
+  },
+  "guide/philippines-honeymoon-guide": {
+    "src": "https://images.unsplash.com/photo-1612869443725-69ff79ba2b84",
+    "page": "https://unsplash.com/photos/brown-wooden-chairs-on-beach-during-daytime-ISiweCJTpJA",
+    "photographer": "Datingscout",
+    "subject": "Two wooden chairs on the beach at Amanpulo, Cuyo, Palawan",
+    "verifiedLocation": true
+  },
+  "guide/philippines-with-children": {
+    "src": "https://images.unsplash.com/photo-1716301149701-b1b0389b466f",
+    "page": "https://unsplash.com/photos/a-man-and-a-child-standing-on-a-beach-at-sunset--I58HO5PP9s",
+    "photographer": "Beaver Fernandez",
+    "subject": "Father and child silhouetted on a beach at sunset, Tondaligan, Dagupan, Pangasinan",
+    "verifiedLocation": true
+  },
+  "guide/luxury-philippines": {
+    "src": "https://images.unsplash.com/photo-1605538108528-8b9be1168ad8",
+    "page": "https://unsplash.com/photos/aerial-view-of-palm-trees-near-body-of-water-during-daytime--6PqSpDC3aw",
+    "photographer": "Cauayan Island Resort",
+    "subject": "Aerial of beachfront villas among palms, Cauayan Island Resort, El Nido",
+    "verifiedLocation": true
+  },
+  "guide/is-the-philippines-safe": {
+    "src": "https://images.unsplash.com/photo-1714572877874-f6f0631ff88b",
+    "page": "https://unsplash.com/photos/a-group-of-boats-floating-on-top-of-a-body-of-water-lOfRiXscqho",
+    "photographer": "Jerry Kavan",
+    "subject": "Island-hopping boats, Philippines",
+    "verifiedLocation": false
+  },
+  "guide/domestic-flights-in-the-philippines": {
+    "src": "https://images.unsplash.com/photo-1787179380214-a3900c4184ad",
+    "page": "https://unsplash.com/photos/cebu-pacific-airplane-on-airport-runway-ca28UxjE7BQ",
+    "photographer": "Rigil Kent Cobrador",
+    "subject": "Cebu Pacific plane taxiing at golden hour",
+    "verifiedLocation": false
+  },
+  "guide/ferries-in-the-philippines": {
+    "src": "https://images.unsplash.com/photo-1621820479111-a41f8e070dec",
+    "page": "https://unsplash.com/photos/white-boat-on-sea-near-green-mountain-under-white-clouds-and-blue-sky-during-daytime-57zM3Ghh-Mg",
+    "photographer": "Doug Villalos",
+    "subject": "Passenger boat near a green island (tagged Philippines)",
+    "verifiedLocation": false
+  },
+  "guide/sim-cards-in-the-philippines": {
+    "src": "https://images.unsplash.com/photo-1785317643503-26bba384b5e3",
+    "page": "https://unsplash.com/photos/hands-holding-smartphone-displaying-a-map-outdoors-axsCAxm2m0c",
+    "photographer": "Sylwia Bartyzel",
+    "subject": "Hands holding a phone with a map",
+    "verifiedLocation": false
+  },
+  "guide/internet-in-the-philippines": {
+    "src": "https://images.unsplash.com/photo-1654355229863-95a8a7a779dd",
+    "page": "https://unsplash.com/photos/a-person-sitting-on-a-beach-with-a-suitcase-and-a-laptop-Y7AwRJmfC0I",
+    "photographer": "Anastasiia Nelen",
+    "subject": "Laptop on the beach",
+    "verifiedLocation": false
+  },
+  "guide/money-and-currency-in-the-philippines": {
+    "src": "https://images.unsplash.com/photo-1768199439172-08b8c55e683b",
+    "page": "https://unsplash.com/photos/busy-outdoor-market-with-vendors-under-umbrellas-v50DftXmY7A",
+    "photographer": "JC Gellidon",
+    "subject": "Busy outdoor market with vendors under umbrellas (tagged Philippines)",
+    "verifiedLocation": false
+  },
+  "guide/philippines-packing-guide": {
+    "src": "https://images.unsplash.com/photo-1502301197179-65228ab57f78",
+    "page": "https://unsplash.com/photos/open-suitcase-with-travel-essentials-and-hat-TVllFyGaLEA",
+    "photographer": "Marissa Grootes",
+    "subject": "Open suitcase with travel essentials and hat",
+    "verifiedLocation": false
+  },
+  "guide/philippine-customs-and-etiquette": {
+    "src": "https://images.unsplash.com/photo-1688084456852-a456753e2f93",
+    "page": "https://unsplash.com/photos/a-table-topped-with-plates-of-food-covered-in-meat-and-veggies-l6iSn9Z2lsE",
+    "photographer": "Christian Dala",
+    "subject": "Shared table of Filipino dishes",
+    "verifiedLocation": false
   }
 }
