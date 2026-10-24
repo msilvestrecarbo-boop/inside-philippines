@@ -12,7 +12,7 @@ import { stories as rawStories } from "@/content/stories";
 import { experienceCategories as rawCategories, experiences } from "@/content/experiences";
 import { landings as rawLandings } from "@/content/landings";
 import { withPhoto } from "./photos";
-import { extraPlaces, extraPlaceNames, extraCoords } from "@/content/places";
+import { extraPlaces, extraPlaceNames, extraPlaceNamesLocal, extraCoords } from "@/content/places";
 import type { Destination, Journey } from "@/content/types";
 import type { Locale } from "@/i18n/config";
 import type { JourneyTranslation } from "@/content/translations/types";
@@ -29,10 +29,16 @@ import guidesRu from "@/content/translations/guides.ru.json";
 import guidesAr from "@/content/translations/guides.ar.json";
 import guidesFr from "@/content/translations/guides.fr.json";
 import storiesEs from "@/content/translations/stories.es.json";
+import storiesRu from "@/content/translations/stories.ru.json";
+import storiesAr from "@/content/translations/stories.ar.json";
 import storiesFr from "@/content/translations/stories.fr.json";
 import categoriesEs from "@/content/translations/experiences.es.json";
 import categoriesFr from "@/content/translations/experiences.fr.json";
+import categoriesRu from "@/content/translations/experiences.ru.json";
+import categoriesAr from "@/content/translations/experiences.ar.json";
 import landingsEs from "@/content/translations/landings.es.json";
+import landingsRu from "@/content/translations/landings.ru.json";
+import landingsAr from "@/content/translations/landings.ar.json";
 import landingsFr from "@/content/translations/landings.fr.json";
 import { overlay } from "./overlay";
 
@@ -67,9 +73,9 @@ function translate<T extends { slug: string }>(item: T, trees: Partial<Record<Lo
 const destinations = rawDestinations.map((d) => translate({ ...d, photo: withPhoto("destination", d.slug, d.photo) }, { es: destinationsEs, fr: destinationsFr, ru: destinationsRu, ar: destinationsAr }));
 const journeys = rawJourneys.map((j) => translateJourney({ ...j, photo: withPhoto("journey", j.slug, j.photo) }));
 const guides = rawGuides.map((g) => translate({ ...g, photo: withPhoto("guide", g.slug, g.photo) }, { es: guidesEs, fr: guidesFr, ru: guidesRu, ar: guidesAr }));
-const stories = rawStories.map((s) => translate({ ...s, photo: withPhoto("story", s.slug, s.photo) }, { es: storiesEs, fr: storiesFr }));
-const experienceCategories = rawCategories.map((c) => translate({ ...c, photo: withPhoto("category", c.slug, c.photo) }, { es: categoriesEs, fr: categoriesFr }));
-const landings = rawLandings.map((l) => translate({ ...l, photo: withPhoto("landing", l.slug, l.photo) }, { es: landingsEs, fr: landingsFr }));
+const stories = rawStories.map((s) => translate({ ...s, photo: withPhoto("story", s.slug, s.photo) }, { es: storiesEs, fr: storiesFr, ru: storiesRu, ar: storiesAr }));
+const experienceCategories = rawCategories.map((c) => translate({ ...c, photo: withPhoto("category", c.slug, c.photo) }, { es: categoriesEs, fr: categoriesFr, ru: categoriesRu, ar: categoriesAr }));
+const landings = rawLandings.map((l) => translate({ ...l, photo: withPhoto("landing", l.slug, l.photo) }, { es: landingsEs, fr: landingsFr, ru: landingsRu, ar: landingsAr }));
 
 export const getDestinations = () => destinations;
 export const getDestination = (slug: string) => destinations.find((d) => d.slug === slug);
@@ -87,6 +93,12 @@ export const getLanding = (slug: string) => landings.find((l) => l.slug === slug
 
 export function placeName(slug: string, locale?: Locale) {
   return getDestination(slug)?.name ?? (locale && extraPlaceNames[slug]?.[locale]) ?? extraPlaces[slug] ?? slug;
+}
+
+/** Place name in the reader's script where we have one (Russian and Arabic), for titles and search snippets. */
+export function localPlaceName(slug: string, locale: Locale) {
+  const local = locale === "ru" || locale === "ar" ? (getDestination(slug)?.nameLocal?.[locale] ?? extraPlaceNamesLocal[slug]?.[locale]) : undefined;
+  return local ?? placeName(slug, locale);
 }
 
 export function journeysThrough(slug: string): Journey[] {

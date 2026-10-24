@@ -4,6 +4,23 @@ export const extraPlaceNames: Record<string, Record<string, string>> = {
   "siargao-islands": { fr: "Îles de Siargao", es: "Islas de Siargao", ru: "Острова Сиаргао", ar: "جزر سيارغاو" },
 };
 
+/** Russian and Arabic spellings of route stops without a destination page, for page titles. */
+export const extraPlaceNamesLocal: Record<string, Partial<Record<"ru" | "ar", string>>> = {
+  "port-barton": { ru: "Порт-Бартон", ar: "بورت بارتون" },
+  "puerto-princesa": { ru: "Пуэрто-Принсеса", ar: "بويرتو برينسيسا" },
+  luzon: { ru: "Лусон", ar: "لوزون" },
+  visayas: { ru: "Висайи", ar: "فيساياس" },
+  apo: { ru: "Остров Апо", ar: "جزيرة أبو" },
+  bantayan: { ru: "Бантаян", ar: "بانتايان" },
+  "san-vicente": { ru: "Сан-Висенте", ar: "سان فيسنتي" },
+  balabac: { ru: "Балабак", ar: "بالاباك" },
+  panglao: { ru: "Панглао", ar: "بانغلاو" },
+  bacolod: { ru: "Баколод", ar: "باكولود" },
+  vigan: { ru: "Виган", ar: "فيغان" },
+  donsol: { ru: "Донсол", ar: "دونسول" },
+  linapacan: { ru: "Линапакан", ar: "ليناباكان" },
+};
+
 /** Display names for route stops that are not full destination pages. */
 export const extraPlaces: Record<string, string> = {
   "port-barton": "Port Barton",
