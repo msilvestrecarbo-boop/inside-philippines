@@ -73,3 +73,31 @@ Rows marked *Philippines only* have no island named on the Unsplash page.
 | story/ten-islands | Aerial of Virgin Island with white-sand spit, Bantayan, Cebu | Big Dodzy | [link](https://unsplash.com/photos/aerial-view-of-green-island-during-daytime-2q6x2vj5XRI) |
 | story/siquijor | Clear water seen from a cliff edge, Siquijor (tagged Siquijor; no location field) | Janica Sib | [link](https://unsplash.com/photos/a-view-of-a-body-of-water-from-a-cliff-bsEEwtiQOFQ) |
 | story/manila-48h | Stone gate with clock tower behind, Intramuros, Manila | German Rivera De La Torre | [link](https://unsplash.com/photos/a-stone-gate-with-a-clock-tower-in-the-background-TBDUapl7H_4) |
+
+## Gallery photos (added 2026-10-24)
+
+Free Unsplash stock photos. Not taken on our trips; yachts, spa, helicopter and jet photos were not shot in the Philippines.
+
+| Key | Subject | Photographer | Page |
+|---|---|---|---|
+| gallery/yacht-1 | Aerial view of a white yacht on calm water | nikldn | [link](https://unsplash.com/photos/aerial-photography-of-white-yacht-on-calm-waters-t-6GW8T6Jsc) |
+| gallery/yacht-2 | Luxury white yacht moored in a scenic bay | Michal Vrba | [link](https://unsplash.com/photos/a-luxurious-white-yacht-moored-in-a-scenic-bay-VkplOkPf59g) |
+| gallery/yacht-3 | Luxury yacht anchored in clear turquoise water | Cartagena Boat Rental Colombia | [link](https://unsplash.com/photos/luxury-yacht-anchored-in-clear-turquoise-ocean-water-aDAl_ru9-QU) |
+| gallery/yacht-4 | Bird's-eye view of a yacht at sea | Tobias Tullius | [link](https://unsplash.com/photos/birds-eye-photography-of-yacht-on-body-of-water-XZOO6QHub60) |
+| gallery/yacht-5 | White motorboat near a rocky island | JJ | [link](https://unsplash.com/photos/motorboat-near-rocky-island-AlstS1z-fFo) |
+| gallery/massage-1 | Hot-stone massage at a spa | engin akyurt | [link](https://unsplash.com/photos/person-with-hot-stones-at-spa-ZbzYDboN7fg) |
+| gallery/massage-2 | Guest relaxing during a spa treatment | alan caishan | [link](https://unsplash.com/photos/woman-lying-with-prone-position-cU53ZFBr3lk) |
+| gallery/massage-3 | Massage treatment | Toa Heftiba | [link](https://unsplash.com/photos/man-massaging-womans-body-a9pFSC8dTlo) |
+| gallery/massage-4 | Back massage at a spa | Simon HUMLER | [link](https://unsplash.com/photos/a-woman-getting-a-back-massage-at-a-spa--AakIaAPV0w) |
+| gallery/massage-5 | Spa candles, towels and oils | Mediamodifier | [link](https://unsplash.com/photos/reed-diffuser-with-candles-and-towel-W7AyAs7azHc) |
+| gallery/helicopter-1 | Helicopter flight over the water | Roman Rezor | [link](https://unsplash.com/photos/LVnCRUgoebg) |
+| gallery/helicopter-2 | Helicopter in a cloudy sky | Niklas Bischop | [link](https://unsplash.com/photos/QkqdmaehigM) |
+| gallery/helicopter-3 | Passenger looking out of a helicopter window | ryan mayes | [link](https://unsplash.com/photos/ZVv_x6gbPco) |
+| gallery/jet-1 | Private jet on the tarmac at sunset | Chris Leipelt | [link](https://unsplash.com/photos/private-jet-on-tarmac-at-sunset-6w_dYdazo20) |
+| gallery/jet-2 | Private jet cabin with leather seats | Yaroslav Muzychenko | [link](https://unsplash.com/photos/private-jet-cabin-with-leather-seats-xG-pV6Eu-bE) |
+| gallery/jet-3 | Private jet interior | Andy Wang | [link](https://unsplash.com/photos/luxurious-interior-of-a-private-jet-with-comfortable-seating-ogUyaf8JWA4) |
+| gallery/jet-4 | Private jet parked on the tarmac | David Syphers | [link](https://unsplash.com/photos/a-private-jet-parked-on-an-airport-tarmac-9vX30eYsBdc) |
+| gallery/ph-boat-1 | Boat on clear water, Philippines | Jarno Colijn | [link](https://unsplash.com/photos/a-boat-in-the-middle-of-a-body-of-water-CQGuK_JAuUI) |
+| gallery/ph-boat-2 | Two boats on the water, Philippines | Jarno Colijn | [link](https://unsplash.com/photos/a-couple-of-boats-that-are-in-the-water-5tqmCAspvIs) |
+| gallery/ph-boat-3 | Island-hopping boats, Philippines | Jerry Kavan | [link](https://unsplash.com/photos/a-group-of-boats-floating-on-top-of-a-body-of-water-lOfRiXscqho) |
+| gallery/ph-islet | Small islet, Philippines | Alejandro Luengo | [link](https://unsplash.com/photos/landscape-photography-of-islet-h1dEzlP12hs) |
