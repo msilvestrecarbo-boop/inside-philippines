@@ -19,6 +19,10 @@ export type Retreat = {
   day: L; // a typical day
   food: L;
   photo: string; // photos.json key
+  programTitle?: L;
+  program?: { name: L; body: L }[];
+  variantsTitle?: L;
+  variants?: { name: L; body: L }[];
   seo: { title: L; description: L };
 };
 
@@ -260,11 +264,11 @@ export const retreats: Retreat[] = [
     place: { en: "Siargao", fr: "Siargao", es: "Siargao", ru: "Сиаргао", ar: "سيارغاو" },
     photo: "destination/siargao",
     title: {
-      en: "Siargao Yoga & Surf Reset",
-      fr: "Siargao : yoga et surf pour se ressourcer",
-      es: "Siargao: yoga y surf para recargar",
-      ru: "Сиаргао: перезагрузка с йогой и сёрфингом",
-      ar: "سيارغاو: استعادة النشاط باليوغا وركوب الأمواج",
+      en: "Siargao Surf, Yoga & Wellness Retreat",
+      fr: "Siargao : retraite surf, yoga et bien-être",
+      es: "Siargao: retiro de surf, yoga y bienestar",
+      ru: "Сиаргао: сёрф, йога и wellness-ретрит",
+      ar: "سيارغاو: رحلة أمواج ويوغا وعافية",
     },
     short: {
       en: "Daily yoga by the sea in General Luna, gentle surf lessons, breathwork and a hilot massage.",
@@ -295,12 +299,130 @@ export const retreats: Retreat[] = [
       ar: "يوغا في السابعة صباحاً، ثم إفطار من الفواكه وأوعية السموذي، ودرس ركوب أمواج مع مدّ الصباح، وغداء نباتي طويل، وقيلولة أو سباحة، وتمارين تنفّس عند الغروب على الشاطئ.",
     },
     food: {
-      en: "General Luna has many vegetarian and vegan cafés, so this is the easiest retreat for plant-based travellers.",
-      fr: "General Luna compte de nombreux cafés végétariens et véganes : c'est la retraite la plus simple pour les voyageurs végétaux.",
-      es: "General Luna tiene muchos cafés vegetarianos y veganos: es el retiro más fácil para quien come vegetal.",
-      ru: "В Дженерал-Луне много вегетарианских и веганских кафе, поэтому это самый простой ретрит для тех, кто ест растительное.",
-      ar: "في جنرال لونا مقاهٍ نباتية كثيرة، لذا فهي أسهل رحلة للمسافرين النباتيين.",
+      en: "Balanced meals cooked with fresh produce from the Siargao market, mixing island flavours and international dishes, with fresh juices and smoothie bowls. General Luna also has many vegetarian and vegan cafés, so this is the easiest retreat for plant-based travellers.",
+      fr: "Des repas équilibrés préparés avec les produits frais du marché de Siargao, entre saveurs de l'île et plats internationaux, avec jus frais et smoothie bowls. General Luna compte aussi de nombreux cafés végétariens et véganes : c'est la retraite la plus simple pour les voyageurs végétaux.",
+      es: "Comidas equilibradas con producto fresco del mercado de Siargao, entre sabores de la isla y platos internacionales, con zumos naturales y smoothie bowls. General Luna tiene además muchos cafés vegetarianos y veganos: es el retiro más fácil para quien come vegetal.",
+      ru: "Сбалансированное питание из свежих продуктов с рынка Сиаргао — местные вкусы и интернациональные блюда, свежие соки и смузи-боулы. В Дженерал-Луне много вегетарианских и веганских кафе, поэтому это самый простой ретрит для тех, кто ест растительное.",
+      ar: "وجبات متوازنة تُحضَّر من منتجات سوق سيارغاو الطازجة، تمزج نكهات الجزيرة بأطباق عالمية، مع عصائر طازجة وأوعية سموذي. وفي جنرال لونا مقاهٍ نباتية كثيرة، لذا فهي أسهل رحلة للمسافرين النباتيين.",
     },
+    programTitle: {
+      en: "Programme and highlights",
+      fr: "Programme et temps forts",
+      es: "Programa y momentos clave",
+      ru: "Программа и главное",
+      ar: "البرنامج وأبرز اللحظات",
+    },
+    program: [
+      {
+        name: { en: "Surf", fr: "Surf", es: "Surf", ru: "Сёрфинг", ar: "ركوب الأمواج" },
+        body: {
+          en: "Coaching for every level with local surf coaches, from your first wave on a gentle beach break to improving your turns on the reef.",
+          fr: "Du coaching pour tous les niveaux avec des coachs locaux, de votre première vague sur un beach break doux à vos virages sur le récif.",
+          es: "Clases para todos los niveles con monitores locales, desde tu primera ola en un beach break suave hasta mejorar tus giros en el arrecife.",
+          ru: "Тренировки для любого уровня с местными тренерами — от первой волны на мягком бич-брейке до отработки поворотов на рифе.",
+          ar: "تدريب لكل المستويات مع مدرّبين محليين، من موجتكم الأولى على شاطئ هادئ إلى تحسين انعطافاتكم على الشعاب.",
+        },
+      },
+      {
+        name: { en: "Yoga and meditation", fr: "Yoga et méditation", es: "Yoga y meditación", ru: "Йога и медитация", ar: "اليوغا والتأمل" },
+        body: {
+          en: "Flow and restorative yoga in an open-air shala among the palms, with breathwork and guided meditation.",
+          fr: "Yoga dynamique et restauratif dans une shala ouverte parmi les palmiers, avec respiration et méditation guidée.",
+          es: "Yoga dinámico y restaurativo en una shala al aire libre entre palmeras, con respiración y meditación guiada.",
+          ru: "Динамическая и восстановительная йога в открытой шале среди пальм, дыхательные практики и медитация с ведущим.",
+          ar: "يوغا حركية واسترخائية في شالا مفتوحة بين أشجار النخيل، مع تمارين تنفّس وتأمل موجّه.",
+        },
+      },
+      {
+        name: { en: "Fitness", fr: "Fitness", es: "Fitness", ru: "Фитнес", ar: "اللياقة" },
+        body: {
+          en: "Surf-specific strength, mobility and conditioning sessions to paddle longer and surf better.",
+          fr: "Renforcement, mobilité et cardio spécifiques au surf pour ramer plus longtemps et mieux surfer.",
+          es: "Fuerza, movilidad y acondicionamiento específicos para el surf, para remar más y surfear mejor.",
+          ru: "Силовые, мобилити- и функциональные тренировки под сёрфинг, чтобы дольше грести и лучше кататься.",
+          ar: "تمارين قوة ومرونة ولياقة مخصّصة لركوب الأمواج، لتجديف أطول وأداء أفضل.",
+        },
+      },
+      {
+        name: { en: "Explore Siargao", fr: "Explorer Siargao", es: "Explorar Siargao", ru: "Знакомство с Сиаргао", ar: "استكشاف سيارغاو" },
+        body: {
+          en: "A boat day to Naked, Daku and Guyam islands, the palm-forest viewpoint, the Magpupungko rock pools at low tide and a sunset with a Filipino barbecue.",
+          fr: "Une journée en bateau vers Naked, Daku et Guyam, le point de vue sur la forêt de cocotiers, les piscines naturelles de Magpupungko à marée basse et un coucher de soleil avec barbecue philippin.",
+          es: "Un día en barco a Naked, Daku y Guyam, el mirador del bosque de cocoteros, las piscinas naturales de Magpupungko con marea baja y un atardecer con barbacoa filipina.",
+          ru: "День на лодке к островам Naked, Daku и Guyam, смотровая площадка над кокосовым лесом, природные бассейны Магпупунгко в отлив и закат с филиппинским барбекю.",
+          ar: "يوم بالقارب إلى جزر Naked وDaku وGuyam، وإطلالة على غابة النخيل، وأحواض ماغبوبونغكو الصخرية عند الجزر، وغروب مع شواء فلبيني.",
+        },
+      },
+      {
+        name: { en: "Wellness and recharge", fr: "Bien-être et récupération", es: "Bienestar y recuperación", ru: "Восстановление", ar: "العافية واستعادة النشاط" },
+        body: {
+          en: "Traditional hilot massage, ice baths and recovery time built into every day.",
+          fr: "Massage hilot traditionnel, bains glacés et temps de récupération chaque jour.",
+          es: "Masaje hilot tradicional, baños de hielo y tiempo de recuperación cada día.",
+          ru: "Традиционный массаж хилот, ледяные ванны и время на восстановление каждый день.",
+          ar: "تدليك هيلوت تقليدي، وحمّامات ثلج، ووقت للتعافي في كل يوم.",
+        },
+      },
+      {
+        name: { en: "Workshops and giving back", fr: "Ateliers et engagement local", es: "Talleres y compromiso local", ru: "Мастер-классы и добрые дела", ar: "ورش وعطاء للمجتمع" },
+        body: {
+          en: "A Filipino cooking class with a local chef (plant-based on request), a beach clean-up and coconut tree planting with the community.",
+          fr: "Un cours de cuisine philippine avec un chef local (végétal sur demande), un nettoyage de plage et la plantation de cocotiers avec les habitants.",
+          es: "Una clase de cocina filipina con un chef local (vegetal si lo pides), una limpieza de playa y plantación de cocoteros con la comunidad.",
+          ru: "Урок филиппинской кухни с местным поваром (растительный по запросу), уборка пляжа и посадка кокосовых пальм вместе с местными жителями.",
+          ar: "درس طبخ فلبيني مع طاهٍ محلي (نباتي عند الطلب)، وتنظيف الشاطئ، وزراعة أشجار جوز الهند مع المجتمع المحلي.",
+        },
+      },
+      {
+        name: { en: "Community", fr: "Communauté", es: "Comunidad", ru: "Сообщество", ar: "المجتمع" },
+        body: {
+          en: "On group dates, share the week with like-minded travellers from around the world. On a private retreat, it is just you and your people.",
+          fr: "Aux dates de groupe, partagez la semaine avec des voyageurs du monde entier qui vous ressemblent. En retraite privée, c'est juste vous et vos proches.",
+          es: "En las fechas de grupo, comparte la semana con viajeros afines de todo el mundo. En un retiro privado, solo tú y los tuyos.",
+          ru: "В групповые даты вы проводите неделю с единомышленниками со всего мира. В частном ретрите — только вы и ваши близкие.",
+          ar: "في مواعيد المجموعات، تشاركون الأسبوع مع مسافرين يشبهونكم من حول العالم. وفي الرحلة الخاصة، أنتم وأحباؤكم فقط.",
+        },
+      },
+    ],
+    variantsTitle: {
+      en: "Choose your focus, any date of the year",
+      fr: "Choisissez votre formule, toute l'année",
+      es: "Elige tu enfoque, cualquier fecha del año",
+      ru: "Выберите формат — в любые даты",
+      ar: "اختاروا التركيز الذي يناسبكم، في أي وقت من العام",
+    },
+    variants: [
+      {
+        name: { en: "Surf & Yoga", fr: "Surf & Yoga", es: "Surf y Yoga", ru: "Сёрф и йога", ar: "أمواج ويوغا" },
+        body: {
+          en: "The balanced week: surf in the morning, yoga in the evening, time to rest in between.",
+          fr: "La semaine équilibrée : surf le matin, yoga le soir, du repos entre les deux.",
+          es: "La semana equilibrada: surf por la mañana, yoga por la tarde y descanso entre medias.",
+          ru: "Сбалансированная неделя: сёрфинг утром, йога вечером и отдых между ними.",
+          ar: "الأسبوع المتوازن: أمواج في الصباح، ويوغا في المساء، وراحة بينهما.",
+        },
+      },
+      {
+        name: { en: "Surf & Fitness", fr: "Surf & Fitness", es: "Surf y Fitness", ru: "Сёрф и фитнес", ar: "أمواج ولياقة" },
+        body: {
+          en: "For active guests who want to keep moving: surf sessions plus strength, mobility and conditioning.",
+          fr: "Pour les actifs qui veulent bouger : sessions de surf plus renforcement, mobilité et cardio.",
+          es: "Para quien quiere moverse sin parar: surf más fuerza, movilidad y acondicionamiento.",
+          ru: "Для активных: сёрфинг плюс силовые, мобилити и функциональные тренировки.",
+          ar: "للضيوف النشطين: جلسات أمواج مع تمارين القوة والمرونة واللياقة.",
+        },
+      },
+      {
+        name: { en: "Surf All Out", fr: "Surf All Out", es: "Surf All Out", ru: "Только сёрфинг", ar: "أمواج بلا حدود" },
+        body: {
+          en: "For surfers who want to progress fast: a full week of one-to-one coaching, matched to the tides and swell.",
+          fr: "Pour progresser vite : une semaine complète de coaching individuel, calée sur les marées et la houle.",
+          es: "Para progresar rápido: una semana entera de clases individuales, según mareas y oleaje.",
+          ru: "Для быстрого прогресса: целая неделя индивидуальных тренировок под приливы и свелл.",
+          ar: "لمن يريد التقدّم بسرعة: أسبوع كامل من التدريب الفردي، بحسب المد والأمواج.",
+        },
+      },
+    ],
     seo: {
       title: {
         en: "Siargao Yoga & Surf Retreat",
@@ -572,6 +694,148 @@ export const retreats: Retreat[] = [
         ru: "Ретрит на 3 ночи в Тагайтае, в двух часах от Манилы: спа, йога, массаж хилот и вегетарианская или веганская еда с фермы.",
         ar: "رحلة استجمام لثلاث ليالٍ في تاغايتاي على بُعد ساعتين من مانيلا: سبا ويوغا وتدليك هيلوت وطعام نباتي من المزرعة.",
       },
+    },
+  },
+];
+
+// ──────────────────────────────────────────────────── PRIVATE / GROUP / CORPORATE
+
+export type RetreatType = {
+  slug: "private-retreats" | "group-retreats" | "corporate-retreats";
+  photo: string;
+  who: string; // trip builder prefill
+  menu: L;
+  title: L;
+  intro: L;
+  points: L<string[]>;
+  faqs: FAQ[];
+  seo: { title: L; description: L };
+};
+
+export const retreatsMenuAll: L = { en: "All retreats", fr: "Toutes les retraites", es: "Todos los retiros", ru: "Все ретриты", ar: "جميع الرحلات" };
+
+export const retreatTypes: RetreatType[] = [
+  {
+    slug: "private-retreats",
+    photo: "landing/luxury-philippines",
+    who: "couple",
+    menu: { en: "Private retreats", fr: "Retraites privées", es: "Retiros privados", ru: "Частные ретриты", ar: "رحلات خاصة" },
+    title: {
+      en: "Private wellness retreats, on your dates",
+      fr: "Retraites bien-être privées, à vos dates",
+      es: "Retiros de bienestar privados, en tus fechas",
+      ru: "Частные wellness-ретриты в ваши даты",
+      ar: "رحلات استجمام خاصة في المواعيد التي تختارونها",
+    },
+    intro: {
+      en: "Just you, your partner, your family or a few friends. Any date, all year round, with a programme built entirely around what you want to feel at the end of it.",
+      fr: "Vous seul, en couple, en famille ou entre amis. À n'importe quelle date, toute l'année, avec un programme entièrement construit autour de ce que vous voulez ressentir à la fin.",
+      es: "Tú solo, en pareja, en familia o con unos amigos. Cualquier fecha, todo el año, con un programa construido por completo en torno a cómo quieres sentirte al final.",
+      ru: "Только вы, ваш партнёр, семья или несколько друзей. Любые даты круглый год и программа, полностью построенная вокруг того, что вы хотите почувствовать в конце.",
+      ar: "أنتم وحدكم، أو مع الشريك أو العائلة أو بضعة أصدقاء. في أي موعد وعلى مدار العام، مع برنامج مبني بالكامل حول ما تريدون الشعور به في نهايته.",
+    },
+    points: {
+      en: ["Any dates, from three nights to two weeks", "Private yoga, surf, fitness and breathwork sessions at your level", "Treatments and spa time chosen for you", "Menus planned around your diet, including vegetarian and vegan", "Private transfers and your own guide", "Combine two retreats, or add one to a longer trip"],
+      fr: ["N'importe quelles dates, de trois nuits à deux semaines", "Séances privées de yoga, surf, fitness et respiration à votre niveau", "Soins et temps au spa choisis pour vous", "Menus pensés selon votre régime, végétarien et végan compris", "Transferts privés et guide dédié", "Deux retraites combinées, ou une retraite ajoutée à un voyage plus long"],
+      es: ["Cualquier fecha, de tres noches a dos semanas", "Sesiones privadas de yoga, surf, fitness y respiración a tu nivel", "Tratamientos y tiempo de spa elegidos para ti", "Menús según tu dieta, incluida vegetariana y vegana", "Traslados privados y guía propio", "Combina dos retiros o añade uno a un viaje más largo"],
+      ru: ["Любые даты — от трёх ночей до двух недель", "Индивидуальные занятия йогой, сёрфингом, фитнесом и дыханием под ваш уровень", "Процедуры и спа, подобранные для вас", "Меню под ваше питание, включая вегетарианское и веганское", "Частные трансферы и личный гид", "Совместите два ретрита или добавьте один к более длинной поездке"],
+      ar: ["أي مواعيد، من ثلاث ليالٍ إلى أسبوعين", "حصص خاصة لليوغا وركوب الأمواج واللياقة والتنفس بحسب مستواكم", "علاجات ووقت سبا مختار لكم", "قوائم طعام بحسب نظامكم الغذائي، بما فيها النباتي والنباتي الصرف", "تنقلات خاصة ومرشد خاص بكم", "اجمعوا بين رحلتين أو أضيفوا واحدة إلى رحلة أطول"],
+    },
+    faqs: [
+      {
+        q: { en: "Can a private retreat be just for one person?", fr: "Une retraite privée peut-elle être pour une seule personne ?", es: "¿Un retiro privado puede ser para una sola persona?", ru: "Можно ли провести частный ретрит одному?", ar: "هل يمكن أن تكون الرحلة الخاصة لشخص واحد؟" },
+        a: { en: "Yes. Many guests come alone to rest and reset. We plan the same care, privacy and support for solo travellers.", fr: "Oui. Beaucoup de voyageurs viennent seuls pour se reposer. Nous prévoyons le même soin, la même intimité et le même accompagnement.", es: "Sí. Muchos viajeros vienen solos para descansar. Planificamos el mismo cuidado, intimidad y acompañamiento.", ru: "Да. Многие гости приезжают одни, чтобы отдохнуть и перезагрузиться. Для них — та же забота, приватность и поддержка.", ar: "نعم. يأتي كثير من الضيوف بمفردهم للراحة واستعادة التوازن، ونخطط لهم بالعناية والخصوصية والدعم نفسها." },
+      },
+      {
+        q: { en: "How far in advance should I book?", fr: "Combien de temps à l'avance réserver ?", es: "¿Con cuánta antelación debo reservar?", ru: "За сколько времени бронировать?", ar: "متى يجب أن أحجز؟" },
+        a: { en: "Two to three months is ideal, and earlier for December to April. We can sometimes arrange shorter notice.", fr: "Deux à trois mois, c'est idéal, et plus tôt pour décembre à avril. Des délais plus courts sont parfois possibles.", es: "Lo ideal son dos o tres meses, y antes para diciembre a abril. A veces podemos organizarlo con menos tiempo.", ru: "Идеально — за два-три месяца, а на декабрь–апрель раньше. Иногда получается и в сжатые сроки.", ar: "المثالي قبل شهرين إلى ثلاثة أشهر، وأبكر لفترة ديسمبر إلى أبريل. وأحياناً يمكننا الترتيب في مهلة أقصر." },
+      },
+    ],
+    seo: {
+      title: { en: "Private Wellness Retreats Philippines", fr: "Retraite bien-être privée aux Philippines", es: "Retiros de bienestar privados en Filipinas", ru: "Частные wellness-ретриты на Филиппинах", ar: "رحلات استجمام خاصة في الفلبين" },
+      description: { en: "Private wellness retreats in the Philippines on your dates: yoga, surf, fitness, spa, vegan and vegetarian menus, private transfers.", fr: "Retraites bien-être privées aux Philippines, à vos dates : yoga, surf, fitness, spa, menus végétariens et véganes, transferts privés.", es: "Retiros de bienestar privados en Filipinas, en tus fechas: yoga, surf, fitness, spa, menús vegetarianos y veganos, traslados privados.", ru: "Частные wellness-ретриты на Филиппинах в ваши даты: йога, сёрфинг, фитнес, спа, вегетарианское и веганское меню, частные трансферы.", ar: "رحلات استجمام خاصة في الفلبين في مواعيدكم: يوغا وركوب أمواج ولياقة وسبا وقوائم نباتية وتنقلات خاصة." },
+    },
+  },
+  {
+    slug: "group-retreats",
+    photo: "retreat/yoga",
+    who: "friends",
+    menu: { en: "Group retreats", fr: "Retraites en groupe", es: "Retiros en grupo", ru: "Групповые ретриты", ar: "رحلات جماعية" },
+    title: {
+      en: "Group wellness retreats",
+      fr: "Retraites bien-être en groupe",
+      es: "Retiros de bienestar en grupo",
+      ru: "Групповые wellness-ретриты",
+      ar: "رحلات استجمام جماعية",
+    },
+    intro: {
+      en: "Bring your friends, your yoga studio, your running club or your family, and share a week of movement, good food and rest. Or ask us about upcoming group dates you can join.",
+      fr: "Venez avec vos amis, votre studio de yoga, votre club de course ou votre famille, et partagez une semaine de mouvement, de bonne cuisine et de repos. Ou demandez-nous les prochaines dates de groupe ouvertes.",
+      es: "Ven con tus amigos, tu estudio de yoga, tu club de running o tu familia y compartid una semana de movimiento, buena comida y descanso. O pregúntanos por las próximas fechas de grupo abiertas.",
+      ru: "Приезжайте с друзьями, своей йога-студией, беговым клубом или семьёй и проведите вместе неделю движения, вкусной еды и отдыха. Или спросите нас о ближайших групповых датах, к которым можно присоединиться.",
+      ar: "تعالوا مع أصدقائكم أو استوديو اليوغا أو نادي الجري أو عائلتكم، وتشاركوا أسبوعاً من الحركة والطعام الجيد والراحة. أو اسألونا عن مواعيد المجموعات القادمة التي يمكنكم الانضمام إليها.",
+    },
+    points: {
+      en: ["A shared programme for your group, with time apart too", "Group yoga, surf lessons, fitness and breathwork", "Guided group activities, workshops and a Filipino cooking class", "Shared villas or a resort booked just for your group", "One menu for everyone, adapted for vegetarian and vegan guests", "Yoga and fitness teachers welcome to bring their own students"],
+      fr: ["Un programme commun pour votre groupe, avec aussi du temps libre", "Yoga en groupe, cours de surf, fitness et respiration", "Activités de groupe guidées, ateliers et cours de cuisine philippine", "Villas partagées ou un resort réservé pour votre groupe", "Un menu pour tous, adapté aux végétariens et véganes", "Les professeurs de yoga et de fitness peuvent venir avec leurs élèves"],
+      es: ["Un programa común para tu grupo, con tiempo libre también", "Yoga en grupo, clases de surf, fitness y respiración", "Actividades guiadas en grupo, talleres y clase de cocina filipina", "Villas compartidas o un resort reservado para tu grupo", "Un menú para todos, adaptado a vegetarianos y veganos", "Profesores de yoga y fitness pueden venir con sus alumnos"],
+      ru: ["Общая программа для вашей группы и время для себя", "Групповая йога, уроки сёрфинга, фитнес и дыхательные практики", "Групповые занятия с ведущим, мастер-классы и урок филиппинской кухни", "Общие виллы или курорт целиком для вашей группы", "Единое меню с учётом вегетарианцев и веганов", "Преподаватели йоги и фитнеса могут приехать со своими учениками"],
+      ar: ["برنامج مشترك لمجموعتكم مع وقت خاص أيضاً", "يوغا جماعية ودروس ركوب أمواج ولياقة وتمارين تنفّس", "أنشطة جماعية بإشراف مرشد وورش ودرس طبخ فلبيني", "فلل مشتركة أو منتجع محجوز لمجموعتكم", "قائمة طعام واحدة للجميع مكيّفة للنباتيين", "يمكن لمدرّبي اليوغا واللياقة القدوم مع طلابهم"],
+    },
+    faqs: [
+      {
+        q: { en: "How big can a group be?", fr: "Quelle taille de groupe ?", es: "¿De cuántas personas puede ser el grupo?", ru: "Насколько большой может быть группа?", ar: "ما حجم المجموعة الممكن؟" },
+        a: { en: "From a few friends to larger groups. Tell us your numbers and we will find villas or resorts that fit.", fr: "De quelques amis à des groupes plus grands. Donnez-nous le nombre et nous trouverons villas ou resorts adaptés.", es: "Desde unos pocos amigos hasta grupos más grandes. Dinos cuántos sois y encontraremos villas o resorts adecuados.", ru: "От нескольких друзей до больших групп. Назовите число участников — подберём виллы или курорты.", ar: "من بضعة أصدقاء إلى مجموعات أكبر. أخبرونا بالعدد ونجد الفلل أو المنتجعات المناسبة." },
+      },
+      {
+        q: { en: "I teach yoga. Can I lead my own retreat?", fr: "Je suis professeur de yoga. Puis-je animer ma propre retraite ?", es: "Soy profesor de yoga. ¿Puedo guiar mi propio retiro?", ru: "Я преподаю йогу. Могу ли я провести свой ретрит?", ar: "أنا مدرّب يوغا. هل يمكنني قيادة رحلتي الخاصة؟" },
+        a: { en: "Yes. You lead the practice; we handle venues, transfers, food, excursions and support on the ground.", fr: "Oui. Vous animez la pratique ; nous gérons lieux, transferts, repas, excursions et assistance sur place.", es: "Sí. Tú guías la práctica; nosotros nos ocupamos de lugares, traslados, comidas, excursiones y apoyo sobre el terreno.", ru: "Да. Вы ведёте практику, а мы берём на себя площадки, трансферы, питание, экскурсии и поддержку на месте.", ar: "نعم. أنتم تقودون الممارسة، ونحن نتولى الأماكن والتنقلات والطعام والرحلات والدعم على الأرض." },
+      },
+    ],
+    seo: {
+      title: { en: "Group Wellness & Yoga Retreats Philippines", fr: "Retraite yoga en groupe aux Philippines", es: "Retiros de yoga en grupo en Filipinas", ru: "Групповые йога-ретриты на Филиппинах", ar: "رحلات يوغا جماعية في الفلبين" },
+      description: { en: "Group wellness and yoga retreats in the Philippines for friends, studios and clubs: yoga, surf, fitness, workshops and vegan-friendly food.", fr: "Retraites bien-être et yoga en groupe aux Philippines pour amis, studios et clubs : yoga, surf, fitness, ateliers et cuisine végétale.", es: "Retiros de bienestar y yoga en grupo en Filipinas para amigos, estudios y clubes: yoga, surf, fitness, talleres y comida vegana.", ru: "Групповые wellness- и йога-ретриты на Филиппинах для друзей, студий и клубов: йога, сёрфинг, фитнес, мастер-классы и веганское меню.", ar: "رحلات استجمام ويوغا جماعية في الفلبين للأصدقاء والاستوديوهات والأندية: يوغا وأمواج ولياقة وورش وطعام نباتي." },
+    },
+  },
+  {
+    slug: "corporate-retreats",
+    photo: "landing/corporate-travel",
+    who: "group",
+    menu: { en: "Corporate retreats", fr: "Retraites d'entreprise", es: "Retiros de empresa", ru: "Корпоративные ретриты", ar: "رحلات الشركات" },
+    title: {
+      en: "Corporate wellness retreats",
+      fr: "Retraites bien-être pour les entreprises",
+      es: "Retiros de bienestar para empresas",
+      ru: "Корпоративные wellness-ретриты",
+      ar: "رحلات استجمام للشركات",
+    },
+    intro: {
+      en: "Give your team time to recharge, reconnect and think clearly. Leadership offsites, team wellness weeks and incentive retreats, with work sessions where you want them and real rest everywhere else.",
+      fr: "Offrez à votre équipe le temps de se ressourcer, de se retrouver et de prendre du recul. Séminaires de direction, semaines bien-être et voyages de récompense, avec des sessions de travail là où vous le souhaitez et du vrai repos ailleurs.",
+      es: "Dale a tu equipo tiempo para recargar, reconectar y pensar con claridad. Retiros de dirección, semanas de bienestar e incentivos, con sesiones de trabajo donde quieras y descanso real en todo lo demás.",
+      ru: "Дайте команде время восстановиться, сблизиться и ясно подумать. Выездные сессии руководства, wellness-недели и мотивационные ретриты — с рабочими сессиями там, где нужно, и настоящим отдыхом во всём остальном.",
+      ar: "امنحوا فريقكم وقتاً لاستعادة النشاط والتواصل والتفكير بوضوح. اجتماعات القيادة خارج المكتب، وأسابيع العافية، ورحلات التحفيز، مع جلسات عمل حيث تريدون وراحة حقيقية في كل ما عداها.",
+    },
+    points: {
+      en: ["Leadership offsites and strategy days in calm, inspiring places", "Team wellness: yoga, fitness, breathwork and stress management", "Team building on the water: island hopping, kayaking and surf lessons", "Meeting space, Wi-Fi and equipment arranged where you need them", "Healthy menus for the whole team, including vegetarian and vegan", "One coordinator for flights, transfers, rooms and the programme"],
+      fr: ["Séminaires de direction et journées stratégiques dans des lieux calmes et inspirants", "Bien-être d'équipe : yoga, fitness, respiration et gestion du stress", "Team building sur l'eau : îles en bateau, kayak et cours de surf", "Salle de réunion, Wi-Fi et matériel prévus là où il le faut", "Menus sains pour toute l'équipe, végétariens et véganes compris", "Un seul coordinateur pour vols, transferts, chambres et programme"],
+      es: ["Retiros de dirección y jornadas de estrategia en lugares tranquilos e inspiradores", "Bienestar de equipo: yoga, fitness, respiración y gestión del estrés", "Team building en el agua: islas en barco, kayak y clases de surf", "Sala de reuniones, wifi y equipos donde los necesitéis", "Menús saludables para todo el equipo, incluidos vegetarianos y veganos", "Un solo coordinador para vuelos, traslados, habitaciones y programa"],
+      ru: ["Выездные сессии руководства и стратегические дни в спокойных вдохновляющих местах", "Wellness для команды: йога, фитнес, дыхание и управление стрессом", "Тимбилдинг на воде: острова на лодке, каяки и уроки сёрфинга", "Переговорные, Wi-Fi и оборудование там, где они нужны", "Здоровое меню для всей команды, включая вегетарианское и веганское", "Один координатор для перелётов, трансферов, номеров и программы"],
+      ar: ["اجتماعات قيادة وأيام استراتيجية في أماكن هادئة وملهمة", "عافية الفريق: يوغا ولياقة وتمارين تنفّس وإدارة التوتر", "بناء الفريق على الماء: التنقّل بين الجزر والتجديف ودروس ركوب الأمواج", "قاعات اجتماعات وإنترنت ومعدّات حيث تحتاجونها", "قوائم طعام صحية للفريق كله، بما فيها النباتي", "منسّق واحد للرحلات الجوية والتنقلات والغرف والبرنامج"],
+    },
+    faqs: [
+      {
+        q: { en: "Can we combine work sessions with the retreat?", fr: "Peut-on combiner sessions de travail et retraite ?", es: "¿Podemos combinar sesiones de trabajo con el retiro?", ru: "Можно ли совместить рабочие сессии с ретритом?", ar: "هل يمكن الجمع بين جلسات العمل والرحلة؟" },
+        a: { en: "Yes. Most teams plan focused morning sessions and keep afternoons for wellness and the sea. We arrange the meeting space and equipment.", fr: "Oui. La plupart des équipes travaillent le matin et gardent l'après-midi pour le bien-être et la mer. Nous prévoyons salle et matériel.", es: "Sí. La mayoría de equipos trabajan por la mañana y dejan las tardes para el bienestar y el mar. Organizamos sala y equipos.", ru: "Да. Обычно команды работают утром, а после обеда — wellness и море. Мы организуем переговорную и оборудование.", ar: "نعم. تخطط معظم الفرق لجلسات صباحية مركّزة وتترك فترة ما بعد الظهر للعافية والبحر. ونرتّب قاعة الاجتماعات والمعدّات." },
+      },
+      {
+        q: { en: "Do you handle flights for the whole team?", fr: "Gérez-vous les vols de toute l'équipe ?", es: "¿Gestionáis los vuelos de todo el equipo?", ru: "Организуете ли вы перелёты для всей команды?", ar: "هل تتولون رحلات الفريق كله؟" },
+        a: { en: "We arrange domestic flights, transfers and boats inside the Philippines, and coordinate arrivals so everyone starts together.", fr: "Nous organisons vols intérieurs, transferts et bateaux aux Philippines, et coordonnons les arrivées pour que tout le monde commence ensemble.", es: "Organizamos vuelos nacionales, traslados y barcos dentro de Filipinas y coordinamos las llegadas para que todos empiecen a la vez.", ru: "Мы организуем внутренние перелёты, трансферы и лодки по Филиппинам и координируем прилёты, чтобы все начали вместе.", ar: "نرتّب الرحلات الداخلية والتنقلات والقوارب داخل الفلبين، وننسّق مواعيد الوصول ليبدأ الجميع معاً." },
+      },
+    ],
+    seo: {
+      title: { en: "Corporate Wellness Retreats Philippines", fr: "Retraite d'entreprise bien-être Philippines", es: "Retiros de empresa y bienestar en Filipinas", ru: "Корпоративные wellness-ретриты, Филиппины", ar: "رحلات استجمام للشركات في الفلبين" },
+      description: { en: "Corporate wellness retreats in the Philippines: leadership offsites, team wellness and incentive retreats with yoga, fitness, island days and healthy menus.", fr: "Retraites bien-être d'entreprise aux Philippines : séminaires de direction, bien-être d'équipe et incentives avec yoga, fitness, îles et menus sains.", es: "Retiros de bienestar para empresas en Filipinas: retiros de dirección, bienestar de equipo e incentivos con yoga, fitness, islas y menús saludables.", ru: "Корпоративные wellness-ретриты на Филиппинах: выездные сессии, wellness для команды и мотивационные поездки с йогой, фитнесом, островами и здоровым меню.", ar: "رحلات استجمام للشركات في الفلبين: اجتماعات قيادة وعافية الفريق ورحلات تحفيز مع اليوغا واللياقة والجزر والطعام الصحي." },
     },
   },
 ];

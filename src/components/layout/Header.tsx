@@ -12,6 +12,7 @@ export type HeaderLabels = {
   destinations: string;
   journeys: string;
   retreats: string;
+  retreatsMenu: { href: string; label: string }[];
   experiences: string;
   guide: string;
   stories: string;
@@ -75,17 +76,33 @@ export function Header({ locale, t, whatsappHref }: { locale: Locale; t: HeaderL
           >
             {nav.map(([slug, label]) => {
               const active = pathname.startsWith(`/${locale}/${slug}`);
+              const sub = slug === "wellness-retreats" ? t.retreatsMenu : null;
               return (
-                <li key={slug}>
+                <li key={slug} className={sub ? "group relative" : undefined}>
                   <Link
                     href={`/${locale}/${slug}`}
                     className={`block rounded-full px-2.5 py-1.5 transition-colors 2xl:px-4 duration-300 ${
                       active ? (solid ? "bg-white" : "bg-white/25") : solid ? "hover:bg-white/70" : "hover:bg-white/15"
                     }`}
                     aria-current={active ? "page" : undefined}
+                    aria-haspopup={sub ? "true" : undefined}
                   >
                     {label}
+                    {sub && <span aria-hidden className="ms-1 text-[0.6rem]">▾</span>}
                   </Link>
+                  {sub && (
+                    <div className="invisible absolute start-0 top-full pt-2 opacity-0 transition-opacity duration-200 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+                      <ul className="min-w-56 rounded-2xl bg-white p-2 text-[0.85rem] normal-case tracking-normal text-ink shadow-[0_12px_30px_-10px_rgb(0_0_0/0.25)]">
+                        {sub.map((m) => (
+                          <li key={m.href}>
+                            <Link href={`/${locale}/${m.href}`} className="block rounded-xl px-4 py-2.5 hover:bg-shell">
+                              {m.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </li>
               );
             })}
@@ -125,6 +142,17 @@ export function Header({ locale, t, whatsappHref }: { locale: Locale; t: HeaderL
                   <Link href={`/${locale}/${slug}`} className="block py-2 font-display text-4xl">
                     {label}
                   </Link>
+                  {slug === "wellness-retreats" && (
+                    <ul className="mb-2 ms-1 space-y-1 border-s border-line ps-4">
+                      {t.retreatsMenu.slice(1).map((m) => (
+                        <li key={m.href}>
+                          <Link href={`/${locale}/${m.href}`} className="block py-1 text-lg text-stone">
+                            {m.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               ))}
               <li>

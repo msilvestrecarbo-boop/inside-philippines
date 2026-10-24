@@ -1,7 +1,8 @@
 import "../globals.css";
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
-import { isLocale, locales, localeMeta } from "@/i18n/config";
+import { isLocale, locales, localeMeta, tr } from "@/i18n/config";
+import { retreatsMenuAll, retreatTypes } from "@/content/retreats";
 import { getDictionary } from "@/i18n/dictionaries";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -74,6 +75,10 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
               destinations: n.destinations,
               journeys: n.journeys,
               retreats: n.retreats,
+              retreatsMenu: [
+                { href: "wellness-retreats", label: tr(retreatsMenuAll, lang) },
+                ...retreatTypes.map((r) => ({ href: r.slug, label: tr(r.menu, lang) })),
+              ],
               experiences: n.experiences,
               guide: n.guide,
               stories: n.stories,
