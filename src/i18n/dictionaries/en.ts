@@ -218,7 +218,7 @@ const en = {
       budgetOptions: ["Under €2,000", "€2,000–3,500", "€3,500–5,000", "€5,000–8,000", "€8,000+", "I'd rather discuss it"],
       details: "Your details",
       talkTitle: "Prefer to write to us directly?",
-      talkBody: "Send us a message on WhatsApp or by email. A real person replies.",
+      talkBody: "Send us a message on WhatsApp or by email.",
       whatsapp: "WhatsApp us",
       email: "Email us",
     },

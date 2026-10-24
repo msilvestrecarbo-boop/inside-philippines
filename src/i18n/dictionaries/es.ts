@@ -215,7 +215,7 @@ const es: Dictionary = {
       budgetOptions: ["Menos de 2.000 €", "2.000–3.500 €", "3.500–5.000 €", "5.000–8.000 €", "Más de 8.000 €", "Prefiero hablarlo"],
       details: "Tus datos",
       talkTitle: "¿Prefieres escribirnos directamente?",
-      talkBody: "Envíanos un mensaje por WhatsApp o por email. Te responde una persona real.",
+      talkBody: "Envíanos un mensaje por WhatsApp o por email.",
       whatsapp: "Escríbenos por WhatsApp",
       email: "Envíanos un email",
     },
