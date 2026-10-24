@@ -13,7 +13,9 @@ import { RouteMap } from "@/components/ui/RouteMap";
 import { Tiers } from "@/components/sections/Sections";
 import { FinalCta } from "@/components/layout/FinalCta";
 import { Price } from "@/components/layout/CurrencyProvider";
-import { TrackView, TrackedLink } from "@/components/layout/Tracking";
+import { TrackView } from "@/components/layout/Tracking";
+import { DurationDesignLink, DurationItinerary, DurationPicker, DurationPrices, DurationProvider, SelectedDays } from "@/components/trip/Durations";
+import { DURATIONS, departureDay, durationLabels as dl, pricesFor, variantFor } from "@/lib/durations";
 import type { TierId } from "@/content/types";
 
 export const dynamicParams = false;
@@ -60,14 +62,20 @@ export default async function JourneyPage({ params }: PageProps<"/[lang]/journey
   const q = `?journey=${j.slug}`;
   const modeLabel = { flight: t.flight, ferry: t.ferry, boat: t.boat, road: t.road };
   const tiers = (Object.keys(j.fromPriceEUR) as TierId[]).filter((k) => j.fromPriceEUR[k]);
-  const customize = (placement: string) => (
-    <TrackedLink href={`/${locale}/design-my-trip${q}`} event="design_trip_click" params={{ placement, journey: j.slug }} className="btn btn-primary">
-      {t.customize}
-    </TrackedLink>
+  const customize = (placement: string) => <DurationDesignLink locale={locale} journey={j.slug} label={t.customize} placement={placement} />;
+  const blocks = [...j.itinerary, departureDay].map((d) => ({ title: tr(d.title, locale), body: tr(d.body, locale), overnight: d.overnight }));
+  const variants = Object.fromEntries(DURATIONS.map((n) => [n, variantFor(j, n)]));
+  const routes = Object.fromEntries(
+    DURATIONS.map((n) => [n, [...new Set(variants[n].map((v) => [...j.itinerary, departureDay][v.block].place))].filter((p) => p !== "manila").map((p) => placeName(p, locale)).join(" • ")]),
+  );
+  const prices = Object.fromEntries(DURATIONS.map((n) => [n, pricesFor(j, n) as Record<string, number>]));
+  const initial = (DURATIONS as readonly number[]).includes(j.days) ? j.days : 14;
+  const picker = (light?: boolean) => (
+    <DurationPicker options={DURATIONS} journey={j.slug} title={tr(dl.choose, locale)} note={tr(dl.note, locale)} daysWord={c.days} routeLabel={tr(dl.route, locale)} routes={routes} light={light} />
   );
 
   return (
-    <>
+    <DurationProvider initial={initial}>
       <TrackView event="journey_view" params={{ journey: j.slug }} />
       <JsonLd
         data={[
@@ -87,7 +95,7 @@ export default async function JourneyPage({ params }: PageProps<"/[lang]/journey
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/70 via-black/10 to-black/30" />
         <div className="container-x pb-16 md:pb-24">
           <Breadcrumbs light items={[{ name: c.breadcrumbHome, href: `/${locale}` }, { name: dict.nav.journeys, href: `/${locale}/journeys` }, { name: title, href: path }]} />
-          <p className="mt-8 font-display text-4xl md:text-5xl">{j.days} {c.days.toUpperCase()}</p>
+          <p className="mt-8 font-display text-4xl md:text-5xl"><SelectedDays /> {c.days.toUpperCase()}</p>
           <p className="kicker mt-3 text-white/85" dir="ltr">{j.route.filter((r) => r !== "manila").map((r) => placeName(r, locale)).join(" • ")}</p>
           <h1 className="mt-5 max-w-4xl text-[length:var(--text-h1)]">{title}</h1>
           <p className="mt-5 max-w-2xl text-lg text-white/85">{tr(j.short, locale)}</p>
@@ -151,23 +159,8 @@ export default async function JourneyPage({ params }: PageProps<"/[lang]/journey
       {/* DAY BY DAY */}
       <section className="container-x py-20 md:py-28" aria-labelledby="days">
         <h2 id="days" className="text-[length:var(--text-h2)]">{t.dayByDay}</h2>
-        <ol className="mt-12 space-y-0">
-          {j.itinerary.map((d, i) => (
-            <li key={i} className="grid gap-4 border-t border-line py-8 md:grid-cols-12">
-              <p className="font-display text-3xl text-narra md:col-span-2">{c.day} {d.days}</p>
-              <div className="md:col-span-7">
-                <h3 className="text-3xl">{tr(d.title, locale)}</h3>
-                <p className="mt-3 leading-relaxed text-stone">{tr(d.body, locale)}</p>
-              </div>
-              {d.overnight && (
-                <p className="text-sm md:col-span-3 md:text-end">
-                  <span className="kicker block text-[0.62rem] text-stone">{t.overnight}</span>
-                  {d.overnight}
-                </p>
-              )}
-            </li>
-          ))}
-        </ol>
+        <div className="mt-8 rounded-card bg-shell p-6 md:p-8">{picker(true)}</div>
+        <DurationItinerary blocks={blocks} variants={variants} dayWord={c.day} overnightWord={t.overnight} />
       </section>
 
       {/* HOTELS / EXPERIENCES / INCLUDED */}
@@ -191,25 +184,19 @@ export default async function JourneyPage({ params }: PageProps<"/[lang]/journey
             <h3 className="kicker mt-10 text-narra">{t.bestMonths}</h3>
             <p className="mt-3 font-display text-2xl">{tr(j.bestMonths, locale)}</p>
           </div>
-          <dl className="grid gap-6 sm:grid-cols-2 md:col-span-7 md:col-start-6">
-            {tiers.map((tier) => (
-              <div key={tier} className="border-t border-line pt-4">
-                <dt className="kicker text-stone">{dict.tiers[tier].name}</dt>
-                <dd className="mt-2 font-display text-4xl">
-                  <span className="text-base text-stone">{c.from} </span>
-                  <Price eur={j.fromPriceEUR[tier]!} />
-                </dd>
-                <dd className="text-xs text-stone">{c.perPerson}</dd>
-              </div>
-            ))}
-          </dl>
+          <div className="md:col-span-7 md:col-start-6">
+            {picker(true)}
+            <div className="mt-8 grid md:grid-cols-1">
+              <DurationPrices prices={prices} tiers={tiers.map((id) => ({ id, name: dict.tiers[id].name }))} from={c.from} perPerson={c.perPerson} />
+            </div>
+          </div>
         </div>
         <div className="mt-10 flex justify-center">{customize("journey_price")}</div>
       </section>
 
       <Faqs faqs={j.faqs} locale={locale} title={c.faqs} />
       <FinalCta locale={locale} dict={dict} query={q} />
-    </>
+    </DurationProvider>
   );
 }
 

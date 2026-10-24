@@ -127,7 +127,8 @@ export function TripBuilder({
     const j = journeys.find((x) => x.slug === sp.get("journey"));
     if (j) {
       next.sourceJourney = j.slug;
-      next.duration = durationFor(j.days);
+      const days = Number(sp.get("days"));
+      next.duration = durationFor(days > 0 ? days : j.days);
       next.destinations = j.route.filter((r) => destinations.some((d) => d.slug === r) && r !== "manila");
       if (j.styles.length === 1) next.style = j.styles[0];
       setPrefillLabel(j.title);

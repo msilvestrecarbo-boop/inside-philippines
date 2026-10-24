@@ -12,6 +12,7 @@ export type TrackEvent =
   | "whatsapp_click"
   | "destination_view"
   | "journey_view"
+  | "journey_duration"
   | "trip_builder_start"
   | "trip_builder_step"
   | "trip_builder_complete"
