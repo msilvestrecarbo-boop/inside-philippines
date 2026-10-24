@@ -118,7 +118,7 @@ const es: Dictionary = {
   },
   why: {
     kicker: "Por qué Inside Philippines",
-    title: "No vendemos Filipinas desde lejos.",
+    title: "Vivimos aquí y preparamos cada viaje sobre el terreno.",
     items: [
       { title: "Conocimiento local", body: "Conocemos Filipinas de primera mano: las rutas, las temporadas, los lugares que han cambiado y los que siguen igual." },
       { title: "A medida", body: "Cada viaje se puede construir en torno a ti: tus fechas, tu ritmo, tu presupuesto, tu idea de un buen día." },
