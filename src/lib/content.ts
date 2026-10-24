@@ -18,6 +18,8 @@ import type { Locale } from "@/i18n/config";
 import type { JourneyTranslation } from "@/content/translations/types";
 import journeysEs from "@/content/translations/journeys.es";
 import journeysFr from "@/content/translations/journeys.fr";
+import journeysRu from "@/content/translations/journeys.ru.json";
+import journeysAr from "@/content/translations/journeys.ar.json";
 import destinationsEs from "@/content/translations/destinations.es.json";
 import destinationsFr from "@/content/translations/destinations.fr.json";
 import guidesEs from "@/content/translations/guides.es.json";
@@ -30,7 +32,7 @@ import landingsEs from "@/content/translations/landings.es.json";
 import landingsFr from "@/content/translations/landings.fr.json";
 import { overlay } from "./overlay";
 
-const journeyTranslations: Partial<Record<Locale, Record<string, JourneyTranslation>>> = { es: journeysEs, fr: journeysFr };
+const journeyTranslations: Partial<Record<Locale, Record<string, JourneyTranslation>>> = { es: journeysEs, fr: journeysFr, ru: journeysRu as unknown as Record<string, JourneyTranslation>, ar: journeysAr as unknown as Record<string, JourneyTranslation> };
 
 function translateJourney(j: Journey): Journey {
   let out = j;
