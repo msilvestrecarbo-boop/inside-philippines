@@ -275,6 +275,7 @@ const es: Dictionary = {
       { name: "Pearly Mae Canoy", role: "Fundadora y directora general", bio: "Pearly Mae fundó Inside Philippines para que el país sea más fácil de planificar desde el extranjero. Dirige la empresa y da forma a cada viaje que ofrecemos: las rutas, la elección de hoteles y el nivel de exigencia que nos marcamos." },
       { name: "Marc Silvestre", role: "Administración y operaciones en destino", bio: "Marc se ocupa de que todo funcione sobre el terreno: reservas, confirmaciones, traslados, ferris y la gestión de cada viaje. Cuando algo cambia durante tu viaje, es él quien lo reorganiza." },
       { name: "Yasmen", role: "Coordinadora de viajes y experiencia del cliente", bio: "Yasmen es tu persona de contacto desde el primer mensaje hasta el último día. Coordina tu itinerario, responde a tus dudas antes de viajar y se interesa por cómo va todo mientras estás en Filipinas." },
+      { name: "Lalaine Cayanan", role: "Coordinadora de viajes y experiencia del cliente", bio: "Lalaine trabaja junto a Yasmen como persona de contacto para nuestros viajeros. Ayuda a preparar cada itinerario, te mantiene informado antes de viajar y está disponible mientras estás en Filipinas." },
     ],
     officeTitle: "Dónde estamos",
   },

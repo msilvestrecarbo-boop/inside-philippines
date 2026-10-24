@@ -46,7 +46,7 @@ export default async function About({ params }: PageProps<"/[lang]/about">) {
         <div className="container-x">
           <h2 className="text-[length:var(--text-h2)]">{t.teamTitle}</h2>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-stone">{t.teamIntro}</p>
-          <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {t.team.map((m) => (
               <div key={m.name}>
                 <p className="border-t border-line pt-6 font-display text-2xl">{m.name}</p>
