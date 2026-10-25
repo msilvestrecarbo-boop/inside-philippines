@@ -1041,5 +1041,12 @@
     "photographer": "THLT LCX",
     "subject": "Singing bowl and incense",
     "verifiedLocation": false
+  },
+  "landing/winter-sun-philippines": {
+    "src": "https://images.unsplash.com/photo-1519101236449-ac8098e16f15",
+    "page": "https://unsplash.com/photos/birds-eye-photography-of-boats-on-body-of-water-near-islet-WHDuMggGxoY",
+    "photographer": "Cris Tagupa",
+    "subject": "Aerial of bangkas moored off Helicopter Island, El Nido, Palawan",
+    "verifiedLocation": true
   }
 }
