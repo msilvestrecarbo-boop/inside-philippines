@@ -356,7 +356,7 @@ const es: Dictionary = {
     journeysFor: "Viajes para empezar",
   },
   consent: {
-    text: "Usamos cookies para entender cómo se utiliza nuestra web y medir nuestra publicidad. No se activa nada hasta que aceptes.",
+    text: "Este sitio web utiliza cookies para ofrecerte la mejor experiencia.",
     accept: "Aceptar",
     decline: "Rechazar",
   },
