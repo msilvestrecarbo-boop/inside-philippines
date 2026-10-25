@@ -39,7 +39,7 @@ export function Newsletter({ locale, t, teamEmail }: { locale: string; teamEmail
         </form>
       )}
       {state === "error" && <p className="mt-2 text-xs text-ink/80" role="alert">{t.error}</p>}
-      <p className="mt-3 text-[0.7rem] text-ink/60">{t.consent}</p>
+      <p className="mt-3 text-[0.7rem] text-ink/75">{t.consent}</p>
     </div>
   );
 }
