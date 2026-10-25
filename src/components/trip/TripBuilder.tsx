@@ -113,6 +113,8 @@ export function TripBuilder({
   const [budgetChoice, setBudgetChoice] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "failed">("idle");
+  // Set when the request only reached the server log (no CRM or webhook yet): the traveller sends it on themselves.
+  const [handoff, setHandoff] = useState<string | null>(null);
   const [prefillLabel, setPrefillLabel] = useState<string | null>(null);
   const started = useRef(false);
 
@@ -221,6 +223,8 @@ export function TripBuilder({
     try {
       const res = await fetch("/api/lead", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(lead) });
       if (!res.ok) throw new Error(String(res.status));
+      const out = (await res.json().catch(() => ({}))) as { delivered?: boolean };
+      if (out.delivered === false) setHandoff(leadSummary(lead));
       track("trip_builder_complete", { style: s.style, duration: s.duration, who: s.who });
       track("generate_lead", { style: s.style, duration: s.duration, value_basis: lead.budgetBasis });
       try { sessionStorage.removeItem(STORAGE); } catch {}
@@ -237,9 +241,24 @@ export function TripBuilder({
         <p className="kicker text-narra">Inside Philippines</p>
         <h2 className="mt-6 text-[length:var(--text-h1)]">{t.doneTitle}</h2>
         <p className="mt-6 text-lg leading-relaxed text-stone">{t.doneBody}</p>
-        <a href={whatsappHref} target="_blank" rel="noopener" onClick={() => track("whatsapp_click", { placement: "trip_builder_done" })} className="btn btn-ghost mt-10">
-          {t.doneWhatsApp}
-        </a>
+        {handoff ? (
+          <div className="mt-10 rounded-2xl border border-line bg-shell p-6 text-start">
+            <h3 className="text-xl">{t.lastStep.title}</h3>
+            <p className="mt-3 text-stone">{t.lastStep.body}</p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href={`${whatsappHref.split("?")[0]}?text=${encodeURIComponent(handoff)}`} target="_blank" rel="noopener" onClick={() => track("whatsapp_click", { placement: "trip_builder_handoff" })} className="btn btn-primary">
+                {t.lastStep.whatsapp}
+              </a>
+              <a href={`mailto:${email}?subject=${encodeURIComponent("Trip request – Inside Philippines")}&body=${encodeURIComponent(handoff)}`} className="btn btn-ghost">
+                {t.lastStep.email}
+              </a>
+            </div>
+          </div>
+        ) : (
+          <a href={whatsappHref} target="_blank" rel="noopener" onClick={() => track("whatsapp_click", { placement: "trip_builder_done" })} className="btn btn-ghost mt-10">
+            {t.doneWhatsApp}
+          </a>
+        )}
       </div>
     );
   }
@@ -434,4 +453,27 @@ function Counter({ label, value, min, max, onChange }: { label: string; value: n
       </div>
     </div>
   );
+}
+
+/** Plain-text copy of a trip request, for the traveller to send on WhatsApp or by email. Labels stay in English for the team. */
+function leadSummary(l: Lead) {
+  const dates = l.startDate ? `${l.startDate} to ${l.endDate ?? "?"}` : l.month ?? "not decided";
+  const kids = l.children ? `, ${l.children} children (ages ${l.childrenAges?.join(", ") || "?"})` : "";
+  return [
+    "Trip request – Inside Philippines",
+    `Name: ${l.name}`,
+    `Email: ${l.email}`,
+    l.whatsapp && `WhatsApp: ${l.whatsapp}`,
+    `Country: ${l.country}`,
+    `Language: ${l.preferredLanguage}`,
+    `Dates: ${dates}`,
+    l.duration && `Length: ${l.duration}`,
+    `Travellers: ${l.who || "?"}, ${l.adults} adults${kids}`,
+    l.destinations?.length && `Places: ${l.destinations.join(", ")}`,
+    l.interests?.length && `Interests: ${l.interests.join(", ")}`,
+    l.style && `Style: ${l.style}`,
+    l.occasions?.length && `Occasion: ${l.occasions.join(", ")}`,
+    l.sourceJourney && `Tour: ${l.sourceJourney}`,
+    l.comments && `Notes: ${l.comments}`,
+  ].filter(Boolean).join("\n");
 }
