@@ -4,12 +4,10 @@
  */
 export const site = {
   name: "Inside Philippines",
-  url: (
-    process.env.NEXT_PUBLIC_SITE_URL ||
-    (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "https://www.insidephilippines.com")
-  ).replace(/\/$/, ""),
-  /** Search engines are kept out until launch. Set NEXT_PUBLIC_ALLOW_INDEXING=true when placeholders are replaced. */
-  indexable: process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true",
+  /** The live domain (www is primary; Vercel redirects the bare domain to it). */
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.insidephilippines.com").replace(/\/$/, ""),
+  /** Launched 2026-10-25: production is indexable; previews and local builds stay out unless NEXT_PUBLIC_ALLOW_INDEXING=true. */
+  indexable: process.env.VERCEL_ENV === "production" || process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true",
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "marc@lymaculinary.com",
   /** Digits only with country code, e.g. 639171234567. Empty = placeholder. */
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "639524050513",
