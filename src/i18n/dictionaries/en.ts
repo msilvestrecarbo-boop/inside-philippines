@@ -294,6 +294,12 @@ const en = {
     doneTitle: "Your Philippines journey starts here.",
     doneBody: "Our travel designers will review your request and create a journey around you. You'll hear from a real person, usually within one working day.",
     doneWhatsApp: "Prefer to talk now? Message us on WhatsApp",
+    lastStep: {
+      title: "One last step: send us your request",
+      body: "Tap below and your request opens ready to send, already written out. Just press send and our team will reply personally.",
+      whatsapp: "Send my request on WhatsApp",
+      email: "Send it by email instead",
+    },
     error: "We couldn't send your request. Please try again, or message us on WhatsApp.",
   },
   months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],

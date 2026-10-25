@@ -12,5 +12,5 @@ export async function POST(req: Request) {
   const hook = process.env.LEAD_WEBHOOK_URL;
   if (hook) await fetch(hook, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text: `Contact form: ${payload.name} <${email}>\n${message}`, contact: payload }) }).catch(() => null);
   else console.info("[contact]", payload);
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true, delivered: !!hook });
 }

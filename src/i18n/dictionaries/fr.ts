@@ -291,6 +291,12 @@ const fr: Dictionary = {
     doneTitle: "Votre voyage aux Philippines commence ici.",
     doneBody: "Nos travel designers vont étudier votre demande et concevoir un voyage autour de vous. Une vraie personne vous répondra, généralement sous un jour ouvré.",
     doneWhatsApp: "Envie d'en parler tout de suite ? Écrivez-nous sur WhatsApp",
+    lastStep: {
+      title: "Dernière étape : envoyez-nous votre demande",
+      body: "Touchez le bouton ci-dessous : votre demande s'ouvre déjà rédigée. Il ne reste qu'à l'envoyer, et notre équipe vous répondra personnellement.",
+      whatsapp: "Envoyer ma demande sur WhatsApp",
+      email: "L'envoyer plutôt par e-mail",
+    },
     error: "Votre demande n'a pas pu être envoyée. Merci de réessayer, ou écrivez-nous sur WhatsApp.",
   },
   months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],

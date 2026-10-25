@@ -48,7 +48,7 @@ export default async function Contact({ params }: PageProps<"/[lang]/contact">) 
         <div>
           <h2 className="text-[length:var(--text-h3)]">{t.formTitle}</h2>
           <div className="mt-8">
-            <ContactForm locale={locale} t={{ name: t.name, email: dict.tripBuilder.q10.email, message: t.message, send: t.send, sent: t.sent, error: dict.tripBuilder.error }} />
+            <ContactForm locale={locale} t={{ name: t.name, email: dict.tripBuilder.q10.email, message: t.message, send: t.send, sent: t.sent, error: dict.tripBuilder.error, lastStep: dict.tripBuilder.lastStep }} whatsappBase={whatsappHref("").split("?")[0]} email={site.email} />
           </div>
         </div>
       </section>

@@ -25,11 +25,12 @@ export async function POST(req: Request) {
     const crm = getCrm();
     const { id } = await crm.submit(lead);
     await notifyWebhook(lead);
-    return NextResponse.json({ ok: true, id, crm: crm.name });
+    // With no CRM and no webhook the lead only reaches the server log, so the browser asks the traveller to send it on.
+    return NextResponse.json({ ok: true, id, crm: crm.name, delivered: crm.name !== "log" || !!process.env.LEAD_WEBHOOK_URL });
   } catch (e) {
     console.error("[lead] CRM failed", e);
     // Never lose a lead: mirror to webhook and still accept.
     await notifyWebhook(lead);
-    return NextResponse.json({ ok: true, queued: true });
+    return NextResponse.json({ ok: true, queued: true, delivered: !!process.env.LEAD_WEBHOOK_URL });
   }
 }
