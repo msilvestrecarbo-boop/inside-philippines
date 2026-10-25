@@ -94,9 +94,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <Link href={`/${locale}/destinations`} className="kicker link-u shrink-0">{dict.common.allDestinations} →</Link>
         </div>
         <div className="no-scrollbar mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto px-5 md:mx-auto md:grid md:max-w-[88rem] md:px-10 md:grid-cols-3 md:gap-10 md:overflow-visible">
-          {featured.map((d, i) => (
+          {featured.map((d) => (
             <div key={d.slug} className="w-[80vw] shrink-0 snap-start sm:w-[45vw] md:w-auto">
-              <DestinationCard d={d} locale={locale} dict={dict} priority={i < 2} />
+              <DestinationCard d={d} locale={locale} dict={dict} />
             </div>
           ))}
         </div>
