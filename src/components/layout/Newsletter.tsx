@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import { track } from "@/lib/analytics";
+import { emailTeam } from "@/lib/mailbox";
 
-export function Newsletter({ locale, t }: { locale: string; t: { title: string; body: string; placeholder: string; submit: string; success: string; error: string; consent: string } }) {
+export function Newsletter({ locale, t, teamEmail }: { locale: string; teamEmail: string; t: { title: string; body: string; placeholder: string; submit: string; success: string; error: string; consent: string } }) {
   const [state, setState] = useState<"idle" | "sending" | "ok" | "error">("idle");
   return (
     <div>
@@ -23,7 +24,10 @@ export function Newsletter({ locale, t }: { locale: string; t: { title: string; 
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ email, locale }),
             }).catch(() => null);
-            if (res?.ok) {
+            const out = res?.ok ? ((await res.json().catch(() => ({}))) as { delivered?: boolean }) : null;
+            const saved =
+              !!out && (out.delivered !== false || (await emailTeam(teamEmail, `Inside Notes sign-up – ${email}`, `New Inside Notes newsletter sign-up\nEmail: ${email}\nSite language: ${locale}`, String(email))));
+            if (saved) {
               track("newsletter_signup");
               setState("ok");
             } else setState("error");

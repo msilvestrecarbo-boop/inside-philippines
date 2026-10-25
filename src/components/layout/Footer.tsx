@@ -45,7 +45,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           </div>
         </nav>
         <div className="md:col-span-4">
-          <Newsletter locale={locale} t={dict.newsletter} />
+          <Newsletter locale={locale} t={dict.newsletter} teamEmail={site.email} />
         </div>
       </div>
       <div className="container-x mt-16 flex flex-col gap-3 border-t border-ink/20 pt-6 text-xs text-ink/65 md:flex-row md:justify-between">

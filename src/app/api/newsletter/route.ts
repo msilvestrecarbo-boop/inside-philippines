@@ -12,5 +12,6 @@ export async function POST(req: Request) {
   } else {
     console.info("[newsletter] (no provider configured)", email, locale);
   }
-  return NextResponse.json({ ok: true });
+  // Without a provider the browser forwards the sign-up to the team inbox (see lib/mailbox).
+  return NextResponse.json({ ok: true, delivered: !!hook });
 }
