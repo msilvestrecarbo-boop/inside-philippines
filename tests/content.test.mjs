@@ -66,8 +66,12 @@ test("landing pages don't collide with site sections and reference real content"
   }
 });
 
-test("journey prices stay flagged as placeholders until confirmed", () => {
-  for (const j of journeys) assert.equal(j.priceIsPlaceholder, true, j.slug);
+test("journey prices are confirmed and every journey has a from-price", () => {
+  // MARC confirmed the from-prices on 2026-10-25.
+  for (const j of journeys) {
+    assert.equal(j.priceIsPlaceholder, false, j.slug);
+    assert.ok(Object.values(j.fromPriceEUR).some((v) => v > 0), `${j.slug} has no price`);
+  }
 });
 
 test("journey translations line up with the English source", async () => {
