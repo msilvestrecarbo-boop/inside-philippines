@@ -36,7 +36,9 @@ export function proxy(req: NextRequest) {
     // "/siargao" (social bio link) -> "/fr/siargao" for a French visitor
     const url = req.nextUrl.clone();
     url.pathname = `/${negotiate(req)}${pathname === "/" ? "" : pathname}`;
-    res = NextResponse.redirect(url, 307);
+    // The bare homepage is served in place (no redirect) so Search Console's
+    // verification check and first-time crawlers get a 200; its canonical still points at /{locale}.
+    res = pathname === "/" ? NextResponse.rewrite(url) : NextResponse.redirect(url, 307);
   }
 
   if (!isCurrency(req.cookies.get(CURRENCY_COOKIE)?.value)) {
