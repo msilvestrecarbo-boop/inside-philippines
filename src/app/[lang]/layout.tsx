@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
       ],
       apple: "/brand/apple-touch-icon.png",
     },
-    verification: process.env.GOOGLE_SITE_VERIFICATION ? { google: process.env.GOOGLE_SITE_VERIFICATION } : undefined,
+    verification: { google: process.env.GOOGLE_SITE_VERIFICATION || "b8B7YgPgxGhZJOj7se-IlybLt3kDmuuyZTjm-ZZLBFk" },
     formatDetection: { telephone: false },
   };
 }
