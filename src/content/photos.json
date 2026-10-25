@@ -1048,5 +1048,26 @@
     "photographer": "Cris Tagupa",
     "subject": "Aerial of bangkas moored off Helicopter Island, El Nido, Palawan",
     "verifiedLocation": true
+  },
+  "guide/philippines-in-december": {
+    "src": "https://images.unsplash.com/photo-1685358654500-0c78db679996",
+    "page": "https://unsplash.com/photos/a-group-of-sailboats-sailing-in-the-ocean-at-sunset-8KLGbVVCi8A",
+    "photographer": "Johann Ocampo",
+    "subject": "Paraw sailboats at sunset, Boracay",
+    "verifiedLocation": true
+  },
+  "guide/siargao-or-palawan": {
+    "src": "https://images.unsplash.com/photo-1565565915331-293fd8113954",
+    "page": "https://unsplash.com/photos/boats-near-seashore-4flavNqoVZc",
+    "photographer": "Alejandro Luengo",
+    "subject": "Drone shot of bangkas off the beach at Guyam Island, Siargao",
+    "verifiedLocation": true
+  },
+  "guide/philippines-trip-cost": {
+    "src": "https://images.unsplash.com/photo-1564425230164-1e63b4922d3f",
+    "page": "https://unsplash.com/photos/aerial-photography-of-boats-beside-mountain-during-daytime-DGOI_BlPdC4",
+    "photographer": "Kaspars Upmanis",
+    "subject": "Aerial of bangkas below limestone cliffs, El Nido, Palawan",
+    "verifiedLocation": true
   }
 }

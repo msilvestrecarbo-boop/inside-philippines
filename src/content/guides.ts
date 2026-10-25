@@ -2265,4 +2265,303 @@ export const guides: GuideArticle[] = [
       journeys: ["the-slow-philippines", "the-grand-philippines"],
     },
   },
+
+  /* -------------------------- ADDED 2026-10-25 ------------------------ */
+  {
+    slug: "philippines-in-december",
+    group: "planning",
+    status: "published",
+    updated: "2026-10-25",
+    title: {
+      en: "The Philippines in December and January",
+      fr: "Les Philippines en décembre et en janvier",
+      es: "Filipinas en diciembre y enero",
+      ru: "Филиппины в декабре и январе",
+      ar: "الفلبين في ديسمبر ويناير",
+    },
+    description: {
+      en: "Weather, Christmas, New Year and January festivals: where to go in the Philippines in winter, and how to plan around the busiest weeks of the year.",
+      fr: "Météo, Noël, Nouvel An et fêtes de janvier : où partir aux Philippines en hiver et comment s'organiser pendant les semaines les plus chargées de l'année.",
+      es: "Clima, Navidad, Año Nuevo y fiestas de enero: adónde ir en Filipinas en invierno y cómo organizarse en las semanas más concurridas del año.",
+      ru: "Погода, Рождество, Новый год и январские фестивали: куда поехать на Филиппины зимой и как спланировать поездку в самые загруженные недели года.",
+      ar: "الطقس وعيد الميلاد ورأس السنة ومهرجانات يناير: إلى أين تسافر في الفلبين شتاءً، وكيف تخطط لأكثر أسابيع السنة ازدحاماً.",
+    },
+    photo: {
+      alt: { en: "Sailboats at sunset off Boracay" },
+      brief: "Library photo (Unsplash), see photos.json.",
+      tone: "dusk",
+    },
+    body: {
+      en: `December and January are some of the best months to visit the Philippines, and also the busiest. While Europe is cold and dark, most of the islands are in their dry season, the sea is warm and the whole country is celebrating. Here is what to expect, where to go and how to plan it well.
+
+## The weather in December and January
+
+From December the northeast monsoon, called amihan, brings drier and slightly cooler air to much of the country. On the western side, including Palawan, Boracay, Bohol and Cebu, this usually means sunny days, lower humidity and calm water for island hopping. Daytime temperatures at sea level are typically around 26 to 31°C, and the sea stays warm.
+
+The exception is the Pacific-facing east coast. Siargao and the east of Mindanao and Samar get more rain from December to February, so we usually suggest Siargao from March. Typhoons are much less common at this time of year than between June and November, but an early-December storm is not impossible, so we keep an eye on the forecast and plan flexible routes.
+
+In the mountains of the north, around Sagada and Banaue, nights can be cool. Bring a warm layer if your trip includes the rice terraces.
+
+## Christmas in the Philippines
+
+The Philippines has one of the longest Christmas seasons in the world. Star-shaped lanterns called parol light up streets and homes for weeks, and from 16 to 24 December many Filipinos attend Simbang Gabi, a series of dawn masses followed by rice cakes and hot drinks outside the church. On Christmas Eve families gather for Noche Buena, a midnight feast.
+
+For travellers this means a warm, festive atmosphere almost everywhere. It also means that many Filipinos travel home for the holidays, so domestic flights and ferries fill up fast.
+
+## New Year
+
+New Year's Eve is loud and joyful, with fireworks, family dinners and a table of round fruits for good luck in the year ahead. Beach destinations such as Boracay and El Nido are especially lively. If you prefer a quiet New Year, we can choose a smaller island or a resort away from the main beach.
+
+## January festivals
+
+January is festival month in the Visayas. Sinulog in Cebu takes place around the third Sunday of January, with a huge street parade and dancing in honour of the Santo Niño. Ati-Atihan in Kalibo, on the same island as Boracay, is held around the same weekend, and Dinagyang in Iloilo usually follows a week later. All three are colourful, crowded and unforgettable. Hotels nearby book up early.
+
+## Where to go
+
+- Palawan: El Nido and Coron are at their best, with calm seas for lagoons and island hopping.
+- Boracay: dry, breezy and perfect for sunset sailing.
+- Bohol: the Chocolate Hills, tarsiers and quiet beaches on Panglao.
+- Cebu: Sinulog in January, then Moalboal for turtles and the sardine run.
+- Siargao: possible, but expect more rain. March to October is better.
+
+## How to plan it well
+
+The busiest period runs from roughly 20 December to the first days of January. If you want to travel then, start planning as early as you can: the best hotels, flight times and boats go first. Traveling in the second half of January or in February gives you the same dry weather with fewer crowds.
+
+Ten to fourteen days is ideal from Europe. Two or three islands is enough: for example Palawan and Bohol, or Palawan, Bohol and Boracay. Every journey we design includes travel insurance with €2,000 cancellation cover, which is reassuring when you book far ahead.`,
+    },
+    insiders: [
+      {
+        type: "go-early",
+        title: { en: "Book Christmas early" },
+        body: { en: "For travel between 20 December and early January, the best boutique hotels and the most convenient domestic flights go first. The earlier we start, the more choice you have." },
+      },
+      {
+        type: "inside-tip",
+        title: { en: "Late January is the sweet spot" },
+        body: { en: "Once the holidays and the big festivals are over, you get the same dry weather, calmer islands and better availability." },
+      },
+      {
+        type: "our-favorite",
+        title: { en: "Christmas Eve on Bohol" },
+        body: { en: "Bohol's old stone churches and small towns make it a lovely place to feel a Filipino Christmas, then spend the next days on Panglao's beaches." },
+      },
+    ],
+    faqs: [
+      {
+        q: { en: "Is December a good time to visit the Philippines?" },
+        a: { en: "Yes for most of the country. Palawan, Boracay, Bohol and Cebu are usually dry and pleasant. Siargao and the east coast are wetter, and the last two weeks of December are the busiest of the year." },
+      },
+      {
+        q: { en: "When is Sinulog?" },
+        a: { en: "Sinulog in Cebu City is held around the third Sunday of January, with events in the days before. Exact dates are announced each year." },
+      },
+      {
+        q: { en: "Will it be crowded at Christmas and New Year?" },
+        a: { en: "The popular beaches are busier, and prices are higher. We balance it with early boat departures, quieter islands and hotels away from the main strip." },
+      },
+    ],
+    related: {
+      destinations: ["el-nido", "coron", "boracay", "bohol", "cebu"],
+      journeys: ["island-classics", "palawan-bohol-boracay", "cebu-islands-and-culture"],
+    },
+  },
+  {
+    slug: "siargao-or-palawan",
+    group: "islands",
+    status: "published",
+    updated: "2026-10-25",
+    title: {
+      en: "Siargao or Palawan? How to Choose",
+      fr: "Siargao ou Palawan ? Comment choisir",
+      es: "¿Siargao o Palawan? Cómo elegir",
+      ru: "Сиаргао или Палаван? Как выбрать",
+      ar: "سيارغاو أم بالاوان؟ كيف تختار",
+    },
+    description: {
+      en: "Surf and palm forests or limestone lagoons? An honest comparison of Siargao and Palawan: scenery, seasons, getting there, and who each one suits best.",
+      fr: "Surf et cocoteraies ou lagons entre falaises calcaires ? Une comparaison honnête de Siargao et Palawan : paysages, saisons, accès et à qui chacune convient.",
+      es: "¿Surf y palmerales o lagunas entre acantilados de caliza? Una comparación sincera de Siargao y Palawan: paisajes, temporadas, cómo llegar y para quién es cada una.",
+      ru: "Сёрфинг и пальмовые леса или лагуны среди известняковых скал? Честное сравнение Сиаргао и Палавана: пейзажи, сезоны, дорога и кому что подходит.",
+      ar: "ركوب الأمواج وغابات النخيل أم البحيرات بين المنحدرات الكلسية؟ مقارنة صادقة بين سيارغاو وبالاوان: المناظر والمواسم والوصول ولمن تناسب كل منهما.",
+    },
+    photo: {
+      alt: { en: "Boats off the beach at Guyam Island, Siargao, from above" },
+      brief: "Library photo (Unsplash), see photos.json.",
+      tone: "lagoon",
+    },
+    body: {
+      en: `Siargao and Palawan are the two names we hear most from travellers planning a first trip to the Philippines. Both are beautiful, both have island hopping and white sand, and both can fill a week easily. But they feel very different. Here is how we help people choose, and why many end up doing both.
+
+## Palawan in one paragraph
+
+Palawan is the long island in the west, famous for El Nido and Coron. Think dramatic limestone cliffs rising out of turquoise water, hidden lagoons you paddle into by kayak, and days spent on a boat moving from beach to beach. Coron adds clear lakes inside Coron Island and Second World War wrecks for divers. It is the postcard Philippines, and it lives up to the photos when you time it well.
+
+## Siargao in one paragraph
+
+Siargao is a smaller island on the Pacific side, known for surfing and a laid-back village feel. Instead of cliffs, you get an ocean of coconut palms, sandbars such as Naked Island, the Sugba Lagoon in the mangroves and the rock pools of Magpupungko at low tide. Evenings are relaxed, with good food in General Luna. Our team is based there, so we know it well.
+
+## Scenery and activities
+
+- Palawan: lagoons, limestone, island hopping, snorkelling, kayaking, wreck diving in Coron.
+- Siargao: surf lessons for all levels, island hopping, paddleboarding, motorbike rides through the palms, a slower island rhythm.
+
+If the picture in your head is a boat between towering cliffs, choose Palawan. If it is learning to surf and riding through palm trees with salty hair, choose Siargao.
+
+## The best season for each
+
+This is the most important difference. Palawan is at its best in the dry season, roughly November or December to May. Siargao faces the Pacific and is usually best from March to October, with the bigger surf season around September to November. From December to February, Siargao gets more rain, while Palawan is dry.
+
+So for a winter trip from Europe, Palawan is usually the safer choice. For a spring or summer trip, Siargao often shines.
+
+## Getting there
+
+Both need a domestic flight. For Palawan, you fly from Manila to El Nido, Puerto Princesa or Busuanga for Coron; El Nido and Coron are linked by a ferry of a few hours. For Siargao, you fly from Manila or Cebu to Sayak airport, then drive about 45 minutes to General Luna. We plan your international and domestic flights together so the connections are realistic.
+
+## Who each one suits
+
+- Couples and honeymooners: both, but Palawan has more high-end island resorts.
+- Families: both work well; Palawan's calm lagoons are easy with children, and Siargao is relaxed and safe-feeling.
+- Surfers and active travellers: Siargao.
+- Divers: Palawan, especially Coron.
+- Travellers who want to slow down: Siargao.
+
+## Why not both?
+
+With ten days or more, you can combine them with one transfer day in the middle. Our Ten Days, Two Islands journey does exactly that, and Surf and Islands adds Bohol between them. The best order depends on the season, which is where a local team makes the difference.`,
+    },
+    insiders: [
+      {
+        type: "inside-tip",
+        title: { en: "Let the season decide" },
+        body: { en: "Torn between the two? Your travel dates often settle it: Palawan for December to April, Siargao for March to October." },
+      },
+      {
+        type: "go-early",
+        title: { en: "Leave before the tour boats" },
+        body: { en: "In El Nido and on Siargao's island-hopping route, a private boat at 7am means the best spots before the crowds arrive." },
+      },
+    ],
+    faqs: [
+      {
+        q: { en: "Which is better for a first trip, Siargao or Palawan?" },
+        a: { en: "Most first-timers love Palawan for its lagoons and cliffs, especially between December and April. If you travel from March to October or want to surf, Siargao is a wonderful first choice too." },
+      },
+      {
+        q: { en: "Can I do Siargao and Palawan in one trip?" },
+        a: { en: "Yes. With ten days or more it works well, with one transfer day between them, usually via Manila or Cebu." },
+      },
+      {
+        q: { en: "Do I need to surf to enjoy Siargao?" },
+        a: { en: "Not at all. Island hopping, lagoons, rock pools, paddleboarding and the island's relaxed rhythm are reasons enough." },
+      },
+    ],
+    related: {
+      destinations: ["siargao", "el-nido", "coron", "palawan"],
+      journeys: ["ten-days-two-islands", "surf-and-islands", "essential-palawan", "palawan-deep-dive"],
+    },
+  },
+  {
+    slug: "philippines-trip-cost",
+    group: "planning",
+    status: "published",
+    updated: "2026-10-25",
+    title: {
+      en: "How Much Does a Trip to the Philippines Cost?",
+      fr: "Combien coûte un voyage aux Philippines ?",
+      es: "¿Cuánto cuesta un viaje a Filipinas?",
+      ru: "Сколько стоит поездка на Филиппины?",
+      ar: "كم تكلف رحلة إلى الفلبين؟",
+    },
+    description: {
+      en: "Real from-prices for tailor-made Philippines trips, what they include, what changes the price, and simple ways to get more from your budget.",
+      fr: "Les vrais prix de départ de nos voyages sur mesure aux Philippines, ce qu'ils incluent, ce qui fait varier le prix et comment tirer le meilleur de votre budget.",
+      es: "Precios reales desde los que parten nuestros viajes a medida a Filipinas, qué incluyen, qué hace variar el precio y cómo sacar más partido a tu presupuesto.",
+      ru: "Реальные цены «от» на индивидуальные туры по Филиппинам: что в них входит, от чего зависит стоимость и как получить больше за свой бюджет.",
+      ar: "أسعار البداية الفعلية لرحلاتنا المصممة حسب الطلب إلى الفلبين، وما تشمله، وما الذي يغيّر السعر، وطرق بسيطة للاستفادة القصوى من ميزانيتك.",
+    },
+    photo: {
+      alt: { en: "Boats below limestone cliffs in El Nido, Palawan, from above" },
+      brief: "Library photo (Unsplash), see photos.json.",
+      tone: "lagoon",
+    },
+    body: {
+      en: `It is the first question almost everyone asks, and a fair one. The honest answer is that a trip to the Philippines can suit very different budgets, from simple and well-chosen to private-island luxury. Here is how pricing works with us, with real examples from our journeys.
+
+## The two parts of the budget
+
+Every trip has two parts. The first is your international flight to Manila or Cebu, which depends on where you fly from, the season and how early you book. Our prices do not include it, but we are happy to advise on routes and timings.
+
+The second part is everything once you land: domestic flights and ferries, hotels, transfers, boat days and guides. That is what our journey prices cover.
+
+## Real examples
+
+All prices are from-prices per person, based on two people sharing, excluding international flights. The final price depends on your dates, hotels and room availability.
+
+- Bohol Beach Escape, 6 days: from €1,100.
+- Visayas on a Budget, 12 days: from €1,300.
+- Essential Palawan, 9 days: from €1,400.
+- Ten Days, Two Islands, 10 days: from €1,700.
+- Island Classics, 14 days: from €2,300 in Essential, up to from €9,800 in Signature.
+- Honeymoon Inside Philippines, 12 days: from €3,900.
+
+## The four comfort levels
+
+- Essential: well-located hotels with character, shared transfers and group tours with a local guide.
+- Boutique: design-led boutique hotels, private transfers and a private boat on one day per island.
+- Premium: five-star resorts and villas, private boats and guides on every tour day, and dinner at a top-rated restaurant in every destination.
+- Signature: private-island resorts, your own boat and crew, and charter flights where they save time.
+
+## What is included
+
+Depending on the level, our journeys include hotels, domestic flights and ferries with checked baggage, transfers, tours and boat days, entrance fees, and 24/7 support by WhatsApp. Every journey includes travel insurance with €2,000 cancellation cover.
+
+Not included: international flights, most meals outside tour days, drinks, tips and personal spending.
+
+## What changes the price
+
+- Season: the Christmas and New Year weeks are the most expensive of the year.
+- Number of islands: each extra island usually adds a domestic flight or ferry and transfers.
+- Private or shared: private boats, guides and transfers cost more, but give you freedom and quiet.
+- Hotel level: the single biggest factor.
+
+## How to get more from your budget
+
+- Choose fewer islands and stay longer in each. You spend less on transport and more time on the beach.
+- Travel outside the peak weeks. Late January to April is dry in most of the west and often better value than Christmas.
+- Spend where it matters to you. A private boat for one special day can feel more luxurious than a more expensive hotel.
+
+Tell us your dates and your budget, and we will design the best trip for it. There is no commitment until you are happy with the plan.`,
+    },
+    insiders: [
+      {
+        type: "inside-tip",
+        title: { en: "Fewer islands, better trip" },
+        body: { en: "Cutting one island often saves a domestic flight, two transfers and half a day of travel. That budget can pay for a private boat day instead." },
+      },
+      {
+        type: "our-favorite",
+        title: { en: "One private day" },
+        body: { en: "Even on an Essential trip, adding one private boat day in El Nido or Coron changes the whole experience." },
+      },
+    ],
+    faqs: [
+      {
+        q: { en: "Is the Philippines expensive to visit?" },
+        a: { en: "It can suit most budgets. Our journeys start from €1,100 per person for six days in Bohol, excluding international flights. Domestic flights and boats add up, so a well-planned route matters more than anything." },
+      },
+      {
+        q: { en: "Are international flights included?" },
+        a: { en: "No. Our prices cover everything in the Philippines, including domestic flights and ferries. We are happy to advise on international routes and timings." },
+      },
+      {
+        q: { en: "Is travel insurance included?" },
+        a: { en: "Yes. Every journey includes travel insurance with €2,000 cancellation cover." },
+      },
+    ],
+    related: {
+      destinations: ["palawan", "bohol", "siquijor"],
+      journeys: ["visayas-on-a-budget", "bohol-beach-escape", "essential-palawan", "island-classics"],
+    },
+  },
 ];
