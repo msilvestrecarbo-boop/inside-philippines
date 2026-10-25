@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { emailTeam } from "@/lib/mailbox";
+import { travellerConfirmation } from "@/lib/confirmation";
 
 type LastStep = { title: string; body: string; whatsapp: string; email: string };
 
@@ -20,7 +21,13 @@ export function ContactForm({ locale, t, whatsappBase, email: teamEmail }: { loc
         </div>
       </div>
     );
-  if (state === "ok") return <p role="status" className="text-lg">{t.sent}</p>;
+  if (state === "ok")
+    return (
+      <div role="status" ref={(el) => el?.scrollIntoView({ behavior: "smooth", block: "center" })} className="rounded-2xl border border-line bg-shell p-6 text-center">
+        <p aria-hidden className="text-3xl text-narra">✓</p>
+        <p className="mt-3 text-xl">{t.sent}</p>
+      </div>
+    );
   const cls = "w-full border-0 border-b border-ink/25 bg-transparent px-0 py-3 text-lg focus:border-ink focus:outline-none";
   return (
     <form
@@ -33,7 +40,7 @@ export function ContactForm({ locale, t, whatsappBase, email: teamEmail }: { loc
         const out = r?.ok ? ((await r.json().catch(() => ({}))) as { delivered?: boolean }) : null;
         if (out?.delivered === false) {
           const summary = [`Message – Inside Philippines`, `Name: ${data.name || ""}`, `Email: ${data.email}`, "", String(data.message)].join("\n");
-          if (!(await emailTeam(teamEmail, `Message – ${data.name || data.email}`, summary, String(data.email)))) setHandoff(summary);
+          if (!(await emailTeam(teamEmail, `Message – ${data.name || data.email}`, summary, String(data.email), travellerConfirmation(locale, String(data.name || ""))))) setHandoff(summary);
         }
         setState(r?.ok ? "ok" : "error");
       }}
