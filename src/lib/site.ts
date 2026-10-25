@@ -8,7 +8,7 @@ export const site = {
   url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.insidephilippines.com").replace(/\/$/, ""),
   /** Launched 2026-10-25: production is indexable; previews and local builds stay out unless NEXT_PUBLIC_ALLOW_INDEXING=true. */
   indexable: process.env.VERCEL_ENV === "production" || process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true",
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "marc@lymaculinary.com",
+  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "marc@travelinsidephilippines.com",
   /** Digits only with country code, e.g. 639171234567. Empty = placeholder. */
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "639524050513",
   instagram: "https://www.instagram.com/inside.philippines",
