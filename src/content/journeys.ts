@@ -11,7 +11,7 @@ import type { FAQ, Journey } from "@/content/types";
  * fall back to English on other locales until translated.
  *
  * Prices are indicative per person, double occupancy, PLACEHOLDERS until
- * the team confirms real costings (priceIsPlaceholder: true everywhere).
+ * the team confirms real costings (priceIsPlaceholder: false everywhere).
  */
 
 const en = (s: string): L => ({ en: s });
@@ -279,7 +279,7 @@ export const journeys: Journey[] = [
       ar: "من ديسمبر إلى مايو، وأفضل فترة للجمع بين بالاوان وسيارغاو من مارس إلى مايو",
     },
     fromPriceEUR: { essential: 2300, boutique: 3400, premium: 5800, signature: 9800 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Can I change the islands?",
@@ -563,7 +563,7 @@ export const journeys: Journey[] = [
       ar: "من نوفمبر إلى مايو حين تكون عبّارة كورون–إل نيدو أكثر انتظامًا، والبحر أهدأ ما يكون من فبراير إلى أبريل",
     },
     fromPriceEUR: { essential: 2000, boutique: 3000, premium: 5200 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Can I change the route?",
@@ -836,7 +836,7 @@ export const journeys: Journey[] = [
       ar: "من فبراير إلى يونيو، وأفضل توازن بين هدوء البحر والشمس من مارس إلى مايو",
     },
     fromPriceEUR: { essential: 2400, boutique: 3600, premium: 6200 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Can I change the islands?",
@@ -1100,7 +1100,7 @@ export const journeys: Journey[] = [
       ar: "من يناير إلى مايو، وتكون الجزيرة الخاصة في أجمل حالاتها من فبراير إلى أبريل",
     },
     fromPriceEUR: { boutique: 3900, premium: 6400, signature: 11500 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Can we change the islands?",
@@ -1381,7 +1381,7 @@ export const journeys: Journey[] = [
       ar: "من مارس إلى يوليو للتعلّم، ومن سبتمبر إلى نوفمبر للأمواج الكبيرة (لأصحاب الخبرة فقط)",
     },
     fromPriceEUR: { essential: 2300, boutique: 3500, premium: 6000 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "I have never surfed. Is this for me?",
@@ -1703,7 +1703,7 @@ export const journeys: Journey[] = [
       ar: "من فبراير إلى مايو، حين تكون المدرجات في أشد خضرتها في أبريل ومايو، والجزر جافة والبحر هادئًا",
     },
     fromPriceEUR: { essential: 3300, boutique: 4900, premium: 8400, signature: 14500 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Can I change the route?",
@@ -1953,7 +1953,7 @@ export const journeys: Journey[] = [
       ar: "من مارس إلى مايو هي الفترة المثالية للجزيرتين، ومن ديسمبر إلى فبراير مناسبة أيضًا مع احتمال أكبر للمطر في سيارغاو",
     },
     fromPriceEUR: { essential: 1700, boutique: 2600, premium: 4300, signature: 7500 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Can I add another island?",
@@ -2149,7 +2149,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Add Siquijor for two or three nights by fast craft", "Private boat for the Balicasag morning", "A beachfront villa in Panglao"]),
     bestMonths: { en: "December to May is the driest; Bohol works most of the year", es: "De diciembre a mayo es la época más seca; Bohol funciona casi todo el año", fr: "De décembre à mai, la saison la plus sèche ; Bohol se visite presque toute l'année" },
     fromPriceEUR: { essential: 1100, boutique: 1600, premium: 2600, signature: 4500 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Is six days enough?",
@@ -2345,7 +2345,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Private boat for the El Nido days", "Add Port Barton for two quiet nights on the way north", "Add Coron for three nights by fast ferry (drier months)"]),
     bestMonths: { en: "November to May; the calmest seas are from February to May", es: "De noviembre a mayo; el mar más tranquilo de febrero a mayo", fr: "De novembre à mai ; la mer la plus calme de février à mai" },
     fromPriceEUR: { essential: 1400, boutique: 2100, premium: 3500, signature: 6000 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Is the drive to El Nido long?",
@@ -2533,7 +2533,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Add Coron by private boat", "A private chef dinner on a sandbar", "A villa with a private pool"]),
     bestMonths: { en: "November to May; February to May for the calmest seas", es: "De noviembre a mayo; de febrero a mayo para el mar más tranquilo", fr: "De novembre à mai ; de février à mai pour la mer la plus calme" },
     fromPriceEUR: { premium: 4800, signature: 8500 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Which private island will we stay on?",
@@ -2744,7 +2744,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Private car and driver for the whole of the north", "A night in Baguio to break the drive", "Private boat in Coron"]),
     bestMonths: { en: "December to May; the terraces are greenest from April to July", es: "De diciembre a mayo; los arrozales están más verdes de abril a julio", fr: "De décembre à mai ; les rizières sont les plus vertes d'avril à juillet" },
     fromPriceEUR: { essential: 2000, boutique: 3000, premium: 5000 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "How hard is the Batad hike?",
@@ -2962,7 +2962,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Add three beach nights in Boracay or El Nido", "Private car and driver throughout", "A night in a restored heritage house in Vigan"]),
     bestMonths: { en: "November to May for dry mountain roads", es: "De noviembre a mayo, con carreteras de montaña secas", fr: "De novembre à mai, pour des routes de montagne sèches" },
     fromPriceEUR: { essential: 1700, boutique: 2500, premium: 4100 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Can I add a beach at the end?",
@@ -3180,7 +3180,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Dive package in Malapascua and Moalboal", "Private car for the long transfers", "Add Siquijor before Bohol"]),
     bestMonths: { en: "December to May; Malapascua's sharks can be seen all year", es: "De diciembre a mayo; los tiburones de Malapascua se ven todo el año", fr: "De décembre à mai ; les requins de Malapascua se voient toute l'année" },
     fromPriceEUR: { essential: 1700, boutique: 2600, premium: 4300 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Do I need to dive?",
@@ -3377,7 +3377,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Private car on both islands", "Add Siquijor before Camiguin", "A hike up Mount Hibok-Hibok with a guide"]),
     bestMonths: { en: "March to June is the driest on Camiguin; December to May for Bohol", es: "De marzo a junio es lo más seco en Camiguin; de diciembre a mayo para Bohol", fr: "De mars à juin, la période la plus sèche à Camiguin ; de décembre à mai pour Bohol" },
     fromPriceEUR: { essential: 1600, boutique: 2400, premium: 4000 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Is Camiguin safe?",
@@ -3580,7 +3580,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Upgrade to suites with sea views", "Add a spa day in Bohol", "Extend El Nido by two nights"]),
     bestMonths: { en: "December to May", es: "De diciembre a mayo", fr: "De décembre à mai" },
     fromPriceEUR: { boutique: 3200, premium: 5200, signature: 9000 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Is it suitable for limited mobility?",
@@ -3779,7 +3779,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Upgrade to Boutique hotels", "Add Apo Island from Dumaguete", "Private car on Siquijor"]),
     bestMonths: { en: "December to May", es: "De diciembre a mayo", fr: "De décembre à mai" },
     fromPriceEUR: { essential: 1300, boutique: 1900 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "What kind of hotels are they?",
@@ -3972,7 +3972,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Family villa with a private pool", "Private boat in Boracay", "A first dive course for children over ten"]),
     bestMonths: { en: "November to May; Boracay's White Beach is calmest from November to May", es: "De noviembre a mayo; White Beach en Boracay está más tranquila de noviembre a mayo", fr: "De novembre à mai ; la White Beach de Boracay est la plus calme de novembre à mai" },
     fromPriceEUR: { essential: 1700, boutique: 2600, premium: 4300, signature: 7400 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Is the Philippines good with small children?",
@@ -4202,7 +4202,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Second El Nido boat day on a private boat", "Swap Boracay for Siargao", "Beachfront rooms on every island"]),
     bestMonths: { en: "December to May; the best chance of good weather on all four islands is from February to May", es: "De diciembre a mayo; de febrero a mayo hay más probabilidad de buen tiempo en las cuatro islas", fr: "De décembre à mai ; de février à mai, les meilleures chances de beau temps sur les quatre îles" },
     fromPriceEUR: { essential: 2100, boutique: 3200, premium: 5300, signature: 9200 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Is four islands too many for fifteen days?",
@@ -4429,7 +4429,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Private boat in El Nido", "Add a Mayon ATV ride", "Add Coron for diving"]),
     bestMonths: { en: "February to April for whale sharks; the Donsol season usually runs from December to May", es: "De febrero a abril para los tiburones ballena; la temporada en Donsol suele ir de diciembre a mayo", fr: "De février à avril pour les requins-baleines ; la saison à Donsol va généralement de décembre à mai" },
     fromPriceEUR: { essential: 2400, boutique: 3600, premium: 6000 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Are whale sharks guaranteed?",
@@ -4669,7 +4669,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Private dive guide throughout", "Nitrox", "Add a liveaboard to Tubbataha (March to June)"]),
     bestMonths: { en: "November to May; Malapascua and Moalboal are good all year", es: "De noviembre a mayo; Malapascua y Moalboal son buenos todo el año", fr: "De novembre à mai ; Malapascua et Moalboal sont bons toute l'année" },
     fromPriceEUR: { essential: 2600, boutique: 3900, premium: 6400 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "What certification do I need?",
@@ -4880,7 +4880,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Private expedition boat for your group", "Add a night at a private-island resort after the expedition", "Surf coaching every morning in Siargao"]),
     bestMonths: { en: "November to May, when the expeditions run", es: "De noviembre a mayo, cuando salen las expediciones", fr: "De novembre à mai, pendant la saison des expéditions" },
     fromPriceEUR: { essential: 2600, boutique: 3600, premium: 5600 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "How basic are the camps?",
@@ -5099,7 +5099,7 @@ export const journeys: Journey[] = [
     upgrades: enList(["Charter flights between islands", "A private chef dinner on a sandbar", "Villas with private pools throughout"]),
     bestMonths: { en: "March to May is best for Batanes and for the whole route; avoid August to October", es: "De marzo a mayo es lo mejor para Batanes y para toda la ruta; mejor evitar de agosto a octubre", fr: "De mars à mai, idéal pour Batanes et pour tout le circuit ; à éviter d'août à octobre" },
     fromPriceEUR: { premium: 6800, signature: 12500 },
-    priceIsPlaceholder: true,
+    priceIsPlaceholder: false,
     faqs: [
       faq(
         "Why Batanes?",
