@@ -1468,4 +1468,103 @@ export const landings: Landing[] = [
       },
     },
   },
+  {
+    slug: "winter-sun-philippines",
+    market: "global",
+    title: {
+      en: "Trade Europe's winter for the Philippine dry season.",
+      fr: "Échangez l'hiver européen contre la saison sèche des Philippines.",
+      es: "Cambia el invierno europeo por la estación seca de Filipinas.",
+      ru: "Смените европейскую зиму на сухой сезон Филиппин.",
+    },
+    kicker: {
+      en: "Winter escape",
+      fr: "Évasion d'hiver",
+      es: "Escapada de invierno",
+      ru: "Зимний побег",
+    },
+    intro: {
+      en: "When Europe turns grey, the Philippines enters its best months. From December to April, Palawan, Bohol, Cebu and Boracay are in their dry season, with warm seas and calm days for island hopping. We plan your winter escape around the right islands for your dates, so the sun is there when you are.",
+      fr: "Quand l'Europe devient grise, les Philippines entrent dans leurs plus beaux mois. De décembre à avril, Palawan, Bohol, Cebu et Boracay sont en saison sèche, avec une mer chaude et des journées calmes pour aller d'île en île. Nous organisons votre évasion d'hiver autour des bonnes îles pour vos dates, pour que le soleil soit au rendez-vous.",
+      es: "Cuando Europa se vuelve gris, Filipinas entra en sus mejores meses. De diciembre a abril, Palawan, Bohol, Cebú y Boracay están en temporada seca, con el mar cálido y días tranquilos para ir de isla en isla. Organizamos tu escapada de invierno en las islas adecuadas para tus fechas, para que el sol esté donde estés tú.",
+      ru: "Когда в Европе серо, на Филиппинах начинаются лучшие месяцы. С декабря по апрель на Палаване, Бохоле, Себу и Боракае сухой сезон: тёплое море и спокойные дни для поездок по островам. Мы подбираем острова под ваши даты, чтобы солнце было там же, где и вы.",
+    },
+    points: {
+      en: [
+        "December to April: dry season in Palawan, Bohol, Cebu and Boracay",
+        "Warm sea and calm water for island hopping, snorkelling and diving",
+        "Christmas and New Year on the islands: popular dates, so we plan early",
+        "January in Cebu brings Sinulog, one of the country's biggest festivals",
+        "Every journey includes travel insurance with €2,000 cancellation cover",
+      ],
+      fr: [
+        "De décembre à avril : saison sèche à Palawan, Bohol, Cebu et Boracay",
+        "Mer chaude et eaux calmes pour les îles, le snorkeling et la plongée",
+        "Noël et le Nouvel An sur les îles : des dates très demandées, nous réservons tôt",
+        "En janvier, Cebu fête le Sinulog, l'un des plus grands festivals du pays",
+        "Chaque voyage inclut une assurance voyage avec une garantie annulation de 2 000 €",
+      ],
+      es: [
+        "De diciembre a abril: temporada seca en Palawan, Bohol, Cebú y Boracay",
+        "Mar cálido y aguas tranquilas para islas, snorkel y buceo",
+        "Navidad y Año Nuevo en las islas: fechas muy demandadas, así que reservamos pronto",
+        "En enero, Cebú celebra el Sinulog, uno de los mayores festivales del país",
+        "Todos los viajes incluyen seguro de viaje con cobertura de cancelación de 2.000 €",
+      ],
+      ru: [
+        "С декабря по апрель — сухой сезон на Палаване, Бохоле, Себу и Боракае",
+        "Тёплое и спокойное море для островов, снорклинга и дайвинга",
+        "Рождество и Новый год на островах: даты популярные, поэтому бронируем заранее",
+        "В январе на Себу проходит Синулог — один из крупнейших фестивалей страны",
+        "Каждое путешествие включает страховку с покрытием отмены поездки до 2000 €",
+      ],
+    },
+    journeys: ["island-classics", "essential-palawan", "palawan-bohol-boracay", "cebu-islands-and-culture"],
+    destinations: ["el-nido", "coron", "bohol", "boracay", "cebu"],
+    photo: {
+      alt: {
+        en: "Boats moored in turquoise water off a limestone island in El Nido, Palawan, seen from above",
+        fr: "Bateaux amarrés dans une eau turquoise près d'une île calcaire à El Nido, Palawan, vus du ciel",
+        es: "Barcos fondeados en agua turquesa junto a una isla de caliza en El Nido, Palawan, vistos desde el aire",
+        ru: "Лодки в бирюзовой воде у известнякового острова в Эль-Нидо, Палаван, вид сверху",
+      },
+      brief: "Bright dry-season island scene that reads as 'sun in winter': turquoise water, boats, limestone.",
+      tone: "lagoon",
+    },
+    faqs: [
+      {
+        q: { en: "Is December to March a good time to visit the Philippines?" },
+        a: {
+          en: "Yes, for most of the country. December to April is the dry season in Palawan, Bohol, Cebu and Boracay, and the sea is warm all year. The exception is the Pacific-facing east coast, including Siargao, which gets more rain from December to February, so we usually suggest it from March.",
+        },
+      },
+      {
+        q: { en: "Can we spend Christmas or New Year in the Philippines?" },
+        a: {
+          en: "Yes, and it is a lovely time to be there. It is also the busiest period for flights and island hotels, so we recommend starting your request as early as you can.",
+        },
+      },
+      {
+        q: { en: "How long should a winter escape be?" },
+        a: {
+          en: "Ten to fourteen days is the sweet spot from Europe: enough for two or three islands without rushing. Shorter trips work well if you focus on one region, such as Palawan or Bohol.",
+        },
+      },
+    ],
+    prefill: { duration: "11-14", interest: "beaches,nature,diving" },
+    seo: {
+      title: {
+        en: "Winter Sun in the Philippines | Inside Philippines",
+        fr: "Soleil d'hiver aux Philippines | Inside Philippines",
+        es: "Sol de invierno en Filipinas | Inside Philippines",
+        ru: "Зимой на Филиппины: солнце и острова | Inside Philippines",
+      },
+      description: {
+        en: "Escape Europe's winter: December to April is dry season in Palawan, Bohol, Cebu and Boracay. Tailor-made island trips with travel insurance included.",
+        fr: "Fuyez l'hiver : de décembre à avril, c'est la saison sèche à Palawan, Bohol, Cebu et Boracay. Voyages sur mesure entre les îles, assurance voyage incluse.",
+        es: "Escapa del invierno: de diciembre a abril es temporada seca en Palawan, Bohol, Cebú y Boracay. Viajes a medida por las islas con seguro de viaje incluido.",
+        ru: "Сбегите от зимы: с декабря по апрель на Палаване, Бохоле, Себу и Боракае сухой сезон. Индивидуальные туры по островам со страховкой.",
+      },
+    },
+  },
 ];
