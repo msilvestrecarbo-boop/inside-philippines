@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { emailTeam } from "@/lib/mailbox";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { TierId } from "@/content/types";
@@ -224,7 +225,10 @@ export function TripBuilder({
       const res = await fetch("/api/lead", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(lead) });
       if (!res.ok) throw new Error(String(res.status));
       const out = (await res.json().catch(() => ({}))) as { delivered?: boolean };
-      if (out.delivered === false) setHandoff(leadSummary(lead));
+      if (out.delivered === false) {
+        const summary = leadSummary(lead);
+        if (!(await emailTeam(email, `Trip request – ${lead.name}`, summary, lead.email))) setHandoff(summary);
+      }
       track("trip_builder_complete", { style: s.style, duration: s.duration, who: s.who });
       track("generate_lead", { style: s.style, duration: s.duration, value_basis: lead.budgetBasis });
       try { sessionStorage.removeItem(STORAGE); } catch {}
