@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { emailTeam } from "@/lib/mailbox";
 
 type LastStep = { title: string; body: string; whatsapp: string; email: string };
 
@@ -30,7 +31,10 @@ export function ContactForm({ locale, t, whatsappBase, email: teamEmail }: { loc
         const data = Object.fromEntries(new FormData(e.currentTarget));
         const r = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...data, locale }) }).catch(() => null);
         const out = r?.ok ? ((await r.json().catch(() => ({}))) as { delivered?: boolean }) : null;
-        if (out?.delivered === false) setHandoff([`Message – Inside Philippines`, `Name: ${data.name || ""}`, `Email: ${data.email}`, "", String(data.message)].join("\n"));
+        if (out?.delivered === false) {
+          const summary = [`Message – Inside Philippines`, `Name: ${data.name || ""}`, `Email: ${data.email}`, "", String(data.message)].join("\n");
+          if (!(await emailTeam(teamEmail, `Message – ${data.name || data.email}`, summary, String(data.email)))) setHandoff(summary);
+        }
         setState(r?.ok ? "ok" : "error");
       }}
     >
