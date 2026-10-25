@@ -2,10 +2,10 @@
 
 import Script from "next/script";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { captureUtm } from "@/lib/analytics";
 
-const GA4 = process.env.NEXT_PUBLIC_GA4_ID;
+const GA4 = process.env.NEXT_PUBLIC_GA4_ID || "G-PXD1M7JLCB";
 const GTM = process.env.NEXT_PUBLIC_GTM_ID;
 const ADS = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
 const META = process.env.NEXT_PUBLIC_META_PIXEL_ID;
@@ -23,6 +23,8 @@ export function Analytics({ text, accept, decline }: { text: string; accept: str
   const [consent, setConsent] = useState<Consent>(null);
   const [ready, setReady] = useState(false);
   const pathname = usePathname();
+  // The gtag-init script sends the first page view itself (gtag.js may not be loaded yet here).
+  const firstView = useRef(true);
 
   useEffect(() => {
     captureUtm();
@@ -34,7 +36,8 @@ export function Analytics({ text, accept, decline }: { text: string; accept: str
 
   useEffect(() => {
     if (consent !== "granted") return;
-    window.gtag?.("event", "page_view", { page_path: pathname });
+    if (firstView.current) firstView.current = false;
+    else window.gtag?.("event", "page_view", { page_path: pathname });
     window.fbq?.("track", "PageView");
     window.ttq?.page?.();
   }, [pathname, consent]);
@@ -59,7 +62,7 @@ export function Analytics({ text, accept, decline }: { text: string; accept: str
                 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;
                 gtag('consent','default',{ad_storage:'granted',analytics_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'});
                 gtag('js',new Date());
-                ${GA4 ? `gtag('config','${GA4}',{send_page_view:false});` : ""}
+                ${GA4 ? `gtag('config','${GA4}',{send_page_view:false});gtag('event','page_view',{page_path:location.pathname});` : ""}
                 ${ADS ? `gtag('config','${ADS}');` : ""}
               `}</Script>
             </>
