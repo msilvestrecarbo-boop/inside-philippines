@@ -359,7 +359,7 @@ const en = {
     journeysFor: "Journeys to start from",
   },
   consent: {
-    text: "We use cookies to understand how our site is used and to measure our advertising. Nothing runs until you agree.",
+    text: "This website uses cookies to give you the best experience.",
     accept: "Accept",
     decline: "Decline",
   },

@@ -356,7 +356,7 @@ const fr: Dictionary = {
     journeysFor: "Des voyages pour commencer",
   },
   consent: {
-    text: "Nous utilisons des cookies pour comprendre l'usage de notre site et mesurer nos publicités. Rien ne s'active sans votre accord.",
+    text: "Ce site utilise des cookies pour vous offrir la meilleure expérience.",
     accept: "Accepter",
     decline: "Refuser",
   },
