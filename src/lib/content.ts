@@ -58,6 +58,8 @@ function translateJourney(j: Journey): Journey {
       faqs: out.faqs.map((f, i) => (t.faqs[i] ? { q: { ...f.q, [l]: t.faqs[i][0] }, a: { ...f.a, [l]: t.faqs[i][1] } } : f)),
       legs: out.legs.map((g, i) => (g.note && t.legNotes?.[i] ? { ...g, note: { ...g.note, [l]: t.legNotes[i] } } : g)),
       bestMonths: t.bestMonths ? { ...out.bestMonths, [l]: t.bestMonths } : out.bestMonths,
+      included: t.included && !(l in out.included) ? { ...out.included, [l]: t.included } : out.included,
+      notIncluded: t.notIncluded && !(l in out.notIncluded) ? { ...out.notIncluded, [l]: t.notIncluded } : out.notIncluded,
     };
   }
   return out;
