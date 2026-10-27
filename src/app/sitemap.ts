@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/faq", translated: all, priority: 0.6, freq: "monthly" },
     { path: "/gallery", translated: all, priority: 0.5, freq: "monthly" },
     { path: "/contact", translated: all, priority: 0.5, freq: "monthly" },
+    { path: "/travel-agencies", translated: all, priority: 0.6, freq: "monthly" },
     ...getDestinations().map((d) => ({ path: `/destinations/${d.slug}`, translated: translatedLocales(d.intro ?? d.short, d.short), priority: 0.8, freq: "monthly" as const })),
     ...getJourneys().map((j) => ({ path: `/journeys/${j.slug}`, translated: translatedLocales(j.intro, j.title), priority: 0.8, freq: "monthly" as const })),
     ...getCategories().map((c) => ({ path: `/experiences/${c.slug}`, translated: translatedLocales(c.body, c.title), priority: 0.6, freq: "monthly" as const })),

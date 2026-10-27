@@ -6,7 +6,7 @@ import { travellerConfirmation } from "@/lib/confirmation";
 
 type LastStep = { title: string; body: string; whatsapp: string; email: string };
 
-export function ContactForm({ locale, t, whatsappBase, email: teamEmail }: { locale: string; t: { name: string; email: string; message: string; send: string; sent: string; error: string; lastStep: LastStep }; whatsappBase: string; email: string }) {
+export function ContactForm({ locale, t, whatsappBase, email: teamEmail, agencyLabel }: { locale: string; t: { name: string; email: string; message: string; send: string; sent: string; error: string; lastStep: LastStep }; whatsappBase: string; email: string; agencyLabel?: string }) {
   const [state, setState] = useState<"idle" | "sending" | "ok" | "error">("idle");
   // Set when the message only reached the server log (no webhook yet): the sender passes it on themselves.
   const [handoff, setHandoff] = useState<string | null>(null);
@@ -39,14 +39,15 @@ export function ContactForm({ locale, t, whatsappBase, email: teamEmail }: { loc
         const r = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...data, locale }) }).catch(() => null);
         const out = r?.ok ? ((await r.json().catch(() => ({}))) as { delivered?: boolean }) : null;
         if (out?.delivered === false) {
-          const summary = [`Message – Inside Philippines`, `Name: ${data.name || ""}`, `Email: ${data.email}`, "", String(data.message)].join("\n");
-          if (!(await emailTeam(teamEmail, `Message – ${data.name || data.email}`, summary, String(data.email), travellerConfirmation(locale, String(data.name || ""))))) setHandoff(summary);
+          const summary = [`Message – Inside Philippines`, `Name: ${data.name || ""}`, ...(data.agency ? [`Agency: ${data.agency}`] : []), `Email: ${data.email}`, "", String(data.message)].join("\n");
+          if (!(await emailTeam(teamEmail, data.agency ? `Agency enquiry – ${data.agency}` : `Message – ${data.name || data.email}`, summary, String(data.email), travellerConfirmation(locale, String(data.name || ""))))) setHandoff(summary);
         }
         setState(r?.ok ? "ok" : "error");
       }}
     >
       <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
       <label><span className="kicker text-[0.65rem] text-stone">{t.name}</span><input name="name" autoComplete="name" className={cls} /></label>
+      {agencyLabel && <label><span className="kicker text-[0.65rem] text-stone">{agencyLabel}</span><input name="agency" required autoComplete="organization" className={cls} /></label>}
       <label><span className="kicker text-[0.65rem] text-stone">{t.email}</span><input name="email" type="email" required autoComplete="email" className={cls} /></label>
       <label><span className="kicker text-[0.65rem] text-stone">{t.message}</span><textarea name="message" required rows={5} className={cls} /></label>
       {state === "error" && <p role="alert" className="text-sm text-clay-dark">{t.error}</p>}
