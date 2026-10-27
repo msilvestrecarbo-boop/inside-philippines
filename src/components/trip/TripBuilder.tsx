@@ -36,6 +36,7 @@ type State = {
   whatsapp: string;
   preferredLanguage: string;
   comments: string;
+  videoCall: boolean;
   consent: boolean;
   sourceJourney?: string;
   sourceDestination?: string;
@@ -80,6 +81,7 @@ function initialState(locale: Locale): State {
     whatsapp: "",
     preferredLanguage: locale,
     comments: "",
+    videoCall: false,
     consent: false,
   };
 }
@@ -214,7 +216,7 @@ export function TripBuilder({
       budgetBasis: budgetAmount ? "per-person" : "undecided",
       currency: "EUR",
       occasions: s.occasions,
-      comments: [budgetIndex >= 0 ? `${q.budget}: ${q.budgetOptions[budgetIndex]}` : "", s.comments.trim()].filter(Boolean).join("\n\n") || undefined,
+      comments: [s.videoCall ? "Would like a free video call to plan the trip" : "", budgetIndex >= 0 ? `${q.budget}: ${q.budgetOptions[budgetIndex]}` : "", s.comments.trim()].filter(Boolean).join("\n\n") || undefined,
       consent: s.consent,
       siteLanguage: locale,
       sourceJourney: s.sourceJourney,
@@ -298,6 +300,7 @@ export function TripBuilder({
               value={[s.dateMode]}
               onPick={(v) => set("dateMode", v as State["dateMode"])}
             />
+            <p className="text-sm text-stone">{t.q1.bookAhead}</p>
             {s.dateMode === "exact" && (
               <div className="grid gap-4 sm:grid-cols-2">
                 <Field label={t.q1.start}><input type="date" className={inputCls} value={s.startDate} min={new Date().toISOString().slice(0, 10)} onChange={(e) => set("startDate", e.target.value)} /></Field>
@@ -381,6 +384,10 @@ export function TripBuilder({
             <div className="sm:col-span-2">
               <Field label={t.q10.comments}><textarea rows={4} className={inputCls} value={s.comments} onChange={(e) => set("comments", e.target.value)} /></Field>
             </div>
+            <label className="flex items-start gap-3 text-[0.95rem] sm:col-span-2">
+              <input type="checkbox" className="mt-1 h-4 w-4 accent-[var(--color-clay)]" checked={!!s.videoCall} onChange={(e) => set("videoCall", e.target.checked)} />
+              <span>{t.q10.videoCall}</span>
+            </label>
             <label className="flex items-start gap-3 text-sm text-stone sm:col-span-2">
               <input type="checkbox" className="mt-1 h-4 w-4 accent-[var(--color-clay)]" checked={s.consent} onChange={(e) => set("consent", e.target.checked)} />
               <span>{t.q10.consent} <a className="underline" href={privacyHref} target="_blank">↗</a></span>

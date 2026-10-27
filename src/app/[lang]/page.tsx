@@ -12,7 +12,7 @@ import { HowItWorks, Tiers, WhyUs } from "@/components/sections/Sections";
 import { FinalCta } from "@/components/layout/FinalCta";
 import { Reveal, TrackedLink } from "@/components/layout/Tracking";
 import { tr } from "@/i18n/config";
-import { approach, audiences, curated, homeFacts } from "@/content/extras";
+import { approach, audiences, curated, homeFacts, stays } from "@/content/extras";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]">) {
   const { locale, dict } = await resolve(params);
@@ -215,6 +215,28 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
 
       <WhyUs dict={dict} />
       <Tiers dict={dict} />
+
+      {/* WHERE YOU'LL STAY */}
+      <section className="pb-24 md:pb-32" aria-labelledby="stay">
+        <div className="container-x">
+          <SectionHeading id="stay" kicker={tr(stays.kicker, locale)} title={tr(stays.title, locale)} body={tr(stays.body, locale)} />
+        </div>
+        <ul className="no-scrollbar mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 md:mx-auto md:grid md:max-w-[88rem] md:grid-cols-4 md:px-10 md:overflow-visible">
+          {stays.items.map((st) => {
+            const lib = libraryPhoto(st.photo, "");
+            const photo = lib && { ...lib, alt: { en: tr(st.title, locale) } };
+            return (
+              <li key={st.photo} className="w-[70vw] shrink-0 snap-start sm:w-[40vw] md:w-auto">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-card">
+                  {photo && <Photo photo={photo} locale={locale} label={dict.common.photoToCome} sizes="(min-width: 768px) 25vw, 70vw" className="absolute inset-0" />}
+                </div>
+                <h3 className="mt-4 text-[1.3rem]">{tr(st.title, locale)}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-stone">{tr(st.body, locale)}</p>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
 
       {/* INSIDE THE ISLANDS */}
       {insiders.length > 0 && (
