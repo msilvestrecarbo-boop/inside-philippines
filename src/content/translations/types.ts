@@ -11,4 +11,6 @@ export type JourneyTranslation = {
   faqs: [q: string, a: string][];
   legNotes?: Record<number, string>;
   bestMonths?: string;
+  included?: string[];
+  notIncluded?: string[];
 };
