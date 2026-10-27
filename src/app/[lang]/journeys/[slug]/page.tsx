@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { notFound } from "next/navigation";
 import { locales, tr } from "@/i18n/config";
 import { resolve } from "@/lib/i18n-server";
@@ -17,6 +18,7 @@ import { TrackView } from "@/components/layout/Tracking";
 import { DurationDesignLink, DurationItinerary, DurationPicker, DurationPrices, DurationProvider, SelectedDays } from "@/components/trip/Durations";
 import { DURATIONS, departureDay, durationLabels as dl, pricesFor, variantFor } from "@/lib/durations";
 import type { TierId } from "@/content/types";
+import { CANCELLATION_COVER_EUR } from "@/content/extras";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -221,6 +223,9 @@ function List({ items }: { items: string[] }) {
   );
 }
 
+/** The cancellation cover as written in EUR in the inclusions; shown in the visitor's currency instead. */
+const COVER_EUR_TEXT = /€2,000|2 000 €|2\.000 €|2000 €/;
+
 function Checklist({ title, items, mark, markClass }: { title: string; items: string[]; mark: string; markClass: string }) {
   return (
     <div>
@@ -229,7 +234,11 @@ function Checklist({ title, items, mark, markClass }: { title: string; items: st
         {items.map((it, i) => (
           <li key={i} className="flex gap-3 leading-relaxed">
             <span aria-hidden className={`mt-0.5 shrink-0 font-semibold ${markClass}`}>{mark}</span>
-            <span>{it}</span>
+            <span>
+              {it.split(COVER_EUR_TEXT).map((part, k) => (
+                <Fragment key={k}>{k > 0 && <Price eur={CANCELLATION_COVER_EUR} />}{part}</Fragment>
+              ))}
+            </span>
           </li>
         ))}
       </ul>

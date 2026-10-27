@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Link from "next/link";
 
 import { resolve } from "@/lib/i18n-server";
@@ -12,7 +13,8 @@ import { HowItWorks, Tiers, WhyUs } from "@/components/sections/Sections";
 import { FinalCta } from "@/components/layout/FinalCta";
 import { Reveal, TrackedLink } from "@/components/layout/Tracking";
 import { tr } from "@/i18n/config";
-import { approach, audiences, curated, homeFacts, stays } from "@/content/extras";
+import { approach, audiences, CANCELLATION_COVER_EUR, curated, homeFacts, stays } from "@/content/extras";
+import { Price } from "@/components/layout/CurrencyProvider";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]">) {
   const { locale, dict } = await resolve(params);
@@ -66,7 +68,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <dl className="container-x grid grid-cols-2 gap-x-6 gap-y-8 py-10 md:grid-cols-5 md:py-12">
           {homeFacts.map((f, i) => (
             <div key={i} className={i === homeFacts.length - 1 ? "col-span-2 md:col-span-1" : undefined}>
-              <dt className="font-display text-2xl md:text-3xl">{tr(f.value, locale)}</dt>
+              <dt className="font-display text-2xl md:text-3xl">{f.eur ? <Price eur={f.eur} /> : tr(f.value, locale)}</dt>
               <dd className="mt-1 text-sm leading-snug text-stone">{tr(f.label, locale)}</dd>
             </div>
           ))}
@@ -195,7 +197,11 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           {curated.pillars.map((p, i) => (
             <Reveal key={i}>
               <h3 className="text-[1.35rem]">{tr(p.title, locale)}</h3>
-              <p className="mt-2 text-[0.95rem] leading-relaxed text-white/75">{tr(p.body, locale)}</p>
+              <p className="mt-2 text-[0.95rem] leading-relaxed text-white/75">
+                {tr(p.body, locale).split("{amount}").map((part, k) => (
+                  <Fragment key={k}>{k > 0 && <Price eur={CANCELLATION_COVER_EUR} />}{part}</Fragment>
+                ))}
+              </p>
             </Reveal>
           ))}
         </div>

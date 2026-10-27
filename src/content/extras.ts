@@ -46,11 +46,11 @@ export const curated = {
     {
       title: { en: "Insured, every trip", fr: "Assuré, à chaque voyage", es: "Con seguro, en cada viaje", ru: "Страховка в каждой поездке", ar: "تأمين في كل رحلة" } as L,
       body: {
-        en: "Travel insurance is included in every journey, with up to €2,000 of cancellation cover.",
-        fr: "L'assurance voyage est incluse dans chaque voyage, avec une garantie annulation jusqu'à 2 000 €.",
-        es: "El seguro de viaje está incluido en todos los viajes, con cobertura de cancelación de hasta 2.000 €.",
-        ru: "Страховка включена в каждое путешествие, с покрытием отмены поездки до 2000 €.",
-        ar: "تأمين السفر مشمول في كل رحلة، مع تغطية للإلغاء تصل إلى 2,000 يورو.",
+        en: "Travel insurance is included in every journey, with up to {amount} of cancellation cover.",
+        fr: "L'assurance voyage est incluse dans chaque voyage, avec une garantie annulation jusqu'à {amount}.",
+        es: "El seguro de viaje está incluido en todos los viajes, con cobertura de cancelación de hasta {amount}.",
+        ru: "Страховка включена в каждое путешествие, с покрытием отмены поездки до {amount}.",
+        ar: "تأمين السفر مشمول في كل رحلة، مع تغطية للإلغاء تصل إلى {amount}.",
       } as L,
     },
     {
@@ -426,7 +426,10 @@ export const gallery = {
 // ──────────────────────────────────────────────────────────── HOME: FACTS, AUDIENCES, APPROACH
 
 /** Key facts under the home hero. Only facts that are true and shown elsewhere on the site. */
-export const homeFacts: { value: L; label: L }[] = [
+/** Cancellation cover included in every trip, in EUR; shown in the visitor's currency. */
+export const CANCELLATION_COVER_EUR = 2000;
+
+export const homeFacts: { value: L; label: L; eur?: number }[] = [
   {
     value: { en: "7,641", fr: "7 641", es: "7.641", ru: "7641", ar: "7,641" },
     label: { en: "islands, and we know which ones are worth it", fr: "îles, et nous savons lesquelles valent le détour", es: "islas, y sabemos cuáles merecen la pena", ru: "остров, и мы знаем, какие из них того стоят", ar: "جزيرة، ونعرف أيّها يستحق الزيارة" },
@@ -441,6 +444,7 @@ export const homeFacts: { value: L; label: L }[] = [
   },
   {
     value: { en: "€2,000", fr: "2 000 €", es: "2.000 €", ru: "2000 €", ar: "2,000 يورو" },
+    eur: CANCELLATION_COVER_EUR,
     label: { en: "cancellation cover included in every trip", fr: "de garantie annulation incluse dans chaque voyage", es: "de cobertura de cancelación incluida en cada viaje", ru: "покрытие отмены в каждой поездке", ar: "تغطية إلغاء مشمولة في كل رحلة" },
   },
   {
