@@ -146,7 +146,7 @@ const en = {
     title: "Five steps from first idea to your last sunset.",
     steps: [
       { title: "Tell us about your trip", body: "Dates, people, pace, what you love. Five minutes, no commitment." },
-      { title: "We design your journey", body: "A travel designer builds a day-by-day route with hotels, flights, transfers and experiences." },
+      { title: "We design your journey", body: "A travel designer builds a day-by-day route with hotels, flights, transfers and experiences. You usually hear from us within one working day." },
       { title: "We refine it together", body: "Change anything. Most journeys go through two or three versions before they feel right." },
       { title: "You book", body: "One confirmation for the whole trip, with clear terms and a secure payment." },
       { title: "You travel with local support", body: "We are in the same country and the same time zone while you travel." },

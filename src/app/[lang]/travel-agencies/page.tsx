@@ -18,7 +18,8 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/travel-age
 
 export default async function TravelAgencies({ params }: PageProps<"/[lang]/travel-agencies">) {
   const { locale, dict } = await resolve(params);
-  const hero = libraryPhoto("landing/private-boats", tr(a.title, locale));
+  const lib = libraryPhoto("landing/private-boats", "");
+  const hero = lib && { ...lib, alt: { en: "Bangkas moored below limestone rocks in Coron, Palawan" } };
   const t = dict.contact;
 
   return (

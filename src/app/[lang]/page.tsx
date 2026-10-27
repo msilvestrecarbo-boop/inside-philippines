@@ -4,7 +4,7 @@ import { resolve } from "@/lib/i18n-server";
 import { buildMetadata } from "@/lib/seo";
 import { getCategories, getDestinations, getJourneys, getStories } from "@/lib/content";
 import { Photo } from "@/components/ui/Photo";
-import { withPhoto } from "@/lib/photos";
+import { libraryPhoto, withPhoto } from "@/lib/photos";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { InsiderNote } from "@/components/ui/Insider";
 import { ArticleCard, CategoryCard, DestinationCard, JourneyCard } from "@/components/cards/Cards";
@@ -12,7 +12,7 @@ import { HowItWorks, Tiers, WhyUs } from "@/components/sections/Sections";
 import { FinalCta } from "@/components/layout/FinalCta";
 import { Reveal, TrackedLink } from "@/components/layout/Tracking";
 import { tr } from "@/i18n/config";
-import { curated } from "@/content/extras";
+import { approach, audiences, curated, homeFacts } from "@/content/extras";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]">) {
   const { locale, dict } = await resolve(params);
@@ -61,6 +61,18 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <span aria-hidden className="absolute bottom-0 end-[8%] hidden h-24 w-px bg-white/70 md:block" />
       </section>
 
+      {/* KEY FACTS */}
+      <section className="border-b border-line bg-shell" aria-label={tr(audiences.kicker, locale)}>
+        <dl className="container-x grid grid-cols-2 gap-x-6 gap-y-8 py-10 md:grid-cols-5 md:py-12">
+          {homeFacts.map((f, i) => (
+            <div key={i} className={i === homeFacts.length - 1 ? "col-span-2 md:col-span-1" : undefined}>
+              <dt className="font-display text-2xl md:text-3xl">{tr(f.value, locale)}</dt>
+              <dd className="mt-1 text-sm leading-snug text-stone">{tr(f.label, locale)}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
       {/* DISCOVERY */}
       <section className="container-x py-24 md:py-36" aria-labelledby="discovery">
         <div className="grid gap-12 lg:grid-cols-12">
@@ -85,6 +97,30 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      {/* WHO WE DESIGN FOR */}
+      <section className="pb-24 md:pb-32" aria-labelledby="who">
+        <div className="container-x">
+          <SectionHeading id="who" kicker={tr(audiences.kicker, locale)} title={tr(audiences.title, locale)} />
+        </div>
+        <ul className="no-scrollbar mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 md:mx-auto md:grid md:max-w-[88rem] md:grid-cols-5 md:px-10 md:overflow-visible">
+          {audiences.items.map((a) => {
+            const lib = libraryPhoto(a.photo, "");
+            const photo = lib && { ...lib, alt: { en: tr(a.title, locale) } };
+            return (
+              <li key={a.href} className="w-[70vw] shrink-0 snap-start sm:w-[40vw] md:w-auto">
+                <Link href={`/${locale}${a.href}`} className="group block">
+                  <div className="relative aspect-[4/5] overflow-hidden rounded-card">
+                    {photo && <Photo photo={photo} locale={locale} label={dict.common.photoToCome} sizes="(min-width: 768px) 20vw, 70vw" className="absolute inset-0 transition-transform duration-700 group-hover:scale-[1.03]" />}
+                  </div>
+                  <h3 className="mt-4 text-[1.3rem]">{tr(a.title, locale)} <span aria-hidden className="text-narra">→</span></h3>
+                  <p className="mt-1 text-sm leading-relaxed text-stone">{tr(a.body, locale)}</p>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
       </section>
 
       {/* DESTINATIONS */}
@@ -161,6 +197,18 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
               <h3 className="text-[1.35rem]">{tr(p.title, locale)}</h3>
               <p className="mt-2 text-[0.95rem] leading-relaxed text-white/75">{tr(p.body, locale)}</p>
             </Reveal>
+          ))}
+        </div>
+        <div className="container-x mt-14 grid gap-10 border-t border-white/20 pt-10 md:grid-cols-2">
+          {([[approach.areTitle, approach.are, "✓"], [approach.notTitle, approach.not, "✕"]] as const).map(([title, lines, mark]) => (
+            <div key={mark}>
+              <h3 className="text-[1.35rem]">{tr(title, locale)}</h3>
+              <ul className="mt-4 space-y-2.5 text-white/80">
+                {lines.map((l, i) => (
+                  <li key={i} className="flex gap-3"><span aria-hidden className="text-white/50">{mark}</span>{tr(l, locale)}</li>
+                ))}
+              </ul>
+            </div>
           ))}
         </div>
       </section>
