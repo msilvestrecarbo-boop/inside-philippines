@@ -6,6 +6,7 @@ import { Newsletter } from "./Newsletter";
 import { site } from "@/lib/site";
 import { tr } from "@/i18n/config";
 import { extraLinks } from "@/content/extras";
+import { agencies } from "@/content/agencies";
 
 export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const t = dict.footer;
@@ -38,6 +39,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               <li><Link className="link-u" href={L("/about")}>{n.about}</Link></li>
               <li><Link className="link-u" href={L("/contact")}>{n.contact}</Link></li>
               <li><Link className="link-u" href={L("/corporate-travel")}>{tr(extraLinks.corporate, locale)}</Link></li>
+              <li><Link className="link-u" href={L("/travel-agencies")}>{tr(agencies.menu, locale)}</Link></li>
               <li><Link className="link-u" href={L("/design-my-trip")}>{n.designMyTrip}</Link></li>
               <li><a className="link-u" href={site.instagram} rel="noopener" target="_blank">Instagram</a></li>
               <li><a className="link-u" href={site.facebook} rel="noopener" target="_blank">Facebook</a></li>
