@@ -10,6 +10,7 @@ import type { FAQ } from "./types";
 
 export const agencies = {
   menu: { en: "For travel agencies", fr: "Agences de voyages", es: "Para agencias de viajes", ru: "Для турагентств", ar: "لوكالات السفر" } as L,
+  navLabel: { en: "Agencies", fr: "Agences", es: "Agencias", ru: "Агентствам", ar: "للوكالات" } as L,
   kicker: { en: "Trade partners", fr: "Partenaires professionnels", es: "Para profesionales", ru: "Партнёрам", ar: "للشركاء المحترفين" } as L,
   title: {
     en: "Your team on the ground in the Philippines",

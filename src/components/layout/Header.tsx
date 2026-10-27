@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Logo } from "@/components/brand/Logo";
 import { CurrencySwitcher, LanguageSwitcher } from "./Switchers";
-import type { Locale } from "@/i18n/config";
+import { tr, type Locale } from "@/i18n/config";
+import { agencies } from "@/content/agencies";
 import { track } from "@/lib/analytics";
 
 export type HeaderLabels = {
@@ -55,6 +56,7 @@ export function Header({ locale, t, whatsappHref }: { locale: Locale; t: HeaderL
     ["travel-guide", t.guide],
     ["stories", t.stories],
     ["about", t.about],
+    ["travel-agencies", tr(agencies.navLabel, locale)],
   ] as const;
 
   return (
