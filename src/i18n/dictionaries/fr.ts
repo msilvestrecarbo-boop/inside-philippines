@@ -143,7 +143,7 @@ const fr: Dictionary = {
     title: "Cinq étapes, de la première idée à votre dernier coucher de soleil.",
     steps: [
       { title: "Parlez-nous de votre voyage", body: "Dates, voyageurs, rythme, envies. Cinq minutes, sans engagement." },
-      { title: "Nous concevons votre itinéraire", body: "Un travel designer construit un parcours jour par jour : hôtels, vols, transferts et expériences." },
+      { title: "Nous concevons votre itinéraire", body: "Un travel designer construit un parcours jour par jour : hôtels, vols, transferts et expériences. Réponse en général sous un jour ouvré." },
       { title: "Nous l'affinons ensemble", body: "Modifiez tout ce que vous voulez. La plupart des voyages passent par deux ou trois versions avant d'être tout à fait justes." },
       { title: "Vous réservez", body: "Une seule confirmation pour tout le voyage, des conditions claires et un paiement sécurisé." },
       { title: "Vous voyagez, accompagné sur place", body: "Nous sommes dans le même pays et sur le même fuseau horaire que vous pendant tout le voyage." },

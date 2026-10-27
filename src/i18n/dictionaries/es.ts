@@ -143,7 +143,7 @@ const es: Dictionary = {
     title: "Cinco pasos desde la primera idea hasta tu última puesta de sol.",
     steps: [
       { title: "Cuéntanos tu viaje", body: "Fechas, quién viaja, ritmo, lo que te gusta. Cinco minutos, sin compromiso." },
-      { title: "Diseñamos tu viaje", body: "Un diseñador de viajes crea una ruta día a día con hoteles, vuelos, traslados y experiencias." },
+      { title: "Diseñamos tu viaje", body: "Un diseñador de viajes crea una ruta día a día con hoteles, vuelos, traslados y experiencias. Normalmente te respondemos en un día laborable." },
       { title: "Lo ajustamos juntos", body: "Cambia lo que quieras. La mayoría de los viajes pasan por dos o tres versiones hasta que encajan." },
       { title: "Reservas", body: "Una sola confirmación para todo el viaje, con condiciones claras y un pago seguro." },
       { title: "Viajas con apoyo local", body: "Estamos en el mismo país y en la misma zona horaria mientras viajas." },

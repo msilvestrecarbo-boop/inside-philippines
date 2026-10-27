@@ -390,3 +390,83 @@ export const gallery = {
     },
   ] as { id: string; label: L; items: GalleryItem[] }[],
 };
+
+// ──────────────────────────────────────────────────────────── HOME: FACTS, AUDIENCES, APPROACH
+
+/** Key facts under the home hero. Only facts that are true and shown elsewhere on the site. */
+export const homeFacts: { value: L; label: L }[] = [
+  {
+    value: { en: "7,641", fr: "7 641", es: "7.641", ru: "7641", ar: "7,641" },
+    label: { en: "islands, and we know which ones are worth it", fr: "îles, et nous savons lesquelles valent le détour", es: "islas, y sabemos cuáles merecen la pena", ru: "остров, и мы знаем, какие из них того стоят", ar: "جزيرة، ونعرف أيّها يستحق الزيارة" },
+  },
+  {
+    value: { en: "Manila · Siargao", fr: "Manille · Siargao", es: "Manila · Siargao", ru: "Манила · Сиаргао", ar: "مانيلا · سيارغاو" },
+    label: { en: "where our team lives and works", fr: "là où notre équipe vit et travaille", es: "donde vive y trabaja nuestro equipo", ru: "здесь живёт и работает наша команда", ar: "حيث يعيش فريقنا ويعمل" },
+  },
+  {
+    value: { en: "1 working day", fr: "1 jour ouvré", es: "1 día laborable", ru: "1 рабочий день", ar: "يوم عمل واحد" },
+    label: { en: "usual time for a personal reply", fr: "délai habituel pour une réponse personnelle", es: "tiempo habitual de respuesta personal", ru: "обычный срок личного ответа", ar: "المدة المعتادة لرد شخصي" },
+  },
+  {
+    value: { en: "€2,000", fr: "2 000 €", es: "2.000 €", ru: "2000 €", ar: "2,000 يورو" },
+    label: { en: "cancellation cover included in every trip", fr: "de garantie annulation incluse dans chaque voyage", es: "de cobertura de cancelación incluida en cada viaje", ru: "покрытие отмены в каждой поездке", ar: "تغطية إلغاء مشمولة في كل رحلة" },
+  },
+  {
+    value: { en: "24/7", fr: "24 h/24", es: "24/7", ru: "24/7", ar: "24/7" },
+    label: { en: "WhatsApp support while you travel", fr: "assistance WhatsApp pendant le voyage", es: "asistencia por WhatsApp durante el viaje", ru: "поддержка в WhatsApp во время поездки", ar: "دعم عبر واتساب طوال الرحلة" },
+  },
+];
+
+/** "Who we design for": one card per kind of traveller, each linking to its best page. */
+export const audiences = {
+  kicker: { en: "Who we design for", fr: "Pour qui nous créons", es: "Para quién diseñamos", ru: "Для кого мы создаём", ar: "لمن نصمّم" } as L,
+  title: { en: "Find the trip that fits you", fr: "Trouvez le voyage qui vous ressemble", es: "Encuentra el viaje hecho para ti", ru: "Найдите поездку для себя", ar: "اعثر على الرحلة التي تناسبك" } as L,
+  items: [
+    {
+      href: "/honeymoon",
+      photo: "landing/honeymoon",
+      title: { en: "Couples and honeymoons", fr: "Couples et voyages de noces", es: "Parejas y lunas de miel", ru: "Пары и молодожёны", ar: "الأزواج وشهر العسل" } as L,
+      body: { en: "Private boats, quiet islands, sunsets for two.", fr: "Bateaux privés, îles tranquilles, couchers de soleil à deux.", es: "Barcos privados, islas tranquilas, atardeceres para dos.", ru: "Частные лодки, тихие острова, закаты на двоих.", ar: "قوارب خاصة وجزر هادئة وغروب لشخصين." } as L,
+    },
+    {
+      href: "/family-philippines",
+      photo: "category/family",
+      title: { en: "Families", fr: "Familles", es: "Familias", ru: "Семьи", ar: "العائلات" } as L,
+      body: { en: "Easy transfers, shallow water, tarsiers and turtles.", fr: "Transferts simples, eaux peu profondes, tarsiers et tortues.", es: "Traslados fáciles, aguas poco profundas, tarseros y tortugas.", ru: "Простые трансферы, мелкая вода, долгопяты и черепахи.", ar: "تنقلات سهلة ومياه ضحلة وقردة الترسير والسلاحف." } as L,
+    },
+    {
+      href: "/journeys/the-gentle-philippines",
+      photo: "journey/the-slow-philippines",
+      title: { en: "Slow travellers and retirees", fr: "Voyageurs sans hâte et retraités", es: "Viajeros sin prisa y jubilados", ru: "Неспешные путешественники и пенсионеры", ar: "المسافرون على مهل والمتقاعدون" } as L,
+      body: { en: "Comfortable hotels, private drivers, fewer early starts.", fr: "Hôtels confortables, chauffeurs privés, moins de réveils matinaux.", es: "Hoteles cómodos, conductores privados, menos madrugones.", ru: "Удобные отели, частные водители, меньше ранних подъёмов.", ar: "فنادق مريحة وسائقون خاصون واستيقاظ مبكر أقل." } as L,
+    },
+    {
+      href: "/corporate-travel",
+      photo: "retreat/g-table-sea",
+      title: { en: "Groups and companies", fr: "Groupes et entreprises", es: "Grupos y empresas", ru: "Группы и компании", ar: "المجموعات والشركات" } as L,
+      body: { en: "Incentives, retreats and group trips, fully handled.", fr: "Incentives, retraites et voyages de groupe, entièrement organisés.", es: "Incentivos, retiros y viajes de grupo, todo organizado.", ru: "Инсентив, ретриты и групповые поездки под ключ.", ar: "رحلات تحفيزية وخلوات ورحلات جماعية بتنظيم كامل." } as L,
+    },
+    {
+      href: "/travel-agencies",
+      photo: "landing/private-boats",
+      title: { en: "Travel agencies", fr: "Agences de voyages", es: "Agencias de viajes", ru: "Турагентства", ar: "وكالات السفر" } as L,
+      body: { en: "Your local partner on the ground, white label available.", fr: "Votre partenaire local sur place, marque blanche possible.", es: "Tu socio local en destino, con opción de marca blanca.", ru: "Ваш местный партнёр, возможен white label.", ar: "شريكك المحلي على الأرض، مع خيار العلامة البيضاء." } as L,
+    },
+  ],
+};
+
+/** "What we are, and what we're not" lines in the curated band. */
+export const approach = {
+  areTitle: { en: "What we are", fr: "Ce que nous sommes", es: "Lo que somos", ru: "Кто мы", ar: "ما نحن عليه" } as L,
+  notTitle: { en: "What we're not", fr: "Ce que nous ne sommes pas", es: "Lo que no somos", ru: "Кем мы не являемся", ar: "ما لسنا عليه" } as L,
+  are: [
+    { en: "A small team that lives in the Philippines", fr: "Une petite équipe qui vit aux Philippines", es: "Un equipo pequeño que vive en Filipinas", ru: "Небольшая команда, живущая на Филиппинах", ar: "فريق صغير يعيش في الفلبين" },
+    { en: "Trip designers who answer you personally", fr: "Des créateurs de voyages qui vous répondent personnellement", es: "Diseñadores de viajes que te responden en persona", ru: "Тревел-дизайнеры, которые отвечают вам лично", ar: "مصممو رحلات يردّون عليك شخصيًا" },
+    { en: "Honest about seasons, crowds and travel times", fr: "Honnêtes sur les saisons, la foule et les temps de trajet", es: "Sinceros sobre temporadas, multitudes y tiempos de viaje", ru: "Честно говорим о сезонах, толпах и времени в пути", ar: "صادقون بشأن المواسم والازدحام وأوقات التنقل" },
+  ] as L[],
+  not: [
+    { en: "A booking website or a call centre", fr: "Un site de réservation ou un centre d'appels", es: "Una web de reservas o un call center", ru: "Сайт бронирования или колл-центр", ar: "موقع حجز أو مركز اتصال" },
+    { en: "A seller of fixed packages", fr: "Un vendeur de forfaits figés", es: "Un vendedor de paquetes cerrados", ru: "Продавец готовых пакетов", ar: "بائع باقات جاهزة" },
+    { en: "In a hurry to fit five islands into one week", fr: "Pressés de caser cinq îles en une semaine", es: "Con prisa por meter cinco islas en una semana", ru: "Не стремимся втиснуть пять островов в одну неделю", ar: "مستعجلين لحشر خمس جزر في أسبوع واحد" },
+  ] as L[],
+};
