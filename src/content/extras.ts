@@ -106,6 +106,38 @@ export const practicalFaq = {
   faqs: [
     {
       q: {
+        en: "How far ahead should I book?",
+        fr: "Combien de temps à l'avance faut-il réserver ?",
+        es: "¿Con cuánta antelación debo reservar?",
+        ru: "За сколько времени лучше бронировать?",
+        ar: "قبل كم من الوقت يجب أن أحجز؟",
+      },
+      a: {
+        en: "We recommend 3 to 4 months before you travel. For Christmas, New Year, Chinese New Year and Easter, book earlier, because island flights and the best small hotels fill up first. Shorter notice is often possible: send us your dates and we will tell you honestly what is still available.",
+        fr: "Nous conseillons de réserver 3 à 4 mois avant le départ. Pour Noël, le Nouvel An, le Nouvel An chinois et Pâques, réservez plus tôt : les vols entre les îles et les meilleurs petits hôtels partent en premier. Un délai plus court est souvent possible : envoyez-nous vos dates et nous vous dirons franchement ce qui reste disponible.",
+        es: "Recomendamos reservar entre 3 y 4 meses antes del viaje. Para Navidad, Año Nuevo, Año Nuevo chino y Semana Santa, reserva antes, porque los vuelos entre islas y los mejores hoteles pequeños se llenan primero. Con menos antelación a menudo también es posible: envíanos tus fechas y te diremos con sinceridad qué queda disponible.",
+        ru: "Мы советуем бронировать за 3–4 месяца до поездки. На Рождество, Новый год, Китайский Новый год и Пасху — раньше: перелёты между островами и лучшие небольшие отели заканчиваются первыми. Часто можно и в более короткий срок: пришлите даты, и мы честно скажем, что ещё доступно.",
+        ar: "ننصح بالحجز قبل السفر بثلاثة إلى أربعة أشهر. وفي عيد الميلاد ورأس السنة ورأس السنة الصينية وعيد الفصح احجز مبكرًا أكثر، لأن رحلات الطيران بين الجزر وأفضل الفنادق الصغيرة تمتلئ أولًا. كثيرًا ما يكون الحجز بمهلة أقصر ممكنًا: أرسل لنا تواريخك وسنخبرك بصراحة بما هو متاح.",
+      },
+    },
+    {
+      q: {
+        en: "Can we talk before we book?",
+        fr: "Peut-on se parler avant de réserver ?",
+        es: "¿Podemos hablar antes de reservar?",
+        ru: "Можно ли поговорить до бронирования?",
+        ar: "هل يمكننا التحدث قبل الحجز؟",
+      },
+      a: {
+        en: "Yes. Tick \"free video call\" on the trip form, or ask us on WhatsApp, and a member of our team will set up a call on WhatsApp video, Google Meet or Zoom at a time that suits you. There is no cost and no commitment.",
+        fr: "Oui. Cochez « appel vidéo gratuit » dans le formulaire de voyage, ou demandez-le-nous sur WhatsApp, et un membre de l'équipe organisera un appel sur WhatsApp vidéo, Google Meet ou Zoom au moment qui vous convient. C'est gratuit et sans engagement.",
+        es: "Sí. Marca «videollamada gratuita» en el formulario del viaje, o pídenoslo por WhatsApp, y alguien del equipo organizará una llamada por videollamada de WhatsApp, Google Meet o Zoom a la hora que te venga bien. Es gratis y sin compromiso.",
+        ru: "Да. Отметьте «бесплатный видеозвонок» в форме поездки или напишите нам в WhatsApp — кто-то из команды назначит звонок по видео в WhatsApp, Google Meet или Zoom в удобное для вас время. Это бесплатно и ни к чему не обязывает.",
+        ar: "نعم. اختر «مكالمة فيديو مجانية» في نموذج الرحلة، أو اطلبها منا عبر واتساب، وسيرتب أحد أعضاء فريقنا مكالمة عبر فيديو واتساب أو Google Meet أو Zoom في الوقت الذي يناسبك. المكالمة مجانية ودون أي التزام.",
+      },
+    },
+    {
+      q: {
         en: "Is there an e-travel form I need to fill out?",
         fr: "Y a-t-il un formulaire eTravel à remplir ?",
         es: "¿Tengo que rellenar el formulario eTravel?",
@@ -469,4 +501,69 @@ export const approach = {
     { en: "A seller of fixed packages", fr: "Un vendeur de forfaits figés", es: "Un vendedor de paquetes cerrados", ru: "Продавец готовых пакетов", ar: "بائع باقات جاهزة" },
     { en: "In a hurry to fit five islands into one week", fr: "Pressés de caser cinq îles en une semaine", es: "Con prisa por meter cinco islas en una semana", ru: "Не стремимся втиснуть пять островов в одну неделю", ar: "مستعجلين لحشر خمس جزر في أسبوع واحد" },
   ] as L[],
+};
+
+/** Home page "Where you'll stay": accommodation types, no hotel names. */
+export const stays = {
+  kicker: { en: "Where you'll stay", fr: "Où vous dormirez", es: "Dónde te alojarás", ru: "Где вы будете жить", ar: "أين ستقيم" } as L,
+  title: {
+    en: "Hotels chosen for you, not from a list",
+    fr: "Des hôtels choisis pour vous, pas sur catalogue",
+    es: "Hoteles elegidos para ti, no de un catálogo",
+    ru: "Отели, подобранные для вас, а не из каталога",
+    ar: "فنادق نختارها لك، لا من قائمة جاهزة",
+  } as L,
+  body: {
+    en: "Family villa, beachfront resort or a small hotel with character? We suggest a few places that fit your budget and the way you travel, tell you honestly why, and you decide.",
+    fr: "Villa familiale, resort en bord de plage ou petit hôtel de caractère ? Nous vous proposons quelques adresses adaptées à votre budget et à votre façon de voyager, nous vous expliquons franchement pourquoi, et vous choisissez.",
+    es: "¿Villa familiar, resort frente al mar o un pequeño hotel con encanto? Te proponemos algunos alojamientos que encajan con tu presupuesto y tu forma de viajar, te explicamos con sinceridad por qué, y tú decides.",
+    ru: "Семейная вилла, курорт на первой линии или небольшой отель с характером? Мы предложим несколько вариантов под ваш бюджет и стиль путешествия, честно объясним почему, а выбор за вами.",
+    ar: "فيلا عائلية، أو منتجع على الشاطئ، أو فندق صغير مميز؟ نقترح عليك بضعة أماكن تناسب ميزانيتك وطريقة سفرك، ونشرح لك بصراحة السبب، والقرار لك.",
+  } as L,
+  items: [
+    {
+      photo: "guide/best-islands",
+      title: { en: "Beachfront resorts", fr: "Resorts en bord de plage", es: "Resorts frente al mar", ru: "Курорты у моря", ar: "منتجعات على الشاطئ" } as L,
+      body: {
+        en: "A few steps from the sand, with a pool, a spa and a restaurant on site.",
+        fr: "À quelques pas du sable, avec piscine, spa et restaurant sur place.",
+        es: "A unos pasos de la arena, con piscina, spa y restaurante.",
+        ru: "В нескольких шагах от песка, с бассейном, спа и рестораном.",
+        ar: "على بعد خطوات من الرمال، مع مسبح وسبا ومطعم في المكان.",
+      } as L,
+    },
+    {
+      photo: "landing/wellness-journeys",
+      title: { en: "Private villas", fr: "Villas privées", es: "Villas privadas", ru: "Частные виллы", ar: "فلل خاصة" } as L,
+      body: {
+        en: "Space and privacy for families and friends, often with your own pool.",
+        fr: "De l'espace et de l'intimité pour les familles et les amis, souvent avec piscine privée.",
+        es: "Espacio y privacidad para familias y amigos, a menudo con piscina propia.",
+        ru: "Простор и уединение для семьи и друзей, часто со своим бассейном.",
+        ar: "مساحة وخصوصية للعائلات والأصدقاء، وغالبًا مع مسبح خاص.",
+      } as L,
+    },
+    {
+      photo: "retreat/g-breakfast-pool",
+      title: { en: "Boutique hotels", fr: "Hôtels de charme", es: "Hoteles boutique", ru: "Бутик-отели", ar: "فنادق بوتيك" } as L,
+      body: {
+        en: "Small places with character, where the staff know your name.",
+        fr: "De petites adresses de caractère, où l'équipe connaît votre prénom.",
+        es: "Lugares pequeños con carácter, donde el personal sabe tu nombre.",
+        ru: "Небольшие отели с характером, где персонал знает вас по имени.",
+        ar: "أماكن صغيرة مميزة يعرف فيها الطاقم اسمك.",
+      } as L,
+    },
+    {
+      photo: "story/best-boutique-hotels-in-palawan",
+      title: { en: "Island hideaways", fr: "Refuges insulaires", es: "Refugios en islas", ru: "Уединённые острова", ar: "ملاذات على الجزر" } as L,
+      body: {
+        en: "A handful of rooms on a quiet beach, reached by boat.",
+        fr: "Quelques chambres sur une plage tranquille, accessible en bateau.",
+        es: "Unas pocas habitaciones en una playa tranquila, a la que se llega en barco.",
+        ru: "Несколько номеров на тихом пляже, куда добираются на лодке.",
+        ar: "غرف قليلة على شاطئ هادئ يُوصل إليه بالقارب.",
+      } as L,
+    },
+  ],
 };
