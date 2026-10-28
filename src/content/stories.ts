@@ -324,7 +324,7 @@ Manila will not give you a beach or a lagoon. What it gives you is context: the 
  */
 const UPDATED_MORE = "2026-10-28";
 
-const travelAgencyBody = `Most people planning a first trip to the Philippines start the same way: forty browser tabs, three booking sites, a spreadsheet of ferry times and a growing doubt about whether the plan actually works. It is a country of more than 7,600 islands, and the hard part is not choosing beautiful places. It is connecting them. That is the work a local travel agency does for you.
+const travelAgencyBody = `Most people planning a first trip to the Philippines start the same way: forty browser tabs, three booking sites, a spreadsheet of ferry times and a growing doubt about whether the plan actually works. It is a country of more than 7,600 islands, and the hard part is not choosing beautiful places. It is connecting them. That is the work a local travel agency, or tour agency, in the Philippines does for you.
 
 ## What a local agency actually does
 
@@ -332,7 +332,7 @@ const travelAgencyBody = `Most people planning a first trip to the Philippines s
 - **Books the pieces that do not talk to each other.** Domestic flights, fast craft, private boats, drivers and hotels are run by different companies. We put them in the right order, with sensible gaps between them.
 - **Is there when something changes.** Flights are delayed and boats stay in port when the sea is rough. A team on the ground rebooks for you, so you are not standing at a pier trying to sort it out.
 
-## Local or international?
+## A local tour agency or an international one?
 
 A large international agency can sell you the Philippines, but it usually does not live here. We do. Our team works from Taguig in Metro Manila and General Luna in Siargao. That means we know which boat days are worth it in March and which ones are not, which areas flood in the wet season, and how long the drive really takes.
 
@@ -584,9 +584,9 @@ const moreStories: Story[] = [
       ar: "لماذا تحجز مع وكالة سفر محلية في الفلبين",
     },
     {
-      en: "What a travel agency based in the Philippines does for you, what to ask before you book, and how our team plans your trip.",
-      fr: "Ce que fait pour vous une agence de voyage basée aux Philippines, les questions à poser avant de réserver et comment notre équipe prépare votre voyage.",
-      es: "Qué hace por ti una agencia de viajes con sede en Filipinas, qué preguntar antes de reservar y cómo prepara tu viaje nuestro equipo.",
+      en: "What a local travel and tour agency in the Philippines does for you, what to ask before you book, and how our team plans your trip.",
+      fr: "Ce que fait pour vous une agence de voyage et de circuits basée aux Philippines, les questions à poser avant de réserver et comment notre équipe prépare votre voyage.",
+      es: "Qué hace por ti una agencia de viajes y tours con sede en Filipinas, qué preguntar antes de reservar y cómo prepara tu viaje nuestro equipo.",
       ru: "Что делает для вас турагентство, работающее на Филиппинах, что спросить перед бронированием и как наша команда планирует поездку.",
       ar: "ما الذي تقدمه لك وكالة سفر مقرها الفلبين، وما الذي تسأله قبل الحجز، وكيف يخطط فريقنا لرحلتك.",
     },
