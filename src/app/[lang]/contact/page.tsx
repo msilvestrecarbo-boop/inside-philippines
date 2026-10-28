@@ -15,7 +15,7 @@ export default async function Contact({ params }: PageProps<"/[lang]/contact">) 
   const t = dict.contact;
   return (
     <>
-      <PageHero kicker={t.kicker} title={t.title} body={t.body}>
+      <PageHero photo="destination/malapascua" kicker={t.kicker} title={t.title} body={t.body}>
         <TrackedLink href={`/${locale}/design-my-trip`} event="design_trip_click" params={{ placement: "contact" }} className="btn btn-primary">{dict.nav.designMyTrip}</TrackedLink>
       </PageHero>
       <section className="container-x grid gap-16 py-20 md:grid-cols-2 md:py-28">

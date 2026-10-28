@@ -4,7 +4,7 @@ import type { TierId } from "@/content/types";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/layout/Tracking";
 import { Photo } from "@/components/ui/Photo";
-import { withPhoto } from "@/lib/photos";
+import { libraryPhoto, withPhoto } from "@/lib/photos";
 
 export function HowItWorks({ dict }: { dict: Dictionary }) {
   const t = dict.howItWorks;
@@ -105,6 +105,7 @@ export function PageHero({
   children,
   tone = "lagoon",
   locale = "en",
+  photo,
 }: {
   kicker?: string;
   title: string;
@@ -112,7 +113,10 @@ export function PageHero({
   children?: React.ReactNode;
   tone?: "lagoon" | "sand";
   locale?: Locale;
+  /** Library photo key (e.g. "destination/coron"); defaults to the site hero. */
+  photo?: string;
 }) {
+  const own = photo ? libraryPhoto(photo, "") : undefined;
   const dark = tone === "lagoon";
   if (!dark) {
     return (
@@ -133,7 +137,7 @@ export function PageHero({
         label=""
         className="absolute inset-0 -z-10"
         sizes="100vw"
-        photo={withPhoto("site", "hero", {
+        photo={own ?? withPhoto("site", "hero", {
           tone: "lagoon",
           alt: {
             en: "Aerial view of turquoise water between limestone cliffs in El Nido, Palawan",

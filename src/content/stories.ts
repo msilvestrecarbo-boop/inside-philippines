@@ -316,7 +316,449 @@ Manila will not give you a beach or a lagoon. What it gives you is context: the 
 /* Stories                                                             */
 /* ------------------------------------------------------------------ */
 
+/**
+ * Stories added 2026-10-28 for searches such as "travel agency Philippines",
+ * "Philippines tours" and "private custom trips". Same integrity rule as
+ * ./stories.ts: no hotels, restaurants or operators are named, and nothing is
+ * claimed about the company that MARC has not confirmed.
+ */
+const UPDATED_MORE = "2026-10-28";
+
+const travelAgencyBody = `Most people planning a first trip to the Philippines start the same way: forty browser tabs, three booking sites, a spreadsheet of ferry times and a growing doubt about whether the plan actually works. It is a country of more than 7,600 islands, and the hard part is not choosing beautiful places. It is connecting them. That is the work a local travel agency, or tour agency, in the Philippines does for you.
+
+## What a local agency actually does
+
+- **Plans the route.** Which islands fit your dates and the season, in which order, and how many nights each one needs. Most disappointing trips are caused by too many islands, not too few.
+- **Books the pieces that do not talk to each other.** Domestic flights, fast craft, private boats, drivers and hotels are run by different companies. We put them in the right order, with sensible gaps between them.
+- **Is there when something changes.** Flights are delayed and boats stay in port when the sea is rough. A team on the ground rebooks for you, so you are not standing at a pier trying to sort it out.
+
+## A local tour agency or an international one?
+
+A large international agency can sell you the Philippines, but it usually does not live here. We do. Our team works from Taguig in Metro Manila and General Luna in Siargao. That means we know which boat days are worth it in March and which ones are not, which areas flood in the wet season, and how long the drive really takes.
+
+## What to ask any agency before you book
+
+1. Who will I talk to during the trip, and how? Ask for a real person on WhatsApp, at any hour.
+2. What exactly is included? Flights, transfers, boat days, entrance fees, meals and insurance should all be listed clearly.
+3. What happens if the weather cancels a boat or a flight?
+4. Is the trip private, shared, or a mix?
+5. Will they tell you honestly when a place is not right for you or for your dates?
+
+## How we work
+
+You tell us how you like to travel, with the trip form, on WhatsApp or on a free video call. A travel designer replies personally, usually within one working day, with a route and a proposal. We adjust it together until it feels right. Every trip includes travel insurance with cancellation cover, and our team answers WhatsApp 24/7 while you travel.
+
+## Our advice
+
+Whoever you book with, choose a team that lives in the Philippines and answers you personally. It makes more difference to your trip than any hotel.`;
+
+const toursBody = `Search for "Philippines tours" and you will find everything from a four-hour island-hopping trip to a three-week journey across the archipelago. They are very different things, and the right choice depends on how much time you have and how you like to travel.
+
+## The three kinds of tours
+
+- **Day tours.** Island-hopping in El Nido or Coron, the Chocolate Hills and tarsiers in Bohol, a walk through Intramuros in Manila. Easy to book once you are there, usually shared with other travellers.
+- **Fixed group tours.** A set route, set dates and a group of strangers. Good value if the dates suit you, less good if you want to change anything.
+- **Private, tailor-made tours.** Your own route, your own dates and your own pace, with private transfers and boats where they matter. This is what we design.
+
+## How many islands, and for how long?
+
+From Europe, most travellers choose 12 to 16 days. That is enough for two or three islands without spending half the trip in transit. A rule we use: one travel day for every three or four days on the islands.
+
+- **10 days:** Palawan (El Nido or Coron) plus one more island, such as Bohol or Siargao.
+- **14 days:** El Nido, Bohol and Siargao, or Coron, El Nido and a quiet island to finish.
+- **3 weeks:** add the rice terraces of Banaue and Batad, or a remote island such as Batanes in the right season.
+
+## What a good tour should include
+
+Hotels, domestic flights and ferries, transfers, boat days, entrance fees and a local guide on tour days. Check whether lunch on boat days, environmental fees and travel insurance are included, because they often are not. On our trips, travel insurance with cancellation cover is included every time.
+
+## Private or shared?
+
+Shared boat tours are fine and sociable. A private boat changes the day: you leave earlier, skip the busiest lagoons at peak hour and stop where you like. Many of our travellers mix the two, with shared tours on some days and a private boat on the day that matters most.
+
+## Our advice
+
+Choose the season first, then the islands, then the hotels. Look at our ready-made journeys for ideas, then tell us what to change. Every route can be adapted.`;
+
+const privateTripsBody = `A private, custom-made trip is not just a more expensive version of a package. It is a different way of travelling: a route built around you rather than around a brochure, with your own transfers, your own boats and nobody else's timetable.
+
+## What "private" means in practice
+
+- **Private transfers.** A driver waiting at every airport and pier, rather than a shared van that stops at six hotels.
+- **Private boats.** You leave at 7am, reach the lagoons before the crowds and stop for lunch on a beach you choose.
+- **Private guides.** A local guide for you alone, in Spanish or English, who adapts the day to your pace.
+- **Your own dates.** You start when you want, stay longer where you are happy and skip what does not interest you.
+
+## What "custom" means
+
+We start with questions, not a catalogue. When do you want to travel? Who is coming? Do you prefer beaches, food, diving, culture or doing very little? What is your budget? Then we design a route that fits the season and connects well, and we choose hotels that suit the way you travel.
+
+## How the process works
+
+1. You tell us about your trip with the form, on WhatsApp or on a free video call.
+2. A travel designer replies personally, usually within one working day.
+3. You receive a proposal with the route, hotels and what is included.
+4. We adjust it together until it feels right.
+5. While you travel, our team is on WhatsApp 24/7.
+
+## Is it much more expensive?
+
+Less than people expect. The biggest costs in the Philippines are hotels and domestic flights, and those are the same whether you book privately or not. Private transfers and boats add to the price, but they also save hours on travel days. We show you the options at each level, from Essential to Signature, and you choose where to spend.
+
+## Who it suits best
+
+Couples and honeymooners, families with children, friends travelling together, slow travellers, and anyone visiting for the first time who wants it to go smoothly. It also suits experienced travellers who want to reach the places group tours do not go.
+
+## Our advice
+
+Tell us the three things that matter most to you on this trip. That is usually enough for us to design a first route.`;
+
+const personalizedBody = `Two travellers can visit the same island in the same week and come home with completely different trips. The difference is rarely the hotel. It is the small, personal decisions: when you go, who shows you around, and the one or two moments planned just for you.
+
+## Start with the person, not the place
+
+When we design a trip, our first questions are about you. Is this a honeymoon, an anniversary, a birthday, a first trip together as a family? Do you wake up early or late? Do you want to dive, eat, walk, read or do nothing at all? The answers shape the route more than any list of famous places.
+
+## Touches that make a trip yours
+
+- **A celebration.** A private dinner on the beach for a honeymoon or an anniversary, a cake waiting for a birthday, or a quiet proposal at sunset. Tell us and we will plan it discreetly.
+- **The right timing.** A private boat leaving at 7am, so you reach the lagoon before the crowds.
+- **A guide who fits.** Spanish or English, and someone who matches your pace, whether you want history, food or just the best swimming spot.
+- **Food that means something.** A market visit, a cooking class or a family-run place for kinilaw and grilled fish, according to your trip.
+- **Space to do nothing.** Some of the best days are the ones with no plan at all. We leave them in on purpose.
+
+## Personal does not mean complicated
+
+A personalised trip is often simpler than a standard one: fewer islands, longer stays and less time in transit. We take care of the logistics, the flights, ferries, transfers and boats, so the days are yours.
+
+## Travelling with specific needs
+
+Tell us about dietary needs, mobility, young children or older parents. We choose hotels, boats and routes that work for everyone, and we tell you honestly when a place is not suitable.
+
+## How to start
+
+Tell us what would make this trip unforgettable for you, in a few lines, on the trip form, on WhatsApp or on a free video call. We will design the rest around it.`;
+
+const spanishHeritageBody = `For travellers from Spain and Latin America, the Philippines holds a surprise. More than three centuries of Spanish rule, from the 1560s to 1898, left churches, forts, street names, family names and hundreds of words in the local languages. You hear "mesa", "cuchara", "pantalón" and "kumusta" in daily life, and you count money in pesos.
+
+## Manila: Intramuros
+
+The old walled city of Manila was the centre of Spanish rule in Asia. Walk the walls early in the morning, visit San Agustin Church, the oldest stone church in the Philippines and part of a UNESCO World Heritage site, and stop at Fort Santiago at the mouth of the Pasig River. Binondo, next door, is the oldest Chinatown in the world, founded in the Spanish era.
+
+## Vigan
+
+In the north of Luzon, Vigan is the best-preserved Spanish colonial town in Asia and a UNESCO World Heritage site. Calle Crisologo, with its cobblestones, stone houses with capiz-shell windows and horse-drawn calesas, feels like another century, especially in the evening.
+
+## The baroque churches
+
+Four Spanish-era churches in the Philippines are listed together by UNESCO: San Agustin in Manila, Paoay in Ilocos Norte, Santa Maria in Ilocos Sur and Miagao in Iloilo. Paoay, with its huge buttresses built against earthquakes, is one of the most striking buildings in the country.
+
+## Cebu and Bohol
+
+Cebu is where Magellan arrived in 1521, and the Cross of Magellan and the Basilica del Santo Niño are still at the heart of the city. In Bohol, the old stone churches of Baclayon and Loboc sit in the countryside between the Chocolate Hills and the river.
+
+## Food with a Spanish accent
+
+Adobo, lechón, leche flan, embutido, menudo, ensaimada and churros all have Spanish names, and most have taken a very Filipino turn. Trying them is one of the pleasures of the trip.
+
+## How to include it in your trip
+
+Two days in Manila for Intramuros and Binondo, two or three in Vigan, and a day in Cebu or Bohol fit easily around the islands. We have Spanish-speaking guides available, so travellers from Spain and Latin America can hear the history in their own language.`;
+
+const fromEuropeBody = `From Europe, the Philippines feels far away, and it is: there are no direct flights from most European cities, and the journey usually takes 15 to 20 hours door to door. With a little planning, the long journey becomes the easy part.
+
+## Flights
+
+- Most travellers fly via a hub in the Middle East or Asia, such as Doha, Dubai, Istanbul, Singapore or Hong Kong.
+- Most international flights land in Manila. Some also land in Cebu, which is closer to Bohol, Siquijor and Siargao.
+- Look at the arrival time before the price. Landing in the evening means a night near the airport, which is often the best plan anyway.
+
+## The first night
+
+Do not try to connect an international flight to a domestic flight on the same day. Delays are common, and a missed connection costs a day of your trip. Spend the first night in Manila or Cebu and take the first domestic flight the next morning. Morning flights are the most likely to leave on time.
+
+## Jet lag
+
+The Philippines is 6 to 7 hours ahead of Central Europe, depending on the season. Most travellers feel it for two or three days. Plan an easy first island, with a beach and nothing to do, and save the long boat days and early starts for later in the trip.
+
+## Before you fly
+
+- Check the entry rules for your passport. Most European nationalities can enter visa-free for a short stay, but rules change, so always check before booking.
+- Register on eTravel, the official arrival form, within 72 hours before landing. It is free on the official site.
+- Pack light: domestic flights often allow only 7 kg in the cabin, with checked bags paid separately.
+
+## The best months from Europe
+
+December to May is the dry season and the best time for most of the islands. It is also when Europe is coldest, which makes the Philippines a perfect winter escape. Book 3 to 4 months ahead, and earlier for Christmas, New Year and Easter.
+
+## How we help
+
+We plan the domestic part around your international flights, arrange a driver to meet you on arrival, and keep a buffer where the sea or the weather could change things. You just need to land.`;
+
+const christmasBody = `The Philippines celebrates the longest Christmas season in the world. Carols start playing in September, the first of the "-ber" months, and the celebrations last until early January. If you visit in December, you will see a side of the country most travellers never expect.
+
+## Parols and lights
+
+The parol, a star-shaped lantern, is the symbol of Filipino Christmas. You will see them in every window, street and church, from simple paper stars to huge illuminated ones. In Pampanga, north of Manila, the city of San Fernando holds a famous Giant Lantern Festival in December.
+
+## Simbang Gabi
+
+From 16 to 24 December, many Filipinos attend a series of nine dawn masses called Simbang Gabi. Outside the churches, stalls sell bibingka, a rice cake cooked over charcoal, and puto bumbong, a purple sticky rice dessert. Even if you do not attend mass, going early for the food is a lovely way to see local life.
+
+## Noche Buena
+
+Christmas Eve is the big night. Families gather after midnight for Noche Buena, a feast with ham, queso de bola, lechón and spaghetti with a sweet sauce. New Year's Eve is just as lively, with fireworks, noise and twelve round fruits on the table for luck.
+
+## Travelling at Christmas: what to know
+
+- It is the busiest time of the year for domestic travel. Flights, ferries and the best small hotels sell out early, so book 4 to 6 months ahead.
+- Prices are higher between about 20 December and 5 January.
+- Many Filipinos travel home to their families, so airports and ports are crowded around 23 to 25 December and 30 December to 1 January. Avoid travel days on those dates if you can.
+
+## Where to spend it
+
+- **Manila** for the lights, the food and the dawn masses before flying to the islands.
+- **Palawan** for a warm, beach Christmas with a private boat day.
+- **Siargao** for a relaxed, barefoot New Year.
+- **Bohol and Siquijor** for something calmer, away from the crowds.
+
+## Our advice
+
+Spend Christmas Eve in one place rather than travelling, and plan the long journeys before 20 December or after 2 January. We will build the trip around the dates that matter to you.`;
+
+const slowTravelBody = `Not everyone wants to see five islands in ten days. More and more travellers, many of them over 55, ask for something different: fewer places, more comfort, no early starts and time to enjoy each day. The Philippines suits this way of travelling very well.
+
+## Fewer islands, longer stays
+
+We usually plan two or three islands for a two-week trip, with at least four nights in each. That means unpacking once or twice, not every other day, and having time to come back to the beach you liked.
+
+## Comfort where it matters
+
+- **Private transfers** at every airport and pier, with help with bags.
+- **Hotels chosen for ease:** few stairs where possible, short walks to the beach, good beds and quiet rooms.
+- **Boats chosen for the conditions:** calmer routes, shaded seats and a private boat if you prefer not to share.
+- **No very early flights** unless there is no alternative, and rest after long travel days.
+
+## Islands that suit a slower pace
+
+- **Bohol:** easy beaches in Panglao and Anda, the Chocolate Hills, the tarsiers and a gentle river cruise.
+- **Siquijor and Dumaguete:** a small island with a quiet coastal road, and a pleasant university town by the sea.
+- **El Nido:** for the famous lagoons, seen from a private boat at your own pace.
+- **Manila and Vigan:** for history and culture, with a guide and a car.
+
+## Health and peace of mind
+
+Every trip includes travel insurance with cancellation cover, and our team answers WhatsApp 24/7 during your trip. Tell us about any health needs, medication or mobility questions before you travel, and we will plan around them. Good hospitals are found in Manila, Cebu and the main regional cities. On small islands, care is more basic, which we take into account when choosing where you stay.
+
+## When to go
+
+January to April has the most comfortable weather for most of the country: dry, sunny and not yet at the peak heat of May.
+
+## Our advice
+
+Choose the pace first, then the places. Our Gentle Philippines journey is a good starting point, and we can slow it down further.`;
+
+const s = (
+  slug: string,
+  group: Story["group"],
+  series: string,
+  readMinutes: number,
+  title: Story["title"],
+  description: Story["description"],
+  photo: Story["photo"],
+  body: string,
+  related: Story["related"],
+): Story => ({ slug, group, status: "published", series, author: AUTHOR, readMinutes, updated: UPDATED_MORE, title, description, photo, body: { en: body }, related });
+
+const moreStories: Story[] = [
+  s(
+    "travel-agency-in-the-philippines",
+    "planning",
+    "Inside Planning",
+    3,
+    {
+      en: "Why Book With a Local Travel Agency in the Philippines",
+      fr: "Pourquoi réserver avec une agence de voyage locale aux Philippines",
+      es: "Por qué reservar con una agencia de viajes local en Filipinas",
+      ru: "Зачем бронировать поездку через местное турагентство на Филиппинах",
+      ar: "لماذا تحجز مع وكالة سفر محلية في الفلبين",
+    },
+    {
+      en: "What a local travel and tour agency in the Philippines does for you, what to ask before you book, and how our team plans your trip.",
+      fr: "Ce que fait pour vous une agence de voyage et de circuits basée aux Philippines, les questions à poser avant de réserver et comment notre équipe prépare votre voyage.",
+      es: "Qué hace por ti una agencia de viajes y tours con sede en Filipinas, qué preguntar antes de reservar y cómo prepara tu viaje nuestro equipo.",
+      ru: "Что делает для вас турагентство, работающее на Филиппинах, что спросить перед бронированием и как наша команда планирует поездку.",
+      ar: "ما الذي تقدمه لك وكالة سفر مقرها الفلبين، وما الذي تسأله قبل الحجز، وكيف يخطط فريقنا لرحلتك.",
+    },
+    { alt: { en: "Traditional bangka on calm blue water in the Philippines" }, brief: "", tone: "lagoon" },
+    travelAgencyBody,
+    { destinations: ["palawan", "siargao", "bohol"], journeys: ["island-classics", "ten-days-two-islands"] },
+  ),
+  s(
+    "philippines-tours",
+    "planning",
+    "Inside Planning",
+    3,
+    {
+      en: "Philippines Tours: How to Choose the Right One",
+      fr: "Circuits aux Philippines : comment choisir le bon",
+      es: "Tours por Filipinas: cómo elegir el adecuado",
+      ru: "Туры по Филиппинам: как выбрать подходящий",
+      ar: "جولات في الفلبين: كيف تختار الجولة المناسبة",
+    },
+    {
+      en: "Day tours, group tours or a private journey? How many islands, for how long, and what a good Philippines tour should include.",
+      fr: "Excursions, circuits en groupe ou voyage privé ? Combien d'îles, pour combien de temps, et ce qu'un bon circuit aux Philippines doit inclure.",
+      es: "¿Excursiones, tours en grupo o un viaje privado? Cuántas islas, durante cuánto tiempo y qué debe incluir un buen tour por Filipinas.",
+      ru: "Экскурсии, групповые туры или индивидуальное путешествие? Сколько островов, на какой срок и что должно входить в хороший тур по Филиппинам.",
+      ar: "جولات يومية أم جماعية أم رحلة خاصة؟ كم جزيرة ولأي مدة، وما الذي يجب أن تشمله جولة جيدة في الفلبين.",
+    },
+    { alt: { en: "Island-hopping boats in the Philippines" }, brief: "", tone: "lagoon" },
+    toursBody,
+    { destinations: ["el-nido", "coron", "bohol", "siargao"], journeys: ["island-classics", "palawan-bohol-boracay", "the-grand-philippines"] },
+  ),
+  s(
+    "private-custom-trips-philippines",
+    "travel-styles",
+    "Inside Private Travel",
+    3,
+    {
+      en: "Private, Custom-Made Trips in the Philippines: How They Work",
+      fr: "Voyages privés et sur mesure aux Philippines : comment ça marche",
+      es: "Viajes privados y a medida en Filipinas: cómo funcionan",
+      ru: "Индивидуальные путешествия по Филиппинам: как это работает",
+      ar: "رحلات خاصة ومصممة حسب الطلب في الفلبين: كيف تعمل",
+    },
+    {
+      en: "Private transfers, private boats, your own dates and a route built around you: what a tailor-made Philippines trip includes and how we plan it.",
+      fr: "Transferts privés, bateaux privés, vos propres dates et un itinéraire construit pour vous : ce que comprend un voyage sur mesure aux Philippines et comment nous le préparons.",
+      es: "Traslados privados, barcos privados, tus propias fechas y una ruta pensada para ti: qué incluye un viaje a medida por Filipinas y cómo lo preparamos.",
+      ru: "Индивидуальные трансферы и лодки, ваши даты и маршрут, построенный вокруг вас: что входит в индивидуальную поездку на Филиппины и как мы её планируем.",
+      ar: "تنقلات خاصة وقوارب خاصة وتواريخك أنت ومسار مبني حولك: ما الذي تشمله رحلة مصممة حسب الطلب في الفلبين وكيف نخطط لها.",
+    },
+    { alt: { en: "Bangkas moored below limestone rocks in Coron, Palawan" }, brief: "", tone: "lagoon" },
+    privateTripsBody,
+    { destinations: ["el-nido", "coron", "siargao"], journeys: ["luxury-palawan", "exclusive-philippines", "honeymoon-inside-philippines"] },
+  ),
+  s(
+    "personalized-trip-philippines",
+    "travel-styles",
+    "Inside Private Travel",
+    3,
+    {
+      en: "Make Your Philippines Trip Unique: The Personal Touches We Love",
+      fr: "Rendez votre voyage aux Philippines unique : les attentions personnelles que nous aimons",
+      es: "Haz que tu viaje a Filipinas sea único: los detalles personales que nos encantan",
+      ru: "Сделайте поездку на Филиппины особенной: личные детали, которые мы любим",
+      ar: "اجعل رحلتك إلى الفلبين فريدة: اللمسات الشخصية التي نحبها",
+    },
+    {
+      en: "Celebrations, private dinners, the right guide and the right timing: how we make a Philippines trip feel like it was designed only for you.",
+      fr: "Célébrations, dîners privés, le bon guide et le bon moment : comment nous faisons d'un voyage aux Philippines un voyage pensé uniquement pour vous.",
+      es: "Celebraciones, cenas privadas, el guía adecuado y el momento justo: cómo hacemos que un viaje a Filipinas parezca diseñado solo para ti.",
+      ru: "Праздники, частные ужины, подходящий гид и правильное время: как мы делаем поездку на Филиппины созданной только для вас.",
+      ar: "احتفالات وعشاء خاص والمرشد المناسب والتوقيت المناسب: كيف نجعل رحلتك إلى الفلبين وكأنها صُممت لك وحدك.",
+    },
+    { alt: { en: "Couple watching a sunset over the sea in the Philippines" }, brief: "", tone: "dusk" },
+    personalizedBody,
+    { destinations: ["siquijor", "el-nido", "bohol"], journeys: ["honeymoon-inside-philippines", "the-slow-philippines"] },
+  ),
+  s(
+    "spanish-heritage-in-the-philippines",
+    "culture",
+    "Inside Culture",
+    4,
+    {
+      en: "Spanish Heritage in the Philippines: Where to See It",
+      fr: "L'héritage espagnol aux Philippines : où le découvrir",
+      es: "La herencia española en Filipinas: dónde descubrirla",
+      ru: "Испанское наследие на Филиппинах: где его увидеть",
+      ar: "التراث الإسباني في الفلبين: أين تراه",
+    },
+    {
+      en: "Intramuros, Vigan, baroque churches and Spanish words in everyday life: where to find three centuries of shared history on your trip.",
+      fr: "Intramuros, Vigan, églises baroques et mots espagnols du quotidien : où retrouver trois siècles d'histoire commune pendant votre voyage.",
+      es: "Intramuros, Vigan, iglesias barrocas y palabras españolas en el día a día: dónde encontrar tres siglos de historia compartida en tu viaje.",
+      ru: "Интрамурос, Виган, барочные церкви и испанские слова в повседневной речи: где увидеть три века общей истории.",
+      ar: "إنتراموروس وفيغان والكنائس الباروكية والكلمات الإسبانية في الحياة اليومية: أين تجد ثلاثة قرون من التاريخ المشترك في رحلتك.",
+    },
+    { alt: { en: "Stone facade of San Agustin Church in Intramuros, Manila" }, brief: "", tone: "stone" },
+    spanishHeritageBody,
+    { destinations: ["manila", "cebu", "bohol"], journeys: ["luzon-adventure", "cebu-islands-and-culture"] },
+  ),
+  s(
+    "travelling-to-the-philippines-from-europe",
+    "practical",
+    "Inside Planning",
+    3,
+    {
+      en: "Travelling to the Philippines From Europe: Flights, Jet Lag and the First Night",
+      fr: "Aller aux Philippines depuis l'Europe : vols, décalage horaire et première nuit",
+      es: "Viajar a Filipinas desde Europa: vuelos, jet lag y la primera noche",
+      ru: "Как добраться на Филиппины из Европы: перелёты, джетлаг и первая ночь",
+      ar: "السفر إلى الفلبين من أوروبا: الرحلات وفارق التوقيت والليلة الأولى",
+    },
+    {
+      en: "How long the journey takes, where to connect, why to spend the first night near the airport and how to beat jet lag on a trip from Europe.",
+      fr: "Durée du trajet, escales, pourquoi passer la première nuit près de l'aéroport et comment gérer le décalage horaire depuis l'Europe.",
+      es: "Cuánto dura el viaje, dónde hacer escala, por qué pasar la primera noche cerca del aeropuerto y cómo combatir el jet lag desde Europa.",
+      ru: "Сколько длится дорога, где делать пересадку, почему первую ночь лучше провести у аэропорта и как справиться с джетлагом.",
+      ar: "كم تستغرق الرحلة، وأين تتوقف، ولماذا تقضي الليلة الأولى قرب المطار، وكيف تتغلب على فارق التوقيت عند السفر من أوروبا.",
+    },
+    { alt: { en: "Green outrigger bangka near a tropical island in the Philippines" }, brief: "", tone: "lagoon" },
+    fromEuropeBody,
+    { destinations: ["manila", "cebu", "bohol"], journeys: ["island-classics", "ten-days-two-islands"] },
+  ),
+  s(
+    "christmas-and-new-year-in-the-philippines",
+    "culture",
+    "Inside Culture",
+    3,
+    {
+      en: "Christmas and New Year in the Philippines",
+      fr: "Noël et le Nouvel An aux Philippines",
+      es: "Navidad y Año Nuevo en Filipinas",
+      ru: "Рождество и Новый год на Филиппинах",
+      ar: "عيد الميلاد ورأس السنة في الفلبين",
+    },
+    {
+      en: "The world's longest Christmas season: parols, dawn masses, Noche Buena and where to spend the holidays, plus how to book around the busiest dates.",
+      fr: "La plus longue saison de Noël du monde : parols, messes de l'aube, Noche Buena, où passer les fêtes et comment réserver autour des dates les plus chargées.",
+      es: "La temporada navideña más larga del mundo: parols, misas del alba, Nochebuena, dónde pasar las fiestas y cómo reservar en las fechas más concurridas.",
+      ru: "Самый долгий рождественский сезон в мире: фонари-паролы, рассветные мессы, Noche Buena, где провести праздники и как бронировать в самые загруженные даты.",
+      ar: "أطول موسم لعيد الميلاد في العالم: فوانيس البارول، وقداسات الفجر، وليلة نوتشي بوينا، وأين تقضي العطلة، وكيف تحجز في أكثر التواريخ ازدحامًا.",
+    },
+    { alt: { en: "Wooden boat on still water at a purple sunset, El Nido" }, brief: "", tone: "dusk" },
+    christmasBody,
+    { destinations: ["manila", "el-nido", "siargao", "bohol"], journeys: ["island-classics", "the-gentle-philippines"] },
+  ),
+  s(
+    "slow-travel-philippines",
+    "travel-styles",
+    "Inside Slow Travel",
+    3,
+    {
+      en: "Slow Travel in the Philippines: A Gentler Way to See the Islands",
+      fr: "Voyager lentement aux Philippines : une façon plus douce de découvrir les îles",
+      es: "Viajar sin prisa por Filipinas: una forma más tranquila de conocer las islas",
+      ru: "Неспешное путешествие по Филиппинам: спокойный способ увидеть острова",
+      ar: "السفر الهادئ في الفلبين: طريقة ألطف لاكتشاف الجزر",
+    },
+    {
+      en: "Fewer islands, longer stays, private transfers and comfortable hotels: how we plan relaxed Philippines trips for travellers who prefer an easy pace.",
+      fr: "Moins d'îles, des séjours plus longs, des transferts privés et des hôtels confortables : comment nous préparons des voyages tranquilles pour ceux qui préfèrent un rythme doux.",
+      es: "Menos islas, estancias más largas, traslados privados y hoteles cómodos: cómo preparamos viajes tranquilos para quienes prefieren un ritmo pausado.",
+      ru: "Меньше островов, дольше на каждом, индивидуальные трансферы и удобные отели: как мы планируем спокойные поездки для тех, кто любит неспешный ритм.",
+      ar: "جزر أقل وإقامات أطول وتنقلات خاصة وفنادق مريحة: كيف نخطط لرحلات هادئة في الفلبين لمن يفضلون إيقاعًا مريحًا.",
+    },
+    { alt: { en: "Woman sitting by the sea at sunset" }, brief: "", tone: "sand" },
+    slowTravelBody,
+    { destinations: ["bohol", "siquijor", "dumaguete", "el-nido"], journeys: ["the-gentle-philippines", "the-slow-philippines", "bohol-beach-escape"] },
+  ),
+];
+
 export const stories: Story[] = [
+  ...moreStories,
   {
     slug: "ten-islands-worth-building-a-philippines-trip-around",
     group: "islands",

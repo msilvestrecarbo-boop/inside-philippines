@@ -15,7 +15,7 @@ export default async function Stories({ params }: PageProps<"/[lang]/stories">) 
   const list = [...getStories()].sort((a, b) => (a.status === b.status ? 0 : a.status === "published" ? -1 : 1));
   return (
     <>
-      <PageHero kicker={dict.stories.kicker} title={dict.stories.title} body={dict.stories.body} />
+      <PageHero photo="story/philippines-in-january" kicker={dict.stories.kicker} title={dict.stories.title} body={dict.stories.body} />
       <section className="container-x grid gap-x-10 gap-y-16 py-20 sm:grid-cols-2 md:py-28 lg:grid-cols-3">
         {list.map((s) => <ArticleCard key={s.slug} a={s} locale={locale} dict={dict} base="stories" />)}
       </section>

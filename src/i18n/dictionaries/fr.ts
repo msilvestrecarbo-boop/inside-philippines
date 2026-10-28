@@ -4,7 +4,7 @@ const fr: Dictionary = {
   meta: {
     siteName: "Inside Philippines",
     tagline: "Les Philippines, de l'intérieur.",
-    defaultTitle: "Inside Philippines — Agence de voyage Philippines sur mesure",
+    defaultTitle: "Inside Philippines — Agence de voyage et circuits aux Philippines",
     defaultDescription:
       "Agence de voyage locale, Inside Philippines conçoit votre circuit sur mesure aux Philippines : Palawan, Siargao, Bohol et plus, vols, bateaux et transferts organisés pour vous.",
   },
