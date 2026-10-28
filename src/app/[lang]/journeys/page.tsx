@@ -16,7 +16,7 @@ export default async function Journeys({ params }: PageProps<"/[lang]/journeys">
   const lengths = [...new Set(list.map((j) => j.days))];
   return (
     <>
-      <PageHero kicker={dict.home.journeysKicker} title={dict.home.journeysTitle} body={dict.journey.customizeNotice}>
+      <PageHero photo="destination/siargao" kicker={dict.home.journeysKicker} title={dict.home.journeysTitle} body={dict.journey.customizeNotice}>
         <nav aria-label="Length" className="flex flex-wrap gap-3">
           {lengths.map((d) => (
             <a key={d} href={`#d${d}`} className="kicker rounded-full border border-white/30 px-4 py-2 text-white/85 hover:bg-white/10">

@@ -1069,5 +1069,61 @@
     "photographer": "Kaspars Upmanis",
     "subject": "Aerial of bangkas below limestone cliffs, El Nido, Palawan",
     "verifiedLocation": true
+  },
+  "story/travel-agency-in-the-philippines": {
+    "src": "https://images.unsplash.com/photo-1759773106970-9e3b78cac2fb",
+    "page": "https://unsplash.com/photos/a-traditional-filipino-boat-floats-on-calm-blue-water-8CGbH85gAis",
+    "photographer": "Bernd Dittrich",
+    "subject": "Traditional bangka on calm blue water, Philippines (exact island not stated)",
+    "verifiedLocation": false
+  },
+  "story/philippines-tours": {
+    "src": "https://images.unsplash.com/photo-1714572877874-f6f0631ff88b",
+    "page": "https://unsplash.com/photos/a-group-of-boats-floating-on-top-of-a-body-of-water-lOfRiXscqho",
+    "photographer": "Jerry Kavan",
+    "subject": "Island-hopping boats, Philippines",
+    "verifiedLocation": false
+  },
+  "story/private-custom-trips-philippines": {
+    "src": "https://images.unsplash.com/photo-1548784590-caed77cd2a38",
+    "page": "https://unsplash.com/photos/boats-on-body-of-water-near-mountains-during-daytime-gluJDF_BfU0",
+    "photographer": "David Köhler",
+    "subject": "Bangkas moored below limestone rocks, Coron (tagged Coron; no location field)",
+    "verifiedLocation": true
+  },
+  "story/personalized-trip-philippines": {
+    "src": "https://images.unsplash.com/photo-1768307389307-74b25da699f9",
+    "page": "https://unsplash.com/photos/couple-watching-a-vibrant-sunset-over-the-ocean-with-boats-4Sjxs_u3fP8",
+    "photographer": "Lisa van Vliet",
+    "subject": "Couple watching a sunset over the sea with boats",
+    "verifiedLocation": false
+  },
+  "story/spanish-heritage-in-the-philippines": {
+    "src": "https://images.unsplash.com/photo-1736122094944-da4deea774ab",
+    "page": "https://unsplash.com/photos/a-stone-gate-with-a-clock-tower-in-the-background-TBDUapl7H_4",
+    "photographer": "German Rivera De La Torre",
+    "subject": "Stone gate with clock tower behind, Intramuros, Manila",
+    "verifiedLocation": true
+  },
+  "story/travelling-to-the-philippines-from-europe": {
+    "src": "https://images.unsplash.com/photo-1757262639062-151c6f2ccdfd",
+    "page": "https://unsplash.com/photos/a-green-outrigger-boat-floats-near-a-tropical-island-xcSQd6UTB8Q",
+    "photographer": "Bernd Dittrich",
+    "subject": "Green outrigger bangka near a tropical island, Philippines (exact island not stated)",
+    "verifiedLocation": false
+  },
+  "story/christmas-and-new-year-in-the-philippines": {
+    "src": "https://images.unsplash.com/photo-1549714301-24ca408b5446",
+    "page": "https://unsplash.com/photos/brown-wooden-boat-at-water-xJBgzu3JZnY",
+    "photographer": "Bas van Wylick",
+    "subject": "Wooden boat on still water at a purple sunset, El Nido",
+    "verifiedLocation": true
+  },
+  "story/slow-travel-philippines": {
+    "src": "https://images.unsplash.com/photo-1533012562945-b003ce1d3269",
+    "page": "https://unsplash.com/photos/silhouette-of-woman-sitting-by-the-seashore-during-sunset-oQ7Y1cU-Rlg",
+    "photographer": "Ash Edmonds",
+    "subject": "Woman sitting by the sea at sunset",
+    "verifiedLocation": false
   }
 }

@@ -19,7 +19,7 @@ export default async function Destinations({ params }: PageProps<"/[lang]/destin
   const regions: Region[] = ["palawan", "visayas", "mindanao", "luzon"];
   return (
     <>
-      <PageHero kicker={dict.home.destinationsKicker} title={dict.home.destinationsTitle} body={dict.home.destinationsBody}>
+      <PageHero photo="destination/coron" kicker={dict.home.destinationsKicker} title={dict.home.destinationsTitle} body={dict.home.destinationsBody}>
         <nav aria-label="Regions" className="flex flex-wrap gap-3">
           {regions.map((r) => (
             <a key={r} href={`#${r}`} className="kicker rounded-full border border-white/30 px-4 py-2 text-white/85 hover:bg-white/10">{regionNames[r]}</a>

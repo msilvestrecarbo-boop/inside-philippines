@@ -24,7 +24,7 @@ export default async function Faq({ params }: PageProps<"/[lang]/faq">) {
           faqSchema(f.faqs.map((x) => ({ q: tr(x.q, locale), a: tr(x.a, locale) }))),
         ]}
       />
-      <PageHero locale={locale} kicker={tr(f.kicker, locale)} title={tr(f.title, locale)} body={tr(f.intro, locale)} />
+      <PageHero photo="destination/dumaguete" locale={locale} kicker={tr(f.kicker, locale)} title={tr(f.title, locale)} body={tr(f.intro, locale)} />
       <Faqs faqs={f.faqs} locale={locale} title={tr(f.kicker, locale)} />
       <FinalCta locale={locale} dict={dict} />
     </>

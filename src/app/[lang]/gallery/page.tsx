@@ -16,7 +16,7 @@ export default async function Gallery({ params }: PageProps<"/[lang]/gallery">) 
   const { locale, dict } = await resolve(params);
   return (
     <>
-      <PageHero locale={locale} kicker={tr(gallery.kicker, locale)} title={tr(gallery.title, locale)} body={tr(gallery.intro, locale)} />
+      <PageHero photo="destination/palawan" locale={locale} kicker={tr(gallery.kicker, locale)} title={tr(gallery.title, locale)} body={tr(gallery.intro, locale)} />
       <nav className="container-x flex flex-wrap gap-3 pt-12" aria-label={tr(gallery.kicker, locale)}>
         {gallery.categories.map((c) => (
           <a key={c.id} href={`#${c.id}`} className="rounded-full border border-line px-4 py-2 text-sm transition-colors hover:border-ink">

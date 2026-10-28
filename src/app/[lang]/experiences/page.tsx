@@ -16,7 +16,7 @@ export default async function Experiences({ params }: PageProps<"/[lang]/experie
   const t = dict.experiencesPage;
   return (
     <>
-      <PageHero kicker={t.kicker} title={t.title} body={t.body} />
+      <PageHero photo="category/nature-adventure" kicker={t.kicker} title={t.title} body={t.body} />
       <section className="container-x grid gap-6 py-20 sm:grid-cols-2 md:py-28 lg:grid-cols-4">
         {getCategories().map((c) => <CategoryCard key={c.slug} cat={c} locale={locale} dict={dict} />)}
       </section>

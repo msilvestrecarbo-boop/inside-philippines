@@ -19,7 +19,7 @@ export default async function Guide({ params }: PageProps<"/[lang]/travel-guide"
   const all = getGuides();
   return (
     <>
-      <PageHero kicker={t.kicker} title={t.title} body={t.body}>
+      <PageHero photo="destination/batanes" kicker={t.kicker} title={t.title} body={t.body}>
         <nav aria-label="Topics" className="flex flex-wrap gap-3">
           {groups.map((g) => <a key={g} href={`#${g}`} className="kicker rounded-full border border-white/30 px-4 py-2 text-white/85 hover:bg-white/10">{t.groups[g]}</a>)}
         </nav>

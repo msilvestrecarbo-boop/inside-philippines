@@ -23,7 +23,7 @@ export default async function About({ params }: PageProps<"/[lang]/about">) {
   ];
   return (
     <>
-      <PageHero kicker={t.kicker} title={t.title} body={t.intro} />
+      <PageHero photo="destination/manila" kicker={t.kicker} title={t.title} body={t.intro} />
       <section className="container-x py-20 md:py-28">
         {t.blocks.map((b, i) => (
           <div key={i} className={`grid items-center gap-10 py-10 md:grid-cols-2 md:gap-20 ${i % 2 ? "md:[&>*:first-child]:order-2" : ""}`}>
