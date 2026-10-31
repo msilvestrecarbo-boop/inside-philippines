@@ -37,7 +37,6 @@ export function Photo({
     );
   }
   if (photo.src) {
-    const unsplash = photo.src.startsWith("https://images.unsplash.com/");
     return (
       <div className={`${position}overflow-hidden tone-${photo.tone ?? "sand"} ${className}`}>
         <Image
@@ -48,17 +47,6 @@ export function Photo({
           priority={priority}
           className="object-cover"
         />
-        {showBrief && photo.credit && (
-          <a
-            href={photo.creditUrl ? `${photo.creditUrl}?utm_source=inside_philippines&utm_medium=referral` : undefined}
-            target="_blank"
-            rel="noopener"
-            className="absolute bottom-3 end-4 z-10 hidden text-[0.65rem] text-white/60 hover:text-white md:block"
-            dir="ltr"
-          >
-            Photo: {photo.credit}{unsplash ? " / Unsplash" : ""}
-          </a>
-        )}
       </div>
     );
   }
